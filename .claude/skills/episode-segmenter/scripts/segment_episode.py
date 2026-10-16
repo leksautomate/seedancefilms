@@ -81,7 +81,8 @@ def parse_scenes(text):
             continue
         m = SCENE_RE.match(line)
         if m and not QUOTE_RE.search(line):
-            cur = {"heading": line.strip(" #*"), "lines": []}
+            num = re.match(r"\s*(?:#+\s*|\*\*)?SCENE\s*(\d+)\b", line, re.IGNORECASE)
+            cur = {"heading": line.strip(" #*"), "lines": [], "number": int(num.group(1)) if num else None}
             scenes.append(cur)
             continue
         if cur is None:
@@ -156,6 +157,9 @@ def scene_events(lines, args):
 
 
 def dialogue_event(speaker, how, spoken, ln, args):
+    lead = re.match(r"\s*\(([^)]*)\)\s*(.*)$", spoken, re.S)   # "(to himself) Then I will ..." is a delivery note
+    if lead and lead.group(2).strip():
+        how, spoken = (how + ", " if how else "") + lead.group(1).strip(), lead.group(2)
     n = words(spoken)
     secs = n / args.wps + args.line_gap
     return {"kind": "dialogue", "speaker": speaker, "how": how, "text": spoken.strip(), "words": n,
@@ -200,7 +204,8 @@ def split_events(events, clip, min_part):
                 break
             if acc < lower:
                 continue
-            sc = cut_score(rest[i - 1], rest[i]) + acc / clip * 0.5
+            share = total(rest) / math.ceil(total(rest) / clip)   # an even split is the goal
+            sc = cut_score(rest[i - 1], rest[i]) - 4.0 * abs(acc - share) / clip
             if sc > best_score:
                 best, best_score = i, sc
         forced = False
@@ -249,9 +254,11 @@ def characters(scene_lines, events):
     for e in events:
         if e["kind"] != "action":
             continue
-        m = re.match(r"\s*([A-Z][A-Z0-9'\-]{2,})\b(?=\s+\S)", e["text"])
-        if m and m.group(1) not in STOP_CAPS:
-            names.add(m.group(1))
+        m = re.match(r"\s*([A-Z][A-Z0-9'\-]{2,}(?:\s+(?:[A-Z][A-Z0-9'\-]{2,}|AL-[A-Z]+))*)\b(?=\s+[a-z])", e["text"])
+        if m:
+            name = " ".join(w for w in m.group(1).split() if w not in STOP_CAPS)
+            if name and name.split()[0] not in STOP_CAPS:
+                names.add(name)
         for tok in re.findall(r"\b([A-Z]{3,})\b(?=\s+(?:and|AND)\s+[A-Z]{3,}\b)", e["text"]):
             if tok not in STOP_CAPS:
                 names.add(tok)
@@ -261,8 +268,11 @@ def characters(scene_lines, events):
 
 def build(text, args):
     scenes = parse_scenes(text)
+    numbers = [sc.get("number") for sc in scenes]
+    explicit = all(n is not None for n in numbers) and len(set(numbers)) == len(numbers)
     out = []
     for si, sc in enumerate(scenes, 1):
+        si = sc["number"] if explicit else si
         ev = scene_events(sc["lines"], args)
         establish = args.establish if sc["heading"] != "(no heading)" else 0.0
         if establish:
@@ -327,7 +337,7 @@ def build(text, args):
                 "characters": s["characters"], "scene_type_hint": s["scene_type"], "mood_hint": s["mood"],
                 "last_beat": (last_ev["text"] if last_ev else ""), "last_beat_kind": (last_ev["kind"] if last_ev else ""),
                 "next_beat": (nxt_ev["text"] if nxt_ev else ""),
-                "events": [{k: e[k] for k in ("kind", "speaker", "text", "words", "seconds")} for e in pev if e["kind"] != "transition"],
+                "events": [{**{k: e[k] for k in ("kind", "speaker", "text", "words", "seconds")}, "how": e.get("how")} for e in pev if e["kind"] != "transition"],
                 "notes": notes,
                 "merged_from": s.get("merged_from"),
             })

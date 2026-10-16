@@ -49,6 +49,9 @@ def cmd_run(argv: list[str]) -> int:
     p.add_argument("--chain", type=float, help="longest generation plus one extension (default 60)")
     p.add_argument("--fresh", action="store_true", help="ignore a saved run and regenerate every clip")
     p.add_argument("--tone", help="tone word for the header, for example comedic")
+    p.add_argument("--wps", type=float, help="spoken words per second (default 3.4; use 2.5 for slow, solemn delivery)")
+    p.add_argument("--plan-only", action="store_true", help="segment the script and file the plan, write no prompts")
+    p.add_argument("--prompts", metavar="FILE", help="JSON with prompts (and an analysis) written elsewhere; filed through the same checks")
     a = p.parse_args(argv)
     console = _console(a)
 
@@ -61,7 +64,7 @@ def cmd_run(argv: list[str]) -> int:
         text = console.read_script()
 
     llm = None
-    if not a.offline:
+    if not (a.offline or a.plan_only or a.prompts):
         try:
             llm = make_llm(a.provider, a.model, a.base_url)
         except LLMError as e:
@@ -69,7 +72,8 @@ def cmd_run(argv: list[str]) -> int:
             return 2
         console.say("Model: %s (%s)" % (llm.model, llm.provider))
     opts = Options(output=a.output, movie=a.movie, episode=a.episode, title=a.title, new_episode=a.new_episode, offline=a.offline,
-                   clip=a.clip, chain=a.chain, max_attempts=a.max_attempts, fresh=a.fresh, tone=a.tone)
+                   clip=a.clip, chain=a.chain, max_attempts=a.max_attempts, fresh=a.fresh, tone=a.tone,
+                   wps=a.wps, plan_only=a.plan_only, prompts_file=a.prompts)
     try:
         result = run_episode(text, opts, console, llm)
     except NeedInput as e:

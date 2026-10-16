@@ -108,10 +108,11 @@ def render(state: dict, offline: bool = False) -> str:
         pct = min(100, 100 * s.get("estimated_s", 0) / max(limit, 1))
         over = s.get("estimated_s", 0) > limit
         out.append("<section class=card id='seg-%s' data-id='%s'><div>" % (_e(s["id"]), _e(s["id"])))
-        out.append("<div class=id>%s</div><div class=scene>%s</div>" % (_e(s["id"]), _e(s.get("heading", ""))))
+        out.append("<div class=id>%s</div><div class=scene>%s</div>" % (_e(s["id"]), _e(s.get("scene_title") or s.get("heading", ""))))
         out.append("<span class='badge m-%s'>%s</span><span class='badge s-%s'>%s</span>" % (_e(s["mode"]), _e(s["mode"]), _e(s.get("status", "pending")), _e(s.get("status", "pending"))))
-        out.append("<div class=bar><i class='%s' style='width:%.0f%%'></i></div><div class=nums>%.1fs estimated of %ds · %d lines · %d words</div>" % (
-            "over" if over else "", pct, s.get("estimated_s", 0), limit, s.get("dialogue_lines", 0), s.get("dialogue_words", 0)))
+        out.append("<div class=bar><i class='%s' style='width:%.0f%%'></i></div><div class=nums>%.1fs estimated of %ds%s · %d lines · %d words</div>" % (
+            "over" if over else "", pct, s.get("estimated_s", 0), limit, (" · plan %ds" % s["planned_s"]) if s.get("planned_s") and s.get("part", 1) == 1 else "",
+            s.get("dialogue_lines", 0), s.get("dialogue_words", 0)))
         out.append("<div class=nums style='margin-top:8px'>%s</div></div><div>" % _e(MODE_HELP.get(s["mode"], "")))
         if why:
             out.append("<h3>Why this scene earns its place</h3><p class='why%s'>%s</p>" % (" weak" if weak else "", _e(why)))

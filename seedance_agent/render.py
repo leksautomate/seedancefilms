@@ -1,6 +1,8 @@
 """Turns the episode state into the files a person reads and copies from (all plain Markdown or text)."""
 from __future__ import annotations
 
+import re
+
 from .library import scene_folder_name
 
 MODE_HELP = {
@@ -12,7 +14,7 @@ MODE_HELP = {
 
 
 def seg_files(seg: dict) -> tuple[str, str, str]:
-    folder = scene_folder_name(seg["scene"], seg.get("heading", ""), seg.get("location", ""))
+    folder = scene_folder_name(seg["scene"], seg.get("heading", ""), seg.get("location", ""), seg.get("scene_title"))
     base = "%s_%s" % (seg["id"], seg["mode"])
     return folder, "%s.txt" % base, "%s_brief.md" % seg["id"]
 
@@ -50,7 +52,8 @@ def brief_md(seg: dict, scene_note: dict | None, settings: dict, offline: bool) 
                  seg.get("status", "pending").upper(), " (offline draft, no model used)" if offline else "", seg.get("estimated_s", 0),
                  seg.get("request_s", 0), seg.get("dialogue_lines", 0), seg.get("dialogue_words", 0), seg.get("part", 1), seg.get("parts", 1)),
              "", "## How to generate", "", MODE_HELP.get(seg["mode"], ""), "",
-             "## Seedance 2.5 settings", ""] + generation_settings(seg, settings) + [""]
+             "## Seedance 2.5 settings", ""] + generation_settings(seg, settings) + [""] + (
+                 ["## Added in the edit (not generated)", ""] + ["- On-screen text: %s" % t for t in seg["overlays"]] + [""] if seg.get("overlays") else [])
     if scene_note:
         lines += ["## Why this scene earns its place", "", scene_note.get("why", "(not analysed)"), ""]
     lines += ["## Shot brief", "",
@@ -116,15 +119,37 @@ def readme_md(state: dict, offline: bool) -> str:
         lines += ["**Logline:** %s" % a["logline"], ""]
     if a.get("tone"):
         lines += ["**Tone:** %s" % a["tone"], ""]
-    lines += ["## Clips in order", "", "| Clip | Scene | Mode | Est. s | Request s | Lines | Words | Status |", "|---|---|---|---|---|---|---|---|"]
+    lines += ["## Clips in order", "", "| Clip | Scene | Mode | Plan s | Est. s | Request s | Lines | Words | Status |", "|---|---|---|---|---|---|---|---|---|"]
     for s in state["segments"]:
-        lines.append("| %s | %s | %s | %.1f | %d | %d | %d | %s |" % (s["id"], s.get("heading", ""), s["mode"], s.get("estimated_s", 0),
-                                                                    s.get("request_s", 0), s.get("dialogue_lines", 0), s.get("dialogue_words", 0), s.get("status", "pending")))
+        plan = ("%d" % s["planned_s"]) if s.get("planned_s") and s.get("part", 1) == 1 else ""
+        lines.append("| %s | %s | %s | %s | %.1f | %d | %d | %d | %s |" % (s["id"], s.get("scene_title") or s.get("heading", ""), s["mode"], plan, s.get("estimated_s", 0),
+                                                                          s.get("request_s", 0), s.get("dialogue_lines", 0), s.get("dialogue_words", 0), s.get("status", "pending")))
     st = state.get("settings", {})
     lines += ["", "Estimated runtime: **%.1fs** (%.1f min) in %d clips." % (total, total / 60, len(state["segments"])),
               "", "Generate every clip with %s at %s, %s, audio %s. Each clip's brief lists its duration (whole seconds, 4 to 30) and inputs." % (
                   st.get("video_model", "Seedance 2.5"), st.get("aspect_ratio", "16:9"), st.get("resolution", "1080p"),
                   "on" if st.get("generate_audio", True) else "off"), ""]
+    sd = state.get("script_doc") or {}
+    if sd:
+        lines += ["## Not generated (edit room)", ""]
+        if sd.get("opening"):
+            lines.append("- Opening: %s" % sd["opening"])
+        for s in state["segments"]:
+            if s.get("overlays") and s.get("part", 1) == 1:
+                lines.append("- Scene %s on-screen text: %s" % (s["scene"], "; ".join(s["overlays"])))
+        if sd.get("end_card"):
+            lines.append("- End card: %s" % sd["end_card"])
+        if sd.get("runtime_s"):
+            span = re.search(r"(\d+):(\d{2})\s*-\s*(\d+):(\d{2})", sd.get("end_card") or "")
+            end_s = (int(span.group(3)) * 60 + int(span.group(4))) - (int(span.group(1)) * 60 + int(span.group(2))) if span else 0
+            open_s = next((b.get("seconds") or 0 for b in sd.get("blocks", []) if "opening" in b.get("block", "").lower()), 0)
+            plan_gen = sd["runtime_s"] - open_s - end_s
+            est = sum(s.get("estimated_s", 0) for s in state["segments"])
+            lines += ["", "Runtime plan: %ds in all, so %ds of generated video once the %ds opening and the %ds end card are taken out. "
+                      "Estimated generated video: %.0fs in %d clips." % (sd["runtime_s"], plan_gen, open_s, end_s, est, len(state["segments"]))]
+        lines.append("")
+        if sd.get("notes"):
+            lines += ["## Production notes (from the script)", ""] + ["- %s" % n for n in sd["notes"]] + [""]
     if a.get("spine"):
         lines += ["## The spine", ""]
         for act in a["spine"]:

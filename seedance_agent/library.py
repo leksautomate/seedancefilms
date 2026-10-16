@@ -125,7 +125,9 @@ class Library:
         return Movie(self.root, existing if existing else name)
 
 
-def scene_folder_name(scene_number: int, heading: str, location: str) -> str:
+def scene_folder_name(scene_number: int, heading: str, location: str, title: str | None = None) -> str:
+    if title:
+        return "Scene %02d - %s" % (scene_number, clean_name(title, 40))
     place = title_case(location) if location else ""
     if not place:
         h = re.sub(r"^\s*SCENE\s*\d+\s*[-:—–.]*\s*", "", heading or "", flags=re.IGNORECASE)

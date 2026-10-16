@@ -12,7 +12,7 @@ _ILLEGAL = re.compile(r'[<>:"/\\|?*\x00-\x1f]')
 
 def clean_name(text: str, max_len: int = 60) -> str:
     """Make a human-readable, filesystem-safe folder or file name."""
-    s = _ILLEGAL.sub(" ", str(text))
+    s = _ILLEGAL.sub(" ", str(text).replace(": ", " - ").replace(":", " -"))
     s = re.sub(r"\s+", " ", s).strip(" .")
     if len(s) > max_len:
         s = s[:max_len].rsplit(" ", 1)[0].strip(" .") or s[:max_len]
@@ -25,8 +25,15 @@ def norm_key(text: str) -> str:
 
 
 def title_case(text: str) -> str:
+    small = {"of", "the", "a", "an", "and", "in", "on", "to", "for", "at", "by", "or"}
     words = re.sub(r"\s+", " ", str(text)).strip().split(" ")
-    return " ".join(w[:1].upper() + w[1:].lower() if w.isupper() or w.islower() else w for w in words)
+    out = []
+    for i, w in enumerate(words):
+        if w.isupper() or w.islower():
+            after_colon = bool(out) and out[-1].endswith(":")
+            w = w.lower() if (i > 0 and w.lower() in small and not after_colon) else w[:1].upper() + w[1:].lower()
+        out.append(w)
+    return " ".join(out)
 
 
 def now_iso() -> str:

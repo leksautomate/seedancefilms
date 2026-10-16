@@ -215,6 +215,7 @@ def analysis_tools(job: AnalysisJob, console: Console, budget: AskBudget) -> lis
             "mood": {"type": "string"}, "camera_approach": {"type": "string"}, "status": {"type": "string", "enum": ["ready", "stub"]}}}},
         "characters": {"type": "array", "items": {"type": "object", "properties": {
             "name": {"type": "string"}, "tag": {"type": "string"}, "look": {"type": "string"}, "voice": {"type": "string"},
+            "aliases": {"type": "array", "items": {"type": "string"}},
             "source": {"type": "string", "enum": ["script", "assumed"]}}}},
         "locations": {"type": "array", "items": {"type": "object", "properties": {"name": {"type": "string"}, "tag": {"type": "string"}}}},
         "style_lock": {"type": "string"},

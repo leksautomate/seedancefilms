@@ -20,9 +20,12 @@ def tag_for(name: str, bible: dict, kind: str = "characters") -> str:
 
 def location_tag(segment: dict, bible: dict) -> tuple[str, str]:
     loc = segment.get("location") or ""
+    label = segment.get("location_label") or ""
     for name, entry in (bible.get("locations") or {}).items():
-        if norm_key(name) == norm_key(loc):
-            return title_case(name), entry.get("tag") or "@ TAG %s" % name.upper()
+        if norm_key(name) == norm_key(loc) or (label and norm_key(name) == norm_key(label)):
+            return (label or title_case(name)), entry.get("tag") or "@ TAG %s" % name.upper()
+    if label:
+        return label, "@ TAG %s" % label.split(",")[0].upper()
     nice = title_case(loc) if loc else "the location"
     return nice, "@ TAG %s" % (loc.upper() if loc else "LOCATION")
 

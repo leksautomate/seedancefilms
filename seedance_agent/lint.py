@@ -106,7 +106,7 @@ def lint(prompt: str, segment: dict, bible: dict, settings: dict, style: str = "
 
     # 7. timing
     limit = float(settings.get("clip_seconds", 30))
-    timing = sb.timing(text, limit)
+    timing = sb.timing(text, limit, settings.get("wps"))
     if timing["verdict"] == "TOO LONG":
         errors.append("Estimated %.1fs against a %ds limit. Remove or merge non-dialogue shots or shorten action. "
                       "Do not cut dialogue." % (timing["estimated_s"], limit))

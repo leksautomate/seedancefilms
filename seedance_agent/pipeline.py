@@ -15,7 +15,7 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
-from . import intake, offline, planpage, prompts, render
+from . import intake, offline, planpage, prompts, render, script_doc
 from . import skills_bridge as sb
 from .agent import run_loop
 from .console import Console
@@ -39,6 +39,9 @@ class Options:
     fresh: bool = False
     style: str = "full"
     tone: str | None = None
+    wps: float | None = None          # spoken words per second (slower for solemn drama)
+    plan_only: bool = False           # segment and file the plan, write no prompts
+    prompts_file: str | None = None   # prompts (and an analysis) written elsewhere, filed through the same checks
 
 
 # ---------------------------------------------------------------------------
@@ -57,6 +60,12 @@ def merge_bible(movie: Movie, analysis: dict | None, segments: list[dict]) -> No
             if not cur.get(k) and c.get(k):
                 cur[k] = c[k]
         cur.setdefault("source", c.get("source", "script"))
+        for alias in c.get("aliases") or []:   # the script's other names for the same person ("SULTAN ALI" for "ALI")
+            a = chars.setdefault(str(alias).strip().upper(), {})
+            for k in ("tag", "look", "voice"):
+                if not a.get(k) and cur.get(k):
+                    a[k] = cur[k]
+            a.setdefault("alias_of", name)
     for l in (analysis or {}).get("locations", []):
         name = str(l.get("name", "")).strip()
         if not name:
@@ -70,8 +79,9 @@ def merge_bible(movie: Movie, analysis: dict | None, segments: list[dict]) -> No
             cur = chars.setdefault(name, {"source": "assumed"})
             cur.setdefault("tag", "@ TAG %s" % name.upper())
         if s.get("location"):
-            key = next((k for k in locs if norm_key(k) == norm_key(s["location"])), title_case(s["location"]))
-            locs.setdefault(key, {}).setdefault("tag", "@ TAG %s" % s["location"].upper())
+            label = s.get("location_label") or title_case(s["location"])
+            key = next((k for k in locs if norm_key(k) == norm_key(label) or norm_key(k) == norm_key(s["location"])), label)
+            locs.setdefault(key, {}).setdefault("tag", script_doc.tag_for_place(label) if s.get("location_label") else "@ TAG %s" % s["location"].upper())
     style = (analysis or {}).get("style_lock")
     if style and not movie.settings.get("style_lock"):
         movie.settings["style_lock"] = style
@@ -107,8 +117,9 @@ def _segment_view(seg: dict, bible: dict) -> dict:
     return {"id": seg["id"], "scene": seg["scene"], "heading": seg.get("heading"), "mode": seg["mode"], "part": seg.get("part"),
             "parts": seg.get("parts"), "estimated_s": seg.get("estimated_s"), "request_s": seg.get("request_s"),
             "location": {"name": loc_name, "tag": loc_tag}, "characters": chars,
-            "events": [{"kind": e["kind"], "speaker": e.get("speaker"), "text": e["text"], "seconds": e.get("seconds")} for e in seg.get("events", [])],
-            "notes": seg.get("notes", [])}
+            "events": [{"kind": e["kind"], "speaker": e.get("speaker"), "how": e.get("how"), "text": e["text"], "seconds": e.get("seconds")} for e in seg.get("events", [])],
+            "scene_title": seg.get("scene_title"), "planned_s": seg.get("planned_s"), "on_screen_per_script": seg.get("on_screen"),
+            "edit_overlays_not_for_the_model_to_draw": seg.get("overlays"), "notes": seg.get("notes", [])}
 
 
 def _prev_info(prev_seg: dict | None) -> dict | None:
@@ -124,6 +135,46 @@ def _analysis_text(script: str, segments: list[dict], movie: Movie) -> str:
     return ("Analyse this episode.\n\n## The script\n\n%s\n\n## The segment plan (computed from the script)\n\n```json\n%s\n```\n\n"
             "## The movie bible so far (existing entries win)\n\n```json\n%s\n```\n\n## Settings\n\n```json\n%s\n```\n" % (
                 script, json.dumps(plan, indent=1), json.dumps(movie.bible, indent=1, ensure_ascii=False), json.dumps(movie.settings, indent=1)))
+
+
+def attach_doc(segs: list[dict], doc: script_doc.Doc) -> None:
+    """Copy what the production script says about each scene onto its clips."""
+    by = {sc.number: sc for sc in doc.scenes}
+    for s in segs:
+        sc = by.get(s["scene"])
+        if not sc:
+            continue
+        s["scene_title"], s["planned_s"], s["clip_block"] = sc.title, sc.planned_s, sc.clip
+        s["on_screen"], s["overlays"] = sc.on_screen, sc.overlays
+        s["location_label"] = script_doc.match_location(doc, sc.place) if sc.place else None
+
+
+def doc_summary(doc: script_doc.Doc) -> dict:
+    return {"movie": doc.movie, "arc": doc.arc, "runtime_s": doc.runtime_s, "setting": doc.setting, "opening": doc.opening,
+            "end_card": doc.end_card, "notes": doc.notes, "blocks": doc.blocks,
+            "characters": [{k: c[k] for k in ("name", "qualifier", "look", "voice")} for c in doc.characters],
+            "locations": doc.locations}
+
+
+def seed_from_doc(movie: Movie, doc: script_doc.Doc, segs: list[dict]) -> None:
+    """Fill empty look and voice fields from the script's CORE CHARACTERS list. Existing entries win."""
+    speakers = sorted({e["speaker"] for s in segs for e in s.get("events", []) if e.get("kind") == "dialogue" and e.get("speaker")})
+    for name, found in script_doc.bible_seed(doc, speakers).items():
+        cur = movie.bible["characters"].setdefault(name, {})
+        for k in ("look", "voice"):
+            if not cur.get(k) and found.get(k):
+                cur[k] = found[k]
+        cur.setdefault("source", "script")
+
+
+def submit_external(seg: dict, movie: Movie, prev_seg: dict | None, sub: dict, opts: "Options") -> dict:
+    """File a prompt written elsewhere. It goes through the same checks, once, with no retries."""
+    job = SegmentJob(segment=seg, bible=movie.bible, settings=movie.settings, style=opts.style, prev=_prev_info(prev_seg), max_attempts=1)
+    job.submit(sub)
+    if job.accepted is None:
+        job.accepted = job.best
+        job.accepted["status"] = "needs-review"
+    return {**job.accepted, "attempts": 1, "turns": 0}
 
 
 # ---------------------------------------------------------------------------
@@ -194,7 +245,12 @@ def run_episode(text: str, opts: Options, console: Console, llm: LLM | None) -> 
     if not text.strip():
         raise ValueError("The script is empty.")
     lib = Library(opts.output)
-    resolved = intake.resolve(text, lib, console, movie=opts.movie, episode=opts.episode, title=opts.title, new_episode=opts.new_episode)
+    doc = script_doc.parse(text)   # an annotated production script, or None for a plain script
+    resolved = intake.resolve(text, lib, console, movie=opts.movie or (doc.movie if doc else None),
+                              episode=opts.episode or (doc.episode_number if doc else None),
+                              title=opts.title or (doc.episode_title if doc else None), new_episode=opts.new_episode)
+    external = json.loads(Path(opts.prompts_file).read_text(encoding="utf-8")) if opts.prompts_file else None
+    offline_mode = llm is None and external is None and not opts.plan_only
     movie = lib.open_movie(resolved.movie)
     if opts.clip:
         movie.settings["clip_seconds"] = opts.clip
@@ -202,35 +258,57 @@ def run_episode(text: str, opts: Options, console: Console, llm: LLM | None) -> 
         movie.settings["chain_seconds"] = opts.chain
     if opts.tone:
         movie.settings["tone"] = opts.tone
+    if opts.wps:
+        movie.settings["wps"] = opts.wps
+    for k, v in ((external or {}).get("settings") or {}).items():
+        movie.settings[k] = v
     epdir = movie.episode_dir(resolved.number, resolved.title)
     folder = EpisodeFolder(epdir)
     prior = read_json(epdir / "episode.json")
-    resume = bool(prior and prior.get("script_sha") == resolved.script_sha and not opts.fresh and prior.get("offline") == (llm is None))
+    resume = bool(prior and prior.get("script_sha") == resolved.script_sha and not opts.fresh and prior.get("offline") == offline_mode)
     console.say("")
     console.say("%s → Episode %02d%s%s" % (movie.name, resolved.number, (" — " + resolved.title) if resolved.title else "",
                                                 " (new movie)" if resolved.is_new_movie else ""))
     console.say("Resuming the saved run." if resume else ("Replacing the earlier version of this episode (it is kept in _history)." if prior else "Starting a new episode."))
 
-    segs = prior["segments"] if resume else sb.segment(text, clip=movie.settings["clip_seconds"], chain=movie.settings["chain_seconds"])
+    segs = prior["segments"] if resume else sb.segment(doc.normalized if doc else text, clip=movie.settings["clip_seconds"],
+                                                       chain=movie.settings["chain_seconds"], wps=movie.settings.get("wps"))
     if not segs:
         raise ValueError("No scenes were found in the script.")
+    if doc and not resume:
+        attach_doc(segs, doc)
+        console.say("Read the production script: %d scenes, %d characters, %d locations, runtime plan %s." % (
+            len(doc.scenes), len(doc.characters), len(doc.locations), ("%d:%02d" % divmod(doc.runtime_s, 60)) if doc.runtime_s else "n/a"))
     for s in segs:
         s.setdefault("status", "pending")
     scene_numbers = sorted({s["scene"] for s in segs})
     console.say("%d scenes → %d clips, about %.0f seconds." % (len(scene_numbers), len(segs), sum(s.get("estimated_s", 0) for s in segs)))
 
     state = {"movie": movie.name, "number": resolved.number, "title": resolved.title, "script_sha": resolved.script_sha,
-             "created": (prior or {}).get("created") or now_iso(), "updated": now_iso(), "offline": llm is None,
-             "provider": getattr(llm, "provider", "offline"), "model": getattr(llm, "model", "template"), "settings": dict(movie.settings),
+             "created": (prior or {}).get("created") or now_iso(), "updated": now_iso(), "offline": offline_mode,
+             "source": "external" if external is not None else ("plan-only" if opts.plan_only else ("offline" if llm is None else "model")),
+             "provider": "external" if external is not None else getattr(llm, "provider", "offline"),
+             "model": "written outside the program" if external is not None else getattr(llm, "model", "template"), "settings": dict(movie.settings),
+             "script_doc": (prior or {}).get("script_doc") if resume else (doc_summary(doc) if doc else None),
              "analysis": (prior or {}).get("analysis") if resume else None, "segments": segs}
     if not resume:
         folder.write("script.txt", text)
-    save_episode_files(folder, state, llm is None)
+    save_episode_files(folder, state, offline_mode)
     movie.save()
+    if opts.plan_only:
+        console.say("Plan only: no prompts were written.")
+        return {"movie": movie.name, "number": resolved.number, "title": resolved.title, "path": str(epdir), "segments": len(segs), "ok": 0,
+                "needs_review": [], "usage": {}, "state": state}
 
     # ---- analysis ---------------------------------------------------------
     if state["analysis"] is None:
-        if llm is None:
+        if external is not None and external.get("analysis"):
+            job = AnalysisJob(scene_numbers)
+            verdict = job.submit(external["analysis"])
+            if not verdict["accepted"]:
+                raise ValueError("The supplied analysis is incomplete: %s" % "; ".join(verdict["problems"]))
+            state["analysis"] = job.analysis
+        elif llm is None:
             state["analysis"] = offline_analysis(segs)
         else:
             console.say("Reading the whole episode (spine, scene notes, characters, voices, colour, risks) ...")
@@ -243,11 +321,13 @@ def run_episode(text: str, opts: Options, console: Console, llm: LLM | None) -> 
             else:
                 state["analysis"] = job.analysis
     merge_bible(movie, state["analysis"], segs)
+    if doc:
+        seed_from_doc(movie, doc, segs)
     movie.save()
     state["settings"] = dict(movie.settings)
     for s in segs:
         s["tags"] = [offline.tag_for(n, movie.bible) for n in s.get("characters", [])] + [offline.location_tag(s, movie.bible)[1]]
-    save_episode_files(folder, state, llm is None)
+    save_episode_files(folder, state, offline_mode)
     notes = {n.get("scene"): n for n in state["analysis"].get("scenes", [])}
 
     # ---- the clips --------------------------------------------------------
@@ -258,21 +338,28 @@ def run_episode(text: str, opts: Options, console: Console, llm: LLM | None) -> 
         console.say("  Writing %s (%s, %.1fs) ..." % (seg["id"], seg["mode"], seg.get("estimated_s", 0)))
         prev_seg = segs[i - 1] if i > 0 and seg["mode"] in ("extend", "new-chain") else None
         nxt = segs[i + 1] if i + 1 < len(segs) else None
-        result = write_segment(seg, movie, notes.get(seg["scene"]), prev_seg, nxt, llm, console, opts)
+        if external is not None:
+            sub = (external.get("prompts") or {}).get(seg["id"])
+            if sub is None:
+                console.say("    no prompt supplied for %s; left pending." % seg["id"])
+                continue
+            result = submit_external(seg, movie, prev_seg, sub, opts)
+        else:
+            result = write_segment(seg, movie, notes.get(seg["scene"]), prev_seg, nxt, llm, console, opts)
         seg.update({k: result[k] for k in ("prompt", "shots", "brief", "carry_over", "assumptions", "warnings", "errors", "timing", "status",
                                            "last_line", "last_speaker", "attempts")})
         t = seg["timing"]
         console.say("    %s — %.1fs estimated, %d warnings%s" % (seg["status"], t["estimated_s"], len(seg["warnings"]),
                                                                     ", %d open problems" % len(seg["errors"]) if seg["errors"] else ""))
         state["updated"] = now_iso()
-        save_segment_files(folder, seg, notes.get(seg["scene"]), movie, llm is None)
-        save_episode_files(folder, state, llm is None)
+        save_segment_files(folder, seg, notes.get(seg["scene"]), movie, offline_mode)
+        save_episode_files(folder, state, offline_mode)
 
     state["usage"] = {"calls": getattr(llm, "calls", 0), "input_tokens": getattr(llm, "input_tokens", 0), "output_tokens": getattr(llm, "output_tokens", 0)}
     state["updated"] = now_iso()
     for seg in segs:
-        save_segment_files(folder, seg, notes.get(seg["scene"]), movie, llm is None)
-    save_episode_files(folder, state, llm is None)
+        save_segment_files(folder, seg, notes.get(seg["scene"]), movie, offline_mode)
+    save_episode_files(folder, state, offline_mode)
     return {"movie": movie.name, "number": resolved.number, "title": resolved.title, "path": str(epdir), "segments": len(segs),
             "ok": sum(1 for s in segs if s["status"] == "ok"), "needs_review": [s["id"] for s in segs if s["status"] == "needs-review"],
             "usage": state["usage"], "state": state}
