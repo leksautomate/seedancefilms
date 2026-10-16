@@ -1,95 +1,118 @@
-# Episode-to-video agent pipeline
+# How the agent works
 
-Goal: turn a full episode script into ready-to-generate Seedance prompts, one segment at a time, with the
-dialogue checked against the clip length.
+`studio.py` is a real agent program. You paste a script, it talks to a language model through tool calls, and it
+files everything under `output/`. This page explains what happens, where the checks are, and how to change things.
 
 ```
- episode script
-      |
-      v
- [1] episode-segmenter ........ scenes -> segments (15 s, +15 s extension, new chains, short clips)
-      |                          output: segment plan (JSON + table)
-      v
- [2] cinematic-camera-engine .. scene type + mood -> shot plan that fits the segment's seconds
-      |                          output: SHOT N - SCALE - ANGLE list, color anchor
-      v
- [3] seedance-scene-prompter .. shot plan + dialogue -> prompt text (full or extension style)
-      |                          output: prompt block per segment
-      v
- [4] dialogue_timing.py ....... counts spoken words, estimates seconds, FITS / TIGHT / TOO LONG
-      |                          loop back to [3] if TOO LONG (trim, merge a shot, or split the segment)
-      v
- approved prompts, in order, with the generation mode (generate / extend / new-chain)
+paste a script
+   |
+   v
+[1] Intake ........... which movie? which episode?  (asks you when the movie is not given)
+   |
+   v
+[2] Segmenter ........ scenes -> clips of 15 s, +15 s extensions, new chains, short clips     (code, no model)
+   |
+   v
+[3] Analyst agent .... reads the whole episode: spine, why each scene earns its place,        (model, 1 loop)
+   |                   characters, voices, tags, colour script, risks, unknowns
+   v
+[4] Writer agents .... one loop per clip. The model calls tools:                              (model, 1 loop per clip)
+   |                     lookup_camera_recipe  -> the camera engine's recipe and shot flow
+   |                     check_prompt          -> linter + timing estimate, nothing saved
+   |                     submit_segment_prompt -> saved ONLY if the linter passes
+   |                     ask_user              -> one question, only if a missing fact changes the clip
+   v
+[5] Library .......... output/<Movie>/<Episode>/<Scene>/ files, plan.html, README, review checklist
 ```
 
-Each stage is a skill in `.claude/skills/`. Stages [1] and [4] are scripts (`segment_episode.py`,
-`dialogue_timing.py`), so the numbers are computed, not guessed. Stages [2] and [3] are instructions the model follows.
+Progress is written after every clip. If a run stops (network, Ctrl-C), run the same command again and it resumes.
 
-## Data contract between stages
+## What gets saved
 
-Stage 1 writes this (the real output is in `episode-segmenter/examples/sample-segments.json`):
-
-```json
-{
-  "id": "S01b",
-  "scene": 1,
-  "heading": "SCENE 1 - INT. KITCHEN - NIGHT",
-  "mode": "extend",
-  "estimated_s": 14.8,
-  "request_s": 15,
-  "characters": ["GIRL", "WOLF"],
-  "scene_type_hint": "dialogue",
-  "mood_hint": "neutral",
-  "dialogue_lines": 5,
-  "dialogue_words": 23,
-  "last_beat": "You thought what?",
-  "next_beat": "",
-  "events": [{"kind": "dialogue", "speaker": "WOLF", "text": "Six? I thought you were, like, a TEN!", "words": 8, "seconds": 3.3}],
-  "notes": ["extension: start from the exact final frame of the previous segment"]
-}
+```
+output/
+  The Six/                              the movie
+    movie.json                          settings + the bible (characters, voices, tags, locations), shared by every episode
+    Episode 01 - The Six/               the episode
+      script.txt                        the script exactly as pasted
+      plan.html                         the visual plan: scrubber, scene cards, prompts with copy buttons
+      README.md                         production sheet: order, spine, colour script, risks, unknowns, assembly notes
+      prompts-all.md                    every prompt in order, ready to copy
+      review-checklist.md               what to check on each generated clip
+      episode.json                      the full state (used to resume)
+      Scene 01 - Kitchen/               a scene
+        S01a_generate.txt               paste-ready prompt
+        S01a_brief.md                   shot brief: purpose, stability constraints, shots, must-get moments, carry-over
+        S01b_extend.txt                 the extension prompt
+        S01b_brief.md
+      _history/<timestamp>/...          earlier versions of any file that was replaced
 ```
 
-Stage 2 adds `shots`: a list of `{scale, angle, movement, seconds, function, prompt_fragment}`.
-Stage 3 adds `prompt` (text) and stage 4 adds `timing` (`lines`, `words`, `estimated_s`, `verdict`).
+The movie name is required. If the script has no `MOVIE:` line and you did not pass `--movie`, the agent asks, and
+lists the movies that already exist so a new episode lands in the right place.
 
-## State the agent keeps
+## The checks a prompt must pass
 
-| Item | Why |
+Every prompt goes through the same linter before it is saved. These are errors (the model must fix them):
+
+| Check | Why |
 |---|---|
-| Tag registry (`@ TAG GIRL`, `@ TAG KITCHEN`, ...) | Tags bind the user's uploaded references to every prompt. Spelling must not drift. |
-| Voice blocks per character | Reused verbatim, with "SAME voice" in each dialogue shot, across all segments and extensions |
-| Color anchor | The first approved segment fixes the grade (see STEP 7 of the camera engine). Later segments reuse it |
-| Continuity sheet per scene | Positions, props, costume state, lighting. Copied into each extension prompt |
-| Last spoken line of each segment | The extension prompt quotes it |
+| Spoken lines match the script **word for word, in order**, nothing added or dropped | The agent never rewrites your dialogue |
+| Header says "Use ONLY hard cuts" and "NO music" | House style |
+| Shots numbered 1..N, 2 to 14 shots, no placeholders such as `<name>` | Prompt must be paste-ready |
+| Explicit ending (`END HERE.` or `CUT TO BLACK.`) | House style |
+| Every speaker has a voice block (new generations) | Voice consistency |
+| Tags for every character (new generations; extensions carry the designs in the source video) | Binds your uploaded references |
+| An extension starts with "Extend ..." and quotes the previous clip's last spoken line | Continuity |
+| Estimated running time not over the clip length | Fits the generation |
 
-## Human checkpoints
+Warnings are saved with the prompt and shown on the plan page. If a model cannot fix an error in `--max-attempts` tries
+(default 4), the best attempt is saved with the status `needs-review` and the open problems are written in the brief and
+the README. If the model never submits anything, a labelled template draft is saved so the episode is never lost.
 
-1. **Segment plan.** Show the table and the cut points. Approve before any prompt is written.
-2. **First segment of each scene.** Approve the prompt, then generate. Its look becomes the anchor for the rest.
-3. **TIGHT or TOO LONG segments.** The agent proposes a trim; a person decides.
+## Revising a clip
 
-Generation itself is outside these skills. Whoever runs the generator confirms credits and results.
+```
+python3 studio.py revise --movie "The Six" --episode 1 --clip-id S01b "make the last shot a wide"
+```
 
-## Running it by hand (no code needed)
+The same agent loop runs with your note and the current prompt, under the same checks. The old version moves to
+`_history`. Dialogue cannot be changed this way, because it comes from the script. Change the script and run again.
 
-1. Put the episode in `episode.txt` and ask Claude to "segment this episode". It runs the script and shows the plan.
-2. Approve the plan.
-3. Ask for "prompts for segment S01a". Claude uses the camera engine, writes the prompt and reports the timing table.
-4. Generate, then ask for the next segment (`S01b`, an extension) and paste nothing else: the continuity details are in the plan.
+## Choosing the model
 
-## Building it as a standalone agent
+Plain HTTP, no packages to install.
 
-The same stages can run as a program, using the Claude Agent SDK or the plain API with tools:
+| Set | Effect |
+|---|---|
+| `ANTHROPIC_API_KEY` | Uses the Anthropic API (default model `claude-sonnet-5-5`) |
+| `OPENAI_API_KEY` | Uses an OpenAI-compatible API (default model `gpt-4.1`) |
+| `SEEDANCE_MODEL`, `--model` | Pick the model |
+| `OPENAI_BASE_URL`, `--base-url` | Point at OpenRouter, a local server, and so on |
+| `--offline` | No model. Builds template drafts from the script so you can see the structure |
 
-- Tools: `segment_episode` and `dialogue_timing` as local functions (they are plain Python with no dependencies beyond the standard library).
-- System prompt: the text of the three `SKILL.md` files, loaded as skills or concatenated.
-- Loop: per segment, call the model with the segment JSON, let it call `dialogue_timing`, and stop when the verdict is FITS or the model reports it cannot fit after trimming.
-- Orchestration order is fixed by the data contract above, so it can be a simple script, not a free-form agent.
+## Where to change behaviour
 
-This repository does not contain that program yet. It is a short build once the skills are settled.
+| To change | Edit |
+|---|---|
+| How prompts are written (house style, camera rules, process) | `seedance_agent/prompts/writer.md` |
+| How the story is analysed | `seedance_agent/prompts/analyst.md` |
+| What counts as an error or warning | `seedance_agent/lint.py` |
+| Timing numbers (words per second, shot lengths) | `.claude/skills/*/scripts/*.py` (one source for the agent and the skills) |
+| How scenes are split into clips | `.claude/skills/episode-segmenter/scripts/segment_episode.py` |
+| The bible: tags, voices, looks, style lock | `output/<Movie>/movie.json` (your edits are kept; the agent only fills blanks) |
 
-## Known limits
+## Tests
 
-- Timing numbers come from five published clips and one prompt matched to its clip. They are estimates.
-- The 4 second minimum generation and the 30 second chain are assumptions to confirm against the generator.
-- The segmenter's parsing is heuristic. Unusual script formats may need a small cleanup before running it.
+```
+python3 -m unittest discover -s tests -t .
+```
+
+62 tests cover intake, the folder structure and versioning, the linter, both model clients (against mocked HTTP), the
+agent loop, and the whole pipeline including a scripted model that first changes a line of dialogue and has to fix it.
+
+## What has not been run
+
+The model clients were tested against mocked HTTP responses, not against the live services. No real model has written a
+prompt through this code yet. The first run with a real key is the first real test of prompt quality; if a prompt comes
+back weak, the fix is almost always in `prompts/writer.md`.

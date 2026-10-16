@@ -109,7 +109,7 @@ def verdict(total, limit):
     return "TOO LONG"
 
 
-def main():
+def build_parser():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("file", help="prompt text file, or - for stdin")
     ap.add_argument("--max", type=float, default=15.0, help="clip length limit in seconds (default 15)")
@@ -119,7 +119,11 @@ def main():
     ap.add_argument("--pad", type=float, default=0.3, help="entry/exit padding for a shot with dialogue (default 0.3)")
     ap.add_argument("--min-shot", type=float, default=1.2, help="shortest visible shot in seconds (default 1.2)")
     ap.add_argument("--json", action="store_true", help="print JSON instead of a table")
-    args = ap.parse_args()
+    return ap
+
+
+def main():
+    args = build_parser().parse_args()
 
     text = sys.stdin.read() if args.file == "-" else open(args.file, encoding="utf-8").read()
     rows = analyse(text, args.wps, args.line_gap, args.pause, args.pad, args.min_shot)

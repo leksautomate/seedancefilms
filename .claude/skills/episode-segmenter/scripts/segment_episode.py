@@ -31,7 +31,7 @@ import math
 import re
 import sys
 
-TITLE_RE = re.compile(r"^\s*(?:EPISODE|TITLE|SERIES|SEASON)\b", re.IGNORECASE)
+TITLE_RE = re.compile(r"^\s*(?:(?:EPISODE|EP\.?)\s*\d+\b.*|(?:TITLE|SERIES|SEASON|MOVIE|FILM|SHOW|EPISODE)\s*[:=\-\u2013\u2014].*)$", re.IGNORECASE)
 SCENE_RE = re.compile(r"^\s*(?:#+\s*|\*\*)?(SCENE\s*\d+\b.*|INT\.?/EXT\.?.*|I/E\.?.*|INT\..*|EXT\..*)$", re.IGNORECASE)
 SPEAKER_COLON_RE = re.compile(r"^\s*([A-Z][A-Z0-9_.'\- ]{0,28}?)\s*(?:\(([^)]*)\))?\s*:\s*(\S.*)$")
 NAME_QUOTE_RE = re.compile(r"^\s*([A-Z][A-Za-z0-9_.'\-]{1,20}(?: [A-Z][A-Za-z0-9_.'\-]{1,20})?)\s*(?:\(([^)]*)\))?\s*:\s*([“\"].*[”\"])\s*$")
@@ -240,11 +240,21 @@ def hints(events, heading):
 
 
 def characters(scene_lines, events):
+    """Speakers, plus capitalised names that start an action sentence ("WOLF sits ...").
+
+    Capitalised words inside spoken lines are emphasis, not names, and one-word sentences such as "CLICK." are
+    sound cues, so neither counts.
+    """
     names = {e["speaker"] for e in events if e["kind"] == "dialogue" and e["speaker"]}
-    blob = " ".join(l for _, l in scene_lines)
-    for tok in re.findall(r"\b[A-Z]{3,}\b", blob):
-        if tok not in STOP_CAPS:
-            names.add(tok)
+    for e in events:
+        if e["kind"] != "action":
+            continue
+        m = re.match(r"\s*([A-Z][A-Z0-9'\-]{2,})\b(?=\s+\S)", e["text"])
+        if m and m.group(1) not in STOP_CAPS:
+            names.add(m.group(1))
+        for tok in re.findall(r"\b([A-Z]{3,})\b(?=\s+(?:and|AND)\s+[A-Z]{3,}\b)", e["text"]):
+            if tok not in STOP_CAPS:
+                names.add(tok)
     names.discard("UNKNOWN")
     return sorted(names)
 
@@ -343,7 +353,7 @@ def render(segs, args):
     return "\n".join(lines)
 
 
-def main():
+def build_parser():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("file", help="episode script, or - for stdin")
     ap.add_argument("--clip", type=float, default=15.0, help="seconds per generation (default 15)")
@@ -362,7 +372,11 @@ def main():
     ap.add_argument("--pause", type=float, default=0.5, help="extra seconds per pause/beat/hold word (default 0.5)")
     ap.add_argument("--establish", type=float, default=2.0, help="seconds for the establishing view at each scene heading (default 2.0)")
     ap.add_argument("--json", action="store_true", help="print JSON for agents")
-    args = ap.parse_args()
+    return ap
+
+
+def main():
+    args = build_parser().parse_args()
     text = sys.stdin.read() if args.file == "-" else open(args.file, encoding="utf-8").read()
     segs = build(text, args)
     if args.json:

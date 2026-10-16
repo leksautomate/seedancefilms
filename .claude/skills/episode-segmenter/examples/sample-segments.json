@@ -15,13 +15,7 @@
       "dialogue_lines": 4,
       "dialogue_words": 16,
       "characters": [
-        "ALREADY",
-        "BABE",
         "GIRL",
-        "SIX",
-        "SURE",
-        "TEN",
-        "THEY",
         "WOLF"
       ],
       "scene_type_hint": "dialogue",
@@ -126,13 +120,7 @@
       "dialogue_lines": 5,
       "dialogue_words": 23,
       "characters": [
-        "ALREADY",
-        "BABE",
         "GIRL",
-        "SIX",
-        "SURE",
-        "TEN",
-        "THEY",
         "WOLF"
       ],
       "scene_type_hint": "dialogue",
@@ -414,7 +402,6 @@
       "dialogue_lines": 4,
       "dialogue_words": 8,
       "characters": [
-        "CLICK",
         "DIESEL",
         "RUFUS"
       ],
@@ -526,12 +513,7 @@
       "dialogue_words": 7,
       "characters": [
         "DIESEL",
-        "DROP",
-        "EXIT",
-        "NOW",
-        "ROXIE",
-        "RUN",
-        "WHAT"
+        "ROXIE"
       ],
       "scene_type_hint": "action",
       "mood_hint": "tense",
@@ -650,12 +632,7 @@
       "dialogue_words": 1,
       "characters": [
         "DIESEL",
-        "DROP",
-        "EXIT",
-        "NOW",
-        "ROXIE",
-        "RUN",
-        "WHAT"
+        "ROXIE"
       ],
       "scene_type_hint": "action",
       "mood_hint": "tense",
