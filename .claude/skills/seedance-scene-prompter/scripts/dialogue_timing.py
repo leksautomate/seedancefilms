@@ -113,7 +113,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("file", help="prompt text file, or - for stdin")
     ap.add_argument("--max", type=float, default=15.0, help="clip length limit in seconds (default 15)")
-    ap.add_argument("--wps", type=float, default=3.0, help="spoken words per second (default 3.0 for fast animated comedy; slow deadpan 2.5, dramatic 2.0)")
+    ap.add_argument("--wps", type=float, default=3.4, help="spoken words per second (default 3.4, measured on published clips; slow deadpan 2.5-3.0, frantic 4.0)")
     ap.add_argument("--line-gap", type=float, default=0.2, help="seconds added per spoken line (default 0.2)")
     ap.add_argument("--pause", type=float, default=0.5, help="seconds per pause/beat/hold note (default 0.5)")
     ap.add_argument("--pad", type=float, default=0.3, help="entry/exit padding for a shot with dialogue (default 0.3)")

@@ -11,6 +11,7 @@ estimates whether the scene fits the clip length.
 
 Read these when needed:
 - `references/prompt-patterns.md` - the patterns found across the example prompts
+- `references/measured-clips.md` - transcripts and measured speaking rate, shot length, and words per 15 seconds from five published clips
 - `references/camera-angles.md` - the 8 core camera angles plus extra terms, and how to name them in a prompt
 - `examples/` - eight real prompts (generation, extension, no-dialogue action, 20s fragment)
 - `scripts/dialogue_timing.py` - dialogue word count and running-time estimate
@@ -99,8 +100,8 @@ Always run this after drafting. Save the prompt to a text file, then:
 python3 -I .claude/skills/seedance-scene-prompter/scripts/dialogue_timing.py prompt.txt --max 15
 ```
 
-Flags: `--max` clip limit in seconds, `--wps` spoken words per second (default 3.0 for fast animated
-comedy; use 2.5 for slow deadpan delivery, 2.0 for dramatic pauses), `--json` for machine-readable output.
+Flags: `--max` clip limit in seconds, `--wps` spoken words per second (default 3.4, measured on
+published clips; use 2.5 to 3.0 for slow deadpan or dramatic delivery, 4.0 for frantic comedy), `--json` for machine-readable output.
 
 The script splits the prompt on `SHOT N`, counts the words inside quotation marks per shot, adds pauses
 and a minimum visible time per shot, and prints a table with lines, words, speaking seconds, shot seconds, and a
@@ -112,10 +113,11 @@ estimated total seconds, and the verdict against the clip length.
 
 Rules of thumb taken from the example prompts (they are estimates, not guarantees):
 
-- Example 01 shipped 7 shots, 6 lines and 25 spoken words inside a 15 second generation (script estimate: 13.2s).
-- Measured on five published clips (74 shots): the average shot lasts 1.7 to 2.7 seconds (median 1.7), so plan for 6 to 9 shots per 15 seconds. Shots under 1 second exist but are rare.
-- Measured on the cash-counting clip: the shot with 2 lines and 7 spoken words ("Is that enough, babe?" / "For rent? Yeah.") ran 3.5 seconds. The script gives 3.0s at 3.0 words per second and 3.5s at 2.5, so use `--wps 2.5` for calm, intimate or deadpan dialogue and 3.0 for fast comedy.
-- Keep a 15 second clip to about 30 spoken words or fewer.
+- Example 01 shipped 7 shots, 6 lines and 25 spoken words inside a 15 second generation (script estimate: 12.5s).
+- Measured on five published clips (transcribed with word timestamps, see `references/measured-clips.md`): speech runs 3.4 words per second pooled (median 4.0); calm or deadpan lines run 2.5 to 3.2, energetic comic lines 4 to 6.
+- Spoken words in the first 15 seconds of the published clips: 16 to 26. Keep a 15 second clip to about 25 spoken words or fewer.
+- 74 shots measured: the average shot lasts 1.7 to 2.7 seconds (median 1.7), so plan for 6 to 9 shots per 15 seconds.
+- A dialogue shot with a reaction or action beat runs about 1 second longer than its speaking time (cash clip: 7 words, 3.5 second shot). The script estimate is the tight minimum, so leave about 0.5 seconds of slack per dialogue shot.
 - Shots with no dialogue still need about 1.2 to 2 seconds each.
 - If the estimate is TOO LONG: trim lines first, then merge or drop a visual-only shot, then split into a first clip plus an extension prompt.
 - If the estimate is TIGHT: trim one line or one beat so the model does not rush the delivery.
