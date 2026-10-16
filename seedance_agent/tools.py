@@ -216,6 +216,8 @@ def analysis_tools(job: AnalysisJob, console: Console, budget: AskBudget) -> lis
         "characters": {"type": "array", "items": {"type": "object", "properties": {
             "name": {"type": "string"}, "tag": {"type": "string"}, "look": {"type": "string"}, "voice": {"type": "string"},
             "aliases": {"type": "array", "items": {"type": "string"}},
+            "lead": {"type": "boolean", "description": "true for a lead of the series"},
+            "extra": {"type": "boolean", "description": "true for a minor character who gets no sheet and is described in full in each scene"},
             "source": {"type": "string", "enum": ["script", "assumed"]}}}},
         "locations": {"type": "array", "items": {"type": "object", "properties": {"name": {"type": "string"}, "tag": {"type": "string"}}}},
         "style_lock": {"type": "string"},

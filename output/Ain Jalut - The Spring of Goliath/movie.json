@@ -1,0 +1,103 @@
+{
+  "name": "Ain Jalut - The Spring of Goliath",
+  "created": "2026-10-16T12:54:49",
+  "settings": {
+    "aspect_ratio": "16:9",
+    "video_model": "Seedance 2.5",
+    "clip_seconds": 30,
+    "chain_seconds": 60,
+    "resolution": "1080p",
+    "generate_audio": true,
+    "style_lock": "",
+    "prompt_style": "full",
+    "wps": 2.5,
+    "format_line": "serious, slow-burn cinematic historical drama scene",
+    "tone": "tense and measured",
+    "visual_style": "2D anime",
+    "language_lock": true
+  },
+  "bible": {
+    "characters": {
+      "QUTUZ": {
+        "tag": "@Qutuz",
+        "look": "Steel mail under a deep red coat, with a white turban wound with a yellow band",
+        "voice": "Adult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.",
+        "source": "script"
+      },
+      "YOUNG QUTUZ": {
+        "tag": "@QutuzChild",
+        "look": "A dusty tunic (proposed: plain, knee-length, undyed), barefoot (proposed)",
+        "voice": "A boy's voice, about ten years old. Small and light in pitch but steady, with a flat, defiant delivery and no tremble.",
+        "source": "script"
+      },
+      "SHAJAR AL-DURR": {
+        "tag": "@ShajarAlDurr",
+        "look": "A dark veil over the lower face and head, gold jewelry, and a long dark gown (proposed: charcoal)",
+        "voice": "Adult woman's voice. Quiet, controlled and even, with calm authority. Never raised.",
+        "source": "script"
+      },
+      "ALI": {
+        "tag": "@SultanAlMansurAli",
+        "look": "White-and-gold sultan's robes that are visibly too large for him: sleeves past his hands, hem pooling on the floor",
+        "voice": "A teenage boy's voice, about fifteen. Thin and slightly high, wavering, frightened.",
+        "source": "script"
+      },
+      "SULTAN ALI": {
+        "tag": "@SultanAlMansurAli",
+        "look": "White-and-gold sultan's robes that are visibly too large for him: sleeves past his hands, hem pooling on the floor",
+        "voice": "A teenage boy's voice, about fifteen. Thin and slightly high, wavering, frightened.",
+        "source": "script",
+        "alias_of": "ALI"
+      },
+      "SULTAN AYBAK": {
+        "tag": "@SultanAybak",
+        "look": "A tall man in a red-gold coat",
+        "voice": "None",
+        "source": "script"
+      },
+      "ELDER EMIR": {
+        "tag": "@ElderEmir",
+        "look": "A red turban and a long dark robe with a plain sash (proposed)",
+        "voice": "Older adult male voice. Dry, weary, measured delivery, a little careful.",
+        "source": "script"
+      },
+      "RIDER": {
+        "tag": "@Rider",
+        "look": "Dust-covered riding clothes (proposed): a dark tunic, a faded scarf and riding boots",
+        "voice": "Adult male voice. Breathless and hoarse from hard riding, urgent.",
+        "source": "script"
+      },
+      "DEALER": {
+        "no_image": true,
+        "tag": "",
+        "look": "man in his 40s, stocky, short dark beard, dirty cream headcloth, stained ochre tunic with a rope sash",
+        "voice": "Adult male voice. Loud, coarse and bored.",
+        "source": "assumed"
+      },
+      "BUYER": {
+        "no_image": true,
+        "tag": "",
+        "look": "man in his 50s, lean, neat trimmed grey beard, deep blue fine coat with gold trim, soft cap",
+        "voice": "Adult male voice. Smooth, unhurried, appraising.",
+        "source": "assumed"
+      }
+    },
+    "locations": {
+      "Qutuz's tent, Salihiyya camp": {
+        "tag": "@QutuzTent"
+      },
+      "Damascus slave market": {
+        "tag": "@DamascusSlaveMarket"
+      },
+      "Cairo Citadel royal bath chamber": {
+        "tag": "@CairoCitadelRoyalBathChamber"
+      },
+      "Citadel throne room": {
+        "tag": "@CitadelThroneRoom"
+      },
+      "Citadel wall at night": {
+        "tag": "@CitadelWall"
+      }
+    }
+  }
+}

@@ -11,7 +11,7 @@ def bible_for(seg):
     return {"characters": {n: {"tag": "@ TAG %s" % n, "voice": "A voice for %s." % n} for n in seg["characters"]}, "locations": {}}
 
 
-class Lint(unittest.TestCase):
+class Base(unittest.TestCase):
     def setUp(self):
         self.segs = sb.segment(SAMPLE, clip=15.0, chain=30.0)  # the 15 second layout
         self.seg = self.segs[0]
@@ -22,6 +22,9 @@ class Lint(unittest.TestCase):
         seg = seg or self.seg
         return lint.lint(prompt, seg, bible_for(seg), SETTINGS, "full", prev)
 
+
+
+class Lint(Base):
     def test_clean_prompt_passes(self):
         r = self.run_lint(self.draft)
         self.assertEqual(r["errors"], [], r["errors"])
@@ -95,6 +98,54 @@ class Lint(unittest.TestCase):
         d = offline.draft(many, bible_for(many), SETTINGS, None)["prompt"]
         r = lint.lint(d, many, bible_for(many), SETTINGS, "full")
         self.assertTrue(any("Estimated" in e and "limit" in e for e in r["errors"]), r["errors"])
+
+class StudioRules(Base):
+    """The studio's Seedance rules: @Name tags, the English-language lock, one Visual Style line, extras described in full."""
+
+    LOCK = "[Negative: chinese language, mandarin, chinese speech, asian accent]\n[System: Language: English] [Audio: English Speech]"
+
+    def locked(self):
+        return {"clip_seconds": 15, "language_lock": True, "visual_style": "2D anime"}
+
+    def run_with(self, prompt, settings, bible=None):
+        return lint.lint(prompt, self.seg, bible or self.bible, settings, "full", None)
+
+    def test_language_lock_lines_are_required(self):
+        r = self.run_with(self.draft, self.locked())
+        text = " ".join(r["errors"])
+        self.assertIn("[Negative: chinese language", text)
+        self.assertIn("[System: Language: English]", text)
+        self.assertIn("Visual Style", text)
+
+    def test_language_lock_passes_with_the_lines(self):
+        d = self.draft.replace("\n\n", "\n\nVisual Style: 2D anime.\n" + self.LOCK + "\n\n", 1)
+        r = self.run_with(d, self.locked())
+        self.assertEqual([e for e in r["errors"] if "Missing" in e or "Visual Style" in e], [])
+
+    def test_no_lock_no_extra_rules(self):
+        r = self.run_with(self.draft, {"clip_seconds": 15})
+        self.assertEqual(r["errors"], [])
+
+    def test_a_tag_must_match_as_a_whole_word(self):
+        bible = {"characters": {n: {"tag": "@Ali", "voice": "v"} for n in self.seg["characters"][:1]}, "locations": {}}
+        d = self.draft.replace("@ TAG", "@AliBaba")
+        warn_or_err = " ".join(self.run_with(d, {"clip_seconds": 15}, bible)["errors"] + self.run_with(d, {"clip_seconds": 15}, bible)["warnings"])
+        self.assertIn("@Ali", warn_or_err)
+
+    def test_a_character_without_an_image_must_be_described(self):
+        name = self.seg["characters"][0]
+        bible = {"characters": {n: {"tag": "@ TAG %s" % n, "voice": "v"} for n in self.seg["characters"]}, "locations": {}}
+        bible["characters"][name] = {"no_image": True, "tag": "", "look": "man in his 40s, stocky, dark beard", "voice": "v"}
+        r = self.run_with(self.draft, {"clip_seconds": 15}, bible)
+        self.assertTrue(any("no reference image" in w for w in r["warnings"]), r["warnings"])
+        d = self.draft.replace(name, "%s (man in his 40s, stocky, dark beard)" % name, 1)
+        r = self.run_with(d, {"clip_seconds": 15}, bible)
+        self.assertFalse(any("no reference image" in w for w in r["warnings"]), r["warnings"])
+
+    def test_shot_timestamps_are_accepted(self):
+        d = self.draft.replace("SHOT 1 \u2014", "SHOT 1 (00:00-00:03) \u2014", 1)
+        self.assertEqual(self.run_lint(d)["errors"], [])
+
 
 
 if __name__ == "__main__":

@@ -1,0 +1,123 @@
+Create a 30s serious, slow-burn cinematic historical drama scene.
+
+Characters: @Qutuz, @ElderEmir, @Rider
+Locations: @CitadelWall
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+@Qutuz, @ElderEmir and a @Rider are on @CitadelWall at night in January 1260.
+
+Wind. @Qutuz looks north across the dark plain. The @ElderEmir climbs the steps behind him.
+
+Preserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @Qutuz, @ElderEmir, @Rider and @CitadelWall.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.
+The plain to the north is empty and dark. The Mongols are never shown.
+The wind is constant in every shot. The only light is cold night light on stone, with a faint warm glow from the stairs.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only constant wind, cloth snapping in the gale, footsteps on stone, galloping hooves, and breathing, and dialogue.
+
+ELDER EMIR'S VOICE:
+
+Older adult male voice. Dry, weary, measured delivery, a little careful.
+
+QUTUZ'S VOICE:
+
+Adult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.
+
+RIDER'S VOICE:
+
+Adult male voice. Breathless and hoarse from hard riding, urgent.
+
+SHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL
+
+@CitadelWall at night in January. Wind blows constantly. @Qutuz is a small silhouette at the parapet, seen from behind, looking north over a dark, empty plain. Stone steps rise at frame right.
+
+HARD CUT.
+
+SHOT 2 (00:03-00:05) — MEDIUM SHOT ON QUTUZ — SLIGHT LOW ANGLE
+
+@Qutuz in profile at the parapet, his red coat moving in the wind. He looks north across the dark plain.
+
+HARD CUT.
+
+SHOT 3 (00:05-00:07) — MEDIUM SHOT — EYE LEVEL
+
+The @ElderEmir climbs the stone steps behind @Qutuz and reaches the top, his red turban whipped by the wind.
+
+HARD CUT.
+
+SHOT 4 (00:07-00:12) — MEDIUM CLOSE-UP ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir speaks over the wind.
+
+@ElderEmir, in his SAME dry, weary voice, level and honest:
+
+“The emirs have sworn their loyalty, my lord. Half from fear, half from hope.”
+
+HARD CUT.
+
+SHOT 5 (00:12-00:16) — CLOSE-UP ON QUTUZ IN PROFILE — EYE LEVEL
+
+@Qutuz does not turn from the plain.
+
+@Qutuz, in his SAME low, stern voice, steady:
+
+“Fear and hope will do. I need one thing more.”
+
+HARD CUT.
+
+SHOT 6 (00:16-00:18) — MEDIUM CLOSE-UP ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir waits, bracing against the wind.
+
+@ElderEmir, in his SAME dry, weary voice, quiet:
+
+“What is that?”
+
+HARD CUT.
+
+SHOT 7 (00:18-00:22) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz finally turns his face toward @ElderEmir.
+
+@Qutuz, in his SAME low, stern voice, quiet, weighty:
+
+“A reason to be remembered for something other than a crown.”
+
+HARD CUT.
+
+SHOT 8 (00:22-00:24) — LOW-ANGLE SHOT UP THE STAIRS — LOW ANGLE
+
+HOOVES, growing louder. A @Rider races up the stone stairs toward the wall, breathless.
+
+HARD CUT.
+
+SHOT 9 (00:24-00:27) — MEDIUM CLOSE-UP ON THE RIDER — EYE LEVEL
+
+The @Rider reaches the top, gasping.
+
+@Rider, in his SAME breathless, hoarse voice, urgent, gasping:
+
+“My lord, the Mongols have reached Aleppo! The siege has begun!”
+
+HARD CUT.
+
+SHOT 10 (00:27-00:30) — CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz turns back to the dark plain. Hold on his face after the line.
+
+@Qutuz, in his SAME low, stern voice, low, certain:
+
+“Then the clock has started.”
+
+HARD CUT.
+
+CUT TO BLACK.

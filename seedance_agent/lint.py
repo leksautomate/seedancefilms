@@ -123,15 +123,29 @@ def lint(prompt: str, segment: dict, bible: dict, settings: dict, style: str = "
             speakers.append(e["speaker"])
     if segment.get("mode") != "extend":  # an extension carries the designs in the source video
         for name in segment.get("characters", []):
-            tag = (chars.get(name) or {}).get("tag")
-            if tag and tag.lower() not in text.lower():
+            entry = chars.get(name) or {}
+            tag = entry.get("tag")
+            if tag and not re.search(re.escape(tag) + r"(?![A-Za-z0-9])", text, re.IGNORECASE):
                 (errors if name in speakers else warnings).append("Character %s is used but the tag '%s' is missing from the prompt." % (name, tag))
+            if entry.get("no_image") and entry.get("look"):
+                key = " ".join(entry["look"].split()[:3]).lower()
+                if key and key not in text.lower():
+                    warnings.append("%s has no reference image, so the prompt must describe them in full (%s...)." % (name, entry["look"][:40]))
     if style == "full" and segment.get("mode") in ("single", "generate", "new-chain"):
         for sp in speakers:
             if not re.search(r"^\s*(?:%s['’]?S?\s+VOICE|VOICE[^\n]{0,40}%s)" % (re.escape(sp), re.escape(sp)), text, re.IGNORECASE | re.MULTILINE):
                 errors.append("Speaker %s has no voice block. Add '%s'S VOICE:' with pitch, tone and delivery." % (sp, sp))
     if style == "full" and speakers and not re.search(r"\bSAME\b", text):
         warnings.append("No dialogue shot says 'in his/her SAME ... voice'.")
+
+    # 8b. language lock and visual style (the studio's Seedance rules)
+    if settings.get("language_lock"):
+        for needle, label in (("[negative: chinese language", "the [Negative: chinese language, mandarin, chinese speech, asian accent] line"),
+                              ("[system: language: english]", "the [System: Language: English] line"), ("[audio: english speech]", "the [Audio: English Speech] line")):
+            if needle not in text.lower():
+                errors.append("Missing %s. Put the language lines directly under Visual Style." % label)
+    if settings.get("visual_style") and "visual style:" not in text.lower():
+        (errors if settings.get("language_lock") else warnings).append("Add one 'Visual Style: %s' line near the top." % settings["visual_style"])
 
     # 9. extension and chain
     mode = segment.get("mode")

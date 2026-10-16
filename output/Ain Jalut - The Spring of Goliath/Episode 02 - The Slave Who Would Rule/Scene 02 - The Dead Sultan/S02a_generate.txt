@@ -1,0 +1,84 @@
+Create a 23s serious, slow-burn cinematic historical drama scene.
+
+Characters: @Qutuz, @ShajarAlDurr, @SultanAybak
+Locations: @CairoCitadelRoyalBathChamber
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+@Qutuz, @ShajarAlDurr and the body of @SultanAybak are in @CairoCitadelRoyalBathChamber at night in 1257.
+
+Steam, lamplight, marble. @SultanAybak lies still on the marble. @ShajarAlDurr stands over him, veiled and calm. @Qutuz enters, breathing hard.
+
+Preserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @Qutuz, @ShajarAlDurr, @SultanAybak and @CairoCitadelRoyalBathChamber.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.
+@SultanAybak is shown only as a body and lies perfectly still. There is no blood and no visible wound.
+Do NOT show @SultanAybak's face in this clip.
+@ShajarAlDurr always stands on the far side of the body. @Qutuz always enters from frame LEFT.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only dripping water, steam, soft echo off marble, footsteps, cloth, and breathing, and dialogue.
+
+QUTUZ'S VOICE:
+
+Adult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.
+
+SHAJAR AL-DURR'S VOICE:
+
+Adult woman's voice. Quiet, controlled and even, with calm authority. Never raised.
+
+SHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL
+
+@CairoCitadelRoyalBathChamber at night. White marble, steam drifting through lamplight. @SultanAybak lies still on the marble at the center, tall in his red-gold coat, his face turned away from the camera. @ShajarAlDurr stands over him on the far side, veiled and calm. An open doorway at frame left.
+
+HARD CUT.
+
+SHOT 2 (00:03-00:06) — MEDIUM SHOT — EYE LEVEL
+
+@Qutuz enters through the doorway at frame left, breathing hard, steam curling around his red coat. He stops at the sight of the body.
+
+HARD CUT.
+
+SHOT 3 (00:06-00:10) — MEDIUM CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz looks from the body to @ShajarAlDurr, still catching his breath.
+
+@Qutuz, in his SAME low, stern voice, hard and breathless:
+
+“The sultan is dead. Who did this?”
+
+HARD CUT.
+
+SHOT 4 (00:10-00:15) — MEDIUM CLOSE-UP ON SHAJAR AL-DURR — SLIGHT LOW ANGLE
+
+@ShajarAlDurr, veiled and calm, with steel in her eyes. She does not move.
+
+@ShajarAlDurr, in her SAME controlled, quiet voice, level and even:
+
+“Egypt is not a house for the soft, Qutuz. Someone had to decide.”
+
+HARD CUT.
+
+SHOT 5 (00:15-00:20) — CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz's eyes narrow. He keeps his voice low.
+
+@Qutuz, in his SAME low, stern voice, bitter:
+
+“You decided with a blade, and now every emir will want one.”
+
+HARD CUT.
+
+SHOT 6 (00:20-00:23) — CLOSE-UP ON SHAJAR AL-DURR'S EYES — EYE LEVEL
+
+Her eyes above the dark veil, level and unblinking, the gold of her jewelry catching the lamplight. She does not look away. Hold on this frame.
+
+HARD CUT.
+
+END HERE.

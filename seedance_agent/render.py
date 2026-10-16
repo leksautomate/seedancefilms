@@ -129,6 +129,22 @@ def readme_md(state: dict, offline: bool) -> str:
               "", "Generate every clip with %s at %s, %s, audio %s. Each clip's brief lists its duration (whole seconds, 4 to 30) and inputs." % (
                   st.get("video_model", "Seedance 2.5"), st.get("aspect_ratio", "16:9"), st.get("resolution", "1080p"),
                   "on" if st.get("generate_audio", True) else "off"), ""]
+    sh = state.get("sheets") or {}
+    if sh:
+        lines += ["## Reference images to make first", "",
+                  "Style: **%s**. Paste each sheet prompt into the image tool, save the result as `images/characters/<tag>.png` or `images/locations/<tag>.png`, "
+                  "and upload those images as references when you generate the clips. Lists to review: `characters-and-locations.md`." % sh.get("style"), "",
+                  "| Tag | Kind | Scenes | Voice design | Status |", "|---|---|---|---|---|"]
+        for c in sh.get("characters", []):
+            lines.append("| `%s` | character | %s | %s | %s |" % (c["tag"], ", ".join(str(x) for x in c.get("scenes", [])), "yes" if c["entry"].get("voice") else "no", c["status"]))
+        for l in sh.get("locations", []):
+            lines.append("| `%s` | location | %s | | %s |" % (l["tag"], ", ".join(str(x) for x in l.get("scenes", [])), l["status"]))
+        if sh.get("extras"):
+            lines += ["", "No sheet (described in full in each scene prompt): %s." % ", ".join(str(x.get("name")) for x in sh["extras"])]
+        bad = [c for c in sh.get("characters", []) + sh.get("locations", []) if c["status"] != "ok"]
+        for c in bad:
+            lines.append("- **%s needs review**: %s" % (c["tag"], "; ".join(c["errors"])))
+        lines.append("")
     sd = state.get("script_doc") or {}
     if sd:
         lines += ["## Not generated (edit room)", ""]

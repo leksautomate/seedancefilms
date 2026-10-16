@@ -1,0 +1,13 @@
+@CitadelWall
+
+Create a polished 16:9 landscape continuity sheet focused exclusively on the location, rendered in 2D anime:
+1. LOCATION PROFILE — Citadel wall at night. Role in the story: Where the lead looks north at the dark plain and learns that the Mongols have reached Aleppo. Exterior setting, Night, January 1260, Cairo Citadel. Scale: A long stone wall walk high above an open plain (proposed). Mood: Cold, windswept and full of dread. Signature colors: night blue-grey, cold stone, faint warm stair glow.
+2. MASTER ESTABLISHING VIEW — one wide hero view showing the full space with accurate layout, architecture, and atmosphere. A high stone wall at night: a parapet along the wall walk, stone steps rising to it at one side, and the dark empty northern plain stretching away beyond.
+3. MULTI-ANGLE VIEWS — front, left, right, and rear or reverse views of the same space, with matching scale, layout, and architectural details. The front view along the parapet toward the north; left and right views along the wall walk; the reverse view from the parapet back toward the stair head.
+4. KEY ZONES AND DETAILS — close-ups of the most important areas, entrances, windows, doors, floors, walls, ceilings, and other defining architectural elements: the stone parapet, the stone steps rising to the wall walk, the dark northern plain beyond (empty, no army), the wall walk (proposed).
+5. LIGHTING AND TIME OF DAY — the same location in the lighting the story calls for, with identical geometry in every version: night, cold light with constant wind (proposed: a faint warm glow from the stairs).
+6. MATERIAL AND TEXTURE REFERENCES — clean swatches or close-ups of the visible surfaces: weathered cut stone, worn stone steps, wind-blown dust (proposed), the dark plain.
+7. COLOR PALETTE — key colors with HEX codes: Night blue-grey #2B3544; Cold stone #6D7A8C; Parapet shadow #171B22; Stair glow (proposed) #A9682F; Plain dark #12151A, plus references for light color and shadow tone.
+8. DO NOT CHANGE — lock the layout, proportions, architecture, materials, colors, signature features, and atmosphere: the parapet, the stone steps at one side, the dark empty northern plain, the cold night light, the wind. Do not redesign, modernize, beautify, simplify, or create alternate versions.
+Use soft controlled lighting, sharp details, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid. Include a small NOTES PANEL with annotation text (the plain is always empty; wind is always present; no people shown).
+Every panel must depict the exact same location with absolute visual consistency. Focus only on the location. Do not include people, characters, vehicles, or unrelated objects.

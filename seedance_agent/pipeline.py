@@ -15,7 +15,7 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
-from . import intake, offline, planpage, prompts, render, script_doc
+from . import intake, offline, planpage, prompts, render, script_doc, sheets
 from . import skills_bridge as sb
 from .agent import run_loop
 from .console import Console
@@ -42,6 +42,8 @@ class Options:
     wps: float | None = None          # spoken words per second (slower for solemn drama)
     plan_only: bool = False           # segment and file the plan, write no prompts
     prompts_file: str | None = None   # prompts (and an analysis) written elsewhere, filed through the same checks
+    visual_style: str | None = None   # for the character and location sheets, for example "2D anime"
+    sheets: str = "auto"              # auto: build the sheets, only: sheets and no scene prompts, skip: no sheets
 
 
 # ---------------------------------------------------------------------------
@@ -57,6 +59,8 @@ def merge_bible(movie: Movie, analysis: dict | None, segments: list[dict]) -> No
             continue
         cur = chars.setdefault(name, {})
         for k in ("tag", "look", "voice"):
+            if k == "tag" and cur.get("no_image"):
+                continue   # an extra with no reference image is described in full, never tagged
             if not cur.get(k) and c.get(k):
                 cur[k] = c[k]
         cur.setdefault("source", c.get("source", "script"))
@@ -77,7 +81,8 @@ def merge_bible(movie: Movie, analysis: dict | None, segments: list[dict]) -> No
     for s in segments:  # everyone in the script gets at least a default tag
         for name in s.get("characters", []):
             cur = chars.setdefault(name, {"source": "assumed"})
-            cur.setdefault("tag", "@ TAG %s" % name.upper())
+            if not cur.get("no_image"):
+                cur.setdefault("tag", "@ TAG %s" % name.upper())
         if s.get("location"):
             label = s.get("location_label") or title_case(s["location"])
             key = next((k for k in locs if norm_key(k) == norm_key(label) or norm_key(k) == norm_key(s["location"])), label)
@@ -112,7 +117,8 @@ def _scene_type(seg: dict) -> str:
 # ---------------------------------------------------------------------------
 def _segment_view(seg: dict, bible: dict) -> dict:
     chars = {n: {"tag": (bible["characters"].get(n) or {}).get("tag"), "voice": (bible["characters"].get(n) or {}).get("voice"),
-                 "look": (bible["characters"].get(n) or {}).get("look")} for n in seg.get("characters", [])}
+                 "look": (bible["characters"].get(n) or {}).get("look"), "no_image": bool((bible["characters"].get(n) or {}).get("no_image"))}
+             for n in seg.get("characters", [])}
     loc_name, loc_tag = offline.location_tag(seg, bible)
     return {"id": seg["id"], "scene": seg["scene"], "heading": seg.get("heading"), "mode": seg["mode"], "part": seg.get("part"),
             "parts": seg.get("parts"), "estimated_s": seg.get("estimated_s"), "request_s": seg.get("request_s"),
@@ -175,6 +181,153 @@ def submit_external(seg: dict, movie: Movie, prev_seg: dict | None, sub: dict, o
         job.accepted = job.best
         job.accepted["status"] = "needs-review"
     return {**job.accepted, "attempts": 1, "turns": 0}
+
+
+# ---------------------------------------------------------------------------
+# character and location sheets
+# ---------------------------------------------------------------------------
+def _norm(s: str) -> str:
+    return norm_key(s)
+
+
+def scenes_for_names(names: list[str], segs: list[dict]) -> list[int]:
+    want = {n.upper() for n in names}
+    out = set()
+    for s in segs:
+        present = set(s.get("characters", [])) | {e.get("speaker") for e in s.get("events", []) if e.get("speaker")}
+        if want & present:
+            out.add(s["scene"])
+    return sorted(out)
+
+
+def scenes_for_location(name: str, segs: list[dict]) -> list[int]:
+    key = _norm(name)
+    return sorted({s["scene"] for s in segs if s.get("location_label") and (key in _norm(s["location_label"]) or _norm(s["location_label"]) in key)})
+
+
+def speech_for(names: list[str], segs: list[dict]) -> list[str]:
+    want = {n.upper() for n in names}
+    out = []
+    for s in segs:
+        for e in s.get("events", []):
+            if e.get("kind") == "dialogue" and e.get("speaker") in want and e["text"] not in out:
+                out.append(e["text"])
+    return out
+
+
+def build_sheets(text: str, doc, segs: list[dict], state: dict, movie: Movie, llm, external, console: Console, opts: "Options") -> dict | None:
+    """Character and location continuity sheets (see sheets.py). Returns the saved state, or None when they were not built."""
+    if opts.sheets == "skip":
+        return None
+    style = movie.settings.get("visual_style")
+    if not style:
+        if console.interactive:
+            style = console.ask("What visual style should the character and location sheets use?", sheets.STYLE_EXAMPLES + ["Other (describe it)"])
+            if style.startswith("Other"):
+                style = console.ask("Describe the style.")
+            movie.settings["visual_style"] = style
+        else:
+            console.say("No visual style is set, so the character and location sheets were skipped. Use --visual-style \"2D anime\" (or similar).")
+            return None
+    spec = (external or {}).get("sheets")
+    if external is not None and not spec:
+        return None
+    if external is None and llm is None:
+        console.say("Character and location sheets need a model (or --prompts). Skipped.")
+        return None
+    analysis = state["analysis"]
+    if spec:
+        char_in, loc_in, extras = spec.get("characters", []), spec.get("locations", []), spec.get("extras", [])
+    else:
+        char_in = [c for c in analysis.get("characters", []) if not c.get("extra")]
+        loc_in = list(analysis.get("locations", []))
+        extras = [c for c in analysis.get("characters", []) if c.get("extra")]
+    all_chars = [{"name": c.get("name", "")} for c in char_in]
+    out = {"style": style, "characters": [], "locations": [], "extras": extras}
+    console.say("Building %d character sheets and %d location sheets in %s ..." % (len(char_in), len(loc_in), style))
+
+    def run(kind: str, base: dict, job: "sheets.SheetJob") -> dict:
+        if spec:
+            job.submit(base)
+        else:
+            ctx = {"kind": kind, "visual_style": style, "entry": base, "needs_voice_design_prompt": job.recurring if kind == "character" else None,
+                   "scenes_it_appears_in": base.get("scenes"), "its_own_script_lines": job.speech_lines, "other_core_characters": [c["name"] for c in all_chars]}
+            user = "Fill the fields for this %s sheet.\n\n## The script\n\n%s\n\n## The entry\n\n```json\n%s\n```\n" % (kind, text, json.dumps(ctx, indent=1, ensure_ascii=False))
+            run_loop(llm, prompts.load("sheet_writer.md"), user, sheets.sheet_tools(job, console, AskBudget(1)), done=lambda: job.accepted is not None,
+                     max_turns=8, nudge="Call submit_sheet now.")
+        if job.accepted is None:
+            job.accepted = job.best or {"entry": base, "prompt": "", "errors": ["The model did not submit this sheet."], "warnings": []}
+            job.accepted["status"] = "needs-review"
+        return job.accepted
+
+    for c in char_in:
+        speakers = [x.upper() for x in (c.get("speakers") or [c.get("name", "")])]
+        scenes = scenes_for_names(speakers, segs)
+        lines = speech_for(speakers, segs)
+        recurring = len(scenes) > 1 or bool(c.get("lead"))
+        base = {**c, "scenes": scenes}
+        job = sheets.SheetJob("character", style, others=[x for x in all_chars if x["name"] != c.get("name")], speech_lines=lines, recurring=recurring)
+        res = run("character", base, job)
+        e = res["entry"]
+        e["scenes"], e["speakers"] = scenes, speakers
+        out["characters"].append({"name": e.get("name"), "tag": e.get("tag"), "status": res["status"], "errors": res["errors"], "warnings": res["warnings"],
+                                  "recurring": recurring, "scenes": scenes, "entry": e, "prompt": res["prompt"]})
+        console.say("  %s %s: %s%s" % (e.get("tag"), "(voice design)" if e.get("voice") else "", res["status"], (", %d problems" % len(res["errors"])) if res["errors"] else ""))
+    for l in loc_in:
+        scenes = scenes_for_location(l.get("match") or l.get("name", ""), segs)
+        job = sheets.SheetJob("location", style, characters=all_chars)
+        res = run("location", {**l, "scenes": scenes}, job)
+        e = res["entry"]
+        e["scenes"] = scenes
+        out["locations"].append({"name": e.get("name"), "tag": e.get("tag"), "status": res["status"], "errors": res["errors"], "warnings": res["warnings"],
+                                 "scenes": scenes, "entry": e, "prompt": res["prompt"]})
+        console.say("  %s: %s%s" % (e.get("tag"), res["status"], (", %d problems" % len(res["errors"])) if res["errors"] else ""))
+    return out
+
+
+def apply_sheets_to_bible(movie: Movie, built: dict, segs: list[dict]) -> None:
+    """The sheet tags become the bible tags, so every scene prompt names the same images."""
+    chars = movie.bible.setdefault("characters", {})
+    locs = movie.bible.setdefault("locations", {})
+    for c in built["characters"]:
+        e = c["entry"]
+        for sp in e.get("speakers") or [str(e.get("name", "")).upper()]:
+            cur = chars.setdefault(sp, {})
+            if not cur.get("tag") or cur["tag"].startswith("@ TAG "):
+                cur["tag"] = e["tag"]
+            for k, v in (("look", e.get("outfit_summary") or e.get("traits")), ("voice", e.get("video_voice") or e.get("speech_style"))):
+                if v and not cur.get(k):
+                    cur[k] = v
+            cur.setdefault("source", "script")
+            cur.pop("no_image", None)
+    for x in built.get("extras", []):
+        name = str(x.get("name", "")).upper()
+        cur = chars.setdefault(name, {})
+        cur["no_image"], cur["tag"] = True, ""
+        if x.get("look"):
+            cur["look"] = x["look"]
+        if x.get("voice") and not cur.get("voice"):
+            cur["voice"] = x["voice"]
+    for l in built["locations"]:
+        e = l["entry"]
+        key = e.get("match") or e.get("name")
+        label = next((s.get("location_label") for s in segs if s.get("location_label") and (_norm(key) in _norm(s["location_label"]) or _norm(s["location_label"]) in _norm(key))), None)
+        k = next((k for k in locs if _norm(k) == _norm(label or key)), label or key)
+        cur = locs.setdefault(k, {})
+        if not cur.get("tag") or cur["tag"].startswith("@ TAG "):
+            cur["tag"] = e["tag"]
+
+
+def save_sheet_files(folder: EpisodeFolder, built: dict) -> None:
+    style = built["style"]
+    for c in built["characters"]:
+        folder.write("characters/%s.md" % c["tag"], sheets.character_file(c["entry"], style))
+    for l in built["locations"]:
+        folder.write("locations/%s.md" % l["tag"], sheets.location_file(l["entry"], style))
+    for d in ("images/characters", "images/locations"):
+        (folder.path / d).mkdir(parents=True, exist_ok=True)
+        (folder.path / d / ".gitkeep").touch()
+    folder.write("characters-and-locations.md", sheets.lists_md([c["entry"] for c in built["characters"]], [l["entry"] for l in built["locations"]], style, built.get("extras")))
 
 
 # ---------------------------------------------------------------------------
@@ -320,10 +473,23 @@ def run_episode(text: str, opts: Options, console: Console, llm: LLM | None) -> 
                 state["analysis"] = offline_analysis(segs)
             else:
                 state["analysis"] = job.analysis
+    if opts.visual_style:
+        movie.settings["visual_style"] = opts.visual_style
+    built = build_sheets(text, doc, segs, state, movie, llm, external, console, opts)
+    if built:
+        state["sheets"] = built
+        apply_sheets_to_bible(movie, built, segs)
+        save_sheet_files(folder, built)
     merge_bible(movie, state["analysis"], segs)
     if doc:
         seed_from_doc(movie, doc, segs)
     movie.save()
+    if opts.sheets == "only":
+        state["updated"] = now_iso()
+        save_episode_files(folder, state, offline_mode)
+        return {"movie": movie.name, "number": resolved.number, "title": resolved.title, "path": str(epdir), "segments": len(segs), "ok": 0,
+                "needs_review": [c["tag"] for c in (built or {}).get("characters", []) + (built or {}).get("locations", []) if c["status"] != "ok"],
+                "usage": {}, "state": state}
     state["settings"] = dict(movie.settings)
     for s in segs:
         s["tags"] = [offline.tag_for(n, movie.bible) for n in s.get("characters", [])] + [offline.location_tag(s, movie.bible)[1]]

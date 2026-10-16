@@ -1,0 +1,133 @@
+Create a 30s serious, slow-burn cinematic historical drama scene.
+
+Characters: @QutuzChild; DEALER: slave dealer, man in his 40s (proposed), warm tan skin, heavy brow, dark eyes with a bored gaze, short dark beard (proposed), shaved head under a dirty cream headcloth (proposed), stained ochre tunic with a rope sash (proposed), bare forearms, stocky build, loud and coarse, 2D anime style; BUYER: man in his 50s (proposed), light olive skin, narrow appraising eyes, neat trimmed grey beard (proposed), soft cap (proposed), deep blue fine coat with gold trim (the fine coat is from the script, the colors are proposed), lean build, upright posture, smooth and unhurried, 2D anime style
+Locations: @DamascusSlaveMarket
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+@QutuzChild, the DEALER and the BUYER are in @DamascusSlaveMarket at midday.
+
+Dust, shouting, rows of chained children. The DEALER shoves the thin boy onto a wooden block.
+
+Preserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @QutuzChild and @DamascusSlaveMarket. Keep the DEALER and the BUYER exactly as described in the Characters line.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.
+Keep it non-graphic and dignified: there is no violence beyond the shove, and the chain is a plain iron cuff. The camera stays on the boy's face and never lingers on suffering.
+The boy is @QutuzChild, a child. He is not the adult @Qutuz.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only crowd noise and shouting, dust and wind, footsteps on packed earth, the clink of chain, cloth, and coin, and dialogue.
+
+DEALER'S VOICE:
+
+Adult male voice. Loud, coarse and bored, the voice of a man who has said the same words ten thousand times.
+
+YOUNG QUTUZ'S VOICE:
+
+A boy's voice, about ten years old. Small and light in pitch but steady, with a flat, defiant delivery and no tremble.
+
+BUYER'S VOICE:
+
+Adult male voice. Smooth, unhurried, appraising.
+
+SHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL
+
+@DamascusSlaveMarket in hard midday light. Dust hangs in the air. A crowd shouts. Rows of chained children sit along a wall at the left. A wooden block stands at the center of the frame.
+
+HARD CUT.
+
+SHOT 2 (00:03-00:05) — MEDIUM SHOT — EYE LEVEL
+
+The DEALER (man in his 40s, stocky, short dark beard, dirty cream headcloth, stained ochre tunic with a rope sash) shoves a thin boy up onto the wooden block. The boy stumbles, then stands straight on top of it.
+
+HARD CUT.
+
+SHOT 3 (00:05-00:08) — MEDIUM CLOSE-UP ON THE DEALER (man in his 40s, stocky, short dark beard, dirty cream headcloth, stained ochre tunic with a rope sash) — LOW ANGLE
+
+The DEALER looks up at the boy on the block, bored and loud.
+
+DEALER, in his SAME coarse voice, loud and bored:
+
+“Step up, boy. Tell the buyers your name.”
+
+HARD CUT.
+
+SHOT 4 (00:08-00:12) — CLOSE-UP ON YOUNG QUTUZ — EYE LEVEL
+
+The boy stands on the block with dry, defiant eyes. He answers without a tremor.
+
+@QutuzChild, in his SAME small, steady voice, proud and unshaken:
+
+“Mahmud, son of Mamdud. My uncle was Khwarazm-Shah, a king.”
+
+HARD CUT.
+
+SHOT 5 (00:12-00:15) — MEDIUM CLOSE-UP ON THE DEALER (man in his 40s, stocky, short dark beard, dirty cream headcloth, stained ochre tunic with a rope sash) — EYE LEVEL
+
+The DEALER shrugs it off without looking at the boy.
+
+DEALER, in his SAME coarse voice, flat, dismissive:
+
+“Everyone in this market was a king yesterday.”
+
+HARD CUT.
+
+SHOT 6 (00:15-00:17) — MEDIUM SHOT — EYE LEVEL
+
+A BUYER (man in his 50s, lean, neat trimmed grey beard, deep blue fine coat with gold trim, soft cap) in a fine coat circles the boy slowly, looking him over.
+
+HARD CUT.
+
+SHOT 7 (00:17-00:20) — MEDIUM CLOSE-UP ON THE BUYER (man in his 50s, lean, neat trimmed grey beard, deep blue fine coat with gold trim, soft cap) — SLIGHT LOW ANGLE
+
+The BUYER stops in front of the block and studies the boy's face.
+
+BUYER, in his SAME smooth voice, appraising:
+
+“Does he fight, or does he cry?”
+
+HARD CUT.
+
+SHOT 8 (00:20-00:21) — CLOSE-UP ON YOUNG QUTUZ — EYE LEVEL
+
+The boy's jaw sets. His eyes stay dry.
+
+@QutuzChild, in his SAME small, steady voice, quiet and certain:
+
+“I do not cry.”
+
+HARD CUT.
+
+SHOT 9 (00:21-00:24) — MEDIUM CLOSE-UP ON THE BUYER (man in his 50s, lean, neat trimmed grey beard, deep blue fine coat with gold trim, soft cap) — EYE LEVEL
+
+The BUYER gives a small nod.
+
+BUYER, in his SAME smooth voice, final:
+
+“Then he is worth the coin.”
+
+HARD CUT.
+
+SHOT 10 (00:24-00:26) — CLOSE-UP ON THE BOY'S EYES — EYE LEVEL
+
+Only the boy's eyes fill the frame. Off-screen an iron chain closes around his wrist: CLINK. His eyes do not blink and do not drop.
+
+HARD CUT.
+
+SHOT 11 (00:26-00:30) — CLOSE-UP ON YOUNG QUTUZ — EYE LEVEL
+
+The boy murmurs it to himself, so quietly that only the frame hears it.
+
+@QutuzChild, in his SAME small, steady voice, murmuring to himself:
+
+“Then I will build a home no one can sell.”
+
+HARD CUT.
+
+END HERE.

@@ -79,11 +79,18 @@ def draft(segment: dict, bible: dict, settings: dict, prev: dict | None = None) 
             first = ("Create a %ds %s that starts exactly from the last frame of the previous clip "
                      "(use it as the first-frame reference @Image 1)." % (request, fmt))
         lines.append(first)
-        who = " and ".join("%s %s" % (n, tag_for(n, bible)) for n in chars) or "the characters"
+        def ref(n):
+            entry = (bible.get("characters") or {}).get(n) or {}
+            if entry.get("no_image"):
+                return "%s (%s)" % (n, entry.get("look") or "describe in full")
+            return "%s %s" % (n, tag_for(n, bible))
+
+        with_tags = [n for n in chars if not ((bible.get("characters") or {}).get(n) or {}).get("no_image")]
+        who = " and ".join(ref(n) for n in chars) or "the characters"
         lines.append("%s %s in the %s %s." % (who, "are" if len(chars) > 1 else "is", loc_name, loc_tag))
         if chars:
             lines.append("Preserve the exact established designs, proportions, clothing, %s %s, lighting, colors, and visual style for %s." % (
-                loc_name, loc_tag, " and ".join("%s %s" % (n, tag_for(n, bible)) for n in chars)))
+                loc_name, loc_tag, " and ".join(ref(n) for n in with_tags) or "the characters"))
     lines.append("IMPORTANT:\n\nUse ONLY hard cuts between shots.\nNO tracking shots, camera slides, whip pans, or continuous camera transitions.")
     tone = (settings.get("tone") or "").strip()
     lines.append("Keep the pacing fast, sharp, and cinematic%s." % ((", and " + tone) if tone and tone.lower() not in ("sharp", "cinematic", "fast") else ""))

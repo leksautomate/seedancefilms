@@ -1,0 +1,85 @@
+Create a 23s serious, slow-burn cinematic historical drama scene.
+
+Characters: @Qutuz, @ShajarAlDurr, @SultanAybak
+Locations: @CairoCitadelRoyalBathChamber
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+Extend the previous video by another 23s, starting from its exact final frame after @Qutuz says:
+
+“You decided with a blade, and now every emir will want one.”
+
+Continue the same scene in @CairoCitadelRoyalBathChamber with the exact same character designs, clothing, lighting, atmosphere, framing style, and emotional continuity. @SultanAybak is still on the marble. @ShajarAlDurr is on the far side of him and @Qutuz is near the doorway at frame left.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. Do not restate the opening; shot 1 continues directly from the final frame.
+@SultanAybak is shown only as a body. There is no blood and no visible wound.
+@Qutuz and @ShajarAlDurr keep their SAME voices from the first part. Do not change them.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only dripping water, steam, soft echo off marble, footsteps, cloth, and breathing, and dialogue.
+
+SHOT 1 (00:00-00:04) — CLOSE-UP ON SHAJAR AL-DURR — EYE LEVEL
+
+Continuing from the final frame. @ShajarAlDurr answers without moving her eyes from @Qutuz.
+
+@ShajarAlDurr, in her SAME controlled, quiet voice, level and even:
+
+“Then be the one who holds the sword, not the one it falls on.”
+
+HARD CUT.
+
+SHOT 2 (00:04-00:08) — CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz lowers his voice. His eyes go to the body and back to her.
+
+@Qutuz, in his SAME low, stern voice, quietly:
+
+“Aybak made me an emir. I will not be his grave-digger.”
+
+HARD CUT.
+
+SHOT 3 (00:08-00:10) — WIDE SHOT — EYE LEVEL
+
+@ShajarAlDurr and @Qutuz stand on either side of the body on the marble. Steam drifts. Nobody moves.
+
+HARD CUT.
+
+SHOT 4 (00:10-00:16) — MEDIUM CLOSE-UP ON SHAJAR AL-DURR — SLIGHT LOW ANGLE
+
+@ShajarAlDurr, veiled and calm.
+
+@ShajarAlDurr, in her SAME controlled, quiet voice, quiet, certain:
+
+“Then protect his son. The boy is fifteen, and the wolves are already circling.”
+
+HARD CUT.
+
+SHOT 5 (00:16-00:17) — CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz looks down at the body. His jaw tightens.
+
+HARD CUT.
+
+SHOT 6 (00:17-00:20) — POV SHOT LOOKING DOWN — HIGH ANGLE
+
+Looking straight down from @Qutuz's eyes at the dead sultan's face on the marble. Still and calm. No blood, no wound.
+
+HARD CUT.
+
+SHOT 7 (00:20-00:23) — CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz lifts his eyes from the body. Hold on his face after the line.
+
+@Qutuz, in his SAME low, stern voice, final:
+
+“I swear it.”
+
+HARD CUT.
+
+END HERE.

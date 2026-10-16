@@ -1,0 +1,101 @@
+Create a 29s serious, slow-burn cinematic historical drama scene.
+
+Characters: @SultanAlMansurAli, @Qutuz, @ElderEmir, @Rider; PALACE GUARDS: two men in their 30s (proposed), clean-shaven, plain stern faces, helmets of dull steel, lamellar vests over dark tunics, spears held upright (all proposed), broad build, stiff posture, 2D anime style
+Locations: @CitadelThroneRoom
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+Extend the previous video by another 29s, starting from its exact final frame after @Qutuz says:
+
+“With respect, you cannot hold a bow for a day, and a Mongol arrow does not wait.”
+
+Continue the same scene in @CitadelThroneRoom with the exact same character designs, clothing, lighting, atmosphere, framing style, and emotional continuity. @SultanAlMansurAli sits on the oversized throne in robes too large for him. @Qutuz is at frame LEFT of him, @Rider kneels at the center of the floor and @ElderEmir stands at frame RIGHT.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. Do not restate the opening; shot 1 continues directly from the final frame.
+The throne is oversized. @SultanAlMansurAli looks small on it in every shot and his robes are too large for him.
+The guards are the only new characters. @SultanAlMansurAli's later fate stays off screen: he is led out through the doors and the clip does not follow him.
+Never show @Qutuz sitting on the throne.
+@SultanAlMansurAli, @Qutuz and @ElderEmir keep their SAME voices from the first part. Do not change them.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only soft echo in a stone hall, cloth dragging on stone, footsteps, breath, and doors closing, and dialogue.
+
+SHOT 1 (00:00-00:03) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE
+
+Continuing from the final frame. @SultanAlMansurAli looks up at @Qutuz.
+
+@SultanAlMansurAli, in his SAME thin, frightened voice, small, afraid:
+
+“Am I being put away?”
+
+HARD CUT.
+
+SHOT 2 (00:03-00:09) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz answers evenly, not unkindly, and does not soften his eyes.
+
+@Qutuz, in his SAME low, stern voice, even, final:
+
+“You are being kept safe. Egypt needs a sword, and no one has ever given you one.”
+
+HARD CUT.
+
+SHOT 3 (00:09-00:12) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE
+
+@SultanAlMansurAli's eyes fill. He does not cry.
+
+@SultanAlMansurAli, in his SAME thin, frightened voice, quiet:
+
+“Aybak was my father.”
+
+HARD CUT.
+
+SHOT 4 (00:12-00:16) — CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz's expression is hard and steady.
+
+@Qutuz, in his SAME low, stern voice, firm:
+
+“And I swore to him that you would live. You will live.”
+
+HARD CUT.
+
+SHOT 5 (00:16-00:21) — WIDE SHOT — EYE LEVEL
+
+Two palace guards (two men in their 30s, helmets of dull steel, lamellar vests over dark tunics, spears) escort @SultanAlMansurAli across the stone floor toward the doors. His oversized robe drags behind him across the stone. @Qutuz stays beside the throne, watching them go.
+
+HARD CUT.
+
+SHOT 6 (00:21-00:23) — EXTREME CLOSE-UP — INSERT — LOW ANGLE
+
+The hem of the white-and-gold robe drags across the stone floor. Cloth on stone, the only sound.
+
+HARD CUT.
+
+SHOT 7 (00:23-00:25) — MEDIUM SHOT ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir watches the doors close behind the boy.
+
+@ElderEmir, in his SAME dry, weary voice, low and grave:
+
+“History will call this a theft.”
+
+HARD CUT.
+
+SHOT 8 (00:25-00:29) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz does not turn to @ElderEmir. Hold on his face after the line.
+
+@Qutuz, in his SAME low, stern voice, quiet, certain:
+
+“History will call it Egypt, if Egypt lives.”
+
+HARD CUT.
+
+END HERE.

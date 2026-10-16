@@ -1,0 +1,108 @@
+Create a 26s serious, slow-burn cinematic historical drama scene.
+
+Characters: @Qutuz, @ElderEmir
+Locations: @QutuzTent
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+@Qutuz and @ElderEmir are inside @QutuzTent in the Salihiyya camp, at night in 1259.
+
+@Qutuz stands over a map of Syria. The @ElderEmir waits at the tent flap. One torch is the only light.
+
+Preserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @Qutuz, @ElderEmir and @QutuzTent.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.
+The single torch is the ONLY light source: warm orange on faces, deep shadow everywhere else.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only the crackle of the torch, wind against the tent canvas, slow breathing, cloth and metal sounds, and dialogue.
+
+ELDER EMIR'S VOICE:
+
+Older adult male voice. Dry, weary, measured delivery, a little careful.
+
+QUTUZ'S VOICE:
+
+Adult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.
+
+SHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL
+
+Inside @QutuzTent, seen from the entrance side. Canvas walls fall away into deep shadow. A single torch burns on a pole. A map of Syria lies on a low table at the center. @Qutuz stands over it, small in the frame. The @ElderEmir waits at the tent flap in the foreground, a dark silhouette at the left edge.
+
+HARD CUT.
+
+SHOT 2 (00:03-00:05) — MEDIUM SHOT ON QUTUZ — SLIGHT LOW ANGLE
+
+@Qutuz stands over the map with both hands resting on the table. Torchlight catches the scar on his cheek. He does not look up.
+
+HARD CUT.
+
+SHOT 3 (00:05-00:09) — MEDIUM CLOSE-UP ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir at the tent flap, his grey beard lit orange from the side. He speaks carefully, like a man testing how far he can go.
+
+@ElderEmir, in his SAME dry, weary voice, careful and level:
+
+“They will say a slave took the throne of Egypt.”
+
+HARD CUT.
+
+SHOT 4 (00:09-00:14) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz finally looks up. His eyes are steady and the torch is reflected in them. He speaks without anger.
+
+@Qutuz, in his SAME low, stern voice, flat and certain:
+
+“Let them. The Mongols never ask who sits on a throne.”
+
+HARD CUT.
+
+SHOT 5 (00:14-00:16) — EXTREME CLOSE-UP — INSERT — TOP-DOWN
+
+@Qutuz's scarred hand lies flat on the northern edge of the map of Syria. His voice continues from OFF-SCREEN, quiet and sure.
+
+@Qutuz, in his SAME low, stern voice, quiet and sure:
+
+“They ask if it stands.”
+
+HARD CUT.
+
+SHOT 6 (00:16-00:18) — MEDIUM CLOSE-UP ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir hesitates before he asks.
+
+@ElderEmir, in his SAME dry, weary voice, hesitant:
+
+“And the boy sultan?”
+
+HARD CUT.
+
+SHOT 7 (00:18-00:21) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz keeps his eyes on the map and answers at once.
+
+@Qutuz, in his SAME low, stern voice, flat, final:
+
+“A boy cannot lift a sword.”
+
+HARD CUT.
+
+SHOT 8 (00:21-00:23) — CLOSE-UP ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir lowers his eyes. He says nothing.
+
+HARD CUT.
+
+SHOT 9 (00:23-00:26) — EXTREME CLOSE-UP ON QUTUZ'S EYES — EYE LEVEL
+
+Only @Qutuz's eyes fill the frame. The single torch flame catches in them and burns there. Perfectly still. Hold.
+
+HARD CUT.
+
+END HERE.

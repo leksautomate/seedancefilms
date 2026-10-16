@@ -14,6 +14,7 @@ You return your analysis through the `submit_story_analysis` tool, once.
    - `status`: `ready` when the script gives enough to shoot, `stub` when it is thin (name what is missing).
 4. **The bible.** Characters (name in capitals exactly as in the script, `tag`, `look`, `voice`) and locations (name, `tag`). Rules:
    - Tags default to `@ TAG NAME` in capitals, matching the studio's convention (for example `@ TAG WOLF`, `@ TAG KITCHEN`). The movie bible may already hold tags, voices and looks. Existing entries win: do not contradict them. Fill in only what is missing.
+   - Mark a minor character who appears in one scene and does not carry the story as `extra: true`. Extras get no reference image, so each scene prompt describes them in full. Mark the series lead as `lead: true`.
    - List `aliases` when the script uses more than one name for the same person (for example "ALI" in dialogue and "SULTAN ALI" in action). Two characters that look different (an adult and the same person as a child) are separate characters with separate tags.
    - A `voice` states pitch, tone, articulation, rhythm and delivery in one or two sentences, drawn from what the script says (accent, age, manner, how lines are delivered). When the script gives nothing, propose a voice that fits the character's lines and mark `source` as `assumed`.
    - `look` is only what the script states about appearance and props. If it states nothing, leave it empty. Do not invent a design.

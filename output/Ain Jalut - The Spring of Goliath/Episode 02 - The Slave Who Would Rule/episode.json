@@ -1,0 +1,3194 @@
+{
+  "movie": "Ain Jalut - The Spring of Goliath",
+  "number": 2,
+  "title": "The Slave Who Would Rule",
+  "script_sha": "d00ed559271ab846",
+  "created": "2026-10-16T12:54:49",
+  "updated": "2026-10-16T12:54:49",
+  "offline": false,
+  "source": "external",
+  "provider": "external",
+  "model": "written outside the program",
+  "settings": {
+    "aspect_ratio": "16:9",
+    "video_model": "Seedance 2.5",
+    "clip_seconds": 30,
+    "chain_seconds": 60,
+    "resolution": "1080p",
+    "generate_audio": true,
+    "style_lock": "",
+    "prompt_style": "full",
+    "wps": 2.5,
+    "format_line": "serious, slow-burn cinematic historical drama scene",
+    "tone": "tense and measured",
+    "visual_style": "2D anime",
+    "language_lock": true
+  },
+  "script_doc": {
+    "movie": "AIN JALUT: THE SPRING OF GOLIATH",
+    "arc": "Arc 1: The Fall",
+    "runtime_s": 180,
+    "setting": "Salihiyya camp 1259, Damascus slave market, Cairo Citadel 1257",
+    "opening": "[0:00-0:04] DREAMINA ORIGINALS OPENING",
+    "end_card": "END CARD [2:56-3:00] TEXT: Episode 03: The Exile | #dreaminaoriginals",
+    "notes": [
+      "Debated history: Qutuz's royal-origin claim (Mahmud, nephew of Khwarazm-Shah) comes from later tradition. The scene frames it as the boy's own claim, which the dealer ignores.",
+      "Aybak's death (1257): sources attribute it to Shajar al-Durr's orders. Shown as an aftermath scene only.",
+      "Ali's removal: Qutuz took the throne in late 1259 citing the Mongol threat. Ali's later fate is kept off screen.",
+      "Signature clip shot: the boy's chain closing, cut to the adult's eyes."
+    ],
+    "blocks": [
+      {
+        "block": "Dreamina Originals opening",
+        "start_s": 0,
+        "end_s": 4,
+        "seconds": 4,
+        "words": 0
+      },
+      {
+        "block": "Clip A: Hook + Damascus slave market",
+        "start_s": 4,
+        "end_s": 55,
+        "seconds": 51,
+        "words": 105
+      },
+      {
+        "block": "Clip B: The dead sultan",
+        "start_s": 55,
+        "end_s": 95,
+        "seconds": 40,
+        "words": 88
+      },
+      {
+        "block": "Clip C: The boy on the throne",
+        "start_s": 95,
+        "end_s": 150,
+        "seconds": 55,
+        "words": 115
+      },
+      {
+        "block": "Clip D: The wall at night",
+        "start_s": 150,
+        "end_s": 180,
+        "seconds": 30,
+        "words": 65
+      }
+    ],
+    "characters": [
+      {
+        "name": "Qutuz",
+        "qualifier": "adult",
+        "look": "broad, scarred cheek, short black beard, steel mail under a deep red coat, white turban with a yellow band.",
+        "voice": "Low, stern voice."
+      },
+      {
+        "name": "Qutuz",
+        "qualifier": "child, about 10",
+        "look": "thin, shaved head, dusty tunic, defiant dark eyes.",
+        "voice": "Small, steady voice."
+      },
+      {
+        "name": "Shajar al-Durr",
+        "qualifier": "",
+        "look": "regal, dark veil, gold jewelry, steel in her eyes.",
+        "voice": "Controlled, quiet voice."
+      },
+      {
+        "name": "Sultan al-Mansur Ali",
+        "qualifier": "",
+        "look": "about 15, slender, boyish, white-and-gold sultan's robes too large for him.",
+        "voice": "Thin, frightened voice."
+      },
+      {
+        "name": "Sultan Aybak",
+        "qualifier": "",
+        "look": "appears as a body only (Scene 2). Tall, red-gold coat.",
+        "voice": ""
+      },
+      {
+        "name": "Elder Emir",
+        "qualifier": "extra",
+        "look": "grey beard, red turban",
+        "voice": ""
+      },
+      {
+        "name": "Slave Dealer",
+        "qualifier": "extra",
+        "look": "",
+        "voice": ""
+      },
+      {
+        "name": "Buyer",
+        "qualifier": "extra",
+        "look": "",
+        "voice": ""
+      },
+      {
+        "name": "Guards",
+        "qualifier": "extra",
+        "look": "",
+        "voice": ""
+      },
+      {
+        "name": "Rider",
+        "qualifier": "extra",
+        "look": "",
+        "voice": ""
+      }
+    ],
+    "locations": [
+      {
+        "name": "Qutuz's tent, Salihiyya camp",
+        "time": "night, 1259",
+        "description": "single torch, map of Syria"
+      },
+      {
+        "name": "Damascus slave market",
+        "time": "midday",
+        "description": "dust, wooden block, rows of chained children"
+      },
+      {
+        "name": "Cairo Citadel royal bath chamber",
+        "time": "night, 1257",
+        "description": "steam, lamplight, marble"
+      },
+      {
+        "name": "Citadel throne room",
+        "time": "autumn 1259",
+        "description": "carved screens, oversized throne, low gold light"
+      },
+      {
+        "name": "Citadel wall at night",
+        "time": "January 1260",
+        "description": "wind, dark northern plain"
+      }
+    ]
+  },
+  "analysis": {
+    "logline": "A former slave who swore to protect a dead sultan's son takes the boy's throne because Egypt must have a sword before the Mongols arrive.",
+    "tone": "Serious, slow-burn historical drama; low voices, held silences.",
+    "spine": [
+      {
+        "act": "Act I: The claim and the wound",
+        "scenes": [
+          0,
+          1
+        ],
+        "note": "State the accusation, then show where the man comes from."
+      },
+      {
+        "act": "Act II: The oath and the theft",
+        "scenes": [
+          2,
+          3
+        ],
+        "note": "He swears to protect the boy, then takes the throne from him."
+      },
+      {
+        "act": "Act III: The clock starts",
+        "scenes": [
+          4
+        ],
+        "note": "The theft becomes a purpose, and the Mongols reach Aleppo."
+      }
+    ],
+    "scenes": [
+      {
+        "scene": 0,
+        "why": "It states the episode's argument in four lines, a slave on a throne and a boy who cannot lift a sword, before the market shows where the man comes from.",
+        "scene_type": "dialogue",
+        "mood": "tense",
+        "camera_approach": "Locked-off close-ups on the two faces, an insert on the map, end on the eyes catching the torch.",
+        "status": "ready"
+      },
+      {
+        "scene": 1,
+        "why": "It turns the throne into a promise made at ten: a boy who will not cry decides to build a home no one can sell.",
+        "scene_type": "dialogue",
+        "mood": "sad",
+        "camera_approach": "Wide to place the market, then tight on the boy's face; the chain closing is a close-up on the eyes, not the wrist.",
+        "status": "ready"
+      },
+      {
+        "scene": 2,
+        "why": "It ties the oath to its cause: Qutuz swears to protect Aybak's son, the debt he breaks in the next scene.",
+        "scene_type": "dialogue",
+        "mood": "tense",
+        "camera_approach": "A wide for the body and the two people, then alternating close-ups that tighten as the accusation turns into an oath.",
+        "status": "ready"
+      },
+      {
+        "scene": 3,
+        "why": "It is the turn of the episode: the protector removes the boy he swore to keep alive, and calls it keeping him safe.",
+        "scene_type": "dialogue",
+        "mood": "tense",
+        "camera_approach": "High angles on the boy and low angles on Qutuz make the power shift visible; the wide shows the oversized throne.",
+        "status": "ready"
+      },
+      {
+        "scene": 4,
+        "why": "It turns the theft into a purpose, 'a reason to be remembered', and starts the clock the next episode runs on.",
+        "scene_type": "dialogue",
+        "mood": "tense",
+        "camera_approach": "Qutuz stays facing the dark plain; the rider's arrival is the only movement; cut to black on the clock line.",
+        "status": "ready"
+      }
+    ],
+    "characters": [
+      {
+        "name": "QUTUZ",
+        "tag": "@Qutuz",
+        "look": "Broad, scarred cheek, short black beard, steel mail under a deep red coat, white turban with a yellow band.",
+        "voice": "Adult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.",
+        "source": "script"
+      },
+      {
+        "name": "YOUNG QUTUZ",
+        "tag": "@QutuzChild",
+        "look": "Thin, shaved head, dusty tunic, defiant dark eyes. About ten.",
+        "voice": "A boy's voice, about ten years old. Small and light in pitch but steady, with a flat, defiant delivery and no tremble.",
+        "source": "script"
+      },
+      {
+        "name": "SHAJAR AL-DURR",
+        "tag": "@ShajarAlDurr",
+        "look": "Regal, dark veil, gold jewelry, steel in her eyes.",
+        "voice": "Adult woman's voice. Quiet, controlled and even, with calm authority. Never raised.",
+        "source": "script"
+      },
+      {
+        "name": "ALI",
+        "tag": "@SultanAlMansurAli",
+        "look": "About 15, slender, boyish, white-and-gold sultan's robes too large for him.",
+        "voice": "A teenage boy's voice, about fifteen. Thin and slightly high, wavering, frightened.",
+        "aliases": [
+          "SULTAN ALI"
+        ],
+        "source": "script"
+      },
+      {
+        "name": "SULTAN AYBAK",
+        "tag": "@SultanAybak",
+        "look": "Tall, red-gold coat. Appears as a body only.",
+        "voice": "",
+        "source": "script"
+      },
+      {
+        "name": "ELDER EMIR",
+        "tag": "@ElderEmir",
+        "look": "Grey beard, red turban.",
+        "voice": "Older adult male voice. Dry, weary, measured delivery, a little careful.",
+        "source": "assumed"
+      },
+      {
+        "name": "DEALER",
+        "tag": "",
+        "extra": true,
+        "look": "man in his 40s, stocky, short dark beard, dirty cream headcloth, stained ochre tunic with a rope sash",
+        "voice": "Adult male voice. Loud, coarse and bored, the voice of a man who has said the same words ten thousand times.",
+        "source": "assumed"
+      },
+      {
+        "name": "BUYER",
+        "tag": "",
+        "extra": true,
+        "look": "man in his 50s, lean, neat trimmed grey beard, deep blue fine coat with gold trim, soft cap",
+        "voice": "Adult male voice. Smooth, unhurried, appraising.",
+        "source": "assumed"
+      },
+      {
+        "name": "RIDER",
+        "tag": "@Rider",
+        "look": "Covered in dust.",
+        "voice": "Adult male voice. Breathless and hoarse from hard riding, urgent.",
+        "source": "assumed"
+      }
+    ],
+    "locations": [
+      {
+        "name": "Qutuz's tent, Salihiyya camp",
+        "tag": "@QutuzTent"
+      },
+      {
+        "name": "Damascus slave market",
+        "tag": "@DamascusSlaveMarket"
+      },
+      {
+        "name": "Cairo Citadel royal bath chamber",
+        "tag": "@CairoCitadelRoyalBathChamber"
+      },
+      {
+        "name": "Citadel throne room",
+        "tag": "@CitadelThroneRoom"
+      },
+      {
+        "name": "Citadel wall at night",
+        "tag": "@CitadelWall"
+      }
+    ],
+    "style_lock": "",
+    "color_script": [
+      {
+        "beat": "Act I",
+        "emotion": "pressure, then loss",
+        "dominant": "torch amber and dust ochre",
+        "accent": "deep red (Qutuz's coat)",
+        "contrast": "high in the tent, medium in the market",
+        "saturation": "~55%",
+        "hex": [
+          "#d9822b",
+          "#b58a4e",
+          "#7a1f1f"
+        ]
+      },
+      {
+        "beat": "Act II",
+        "emotion": "grief, then cold resolve",
+        "dominant": "pale marble and steam, then low gold",
+        "accent": "red-gold (Aybak's coat)",
+        "contrast": "medium",
+        "saturation": "~45%",
+        "hex": [
+          "#d8d4c8",
+          "#c9a24a",
+          "#9a3b2e"
+        ]
+      },
+      {
+        "beat": "Act III",
+        "emotion": "dread",
+        "dominant": "cold blue-grey night",
+        "accent": "the red of Qutuz's coat",
+        "contrast": "low, dark",
+        "saturation": "~35%",
+        "hex": [
+          "#2b3544",
+          "#6d7a8c",
+          "#7a1f1f"
+        ]
+      }
+    ],
+    "motif": "Red: Qutuz's coat in the tent, the red-gold coat of the dead sultan, and the red coat again on the dark wall. It tracks the throne from one man to the other.",
+    "risks": [
+      {
+        "item": "A child in chains in the market",
+        "why": "Image and video models can refuse or misrender this",
+        "alternative": "Keep the chain as a plain cuff, stay on the boy's face and sound, show the other children only as background"
+      },
+      {
+        "item": "A body on the marble (Aybak)",
+        "why": "The model may add a wound or blood",
+        "alternative": "State no blood, no wound; keep his face away from camera until the one calm high-angle shot"
+      },
+      {
+        "item": "Adult and child Qutuz",
+        "why": "The two designs can drift toward each other",
+        "alternative": "Separate tags and separate references; the market clip never includes the adult"
+      },
+      {
+        "item": "Left and right across the extension cuts",
+        "why": "Positions flip between the first part and its extension",
+        "alternative": "Each brief records the positions; the extension header restates them"
+      },
+      {
+        "item": "The oversized throne and robe",
+        "why": "Scale props drift and the boy stops looking small",
+        "alternative": "Lock it in IMPORTANT and use high angles on Ali"
+      },
+      {
+        "item": "On-screen text",
+        "why": "Models draw unreliable lettering",
+        "alternative": "Add the three text cards and the end card in the edit"
+      },
+      {
+        "item": "Dense dialogue in a 30 second clip",
+        "why": "Lip-sync can rush when the request is shorter than the speech",
+        "alternative": "Request the duration given in each brief and keep silences in the cuts"
+      }
+    ],
+    "unknowns": [
+      "The visual style was not stated for the episode. \"2D anime\" is used because the skill describes characters without images as \"2D anime style\"; change it if the series looks different.",
+      "Voices for the Elder Emir, Dealer, Buyer and Rider were not given.",
+      "What the tent contains besides the torch and the map of Syria.",
+      "Whether the three scenes with text cards should use a different card design from the end card."
+    ],
+    "assumptions": [
+      "16:9 at 1080p, audio on.",
+      "Slow, solemn delivery at about 2.5 words per second.",
+      "Tags follow the character-location skill: @Name in PascalCase, the same as the sheet file names.",
+      "Each scene is one generation; the two long scenes (2 and 3) are a generation plus an extension."
+    ]
+  },
+  "segments": [
+    {
+      "id": "S00",
+      "scene": 0,
+      "heading": "SCENE 0 - INT. QUTUZ'S TENT, SALIHIYYA CAMP - NIGHT, 1259",
+      "location": "qutuzs tent salihiyya camp",
+      "mode": "single",
+      "part": 1,
+      "parts": 1,
+      "estimated_s": 22.8,
+      "request_s": 26,
+      "dialogue_lines": 4,
+      "dialogue_words": 36,
+      "characters": [
+        "ELDER EMIR",
+        "QUTUZ"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "neutral",
+      "last_beat": "Qutuz's eyes catch the torch.",
+      "last_beat_kind": "action",
+      "next_beat": "",
+      "events": [
+        {
+          "kind": "establish",
+          "speaker": null,
+          "text": "establishing view of SCENE 0 - INT. QUTUZ'S TENT, SALIHIYYA CAMP - NIGHT, 1259",
+          "words": 0,
+          "seconds": 2.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "One torch.",
+          "words": 0,
+          "seconds": 2.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Qutuz stands over a map of Syria.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "An ELDER EMIR waits at the tent flap.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ELDER EMIR",
+          "text": "They will say a slave took the throne of Egypt.",
+          "words": 10,
+          "seconds": 4.6,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "Let them. The Mongols never ask who sits on a throne. They ask if it stands.",
+          "words": 16,
+          "seconds": 7.0,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ELDER EMIR",
+          "text": "And the boy sultan?",
+          "words": 4,
+          "seconds": 2.2,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "A boy cannot lift a sword.",
+          "words": 6,
+          "seconds": 3.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Qutuz's eyes catch the torch.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        }
+      ],
+      "notes": [],
+      "merged_from": null,
+      "scene_title": "Hook",
+      "planned_s": 18,
+      "clip_block": "A",
+      "on_screen": [
+        "Qutuz (adult)",
+        "Elder Emir"
+      ],
+      "overlays": [
+        "Damascus. Many years earlier."
+      ],
+      "location_label": "Qutuz's tent, Salihiyya camp",
+      "status": "ok",
+      "tags": [
+        "@ElderEmir",
+        "@Qutuz",
+        "@QutuzTent"
+      ],
+      "prompt": "Create a 26s serious, slow-burn cinematic historical drama scene.\n\nCharacters: @Qutuz, @ElderEmir\nLocations: @QutuzTent\n\nVisual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.\n[Negative: chinese language, mandarin, chinese speech, asian accent]\n[System: Language: English] [Audio: English Speech]\n\n@Qutuz and @ElderEmir are inside @QutuzTent in the Salihiyya camp, at night in 1259.\n\n@Qutuz stands over a map of Syria. The @ElderEmir waits at the tent flap. One torch is the only light.\n\nPreserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @Qutuz, @ElderEmir and @QutuzTent.\n\nIMPORTANT:\n\nUse ONLY hard cuts between shots.\nNO tracking shots, camera slides, whip pans, or continuous camera transitions.\nEvery shot is a locked-off frame.\nKeep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.\nThe single torch is the ONLY light source: warm orange on faces, deep shadow everywhere else.\nNo on-screen text, subtitles or captions anywhere in the frame.\nNO music. Only the crackle of the torch, wind against the tent canvas, slow breathing, cloth and metal sounds, and dialogue.\n\nELDER EMIR'S VOICE:\n\nOlder adult male voice. Dry, weary, measured delivery, a little careful.\n\nQUTUZ'S VOICE:\n\nAdult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.\n\nSHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL\n\nInside @QutuzTent, seen from the entrance side. Canvas walls fall away into deep shadow. A single torch burns on a pole. A map of Syria lies on a low table at the center. @Qutuz stands over it, small in the frame. The @ElderEmir waits at the tent flap in the foreground, a dark silhouette at the left edge.\n\nHARD CUT.\n\nSHOT 2 (00:03-00:05) — MEDIUM SHOT ON QUTUZ — SLIGHT LOW ANGLE\n\n@Qutuz stands over the map with both hands resting on the table. Torchlight catches the scar on his cheek. He does not look up.\n\nHARD CUT.\n\nSHOT 3 (00:05-00:09) — MEDIUM CLOSE-UP ON THE ELDER EMIR — EYE LEVEL\n\nThe @ElderEmir at the tent flap, his grey beard lit orange from the side. He speaks carefully, like a man testing how far he can go.\n\n@ElderEmir, in his SAME dry, weary voice, careful and level:\n\n“They will say a slave took the throne of Egypt.”\n\nHARD CUT.\n\nSHOT 4 (00:09-00:14) — CLOSE-UP ON QUTUZ — LOW ANGLE\n\n@Qutuz finally looks up. His eyes are steady and the torch is reflected in them. He speaks without anger.\n\n@Qutuz, in his SAME low, stern voice, flat and certain:\n\n“Let them. The Mongols never ask who sits on a throne.”\n\nHARD CUT.\n\nSHOT 5 (00:14-00:16) — EXTREME CLOSE-UP — INSERT — TOP-DOWN\n\n@Qutuz's scarred hand lies flat on the northern edge of the map of Syria. His voice continues from OFF-SCREEN, quiet and sure.\n\n@Qutuz, in his SAME low, stern voice, quiet and sure:\n\n“They ask if it stands.”\n\nHARD CUT.\n\nSHOT 6 (00:16-00:18) — MEDIUM CLOSE-UP ON THE ELDER EMIR — EYE LEVEL\n\nThe @ElderEmir hesitates before he asks.\n\n@ElderEmir, in his SAME dry, weary voice, hesitant:\n\n“And the boy sultan?”\n\nHARD CUT.\n\nSHOT 7 (00:18-00:21) — CLOSE-UP ON QUTUZ — LOW ANGLE\n\n@Qutuz keeps his eyes on the map and answers at once.\n\n@Qutuz, in his SAME low, stern voice, flat, final:\n\n“A boy cannot lift a sword.”\n\nHARD CUT.\n\nSHOT 8 (00:21-00:23) — CLOSE-UP ON THE ELDER EMIR — EYE LEVEL\n\nThe @ElderEmir lowers his eyes. He says nothing.\n\nHARD CUT.\n\nSHOT 9 (00:23-00:26) — EXTREME CLOSE-UP ON QUTUZ'S EYES — EYE LEVEL\n\nOnly @Qutuz's eyes fill the frame. The single torch flame catches in them and burns there. Perfectly still. Hold.\n\nHARD CUT.\n\nEND HERE.\n",
+      "shots": [
+        {
+          "n": 1,
+          "scale": "wide establishing shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "establish the tent and the one light",
+          "dialogue": null
+        },
+        {
+          "n": 2,
+          "scale": "medium shot on qutuz",
+          "angle": "slight low angle",
+          "camera": "locked-off",
+          "seconds": 2,
+          "function": "show who holds the room",
+          "dialogue": null
+        },
+        {
+          "n": 3,
+          "scale": "medium close-up on the elder emir",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3.5,
+          "function": "state the claim against him",
+          "dialogue": "They will say a slave took the throne of Egypt."
+        },
+        {
+          "n": 4,
+          "scale": "close-up on qutuz",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 4,
+          "function": "the answer: legitimacy is whether it stands",
+          "dialogue": "Let them. The Mongols never ask who sits on a throne."
+        },
+        {
+          "n": 5,
+          "scale": "extreme close-up — insert",
+          "angle": "top-down",
+          "camera": "locked-off",
+          "seconds": 2,
+          "function": "land the second half of the line on the map",
+          "dialogue": "They ask if it stands."
+        },
+        {
+          "n": 6,
+          "scale": "medium close-up on the elder emir",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "raise the boy sultan",
+          "dialogue": "And the boy sultan?"
+        },
+        {
+          "n": 7,
+          "scale": "close-up on qutuz",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "dismiss the boy",
+          "dialogue": "A boy cannot lift a sword."
+        },
+        {
+          "n": 8,
+          "scale": "close-up on the elder emir",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 1.5,
+          "function": "the Emir's silent doubt",
+          "dialogue": null
+        },
+        {
+          "n": 9,
+          "scale": "extreme close-up on qutuz's eyes",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "the hook's last image, ready to cut to the boy's eyes",
+          "dialogue": null
+        }
+      ],
+      "brief": {
+        "purpose": "State the episode's argument before the flashback: a slave holds the throne and says legitimacy is whether it stands.",
+        "subject": "QUTUZ and the ELDER EMIR",
+        "subject_action": "A tense exchange across a map; Qutuz never looks away from it until his eyes catch the torch.",
+        "camera": "locked-off framing with hard cuts only",
+        "environment": "Qutuz's tent, Salihiyya camp, night, 1259",
+        "lighting": "One torch only, warm orange against deep shadow",
+        "visual_direction": "Serious historical drama. Match the established references; the style was not specified in the script.",
+        "stability": [
+          "Qutuz's design identical to the adult references in every shot",
+          "The torch is the only light",
+          "The map of Syria stays on the low table at the center"
+        ],
+        "must_get": [
+          "The close-up of Qutuz on 'Let them. The Mongols never ask who sits on a throne.'",
+          "The final extreme close-up of his eyes catching the torch",
+          "The wide that shows the tent and the single light"
+        ],
+        "cut_first": [
+          "The silent Elder Emir reaction (shot 8)",
+          "The medium shot of Qutuz at the map (shot 2)"
+        ]
+      },
+      "carry_over": {
+        "last_frame": "Extreme close-up of Qutuz's eyes with the torch flame reflected in them",
+        "positions": "Qutuz stands behind the map table; the Elder Emir is at the tent flap",
+        "props": "Map of Syria on a low table; one torch on a pole",
+        "costume": "Steel mail under a deep red coat; white turban with a yellow band",
+        "lighting": "Single torch, warm orange"
+      },
+      "assumptions": [
+        "Voices for the ELDER EMIR, DEALER, BUYER and RIDER are not in the script. They were assumed from how each character speaks.",
+        "The one-line voice notes in the script were expanded into pitch, tone and delivery.",
+        "The on-screen text 'Damascus. Many years earlier.' is added in the edit, not generated.",
+        "The ending cut to the market (SMASH CUT) is made in the edit; the last frame here is Qutuz's eyes."
+      ],
+      "warnings": [],
+      "errors": [],
+      "timing": {
+        "shots": 9,
+        "dialogue_lines": 5,
+        "dialogue_words": 36,
+        "speaking_s": 15.4,
+        "estimated_s": 21.7,
+        "limit_s": 30.0,
+        "verdict": "FITS"
+      },
+      "last_line": "A boy cannot lift a sword.",
+      "last_speaker": "QUTUZ",
+      "attempts": 1
+    },
+    {
+      "id": "S01",
+      "scene": 1,
+      "heading": "SCENE 1 - EXT. DAMASCUS SLAVE MARKET - MIDDAY",
+      "location": "damascus slave market",
+      "mode": "single",
+      "part": 1,
+      "parts": 1,
+      "estimated_s": 31.9,
+      "request_s": 30,
+      "dialogue_lines": 7,
+      "dialogue_words": 53,
+      "characters": [
+        "BUYER",
+        "DEALER",
+        "YOUNG QUTUZ"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "sad",
+      "last_beat": "Then I will build a home no one can sell.",
+      "last_beat_kind": "dialogue",
+      "next_beat": "",
+      "events": [
+        {
+          "kind": "establish",
+          "speaker": null,
+          "text": "establishing view of SCENE 1 - EXT. DAMASCUS SLAVE MARKET - MIDDAY",
+          "words": 0,
+          "seconds": 2.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Dust, shouting, rows of chained children.",
+          "words": 0,
+          "seconds": 2.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "A DEALER shoves a thin boy onto a wooden block.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "DEALER",
+          "text": "Step up, boy. Tell the buyers your name.",
+          "words": 8,
+          "seconds": 3.8,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "YOUNG QUTUZ",
+          "text": "Mahmud, son of Mamdud. My uncle was Khwarazm-Shah, a king.",
+          "words": 10,
+          "seconds": 4.6,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "DEALER",
+          "text": "Everyone in this market was a king yesterday.",
+          "words": 8,
+          "seconds": 3.8,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "A BUYER in a fine coat circles the boy.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "BUYER",
+          "text": "Does he fight, or does he cry?",
+          "words": 7,
+          "seconds": 3.4,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "YOUNG QUTUZ",
+          "text": "I do not cry.",
+          "words": 4,
+          "seconds": 2.2,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "BUYER",
+          "text": "Then he is worth the coin.",
+          "words": 6,
+          "seconds": 3.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Close-up: the boy's eyes as the chain closes around his wrist.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "YOUNG QUTUZ",
+          "text": "Then I will build a home no one can sell.",
+          "words": 10,
+          "seconds": 4.6,
+          "how": "to himself"
+        }
+      ],
+      "notes": [
+        "TIGHT: estimate 31.9s is over the 30s budget by 1.9s; trim a line or a beat, or accept the risk"
+      ],
+      "merged_from": null,
+      "scene_title": "The Market",
+      "planned_s": 33,
+      "clip_block": "A",
+      "on_screen": [
+        "Qutuz (child)",
+        "Slave Dealer",
+        "Buyer"
+      ],
+      "overlays": [],
+      "location_label": "Damascus slave market",
+      "status": "ok",
+      "tags": [
+        "@ TAG BUYER",
+        "@ TAG DEALER",
+        "@QutuzChild",
+        "@DamascusSlaveMarket"
+      ],
+      "prompt": "Create a 30s serious, slow-burn cinematic historical drama scene.\n\nCharacters: @QutuzChild; DEALER: slave dealer, man in his 40s (proposed), warm tan skin, heavy brow, dark eyes with a bored gaze, short dark beard (proposed), shaved head under a dirty cream headcloth (proposed), stained ochre tunic with a rope sash (proposed), bare forearms, stocky build, loud and coarse, 2D anime style; BUYER: man in his 50s (proposed), light olive skin, narrow appraising eyes, neat trimmed grey beard (proposed), soft cap (proposed), deep blue fine coat with gold trim (the fine coat is from the script, the colors are proposed), lean build, upright posture, smooth and unhurried, 2D anime style\nLocations: @DamascusSlaveMarket\n\nVisual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.\n[Negative: chinese language, mandarin, chinese speech, asian accent]\n[System: Language: English] [Audio: English Speech]\n\n@QutuzChild, the DEALER and the BUYER are in @DamascusSlaveMarket at midday.\n\nDust, shouting, rows of chained children. The DEALER shoves the thin boy onto a wooden block.\n\nPreserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @QutuzChild and @DamascusSlaveMarket. Keep the DEALER and the BUYER exactly as described in the Characters line.\n\nIMPORTANT:\n\nUse ONLY hard cuts between shots.\nNO tracking shots, camera slides, whip pans, or continuous camera transitions.\nEvery shot is a locked-off frame.\nKeep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.\nKeep it non-graphic and dignified: there is no violence beyond the shove, and the chain is a plain iron cuff. The camera stays on the boy's face and never lingers on suffering.\nThe boy is @QutuzChild, a child. He is not the adult @Qutuz.\nNo on-screen text, subtitles or captions anywhere in the frame.\nNO music. Only crowd noise and shouting, dust and wind, footsteps on packed earth, the clink of chain, cloth, and coin, and dialogue.\n\nDEALER'S VOICE:\n\nAdult male voice. Loud, coarse and bored, the voice of a man who has said the same words ten thousand times.\n\nYOUNG QUTUZ'S VOICE:\n\nA boy's voice, about ten years old. Small and light in pitch but steady, with a flat, defiant delivery and no tremble.\n\nBUYER'S VOICE:\n\nAdult male voice. Smooth, unhurried, appraising.\n\nSHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL\n\n@DamascusSlaveMarket in hard midday light. Dust hangs in the air. A crowd shouts. Rows of chained children sit along a wall at the left. A wooden block stands at the center of the frame.\n\nHARD CUT.\n\nSHOT 2 (00:03-00:05) — MEDIUM SHOT — EYE LEVEL\n\nThe DEALER (man in his 40s, stocky, short dark beard, dirty cream headcloth, stained ochre tunic with a rope sash) shoves a thin boy up onto the wooden block. The boy stumbles, then stands straight on top of it.\n\nHARD CUT.\n\nSHOT 3 (00:05-00:08) — MEDIUM CLOSE-UP ON THE DEALER (man in his 40s, stocky, short dark beard, dirty cream headcloth, stained ochre tunic with a rope sash) — LOW ANGLE\n\nThe DEALER looks up at the boy on the block, bored and loud.\n\nDEALER, in his SAME coarse voice, loud and bored:\n\n“Step up, boy. Tell the buyers your name.”\n\nHARD CUT.\n\nSHOT 4 (00:08-00:12) — CLOSE-UP ON YOUNG QUTUZ — EYE LEVEL\n\nThe boy stands on the block with dry, defiant eyes. He answers without a tremor.\n\n@QutuzChild, in his SAME small, steady voice, proud and unshaken:\n\n“Mahmud, son of Mamdud. My uncle was Khwarazm-Shah, a king.”\n\nHARD CUT.\n\nSHOT 5 (00:12-00:15) — MEDIUM CLOSE-UP ON THE DEALER (man in his 40s, stocky, short dark beard, dirty cream headcloth, stained ochre tunic with a rope sash) — EYE LEVEL\n\nThe DEALER shrugs it off without looking at the boy.\n\nDEALER, in his SAME coarse voice, flat, dismissive:\n\n“Everyone in this market was a king yesterday.”\n\nHARD CUT.\n\nSHOT 6 (00:15-00:17) — MEDIUM SHOT — EYE LEVEL\n\nA BUYER (man in his 50s, lean, neat trimmed grey beard, deep blue fine coat with gold trim, soft cap) in a fine coat circles the boy slowly, looking him over.\n\nHARD CUT.\n\nSHOT 7 (00:17-00:20) — MEDIUM CLOSE-UP ON THE BUYER (man in his 50s, lean, neat trimmed grey beard, deep blue fine coat with gold trim, soft cap) — SLIGHT LOW ANGLE\n\nThe BUYER stops in front of the block and studies the boy's face.\n\nBUYER, in his SAME smooth voice, appraising:\n\n“Does he fight, or does he cry?”\n\nHARD CUT.\n\nSHOT 8 (00:20-00:21) — CLOSE-UP ON YOUNG QUTUZ — EYE LEVEL\n\nThe boy's jaw sets. His eyes stay dry.\n\n@QutuzChild, in his SAME small, steady voice, quiet and certain:\n\n“I do not cry.”\n\nHARD CUT.\n\nSHOT 9 (00:21-00:24) — MEDIUM CLOSE-UP ON THE BUYER (man in his 50s, lean, neat trimmed grey beard, deep blue fine coat with gold trim, soft cap) — EYE LEVEL\n\nThe BUYER gives a small nod.\n\nBUYER, in his SAME smooth voice, final:\n\n“Then he is worth the coin.”\n\nHARD CUT.\n\nSHOT 10 (00:24-00:26) — CLOSE-UP ON THE BOY'S EYES — EYE LEVEL\n\nOnly the boy's eyes fill the frame. Off-screen an iron chain closes around his wrist: CLINK. His eyes do not blink and do not drop.\n\nHARD CUT.\n\nSHOT 11 (00:26-00:30) — CLOSE-UP ON YOUNG QUTUZ — EYE LEVEL\n\nThe boy murmurs it to himself, so quietly that only the frame hears it.\n\n@QutuzChild, in his SAME small, steady voice, murmuring to himself:\n\n“Then I will build a home no one can sell.”\n\nHARD CUT.\n\nEND HERE.\n",
+      "shots": [
+        {
+          "n": 1,
+          "scale": "wide establishing shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "place us in the market",
+          "dialogue": null
+        },
+        {
+          "n": 2,
+          "scale": "medium shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2,
+          "function": "the dealer shoves the boy up",
+          "dialogue": null
+        },
+        {
+          "n": 3,
+          "scale": "medium close-up on the dealer",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "the dealer's command",
+          "dialogue": "Step up, boy. Tell the buyers your name."
+        },
+        {
+          "n": 4,
+          "scale": "close-up on young qutuz",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 4.5,
+          "function": "the boy's claim",
+          "dialogue": "Mahmud, son of Mamdud. My uncle was Khwarazm-Shah, a king."
+        },
+        {
+          "n": 5,
+          "scale": "medium close-up on the dealer",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "the dealer ignores the claim",
+          "dialogue": "Everyone in this market was a king yesterday."
+        },
+        {
+          "n": 6,
+          "scale": "medium shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2,
+          "function": "the buyer appraises him",
+          "dialogue": null
+        },
+        {
+          "n": 7,
+          "scale": "medium close-up on the buyer",
+          "angle": "slight low angle",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "the test",
+          "dialogue": "Does he fight, or does he cry?"
+        },
+        {
+          "n": 8,
+          "scale": "close-up on young qutuz",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 1.5,
+          "function": "the answer",
+          "dialogue": "I do not cry."
+        },
+        {
+          "n": 9,
+          "scale": "medium close-up on the buyer",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "the sale",
+          "dialogue": "Then he is worth the coin."
+        },
+        {
+          "n": 10,
+          "scale": "close-up on the boy's eyes",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "the signature shot: the chain closes",
+          "dialogue": null
+        },
+        {
+          "n": 11,
+          "scale": "close-up on young qutuz",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3.5,
+          "function": "the vow",
+          "dialogue": "Then I will build a home no one can sell."
+        }
+      ],
+      "brief": {
+        "purpose": "Show where the throne began: a boy who will not cry decides to build a home no one can sell.",
+        "subject": "YOUNG QUTUZ on the wooden block",
+        "subject_action": "He claims a royal name, is ignored, is sold, and makes a vow.",
+        "camera": "locked-off framing with hard cuts only",
+        "environment": "Damascus slave market, midday",
+        "lighting": "Hard midday light, hanging dust",
+        "visual_direction": "Serious historical drama. Match the established references; the style was not specified in the script.",
+        "stability": [
+          "Young Qutuz is a thin boy with a shaved head and dusty tunic in every shot, never the adult",
+          "The wooden block stays at the center; the chained children stay at frame left",
+          "The chain is a plain iron cuff; nothing graphic"
+        ],
+        "must_get": [
+          "The close-up on the boy's eyes as the chain closes",
+          "The close-up on 'Mahmud, son of Mamdud...'",
+          "The final close-up on 'Then I will build a home no one can sell.'"
+        ],
+        "cut_first": [
+          "The medium shot of the buyer circling (shot 6)",
+          "The wide establishing shot can shrink to 2 seconds"
+        ]
+      },
+      "carry_over": {
+        "last_frame": "Close-up of the boy murmuring his vow",
+        "positions": "The boy stands on the wooden block, the Dealer beside it, the Buyer in front",
+        "props": "Wooden block; iron chain on the boy's wrist",
+        "costume": "Boy in a dusty tunic; Buyer in a fine coat",
+        "lighting": "Hard midday light with dust"
+      },
+      "assumptions": [
+        "Voices for the ELDER EMIR, DEALER, BUYER and RIDER are not in the script. They were assumed from how each character speaks.",
+        "The one-line voice notes in the script were expanded into pitch, tone and delivery.",
+        "The production notes say the royal claim is the boy's own and the dealer ignores it. The prompt keeps it that way.",
+        "Signature shot read as: the boy's eyes as the chain closes (shot 10). The hook ends on the adult's eyes, so the two eye close-ups can be matched in the edit.",
+        "Chained children are shown only as background; no child is shown suffering."
+      ],
+      "warnings": [
+        "Timing is tight: estimated 29.5s of 30s."
+      ],
+      "errors": [],
+      "timing": {
+        "shots": 11,
+        "dialogue_lines": 7,
+        "dialogue_words": 53,
+        "speaking_s": 22.6,
+        "estimated_s": 29.5,
+        "limit_s": 30.0,
+        "verdict": "TIGHT"
+      },
+      "last_line": "Then I will build a home no one can sell.",
+      "last_speaker": "YOUNG QUTUZ",
+      "attempts": 1
+    },
+    {
+      "id": "S02a",
+      "scene": 2,
+      "heading": "SCENE 2 - INT. ROYAL BATH CHAMBER - NIGHT",
+      "location": "royal bath chamber",
+      "mode": "generate",
+      "part": 1,
+      "parts": 2,
+      "estimated_s": 20.1,
+      "request_s": 23,
+      "dialogue_lines": 3,
+      "dialogue_words": 32,
+      "characters": [
+        "QUTUZ",
+        "SHAJAR AL-DURR",
+        "SULTAN AYBAK"
+      ],
+      "scene_type_hint": "character_entrance",
+      "mood_hint": "warm",
+      "last_beat": "You decided with a blade, and now every emir will want one.",
+      "last_beat_kind": "dialogue",
+      "next_beat": "Then be the one who holds the sword, not the one it falls on.",
+      "events": [
+        {
+          "kind": "establish",
+          "speaker": null,
+          "text": "establishing view of SCENE 2 - INT. ROYAL BATH CHAMBER - NIGHT",
+          "words": 0,
+          "seconds": 2.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Steam, lamplight.",
+          "words": 0,
+          "seconds": 2.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "SULTAN AYBAK lies still on the marble.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "SHAJAR AL-DURR stands over him, veiled and calm.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Qutuz enters, breathing hard.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "The sultan is dead. Who did this?",
+          "words": 7,
+          "seconds": 3.4,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "SHAJAR AL-DURR",
+          "text": "Egypt is not a house for the soft, Qutuz. Someone had to decide.",
+          "words": 13,
+          "seconds": 5.8,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "You decided with a blade, and now every emir will want one.",
+          "words": 12,
+          "seconds": 5.4,
+          "how": null
+        }
+      ],
+      "notes": [],
+      "merged_from": null,
+      "scene_title": "The Dead Sultan",
+      "planned_s": 40,
+      "clip_block": "B",
+      "on_screen": [
+        "Qutuz (adult)",
+        "Shajar al-Durr",
+        "Sultan Aybak (body)"
+      ],
+      "overlays": [
+        "Cairo Citadel, 1257."
+      ],
+      "location_label": "Cairo Citadel royal bath chamber",
+      "status": "ok",
+      "tags": [
+        "@Qutuz",
+        "@ShajarAlDurr",
+        "@SultanAybak",
+        "@CairoCitadelRoyalBathChamber"
+      ],
+      "prompt": "Create a 23s serious, slow-burn cinematic historical drama scene.\n\nCharacters: @Qutuz, @ShajarAlDurr, @SultanAybak\nLocations: @CairoCitadelRoyalBathChamber\n\nVisual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.\n[Negative: chinese language, mandarin, chinese speech, asian accent]\n[System: Language: English] [Audio: English Speech]\n\n@Qutuz, @ShajarAlDurr and the body of @SultanAybak are in @CairoCitadelRoyalBathChamber at night in 1257.\n\nSteam, lamplight, marble. @SultanAybak lies still on the marble. @ShajarAlDurr stands over him, veiled and calm. @Qutuz enters, breathing hard.\n\nPreserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @Qutuz, @ShajarAlDurr, @SultanAybak and @CairoCitadelRoyalBathChamber.\n\nIMPORTANT:\n\nUse ONLY hard cuts between shots.\nNO tracking shots, camera slides, whip pans, or continuous camera transitions.\nEvery shot is a locked-off frame.\nKeep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.\n@SultanAybak is shown only as a body and lies perfectly still. There is no blood and no visible wound.\nDo NOT show @SultanAybak's face in this clip.\n@ShajarAlDurr always stands on the far side of the body. @Qutuz always enters from frame LEFT.\nNo on-screen text, subtitles or captions anywhere in the frame.\nNO music. Only dripping water, steam, soft echo off marble, footsteps, cloth, and breathing, and dialogue.\n\nQUTUZ'S VOICE:\n\nAdult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.\n\nSHAJAR AL-DURR'S VOICE:\n\nAdult woman's voice. Quiet, controlled and even, with calm authority. Never raised.\n\nSHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL\n\n@CairoCitadelRoyalBathChamber at night. White marble, steam drifting through lamplight. @SultanAybak lies still on the marble at the center, tall in his red-gold coat, his face turned away from the camera. @ShajarAlDurr stands over him on the far side, veiled and calm. An open doorway at frame left.\n\nHARD CUT.\n\nSHOT 2 (00:03-00:06) — MEDIUM SHOT — EYE LEVEL\n\n@Qutuz enters through the doorway at frame left, breathing hard, steam curling around his red coat. He stops at the sight of the body.\n\nHARD CUT.\n\nSHOT 3 (00:06-00:10) — MEDIUM CLOSE-UP ON QUTUZ — EYE LEVEL\n\n@Qutuz looks from the body to @ShajarAlDurr, still catching his breath.\n\n@Qutuz, in his SAME low, stern voice, hard and breathless:\n\n“The sultan is dead. Who did this?”\n\nHARD CUT.\n\nSHOT 4 (00:10-00:15) — MEDIUM CLOSE-UP ON SHAJAR AL-DURR — SLIGHT LOW ANGLE\n\n@ShajarAlDurr, veiled and calm, with steel in her eyes. She does not move.\n\n@ShajarAlDurr, in her SAME controlled, quiet voice, level and even:\n\n“Egypt is not a house for the soft, Qutuz. Someone had to decide.”\n\nHARD CUT.\n\nSHOT 5 (00:15-00:20) — CLOSE-UP ON QUTUZ — EYE LEVEL\n\n@Qutuz's eyes narrow. He keeps his voice low.\n\n@Qutuz, in his SAME low, stern voice, bitter:\n\n“You decided with a blade, and now every emir will want one.”\n\nHARD CUT.\n\nSHOT 6 (00:20-00:23) — CLOSE-UP ON SHAJAR AL-DURR'S EYES — EYE LEVEL\n\nHer eyes above the dark veil, level and unblinking, the gold of her jewelry catching the lamplight. She does not look away. Hold on this frame.\n\nHARD CUT.\n\nEND HERE.\n",
+      "shots": [
+        {
+          "n": 1,
+          "scale": "wide establishing shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "the room and the body",
+          "dialogue": null
+        },
+        {
+          "n": 2,
+          "scale": "medium shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "Qutuz enters",
+          "dialogue": null
+        },
+        {
+          "n": 3,
+          "scale": "medium close-up on qutuz",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "the question",
+          "dialogue": "The sultan is dead. Who did this?"
+        },
+        {
+          "n": 4,
+          "scale": "medium close-up on shajar al-durr",
+          "angle": "slight low angle",
+          "camera": "locked-off",
+          "seconds": 4.5,
+          "function": "she owns it without apology",
+          "dialogue": "Egypt is not a house for the soft, Qutuz. Someone had to decide."
+        },
+        {
+          "n": 5,
+          "scale": "close-up on qutuz",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 4,
+          "function": "he sees the cost",
+          "dialogue": "You decided with a blade, and now every emir will want one."
+        },
+        {
+          "n": 6,
+          "scale": "close-up on shajar al-durr's eyes",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "hold on her, ready to answer",
+          "dialogue": null
+        }
+      ],
+      "brief": {
+        "purpose": "Show the cause of the oath: Qutuz finds the dead sultan, and Shajar al-Durr owns the act.",
+        "subject": "QUTUZ and SHAJAR AL-DURR over the body of SULTAN AYBAK",
+        "subject_action": "Qutuz enters and confronts her; she answers without apology.",
+        "camera": "locked-off framing with hard cuts only",
+        "environment": "Cairo Citadel royal bath chamber, night, 1257",
+        "lighting": "Steam and lamplight on white marble",
+        "visual_direction": "Serious historical drama. Match the established references; the style was not specified in the script.",
+        "stability": [
+          "Aybak lies still, face away from camera, no wound, no blood",
+          "Shajar stands on the far side of the body in every shot",
+          "Qutuz enters from frame left and keeps the red coat and turban of the adult design"
+        ],
+        "must_get": [
+          "The wide that shows the body, Shajar and the doorway",
+          "Shajar on 'Someone had to decide.'",
+          "The final close-up of her eyes, held"
+        ],
+        "cut_first": [
+          "The medium shot of Qutuz entering can shrink to 1.5 seconds"
+        ]
+      },
+      "carry_over": {
+        "last_frame": "Close-up of Shajar al-Durr's eyes above the veil, steady, about to speak",
+        "positions": "Shajar on the far side of the body; Qutuz near the doorway at frame left; Aybak on the marble between them",
+        "props": "Aybak's body on the marble",
+        "costume": "Shajar in a dark veil and gold jewelry; Qutuz in a deep red coat over steel mail",
+        "lighting": "Lamplight and steam on marble"
+      },
+      "assumptions": [
+        "The one-line voice notes in the script were expanded into pitch, tone and delivery.",
+        "The on-screen text 'Cairo Citadel, 1257.' is added in the edit, not generated.",
+        "The script shows Aybak's death as an aftermath scene only; no violence is shown."
+      ],
+      "warnings": [],
+      "errors": [],
+      "timing": {
+        "shots": 6,
+        "dialogue_lines": 3,
+        "dialogue_words": 32,
+        "speaking_s": 13.4,
+        "estimated_s": 17.9,
+        "limit_s": 30.0,
+        "verdict": "FITS"
+      },
+      "last_line": "You decided with a blade, and now every emir will want one.",
+      "last_speaker": "QUTUZ",
+      "attempts": 1
+    },
+    {
+      "id": "S02b",
+      "scene": 2,
+      "heading": "SCENE 2 - INT. ROYAL BATH CHAMBER - NIGHT",
+      "location": "royal bath chamber",
+      "mode": "extend",
+      "part": 2,
+      "parts": 2,
+      "estimated_s": 20.2,
+      "request_s": 23,
+      "dialogue_lines": 4,
+      "dialogue_words": 42,
+      "characters": [
+        "QUTUZ",
+        "SHAJAR AL-DURR",
+        "SULTAN AYBAK"
+      ],
+      "scene_type_hint": "character_entrance",
+      "mood_hint": "warm",
+      "last_beat": "I swear it.",
+      "last_beat_kind": "dialogue",
+      "next_beat": "",
+      "events": [
+        {
+          "kind": "dialogue",
+          "speaker": "SHAJAR AL-DURR",
+          "text": "Then be the one who holds the sword, not the one it falls on.",
+          "words": 14,
+          "seconds": 6.2,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "Aybak made me an emir. I will not be his grave-digger.",
+          "words": 11,
+          "seconds": 5.0,
+          "how": "quietly"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "SHAJAR AL-DURR",
+          "text": "Then protect his son. The boy is fifteen, and the wolves are already circling.",
+          "words": 14,
+          "seconds": 6.2,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Qutuz looks down at the dead sultan's face.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "I swear it.",
+          "words": 3,
+          "seconds": 1.8,
+          "how": null
+        }
+      ],
+      "notes": [
+        "extension: start from the exact final frame of the previous segment"
+      ],
+      "merged_from": null,
+      "scene_title": "The Dead Sultan",
+      "planned_s": 40,
+      "clip_block": "B",
+      "on_screen": [
+        "Qutuz (adult)",
+        "Shajar al-Durr",
+        "Sultan Aybak (body)"
+      ],
+      "overlays": [
+        "Cairo Citadel, 1257."
+      ],
+      "location_label": "Cairo Citadel royal bath chamber",
+      "status": "ok",
+      "tags": [
+        "@Qutuz",
+        "@ShajarAlDurr",
+        "@SultanAybak",
+        "@CairoCitadelRoyalBathChamber"
+      ],
+      "prompt": "Create a 23s serious, slow-burn cinematic historical drama scene.\n\nCharacters: @Qutuz, @ShajarAlDurr, @SultanAybak\nLocations: @CairoCitadelRoyalBathChamber\n\nVisual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.\n[Negative: chinese language, mandarin, chinese speech, asian accent]\n[System: Language: English] [Audio: English Speech]\n\nExtend the previous video by another 23s, starting from its exact final frame after @Qutuz says:\n\n“You decided with a blade, and now every emir will want one.”\n\nContinue the same scene in @CairoCitadelRoyalBathChamber with the exact same character designs, clothing, lighting, atmosphere, framing style, and emotional continuity. @SultanAybak is still on the marble. @ShajarAlDurr is on the far side of him and @Qutuz is near the doorway at frame left.\n\nIMPORTANT:\n\nUse ONLY hard cuts between shots.\nNO tracking shots, camera slides, whip pans, or continuous camera transitions.\nEvery shot is a locked-off frame.\nKeep the pacing measured, tense, and cinematic. Do not restate the opening; shot 1 continues directly from the final frame.\n@SultanAybak is shown only as a body. There is no blood and no visible wound.\n@Qutuz and @ShajarAlDurr keep their SAME voices from the first part. Do not change them.\nNo on-screen text, subtitles or captions anywhere in the frame.\nNO music. Only dripping water, steam, soft echo off marble, footsteps, cloth, and breathing, and dialogue.\n\nSHOT 1 (00:00-00:04) — CLOSE-UP ON SHAJAR AL-DURR — EYE LEVEL\n\nContinuing from the final frame. @ShajarAlDurr answers without moving her eyes from @Qutuz.\n\n@ShajarAlDurr, in her SAME controlled, quiet voice, level and even:\n\n“Then be the one who holds the sword, not the one it falls on.”\n\nHARD CUT.\n\nSHOT 2 (00:04-00:08) — CLOSE-UP ON QUTUZ — EYE LEVEL\n\n@Qutuz lowers his voice. His eyes go to the body and back to her.\n\n@Qutuz, in his SAME low, stern voice, quietly:\n\n“Aybak made me an emir. I will not be his grave-digger.”\n\nHARD CUT.\n\nSHOT 3 (00:08-00:10) — WIDE SHOT — EYE LEVEL\n\n@ShajarAlDurr and @Qutuz stand on either side of the body on the marble. Steam drifts. Nobody moves.\n\nHARD CUT.\n\nSHOT 4 (00:10-00:16) — MEDIUM CLOSE-UP ON SHAJAR AL-DURR — SLIGHT LOW ANGLE\n\n@ShajarAlDurr, veiled and calm.\n\n@ShajarAlDurr, in her SAME controlled, quiet voice, quiet, certain:\n\n“Then protect his son. The boy is fifteen, and the wolves are already circling.”\n\nHARD CUT.\n\nSHOT 5 (00:16-00:17) — CLOSE-UP ON QUTUZ — EYE LEVEL\n\n@Qutuz looks down at the body. His jaw tightens.\n\nHARD CUT.\n\nSHOT 6 (00:17-00:20) — POV SHOT LOOKING DOWN — HIGH ANGLE\n\nLooking straight down from @Qutuz's eyes at the dead sultan's face on the marble. Still and calm. No blood, no wound.\n\nHARD CUT.\n\nSHOT 7 (00:20-00:23) — CLOSE-UP ON QUTUZ — EYE LEVEL\n\n@Qutuz lifts his eyes from the body. Hold on his face after the line.\n\n@Qutuz, in his SAME low, stern voice, final:\n\n“I swear it.”\n\nHARD CUT.\n\nEND HERE.\n",
+      "shots": [
+        {
+          "n": 1,
+          "scale": "close-up on shajar al-durr",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 4,
+          "function": "she turns the accusation into an offer",
+          "dialogue": "Then be the one who holds the sword, not the one it falls on."
+        },
+        {
+          "n": 2,
+          "scale": "close-up on qutuz",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 4,
+          "function": "his loyalty to Aybak",
+          "dialogue": "Aybak made me an emir. I will not be his grave-digger."
+        },
+        {
+          "n": 3,
+          "scale": "wide shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2,
+          "function": "the three of them in the room",
+          "dialogue": null
+        },
+        {
+          "n": 4,
+          "scale": "medium close-up on shajar al-durr",
+          "angle": "slight low angle",
+          "camera": "locked-off",
+          "seconds": 5,
+          "function": "the oath is handed to him",
+          "dialogue": "Then protect his son. The boy is fifteen, and the wolves are already circling."
+        },
+        {
+          "n": 5,
+          "scale": "close-up on qutuz",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 1.5,
+          "function": "he looks down",
+          "dialogue": null
+        },
+        {
+          "n": 6,
+          "scale": "pov shot looking down",
+          "angle": "high angle",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "the dead sultan's face",
+          "dialogue": null
+        },
+        {
+          "n": 7,
+          "scale": "close-up on qutuz",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "the oath",
+          "dialogue": "I swear it."
+        }
+      ],
+      "brief": {
+        "purpose": "Hand Qutuz the oath: he swears to protect Aybak's son, the promise he breaks in scene 3.",
+        "subject": "QUTUZ and SHAJAR AL-DURR",
+        "subject_action": "She offers him the sword and the boy; he swears.",
+        "camera": "locked-off framing with hard cuts only",
+        "environment": "Cairo Citadel royal bath chamber, night, 1257",
+        "lighting": "Steam and lamplight on white marble",
+        "visual_direction": "Serious historical drama. Match the established references; the style was not specified in the script.",
+        "stability": [
+          "Same positions as the first part: Shajar far side, Qutuz near the doorway",
+          "Aybak's face appears once, from above, calm, no wound",
+          "Voices unchanged from the first part"
+        ],
+        "must_get": [
+          "'Aybak made me an emir. I will not be his grave-digger.'",
+          "The high-angle shot of Aybak's face",
+          "The final close-up on 'I swear it.'"
+        ],
+        "cut_first": [
+          "The wide shot of the three of them (shot 3)"
+        ]
+      },
+      "carry_over": {
+        "last_frame": "Close-up of Qutuz holding his gaze after 'I swear it.'",
+        "positions": "End of scene; the next scene is a different place",
+        "props": "Aybak's body on the marble",
+        "costume": "Unchanged",
+        "lighting": "Lamplight and steam"
+      },
+      "assumptions": [
+        "Extension of S02a: start it from the exact final frame of S02a.",
+        "The cut from this scene to the throne room is made in the edit."
+      ],
+      "warnings": [],
+      "errors": [],
+      "timing": {
+        "shots": 7,
+        "dialogue_lines": 4,
+        "dialogue_words": 42,
+        "speaking_s": 18.6,
+        "estimated_s": 23.4,
+        "limit_s": 30.0,
+        "verdict": "FITS"
+      },
+      "last_line": "I swear it.",
+      "last_speaker": "QUTUZ",
+      "attempts": 1
+    },
+    {
+      "id": "S03a",
+      "scene": 3,
+      "heading": "SCENE 3 - INT. CITADEL THRONE ROOM - 1259",
+      "location": "citadel throne room",
+      "mode": "generate",
+      "part": 1,
+      "parts": 2,
+      "estimated_s": 30.7,
+      "request_s": 30,
+      "dialogue_lines": 6,
+      "dialogue_words": 54,
+      "characters": [
+        "ALI",
+        "ELDER EMIR",
+        "QUTUZ",
+        "RIDER",
+        "SULTAN ALI"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "neutral",
+      "last_beat": "With respect, you cannot hold a bow for a day, and a Mongol arrow does not wait.",
+      "last_beat_kind": "dialogue",
+      "next_beat": "Am I being put away?",
+      "events": [
+        {
+          "kind": "establish",
+          "speaker": null,
+          "text": "establishing view of SCENE 3 - INT. CITADEL THRONE ROOM - 1259",
+          "words": 0,
+          "seconds": 2.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Autumn light.",
+          "words": 0,
+          "seconds": 2.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "SULTAN ALI sits on a throne too big for him.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Qutuz stands at his shoulder.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "A RIDER, covered in dust, kneels.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "RIDER",
+          "text": "Sultan, the Mongols are moving west. Hulagu marches on Syria.",
+          "words": 10,
+          "seconds": 4.6,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ELDER EMIR",
+          "text": "Egypt cannot fight an army that took Baghdad.",
+          "words": 8,
+          "seconds": 3.8,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ALI",
+          "text": "Atabek, what do we do?",
+          "words": 5,
+          "seconds": 2.6,
+          "how": "small voice"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "We do not hide behind a crown, my lord.",
+          "words": 9,
+          "seconds": 4.2,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ALI",
+          "text": "Then I will lead them.",
+          "words": 5,
+          "seconds": 2.6,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "With respect, you cannot hold a bow for a day, and a Mongol arrow does not wait.",
+          "words": 17,
+          "seconds": 7.4,
+          "how": null
+        }
+      ],
+      "notes": [
+        "TIGHT: estimate 30.7s is over the 30s budget by 0.7s; trim a line or a beat, or accept the risk"
+      ],
+      "merged_from": null,
+      "scene_title": "The Boy On The Throne",
+      "planned_s": 55,
+      "clip_block": "C",
+      "on_screen": [
+        "Qutuz (adult)",
+        "Sultan Ali",
+        "Elder Emir",
+        "Rider",
+        "Guards"
+      ],
+      "overlays": [],
+      "location_label": "Citadel throne room",
+      "status": "ok",
+      "tags": [
+        "@SultanAlMansurAli",
+        "@ElderEmir",
+        "@Qutuz",
+        "@Rider",
+        "@SultanAlMansurAli",
+        "@CitadelThroneRoom"
+      ],
+      "prompt": "Create a 30s serious, slow-burn cinematic historical drama scene.\n\nCharacters: @SultanAlMansurAli, @Qutuz, @ElderEmir, @Rider\nLocations: @CitadelThroneRoom\n\nVisual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.\n[Negative: chinese language, mandarin, chinese speech, asian accent]\n[System: Language: English] [Audio: English Speech]\n\n@SultanAlMansurAli, @Qutuz, @ElderEmir and a dust-covered @Rider are in @CitadelThroneRoom in autumn 1259.\n\nAutumn light, low and gold through carved screens. @SultanAlMansurAli sits on a throne too big for him. @Qutuz stands at his shoulder. The @Rider, covered in dust, kneels.\n\nPreserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @SultanAlMansurAli, @Qutuz, @ElderEmir, @Rider and @CitadelThroneRoom.\n\nIMPORTANT:\n\nUse ONLY hard cuts between shots.\nNO tracking shots, camera slides, whip pans, or continuous camera transitions.\nEvery shot is a locked-off frame.\nKeep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.\nThe throne is oversized. @SultanAlMansurAli looks small on it in every shot, and his robes are too large for him.\nFrom the front: @SultanAlMansurAli at the center, @Qutuz at frame LEFT of him, @Rider kneeling at the center of the floor, @ElderEmir at frame RIGHT. Keep these positions in every wide shot.\nNever show @Qutuz sitting on the throne.\nNo on-screen text, subtitles or captions anywhere in the frame.\nNO music. Only soft echo in a stone hall, cloth, footsteps, breath, the creak of a throne, and the low hum of wind through carved screens, and dialogue.\n\nRIDER'S VOICE:\n\nAdult male voice. Breathless and hoarse from hard riding, urgent.\n\nELDER EMIR'S VOICE:\n\nOlder adult male voice. Dry, weary, measured delivery, a little careful.\n\nALI'S VOICE:\n\nA teenage boy's voice, about fifteen. Thin and slightly high, wavering, frightened.\n\nQUTUZ'S VOICE:\n\nAdult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.\n\nSHOT 1 (00:00-00:04) — WIDE ESTABLISHING SHOT — EYE LEVEL\n\n@CitadelThroneRoom in autumn light, low and gold through carved screens. From the front: @SultanAlMansurAli sits at the center on a throne far too big for him. @Qutuz stands at frame LEFT of him, at his shoulder. The dust-covered @Rider kneels at the center of the floor. The @ElderEmir stands at frame RIGHT.\n\nHARD CUT.\n\nSHOT 2 (00:04-00:06) — MEDIUM SHOT ON SULTAN ALI — HIGH ANGLE\n\n@SultanAlMansurAli sits on the oversized throne, his white-and-gold robes too large for him, his hands gripping the armrests.\n\nHARD CUT.\n\nSHOT 3 (00:06-00:11) — MEDIUM CLOSE-UP ON THE RIDER — EYE LEVEL\n\nThe @Rider kneels, covered in dust, breathless from the road.\n\n@Rider, in his SAME breathless, hoarse voice, urgent, gasping:\n\n“Sultan, the Mongols are moving west. Hulagu marches on Syria.”\n\nHARD CUT.\n\nSHOT 4 (00:11-00:14) — MEDIUM SHOT ON THE ELDER EMIR — EYE LEVEL\n\nThe @ElderEmir stands with his hands clasped, grave.\n\n@ElderEmir, in his SAME dry, weary voice, grave:\n\n“Egypt cannot fight an army that took Baghdad.”\n\nHARD CUT.\n\nSHOT 5 (00:14-00:17) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE\n\n@SultanAlMansurAli looks up and to the side at @Qutuz, his eyes wide.\n\n@SultanAlMansurAli, in his SAME thin, frightened voice, in a small voice:\n\n“Atabek, what do we do?”\n\nHARD CUT.\n\nSHOT 6 (00:17-00:20) — CLOSE-UP ON QUTUZ — LOW ANGLE\n\n@Qutuz looks straight ahead, not at the boy.\n\n@Qutuz, in his SAME low, stern voice, firm, unhurried:\n\n“We do not hide behind a crown, my lord.”\n\nHARD CUT.\n\nSHOT 7 (00:20-00:22) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE\n\n@SultanAlMansurAli lifts his chin, trying to sound older.\n\n@SultanAlMansurAli, in his SAME thin, frightened voice, trying to sound steady:\n\n“Then I will lead them.”\n\nHARD CUT.\n\nSHOT 8 (00:22-00:28) — CLOSE-UP ON QUTUZ — LOW ANGLE\n\n@Qutuz turns his head toward the boy for the first time. His voice stays even.\n\n@Qutuz, in his SAME low, stern voice, respectful and final:\n\n“With respect, you cannot hold a bow for a day, and a Mongol arrow does not wait.”\n\nHARD CUT.\n\nSHOT 9 (00:28-00:30) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE\n\n@SultanAlMansurAli's face falls. His eyes drop, then lift again toward @Qutuz. Hold on this frame.\n\nHARD CUT.\n\nEND HERE.\n",
+      "shots": [
+        {
+          "n": 1,
+          "scale": "wide establishing shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3.5,
+          "function": "the room, the boy, the man at his shoulder",
+          "dialogue": null
+        },
+        {
+          "n": 2,
+          "scale": "medium shot on sultan ali",
+          "angle": "high angle",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "the boy is small on the throne",
+          "dialogue": null
+        },
+        {
+          "n": 3,
+          "scale": "medium close-up on the rider",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 4.5,
+          "function": "the news",
+          "dialogue": "Sultan, the Mongols are moving west. Hulagu marches on Syria."
+        },
+        {
+          "n": 4,
+          "scale": "medium shot on the elder emir",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3.5,
+          "function": "the fear",
+          "dialogue": "Egypt cannot fight an army that took Baghdad."
+        },
+        {
+          "n": 5,
+          "scale": "close-up on sultan ali",
+          "angle": "high angle",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "the boy turns to his guardian",
+          "dialogue": "Atabek, what do we do?"
+        },
+        {
+          "n": 6,
+          "scale": "close-up on qutuz",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "Qutuz answers for the throne",
+          "dialogue": "We do not hide behind a crown, my lord."
+        },
+        {
+          "n": 7,
+          "scale": "close-up on sultan ali",
+          "angle": "high angle",
+          "camera": "locked-off",
+          "seconds": 2,
+          "function": "the boy reaches for power",
+          "dialogue": "Then I will lead them."
+        },
+        {
+          "n": 8,
+          "scale": "close-up on qutuz",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 5.5,
+          "function": "the refusal",
+          "dialogue": "With respect, you cannot hold a bow for a day, and a Mongol arrow does not wait."
+        },
+        {
+          "n": 9,
+          "scale": "close-up on sultan ali",
+          "angle": "high angle",
+          "camera": "locked-off",
+          "seconds": 2,
+          "function": "the boy's face falls, hold",
+          "dialogue": null
+        }
+      ],
+      "brief": {
+        "purpose": "Show the turn: the protector tells the boy he cannot lead, in front of the court.",
+        "subject": "SULTAN ALI and QUTUZ",
+        "subject_action": "Ali asks to lead; Qutuz refuses him with respect.",
+        "camera": "locked-off framing with hard cuts only",
+        "environment": "Citadel throne room, autumn 1259",
+        "lighting": "Low gold autumn light through carved screens",
+        "visual_direction": "Serious historical drama. Match the established references; the style was not specified in the script.",
+        "stability": [
+          "The throne is oversized and Ali is small on it in every shot",
+          "Positions: Ali center, Qutuz frame left, Rider kneeling center, Elder Emir frame right",
+          "Ali's robes are too large for him",
+          "Qutuz never sits on the throne"
+        ],
+        "must_get": [
+          "Ali's close-up on 'Atabek, what do we do?'",
+          "Qutuz on 'With respect, you cannot hold a bow for a day...'",
+          "The wide that shows the boy on the oversized throne"
+        ],
+        "cut_first": [
+          "The Elder Emir medium shot (shot 4) can shrink to 2.5 seconds",
+          "The high-angle medium shot of Ali (shot 2)"
+        ]
+      },
+      "carry_over": {
+        "last_frame": "Close-up of Sultan Ali, face fallen, eyes lifting toward Qutuz",
+        "positions": "Ali on the throne, Qutuz at frame left of him, Rider kneeling at center, Elder Emir at frame right",
+        "props": "Oversized throne",
+        "costume": "Ali in white-and-gold robes too large for him; Qutuz in a deep red coat",
+        "lighting": "Low gold autumn light through carved screens"
+      },
+      "assumptions": [
+        "Voices for the ELDER EMIR, DEALER, BUYER and RIDER are not in the script. They were assumed from how each character speaks.",
+        "The one-line voice notes in the script were expanded into pitch, tone and delivery.",
+        "The script's 'SULTAN ALI' and 'ALI' are one character; both use @SultanAlMansurAli.",
+        "The palace guards have no reference image, so they are described in full in the Characters line of the extension (S03b)."
+      ],
+      "warnings": [
+        "Timing is tight: estimated 28.7s of 30s."
+      ],
+      "errors": [],
+      "timing": {
+        "shots": 9,
+        "dialogue_lines": 6,
+        "dialogue_words": 54,
+        "speaking_s": 23.3,
+        "estimated_s": 28.7,
+        "limit_s": 30.0,
+        "verdict": "TIGHT"
+      },
+      "last_line": "With respect, you cannot hold a bow for a day, and a Mongol arrow does not wait.",
+      "last_speaker": "QUTUZ",
+      "attempts": 1
+    },
+    {
+      "id": "S03b",
+      "scene": 3,
+      "heading": "SCENE 3 - INT. CITADEL THRONE ROOM - 1259",
+      "location": "citadel throne room",
+      "mode": "extend",
+      "part": 2,
+      "parts": 2,
+      "estimated_s": 25.9,
+      "request_s": 29,
+      "dialogue_lines": 6,
+      "dialogue_words": 52,
+      "characters": [
+        "ALI",
+        "ELDER EMIR",
+        "QUTUZ",
+        "RIDER",
+        "SULTAN ALI"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "neutral",
+      "last_beat": "History will call it Egypt, if Egypt lives.",
+      "last_beat_kind": "dialogue",
+      "next_beat": "",
+      "events": [
+        {
+          "kind": "dialogue",
+          "speaker": "ALI",
+          "text": "Am I being put away?",
+          "words": 5,
+          "seconds": 2.6,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "You are being kept safe. Egypt needs a sword, and no one has ever given you one.",
+          "words": 17,
+          "seconds": 7.4,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ALI",
+          "text": "Aybak was my father.",
+          "words": 4,
+          "seconds": 2.2,
+          "how": "quiet"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "And I swore to him that you would live. You will live.",
+          "words": 12,
+          "seconds": 5.4,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Guards escort Ali out.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "His robe drags across the stone.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ELDER EMIR",
+          "text": "History will call this a theft.",
+          "words": 6,
+          "seconds": 3.0,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "History will call it Egypt, if Egypt lives.",
+          "words": 8,
+          "seconds": 3.8,
+          "how": null
+        }
+      ],
+      "notes": [
+        "extension: start from the exact final frame of the previous segment"
+      ],
+      "merged_from": null,
+      "scene_title": "The Boy On The Throne",
+      "planned_s": 55,
+      "clip_block": "C",
+      "on_screen": [
+        "Qutuz (adult)",
+        "Sultan Ali",
+        "Elder Emir",
+        "Rider",
+        "Guards"
+      ],
+      "overlays": [],
+      "location_label": "Citadel throne room",
+      "status": "ok",
+      "tags": [
+        "@SultanAlMansurAli",
+        "@ElderEmir",
+        "@Qutuz",
+        "@Rider",
+        "@SultanAlMansurAli",
+        "@CitadelThroneRoom"
+      ],
+      "prompt": "Create a 29s serious, slow-burn cinematic historical drama scene.\n\nCharacters: @SultanAlMansurAli, @Qutuz, @ElderEmir, @Rider; PALACE GUARDS: two men in their 30s (proposed), clean-shaven, plain stern faces, helmets of dull steel, lamellar vests over dark tunics, spears held upright (all proposed), broad build, stiff posture, 2D anime style\nLocations: @CitadelThroneRoom\n\nVisual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.\n[Negative: chinese language, mandarin, chinese speech, asian accent]\n[System: Language: English] [Audio: English Speech]\n\nExtend the previous video by another 29s, starting from its exact final frame after @Qutuz says:\n\n“With respect, you cannot hold a bow for a day, and a Mongol arrow does not wait.”\n\nContinue the same scene in @CitadelThroneRoom with the exact same character designs, clothing, lighting, atmosphere, framing style, and emotional continuity. @SultanAlMansurAli sits on the oversized throne in robes too large for him. @Qutuz is at frame LEFT of him, @Rider kneels at the center of the floor and @ElderEmir stands at frame RIGHT.\n\nIMPORTANT:\n\nUse ONLY hard cuts between shots.\nNO tracking shots, camera slides, whip pans, or continuous camera transitions.\nEvery shot is a locked-off frame.\nKeep the pacing measured, tense, and cinematic. Do not restate the opening; shot 1 continues directly from the final frame.\nThe throne is oversized. @SultanAlMansurAli looks small on it in every shot and his robes are too large for him.\nThe guards are the only new characters. @SultanAlMansurAli's later fate stays off screen: he is led out through the doors and the clip does not follow him.\nNever show @Qutuz sitting on the throne.\n@SultanAlMansurAli, @Qutuz and @ElderEmir keep their SAME voices from the first part. Do not change them.\nNo on-screen text, subtitles or captions anywhere in the frame.\nNO music. Only soft echo in a stone hall, cloth dragging on stone, footsteps, breath, and doors closing, and dialogue.\n\nSHOT 1 (00:00-00:03) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE\n\nContinuing from the final frame. @SultanAlMansurAli looks up at @Qutuz.\n\n@SultanAlMansurAli, in his SAME thin, frightened voice, small, afraid:\n\n“Am I being put away?”\n\nHARD CUT.\n\nSHOT 2 (00:03-00:09) — CLOSE-UP ON QUTUZ — LOW ANGLE\n\n@Qutuz answers evenly, not unkindly, and does not soften his eyes.\n\n@Qutuz, in his SAME low, stern voice, even, final:\n\n“You are being kept safe. Egypt needs a sword, and no one has ever given you one.”\n\nHARD CUT.\n\nSHOT 3 (00:09-00:12) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE\n\n@SultanAlMansurAli's eyes fill. He does not cry.\n\n@SultanAlMansurAli, in his SAME thin, frightened voice, quiet:\n\n“Aybak was my father.”\n\nHARD CUT.\n\nSHOT 4 (00:12-00:16) — CLOSE-UP ON QUTUZ — EYE LEVEL\n\n@Qutuz's expression is hard and steady.\n\n@Qutuz, in his SAME low, stern voice, firm:\n\n“And I swore to him that you would live. You will live.”\n\nHARD CUT.\n\nSHOT 5 (00:16-00:21) — WIDE SHOT — EYE LEVEL\n\nTwo palace guards (two men in their 30s, helmets of dull steel, lamellar vests over dark tunics, spears) escort @SultanAlMansurAli across the stone floor toward the doors. His oversized robe drags behind him across the stone. @Qutuz stays beside the throne, watching them go.\n\nHARD CUT.\n\nSHOT 6 (00:21-00:23) — EXTREME CLOSE-UP — INSERT — LOW ANGLE\n\nThe hem of the white-and-gold robe drags across the stone floor. Cloth on stone, the only sound.\n\nHARD CUT.\n\nSHOT 7 (00:23-00:25) — MEDIUM SHOT ON THE ELDER EMIR — EYE LEVEL\n\nThe @ElderEmir watches the doors close behind the boy.\n\n@ElderEmir, in his SAME dry, weary voice, low and grave:\n\n“History will call this a theft.”\n\nHARD CUT.\n\nSHOT 8 (00:25-00:29) — CLOSE-UP ON QUTUZ — LOW ANGLE\n\n@Qutuz does not turn to @ElderEmir. Hold on his face after the line.\n\n@Qutuz, in his SAME low, stern voice, quiet, certain:\n\n“History will call it Egypt, if Egypt lives.”\n\nHARD CUT.\n\nEND HERE.\n",
+      "shots": [
+        {
+          "n": 1,
+          "scale": "close-up on sultan ali",
+          "angle": "high angle",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "the boy asks the real question",
+          "dialogue": "Am I being put away?"
+        },
+        {
+          "n": 2,
+          "scale": "close-up on qutuz",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 6,
+          "function": "Qutuz calls it protection",
+          "dialogue": "You are being kept safe. Egypt needs a sword, and no one has ever given you one."
+        },
+        {
+          "n": 3,
+          "scale": "close-up on sultan ali",
+          "angle": "high angle",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "the boy names his father",
+          "dialogue": "Aybak was my father."
+        },
+        {
+          "n": 4,
+          "scale": "close-up on qutuz",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 4,
+          "function": "the oath, used as a reason",
+          "dialogue": "And I swore to him that you would live. You will live."
+        },
+        {
+          "n": 5,
+          "scale": "wide shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 4,
+          "function": "the boy is led away",
+          "dialogue": null
+        },
+        {
+          "n": 6,
+          "scale": "extreme close-up — insert",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 2,
+          "function": "the robe on the stone",
+          "dialogue": null
+        },
+        {
+          "n": 7,
+          "scale": "medium shot on the elder emir",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "the verdict",
+          "dialogue": "History will call this a theft."
+        },
+        {
+          "n": 8,
+          "scale": "close-up on qutuz",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 3.5,
+          "function": "Qutuz's answer, held",
+          "dialogue": "History will call it Egypt, if Egypt lives."
+        }
+      ],
+      "brief": {
+        "purpose": "Complete the turn: the boy is removed and Qutuz calls it keeping Egypt alive.",
+        "subject": "QUTUZ and SULTAN ALI",
+        "subject_action": "Qutuz refuses to hear the boy, the guards lead him out, and Qutuz answers the Emir.",
+        "camera": "locked-off framing with hard cuts only",
+        "environment": "Citadel throne room, autumn 1259",
+        "lighting": "Low gold autumn light through carved screens",
+        "visual_direction": "Serious historical drama. Match the established references; the style was not specified in the script.",
+        "stability": [
+          "Ali's robe is visibly too large and drags on the stone",
+          "Ali's later fate stays off screen: he leaves through the doors and the clip does not follow him",
+          "Positions match the first part",
+          "Qutuz never sits on the throne"
+        ],
+        "must_get": [
+          "Qutuz on 'You are being kept safe...'",
+          "The wide of the guards leading Ali out",
+          "The final close-up on 'History will call it Egypt, if Egypt lives.'"
+        ],
+        "cut_first": [
+          "The insert of the robe hem (shot 6)"
+        ]
+      },
+      "carry_over": {
+        "last_frame": "Close-up of Qutuz after 'History will call it Egypt, if Egypt lives.'",
+        "positions": "End of scene; the next scene is the wall at night",
+        "props": "Oversized throne",
+        "costume": "Unchanged",
+        "lighting": "Low gold autumn light"
+      },
+      "assumptions": [
+        "Extension of S03a: start it from the exact final frame of S03a.",
+        "The production notes say Ali's later fate is kept off screen; this clip ends with him leaving."
+      ],
+      "warnings": [],
+      "errors": [],
+      "timing": {
+        "shots": 8,
+        "dialogue_lines": 6,
+        "dialogue_words": 52,
+        "speaking_s": 22.5,
+        "estimated_s": 26.7,
+        "limit_s": 30.0,
+        "verdict": "FITS"
+      },
+      "last_line": "History will call it Egypt, if Egypt lives.",
+      "last_speaker": "QUTUZ",
+      "attempts": 1
+    },
+    {
+      "id": "S04",
+      "scene": 4,
+      "heading": "SCENE 4 - EXT. CITADEL WALL - NIGHT, JANUARY 1260",
+      "location": "citadel wall",
+      "mode": "single",
+      "part": 1,
+      "parts": 1,
+      "estimated_s": 31.7,
+      "request_s": 30,
+      "dialogue_lines": 6,
+      "dialogue_words": 54,
+      "characters": [
+        "ELDER EMIR",
+        "QUTUZ",
+        "RIDER"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "tense",
+      "last_beat": "Then the clock has started.",
+      "last_beat_kind": "dialogue",
+      "next_beat": "",
+      "events": [
+        {
+          "kind": "establish",
+          "speaker": null,
+          "text": "establishing view of SCENE 4 - EXT. CITADEL WALL - NIGHT, JANUARY 1260",
+          "words": 0,
+          "seconds": 2.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Wind.",
+          "words": 0,
+          "seconds": 2.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Qutuz looks north across the dark plain.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "The Elder Emir climbs the steps behind him.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ELDER EMIR",
+          "text": "The emirs have sworn their loyalty, my lord. Half from fear, half from hope.",
+          "words": 14,
+          "seconds": 6.2,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "Fear and hope will do. I need one thing more.",
+          "words": 10,
+          "seconds": 4.6,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ELDER EMIR",
+          "text": "What is that?",
+          "words": 3,
+          "seconds": 1.8,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "A reason to be remembered for something other than a crown.",
+          "words": 11,
+          "seconds": 5.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Hooves.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "A RIDER races up the stairs, breathless.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "RIDER",
+          "text": "My lord, the Mongols have reached Aleppo! The siege has begun!",
+          "words": 11,
+          "seconds": 5.0,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "QUTUZ",
+          "text": "Then the clock has started.",
+          "words": 5,
+          "seconds": 2.6,
+          "how": null
+        }
+      ],
+      "notes": [
+        "TIGHT: estimate 31.7s is over the 30s budget by 1.7s; trim a line or a beat, or accept the risk"
+      ],
+      "merged_from": null,
+      "scene_title": "The Wall At Night",
+      "planned_s": 30,
+      "clip_block": "D",
+      "on_screen": [
+        "Qutuz (adult)",
+        "Elder Emir",
+        "Rider"
+      ],
+      "overlays": [],
+      "location_label": "Citadel wall at night",
+      "status": "ok",
+      "tags": [
+        "@ElderEmir",
+        "@Qutuz",
+        "@Rider",
+        "@CitadelWall"
+      ],
+      "prompt": "Create a 30s serious, slow-burn cinematic historical drama scene.\n\nCharacters: @Qutuz, @ElderEmir, @Rider\nLocations: @CitadelWall\n\nVisual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.\n[Negative: chinese language, mandarin, chinese speech, asian accent]\n[System: Language: English] [Audio: English Speech]\n\n@Qutuz, @ElderEmir and a @Rider are on @CitadelWall at night in January 1260.\n\nWind. @Qutuz looks north across the dark plain. The @ElderEmir climbs the steps behind him.\n\nPreserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @Qutuz, @ElderEmir, @Rider and @CitadelWall.\n\nIMPORTANT:\n\nUse ONLY hard cuts between shots.\nNO tracking shots, camera slides, whip pans, or continuous camera transitions.\nEvery shot is a locked-off frame.\nKeep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.\nThe plain to the north is empty and dark. The Mongols are never shown.\nThe wind is constant in every shot. The only light is cold night light on stone, with a faint warm glow from the stairs.\nNo on-screen text, subtitles or captions anywhere in the frame.\nNO music. Only constant wind, cloth snapping in the gale, footsteps on stone, galloping hooves, and breathing, and dialogue.\n\nELDER EMIR'S VOICE:\n\nOlder adult male voice. Dry, weary, measured delivery, a little careful.\n\nQUTUZ'S VOICE:\n\nAdult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.\n\nRIDER'S VOICE:\n\nAdult male voice. Breathless and hoarse from hard riding, urgent.\n\nSHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL\n\n@CitadelWall at night in January. Wind blows constantly. @Qutuz is a small silhouette at the parapet, seen from behind, looking north over a dark, empty plain. Stone steps rise at frame right.\n\nHARD CUT.\n\nSHOT 2 (00:03-00:05) — MEDIUM SHOT ON QUTUZ — SLIGHT LOW ANGLE\n\n@Qutuz in profile at the parapet, his red coat moving in the wind. He looks north across the dark plain.\n\nHARD CUT.\n\nSHOT 3 (00:05-00:07) — MEDIUM SHOT — EYE LEVEL\n\nThe @ElderEmir climbs the stone steps behind @Qutuz and reaches the top, his red turban whipped by the wind.\n\nHARD CUT.\n\nSHOT 4 (00:07-00:12) — MEDIUM CLOSE-UP ON THE ELDER EMIR — EYE LEVEL\n\nThe @ElderEmir speaks over the wind.\n\n@ElderEmir, in his SAME dry, weary voice, level and honest:\n\n“The emirs have sworn their loyalty, my lord. Half from fear, half from hope.”\n\nHARD CUT.\n\nSHOT 5 (00:12-00:16) — CLOSE-UP ON QUTUZ IN PROFILE — EYE LEVEL\n\n@Qutuz does not turn from the plain.\n\n@Qutuz, in his SAME low, stern voice, steady:\n\n“Fear and hope will do. I need one thing more.”\n\nHARD CUT.\n\nSHOT 6 (00:16-00:18) — MEDIUM CLOSE-UP ON THE ELDER EMIR — EYE LEVEL\n\nThe @ElderEmir waits, bracing against the wind.\n\n@ElderEmir, in his SAME dry, weary voice, quiet:\n\n“What is that?”\n\nHARD CUT.\n\nSHOT 7 (00:18-00:22) — CLOSE-UP ON QUTUZ — LOW ANGLE\n\n@Qutuz finally turns his face toward @ElderEmir.\n\n@Qutuz, in his SAME low, stern voice, quiet, weighty:\n\n“A reason to be remembered for something other than a crown.”\n\nHARD CUT.\n\nSHOT 8 (00:22-00:24) — LOW-ANGLE SHOT UP THE STAIRS — LOW ANGLE\n\nHOOVES, growing louder. A @Rider races up the stone stairs toward the wall, breathless.\n\nHARD CUT.\n\nSHOT 9 (00:24-00:27) — MEDIUM CLOSE-UP ON THE RIDER — EYE LEVEL\n\nThe @Rider reaches the top, gasping.\n\n@Rider, in his SAME breathless, hoarse voice, urgent, gasping:\n\n“My lord, the Mongols have reached Aleppo! The siege has begun!”\n\nHARD CUT.\n\nSHOT 10 (00:27-00:30) — CLOSE-UP ON QUTUZ — EYE LEVEL\n\n@Qutuz turns back to the dark plain. Hold on his face after the line.\n\n@Qutuz, in his SAME low, stern voice, low, certain:\n\n“Then the clock has started.”\n\nHARD CUT.\n\nCUT TO BLACK.\n",
+      "shots": [
+        {
+          "n": 1,
+          "scale": "wide establishing shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "the wall and the dark plain",
+          "dialogue": null
+        },
+        {
+          "n": 2,
+          "scale": "medium shot on qutuz",
+          "angle": "slight low angle",
+          "camera": "locked-off",
+          "seconds": 2,
+          "function": "he looks north",
+          "dialogue": null
+        },
+        {
+          "n": 3,
+          "scale": "medium shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2,
+          "function": "the Emir arrives",
+          "dialogue": null
+        },
+        {
+          "n": 4,
+          "scale": "medium close-up on the elder emir",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 5,
+          "function": "the Emir reports the oaths",
+          "dialogue": "The emirs have sworn their loyalty, my lord. Half from fear, half from hope."
+        },
+        {
+          "n": 5,
+          "scale": "close-up on qutuz in profile",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3.5,
+          "function": "he sets his need",
+          "dialogue": "Fear and hope will do. I need one thing more."
+        },
+        {
+          "n": 6,
+          "scale": "medium close-up on the elder emir",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 1.5,
+          "function": "the question",
+          "dialogue": "What is that?"
+        },
+        {
+          "n": 7,
+          "scale": "close-up on qutuz",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 4,
+          "function": "the real answer",
+          "dialogue": "A reason to be remembered for something other than a crown."
+        },
+        {
+          "n": 8,
+          "scale": "low-angle shot up the stairs",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 2,
+          "function": "hooves, and the rider",
+          "dialogue": null
+        },
+        {
+          "n": 9,
+          "scale": "medium close-up on the rider",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3.5,
+          "function": "the news from the north",
+          "dialogue": "My lord, the Mongols have reached Aleppo! The siege has begun!"
+        },
+        {
+          "n": 10,
+          "scale": "close-up on qutuz",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "the clock",
+          "dialogue": "Then the clock has started."
+        }
+      ],
+      "brief": {
+        "purpose": "Turn the theft into purpose and start the clock the next episode runs on.",
+        "subject": "QUTUZ on the Citadel wall",
+        "subject_action": "He stays facing north through the report and the news from Aleppo.",
+        "camera": "locked-off framing with hard cuts only",
+        "environment": "Citadel wall at night, January 1260",
+        "lighting": "Cold night light on stone, constant wind",
+        "visual_direction": "Serious historical drama. Match the established references; the style was not specified in the script.",
+        "stability": [
+          "The plain to the north is empty and dark; the Mongols are never shown",
+          "Wind is audible and visible in cloth in every shot",
+          "Qutuz keeps his deep red coat and white turban with yellow band"
+        ],
+        "must_get": [
+          "Qutuz on 'A reason to be remembered for something other than a crown.'",
+          "The rider arriving up the stairs",
+          "The final close-up on 'Then the clock has started.'"
+        ],
+        "cut_first": [
+          "The medium shot of the Emir climbing the steps (shot 3)",
+          "The 'What is that?' reaction (shot 6) can merge into the shot before it"
+        ]
+      },
+      "carry_over": {
+        "last_frame": "Cut to black after the close-up of Qutuz",
+        "positions": "End of the episode's generated footage; the end card is added in the edit",
+        "props": "None",
+        "costume": "Unchanged",
+        "lighting": "Cold night light"
+      },
+      "assumptions": [
+        "Voices for the ELDER EMIR, DEALER, BUYER and RIDER are not in the script. They were assumed from how each character speaks.",
+        "The one-line voice notes in the script were expanded into pitch, tone and delivery.",
+        "The end card text is added in the edit.",
+        "The script's SMASH CUT TO BLACK is written as CUT TO BLACK."
+      ],
+      "warnings": [
+        "Timing is tight: estimated 29.9s of 30s."
+      ],
+      "errors": [],
+      "timing": {
+        "shots": 10,
+        "dialogue_lines": 6,
+        "dialogue_words": 54,
+        "speaking_s": 23.3,
+        "estimated_s": 29.9,
+        "limit_s": 30.0,
+        "verdict": "TIGHT"
+      },
+      "last_line": "Then the clock has started.",
+      "last_speaker": "QUTUZ",
+      "attempts": 1
+    }
+  ],
+  "sheets": {
+    "style": "2D anime",
+    "characters": [
+      {
+        "name": "Qutuz (adult)",
+        "tag": "@Qutuz",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "recurring": true,
+        "scenes": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "entry": {
+          "name": "Qutuz (adult)",
+          "tag": "@Qutuz",
+          "speakers": [
+            "QUTUZ"
+          ],
+          "lead": true,
+          "alias": "Atabek (how the boy sultan addresses him)",
+          "gender": "Male",
+          "age": "Adult (proposed: about 40)",
+          "height": "178 cm (proposed)",
+          "body_type": "Broad",
+          "ethnicity": "Not stated in the script. (proposed) Warm olive skin, plain and neutral to the setting.",
+          "role": "An emir who becomes sultan: the lead of the series, who swears to protect a dead sultan's son and then takes the boy's throne",
+          "archetype": "The stern guardian who chooses the sword over the crown",
+          "personality": "Stern, controlled, patient and unsentimental; he never raises his voice and tells people what will happen instead of asking",
+          "core_theme": "A man who was sold as a child builds a home no one can sell, and pays for it with a promise made to a dead sultan",
+          "emotional_range": "Held back: stern, controlled, quietly bitter, with flashes of grief and resolve; no open rage (proposed from the scenes)",
+          "behavior_notes": "Stands over things (a map, a boy's shoulder, a dark plain); does not look away when he speaks",
+          "speech_style": "Low, stern voice, measured and unhurried",
+          "video_voice": "Adult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.",
+          "traits": "A scarred cheek (side proposed: left), a short black beard, steady dark eyes, a white turban with a yellow band",
+          "signature_colors": "deep red coat, steel-grey mail, white turban with a yellow band",
+          "outfit_summary": "Steel mail under a deep red coat, with a white turban wound with a yellow band",
+          "top": "Deep red long coat (proposed: falling to the knee) over steel mail that shows at the collar and chest",
+          "bottom": "Dark trousers (proposed), mostly hidden by the coat",
+          "shoes": "Dark leather riding boots (proposed)",
+          "accessories": "A plain dark leather belt (proposed); no jewelry",
+          "turnaround": "He stands straight with his hands relaxed at his sides: white turban with the yellow band, deep red coat open enough to show the steel mail at the collar.",
+          "face_details": "A broad face with strong cheekbones (proposed), a scarred cheek (side proposed: left), a short black beard, steady dark eyes under heavy brows (proposed), a stern closed mouth, warm olive skin (proposed). His hair is covered by the white turban with the yellow band.",
+          "expression_notes": "Even the happy and sad expressions stay restrained: a slight softening around the eyes, never a broad smile (proposed from the script's tone).",
+          "posture_notes": "Upright and broad-shouldered, weight settled, hands still. Walking is slow and certain; sitting is rare (proposed); the tense pose is a locked jaw, not a clenched fist.",
+          "costume_details": "Fine steel mail rings at the collar and sleeve ends; a deep red coat with plain stitched seams (proposed) and a front fastening; a white turban wound neatly with a yellow band across it; plain dark leather boots (proposed); no jewelry.",
+          "palette": [
+            {
+              "label": "Skin (proposed)",
+              "hex": "#C79A6B"
+            },
+            {
+              "label": "Beard and brows",
+              "hex": "#1B1512"
+            },
+            {
+              "label": "Coat",
+              "hex": "#7A1F1F"
+            },
+            {
+              "label": "Steel mail",
+              "hex": "#8A929B"
+            },
+            {
+              "label": "Turban",
+              "hex": "#EDE8DC"
+            },
+            {
+              "label": "Turban band",
+              "hex": "#D8A82A"
+            }
+          ],
+          "materials": "Steel mail rings, a heavy deep red cloth coat (proposed: wool), white turban cloth (proposed: linen), plain leather; all shown as stylized materials.",
+          "lock": "the scarred cheek, short black beard, white turban with the yellow band, deep red coat over steel mail, broad build, steady dark eyes",
+          "notes": [
+            "steel mail always visible at the collar",
+            "the deep red coat is the only strong color on him",
+            "stands still when he speaks"
+          ],
+          "close_up": "His face lit by a single warm torch, the flame reflected in his steady eyes, jaw set: the moment he answers an accusation without anger.",
+          "voice": {
+            "language_accent": "English, neutral standard delivery (proposed)",
+            "gender_age": "Male, 40s (proposed)",
+            "persona": "Stern guardian-commander",
+            "emotion": "Controlled, grave, resolute",
+            "delivery": "Low pitch and a stern tone, measured and unhurried and never raised; he lets the silences carry the weight.",
+            "preview_text": "Let them. The Mongols never ask who sits on a throne. They ask if it stands. A boy cannot lift a sword. You are being kept safe. Egypt needs a sword, and no one has ever given you one."
+          },
+          "proposed": [
+            "age",
+            "height",
+            "ethnicity and skin tone",
+            "scar side",
+            "coat length",
+            "trousers and boots",
+            "belt",
+            "palette values"
+          ],
+          "scenes": [
+            0,
+            2,
+            3,
+            4
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the character, rendered in 2D anime:\n1. CHARACTER PROFILE — Qutuz (adult) (also called Atabek (how the boy sultan addresses him)). Role: An emir who becomes sultan: the lead of the series, who swears to protect a dead sultan's son and then takes the boy's throne. Adult (proposed: about 40), 178 cm (proposed), Broad build. Personality: Stern, controlled, patient and unsentimental; he never raises his voice and tells people what will happen instead of asking. Distinctive traits: A scarred cheek (side proposed: left), a short black beard, steady dark eyes, a white turban with a yellow band. Signature colors: deep red coat, steel-grey mail, white turban with a yellow band.\n2. FULL-BODY TURNAROUND — front, 3/4, side, and back views of the exact same character at matching scale, with identical facial features, hairstyle, body proportions, costume, colors, and accessories, standing in a neutral pose beside a vertical height scale in centimeters. He stands straight with his hands relaxed at his sides: white turban with the yellow band, deep red coat open enough to show the steel mail at the collar.\n3. FACE AND IDENTITY DETAILS — front, profile, and 3/4 head-and-shoulder close-ups showing facial structure, eyes, eyebrows, nose, lips, hairstyle, skin tone, makeup, scars, tattoos, and other defining features. A broad face with strong cheekbones (proposed), a scarred cheek (side proposed: left), a short black beard, steady dark eyes under heavy brows (proposed), a stern closed mouth, warm olive skin (proposed). His hair is covered by the white turban with the yellow band.\n4. EXPRESSION SHEET — neutral, happy, angry, sad, surprised, worried, confident, and determined expressions. Preserve the exact same facial structure and identity in every expression. Even the happy and sad expressions stay restrained: a slight softening around the eyes, never a broad smile (proposed from the script's tone).\n5. POSE AND BODY LANGUAGE — neutral standing, walking, sitting, relaxed, tense, and action-ready poses. Maintain consistent anatomy, proportions, posture, and silhouette. Upright and broad-shouldered, weight settled, hands still. Walking is slow and certain; sitting is rare (proposed); the tense pose is a locked jaw, not a clenched fist.\n6. COSTUME DETAILS — close-ups of clothing layers, fabrics, seams, fasteners, footwear, jewelry, eyewear, markings, and other character-defining wardrobe elements. Fine steel mail rings at the collar and sleeve ends; a deep red coat with plain stitched seams (proposed) and a front fastening; a white turban wound neatly with a yellow band across it; plain dark leather boots (proposed); no jewelry.\n7. COLOR AND MATERIAL PALETTE — key colors with HEX codes: Skin (proposed) #C79A6B; Beard and brows #1B1512; Coat #7A1F1F; Steel mail #8A929B; Turban #EDE8DC; Turban band #D8A82A. Materials: Steel mail rings, a heavy deep red cloth coat (proposed: wool), white turban cloth (proposed: linen), plain leather; all shown as stylized materials.\n8. DO NOT CHANGE — lock the character's face, identity, skin tone, age, hair, eye color, body shape, proportions, costume, accessories, markings, colors, and defining features: the scarred cheek, short black beard, white turban with the yellow band, deep red coat over steel mail, broad build, steady dark eyes. Do not redesign, beautify, age, stylize, simplify, or create alternate versions.\nUse a plain solid white studio background (always white, no gradients or scenery), soft controlled lighting, stylized materials consistent with the chosen style, sharp details, subtle shadows, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid laid out horizontally across the wide frame.\nInclude a small NOTES PANEL with annotation text (steel mail always visible at the collar; the deep red coat is the only strong color on him; stands still when he speaks) and one cinematic CLOSE-UP POSE of the character: His face lit by a single warm torch, the flame reflected in his steady eyes, jaw set: the moment he answers an accusation without anger.\nEvery panel must depict the exact same character with absolute visual consistency. Focus only on the character. Do not include props, additional characters, environments, unrelated objects, or alternate outfits."
+      },
+      {
+        "name": "Qutuz (child)",
+        "tag": "@QutuzChild",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "recurring": false,
+        "scenes": [
+          1
+        ],
+        "entry": {
+          "name": "Qutuz (child)",
+          "tag": "@QutuzChild",
+          "speakers": [
+            "YOUNG QUTUZ"
+          ],
+          "alias": "Mahmud, son of Mamdud (the name he gives in the market)",
+          "gender": "Male",
+          "age": "About 10",
+          "height": "128 cm (proposed)",
+          "body_type": "Thin",
+          "ethnicity": "Not stated in the script. (proposed) Warm olive skin, plain and neutral to the setting.",
+          "role": "Qutuz as a boy of about ten, sold in the Damascus slave market",
+          "archetype": "The defiant child who refuses to cry",
+          "personality": "Defiant, proud and unbowed; he answers without a tremor",
+          "core_theme": "The vow he makes at ten: to build a home no one can sell",
+          "emotional_range": "Narrow and controlled: defiant, steady, dry-eyed; fear is never shown (from 'I do not cry')",
+          "behavior_notes": "Stands straight even when shoved; holds his gaze; speaks quietly to himself when alone",
+          "speech_style": "Small, steady voice",
+          "video_voice": "A boy's voice, about ten years old. Small and light in pitch but steady, with a flat, defiant delivery and no tremble.",
+          "traits": "A shaved head and defiant dark eyes; thin; dust on his clothes",
+          "signature_colors": "dusty tunic beige, dark brown eyes, warm skin",
+          "outfit_summary": "A dusty tunic (proposed: plain, knee-length, undyed), barefoot (proposed)",
+          "top": "Dusty tunic (proposed: undyed linen-colored, knee-length)",
+          "bottom": "None visible; the tunic covers it",
+          "shoes": "Barefoot (proposed)",
+          "accessories": "None",
+          "turnaround": "He stands straight and small, arms at his sides, chin level, the tunic hanging loosely on his thin frame.",
+          "face_details": "A thin face with a shaved head, large defiant dark eyes, level brows (proposed), a small firm mouth, warm olive skin (proposed) with a light film of dust.",
+          "expression_notes": "Defiance is the default: the happy expression is a rare small curve of the mouth (proposed); sad and worried never show tears, only a set jaw.",
+          "posture_notes": "Straight-backed and rigid; the relaxed pose is still upright; the action-ready pose is a planted stance with clenched fists (proposed).",
+          "costume_details": "A single dusty tunic with a plain neckline and rough hem (proposed), visible seams, dust on the hem and knees; bare feet (proposed). No jewelry.",
+          "palette": [
+            {
+              "label": "Skin (proposed)",
+              "hex": "#C79A6B"
+            },
+            {
+              "label": "Eyes",
+              "hex": "#2A1D17"
+            },
+            {
+              "label": "Tunic",
+              "hex": "#A8957A"
+            },
+            {
+              "label": "Dust",
+              "hex": "#8C7B64"
+            },
+            {
+              "label": "Shadow",
+              "hex": "#3D3027"
+            }
+          ],
+          "materials": "Rough plain cloth (proposed: linen), dust; stylized materials.",
+          "lock": "the shaved head, defiant dark eyes, thin build, dusty tunic, bare feet, child age of about ten",
+          "notes": [
+            "never shows tears",
+            "tunic always dusty",
+            "thin but upright"
+          ],
+          "close_up": "A close-up of his dry, defiant dark eyes looking straight ahead without blinking, soft light, a haze of dust in the air.",
+          "proposed": [
+            "height",
+            "ethnicity and skin tone",
+            "tunic cut and color",
+            "bare feet",
+            "palette values"
+          ],
+          "scenes": [
+            1
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the character, rendered in 2D anime:\n1. CHARACTER PROFILE — Qutuz (child) (also called Mahmud, son of Mamdud (the name he gives in the market)). Role: Qutuz as a boy of about ten, sold in the Damascus slave market. About 10, 128 cm (proposed), Thin build. Personality: Defiant, proud and unbowed; he answers without a tremor. Distinctive traits: A shaved head and defiant dark eyes; thin; dust on his clothes. Signature colors: dusty tunic beige, dark brown eyes, warm skin.\n2. FULL-BODY TURNAROUND — front, 3/4, side, and back views of the exact same character at matching scale, with identical facial features, hairstyle, body proportions, costume, colors, and accessories, standing in a neutral pose beside a vertical height scale in centimeters. He stands straight and small, arms at his sides, chin level, the tunic hanging loosely on his thin frame.\n3. FACE AND IDENTITY DETAILS — front, profile, and 3/4 head-and-shoulder close-ups showing facial structure, eyes, eyebrows, nose, lips, hairstyle, skin tone, makeup, scars, tattoos, and other defining features. A thin face with a shaved head, large defiant dark eyes, level brows (proposed), a small firm mouth, warm olive skin (proposed) with a light film of dust.\n4. EXPRESSION SHEET — neutral, happy, angry, sad, surprised, worried, confident, and determined expressions. Preserve the exact same facial structure and identity in every expression. Defiance is the default: the happy expression is a rare small curve of the mouth (proposed); sad and worried never show tears, only a set jaw.\n5. POSE AND BODY LANGUAGE — neutral standing, walking, sitting, relaxed, tense, and action-ready poses. Maintain consistent anatomy, proportions, posture, and silhouette. Straight-backed and rigid; the relaxed pose is still upright; the action-ready pose is a planted stance with clenched fists (proposed).\n6. COSTUME DETAILS — close-ups of clothing layers, fabrics, seams, fasteners, footwear, jewelry, eyewear, markings, and other character-defining wardrobe elements. A single dusty tunic with a plain neckline and rough hem (proposed), visible seams, dust on the hem and knees; bare feet (proposed). No jewelry.\n7. COLOR AND MATERIAL PALETTE — key colors with HEX codes: Skin (proposed) #C79A6B; Eyes #2A1D17; Tunic #A8957A; Dust #8C7B64; Shadow #3D3027. Materials: Rough plain cloth (proposed: linen), dust; stylized materials.\n8. DO NOT CHANGE — lock the character's face, identity, skin tone, age, hair, eye color, body shape, proportions, costume, accessories, markings, colors, and defining features: the shaved head, defiant dark eyes, thin build, dusty tunic, bare feet, child age of about ten. Do not redesign, beautify, age, stylize, simplify, or create alternate versions.\nUse a plain solid white studio background (always white, no gradients or scenery), soft controlled lighting, stylized materials consistent with the chosen style, sharp details, subtle shadows, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid laid out horizontally across the wide frame.\nInclude a small NOTES PANEL with annotation text (never shows tears; tunic always dusty; thin but upright) and one cinematic CLOSE-UP POSE of the character: A close-up of his dry, defiant dark eyes looking straight ahead without blinking, soft light, a haze of dust in the air.\nEvery panel must depict the exact same character with absolute visual consistency. Focus only on the character. Do not include props, additional characters, environments, unrelated objects, or alternate outfits."
+      },
+      {
+        "name": "Shajar al-Durr",
+        "tag": "@ShajarAlDurr",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "recurring": false,
+        "scenes": [
+          2
+        ],
+        "entry": {
+          "name": "Shajar al-Durr",
+          "tag": "@ShajarAlDurr",
+          "speakers": [
+            "SHAJAR AL-DURR"
+          ],
+          "alias": "",
+          "gender": "Female",
+          "age": "Mature adult (proposed: about 45)",
+          "height": "165 cm (proposed)",
+          "body_type": "Slender and upright (proposed)",
+          "ethnicity": "Not stated in the script. (proposed) Warm olive skin, plain and neutral to the setting.",
+          "role": "The regal, veiled figure who stands over the dead sultan and tells the emir to protect the sultan's son",
+          "archetype": "The cold decider",
+          "personality": "Regal, controlled and calm; she owns hard decisions without apology",
+          "core_theme": "'Someone had to decide': power taken by deciding",
+          "emotional_range": "Narrow: calm, cold, certain; a flicker of steel when challenged (from the script's 'steel in her eyes')",
+          "behavior_notes": "Does not move when challenged; answers evenly and holds the other person's eyes",
+          "speech_style": "Controlled, quiet voice",
+          "video_voice": "Adult woman's voice. Quiet, controlled and even, with calm authority. Never raised.",
+          "traits": "A dark veil, gold jewelry, steel in her eyes",
+          "signature_colors": "dark veil, gold, deep charcoal",
+          "outfit_summary": "A dark veil over the lower face and head, gold jewelry, and a long dark gown (proposed: charcoal)",
+          "top": "Long dark gown (proposed: charcoal, high neck)",
+          "bottom": "Full-length skirt of the same gown (proposed)",
+          "shoes": "Not visible under the gown (proposed)",
+          "accessories": "Gold jewelry: earrings, a neck piece and bracelets (proposed forms)",
+          "turnaround": "She stands tall and still, the dark veil covering the lower face and head, gold jewelry catching the light, the gown falling to the floor.",
+          "face_details": "The veil hides the lower face; the eyes are dark grey-brown (proposed), level and unblinking, with straight brows (proposed). Skin tone warm and pale olive (proposed).",
+          "expression_notes": "Expressions are carried by the eyes above the veil: calm, cold and certain; happy is a faint warmth at the eyes only (proposed).",
+          "posture_notes": "Upright, still, hands folded at the waist (proposed); never hurried; the tense pose is a lifted chin, not a gesture.",
+          "costume_details": "A dark veil with a fine edge (proposed), gold jewelry with simple engraved patterns (proposed), a long dark gown with plain seams and a high neckline (proposed), full sleeves (proposed).",
+          "palette": [
+            {
+              "label": "Skin (proposed)",
+              "hex": "#C9A27C"
+            },
+            {
+              "label": "Veil",
+              "hex": "#1E1A24"
+            },
+            {
+              "label": "Gown",
+              "hex": "#2C2530"
+            },
+            {
+              "label": "Gold",
+              "hex": "#C9A227"
+            },
+            {
+              "label": "Eyes (proposed)",
+              "hex": "#4A4F57"
+            }
+          ],
+          "materials": "Fine dark veil cloth (proposed: silk), heavy dark gown cloth (proposed), hammered gold; stylized materials.",
+          "lock": "the dark veil, gold jewelry, level steel-like eyes, upright regal posture, long dark gown",
+          "notes": [
+            "only the eyes are shown above the veil",
+            "gold is the single accent",
+            "never moves when challenged"
+          ],
+          "close_up": "Her eyes above the dark veil, level and unblinking, the gold of her jewelry catching soft lamplight: the moment she owns a hard decision.",
+          "proposed": [
+            "age",
+            "height",
+            "build",
+            "skin tone",
+            "gown color and cut",
+            "jewelry forms",
+            "eye color",
+            "palette values"
+          ],
+          "scenes": [
+            2
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the character, rendered in 2D anime:\n1. CHARACTER PROFILE — Shajar al-Durr. Role: The regal, veiled figure who stands over the dead sultan and tells the emir to protect the sultan's son. Mature adult (proposed: about 45), 165 cm (proposed), Slender and upright (proposed) build. Personality: Regal, controlled and calm; she owns hard decisions without apology. Distinctive traits: A dark veil, gold jewelry, steel in her eyes. Signature colors: dark veil, gold, deep charcoal.\n2. FULL-BODY TURNAROUND — front, 3/4, side, and back views of the exact same character at matching scale, with identical facial features, hairstyle, body proportions, costume, colors, and accessories, standing in a neutral pose beside a vertical height scale in centimeters. She stands tall and still, the dark veil covering the lower face and head, gold jewelry catching the light, the gown falling to the floor.\n3. FACE AND IDENTITY DETAILS — front, profile, and 3/4 head-and-shoulder close-ups showing facial structure, eyes, eyebrows, nose, lips, hairstyle, skin tone, makeup, scars, tattoos, and other defining features. The veil hides the lower face; the eyes are dark grey-brown (proposed), level and unblinking, with straight brows (proposed). Skin tone warm and pale olive (proposed).\n4. EXPRESSION SHEET — neutral, happy, angry, sad, surprised, worried, confident, and determined expressions. Preserve the exact same facial structure and identity in every expression. Expressions are carried by the eyes above the veil: calm, cold and certain; happy is a faint warmth at the eyes only (proposed).\n5. POSE AND BODY LANGUAGE — neutral standing, walking, sitting, relaxed, tense, and action-ready poses. Maintain consistent anatomy, proportions, posture, and silhouette. Upright, still, hands folded at the waist (proposed); never hurried; the tense pose is a lifted chin, not a gesture.\n6. COSTUME DETAILS — close-ups of clothing layers, fabrics, seams, fasteners, footwear, jewelry, eyewear, markings, and other character-defining wardrobe elements. A dark veil with a fine edge (proposed), gold jewelry with simple engraved patterns (proposed), a long dark gown with plain seams and a high neckline (proposed), full sleeves (proposed).\n7. COLOR AND MATERIAL PALETTE — key colors with HEX codes: Skin (proposed) #C9A27C; Veil #1E1A24; Gown #2C2530; Gold #C9A227; Eyes (proposed) #4A4F57. Materials: Fine dark veil cloth (proposed: silk), heavy dark gown cloth (proposed), hammered gold; stylized materials.\n8. DO NOT CHANGE — lock the character's face, identity, skin tone, age, hair, eye color, body shape, proportions, costume, accessories, markings, colors, and defining features: the dark veil, gold jewelry, level steel-like eyes, upright regal posture, long dark gown. Do not redesign, beautify, age, stylize, simplify, or create alternate versions.\nUse a plain solid white studio background (always white, no gradients or scenery), soft controlled lighting, stylized materials consistent with the chosen style, sharp details, subtle shadows, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid laid out horizontally across the wide frame.\nInclude a small NOTES PANEL with annotation text (only the eyes are shown above the veil; gold is the single accent; never moves when challenged) and one cinematic CLOSE-UP POSE of the character: Her eyes above the dark veil, level and unblinking, the gold of her jewelry catching soft lamplight: the moment she owns a hard decision.\nEvery panel must depict the exact same character with absolute visual consistency. Focus only on the character. Do not include props, additional characters, environments, unrelated objects, or alternate outfits."
+      },
+      {
+        "name": "Sultan al-Mansur Ali",
+        "tag": "@SultanAlMansurAli",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "recurring": false,
+        "scenes": [
+          3
+        ],
+        "entry": {
+          "name": "Sultan al-Mansur Ali",
+          "tag": "@SultanAlMansurAli",
+          "speakers": [
+            "ALI",
+            "SULTAN ALI"
+          ],
+          "alias": "Ali (as the script calls him)",
+          "gender": "Male",
+          "age": "About 15",
+          "height": "160 cm (proposed)",
+          "body_type": "Slender and boyish",
+          "ethnicity": "Not stated in the script. (proposed) Warm olive skin, plain and neutral to the setting.",
+          "role": "The boy sultan, set on a throne too big for him, who is told he cannot lead and is led away",
+          "archetype": "The child king",
+          "personality": "Frightened and boyish, trying to sound older; he asks direct questions and wants to be useful",
+          "core_theme": "A boy who is kept safe by being taken out of his own life",
+          "emotional_range": "Fear, hope and hurt; small flashes of resolve; no anger (proposed from the scene)",
+          "behavior_notes": "Looks up at his guardian when he asks for help; lifts his chin when he tries to sound strong; grips the armrests",
+          "speech_style": "Thin, frightened voice",
+          "video_voice": "A teenage boy's voice, about fifteen. Thin and slightly high, wavering, frightened.",
+          "traits": "Slender and boyish; sultan's robes that are too large for him",
+          "signature_colors": "white and gold",
+          "outfit_summary": "White-and-gold sultan's robes that are visibly too large for him: sleeves past his hands, hem pooling on the floor",
+          "top": "White-and-gold sultan's robe, oversized, sleeves long enough to cover the hands",
+          "bottom": "The same robe, hem long enough to drag on the floor",
+          "shoes": "Small soft slippers (proposed), mostly hidden by the hem",
+          "accessories": "No crown (proposed); a thin gold sash (proposed)",
+          "turnaround": "He stands in the oversized white-and-gold robe, shoulders slightly narrower than the garment, sleeves hanging past his hands, the hem pooling at his feet.",
+          "face_details": "A young, soft-featured face with large dark eyes (proposed), thin eyebrows (proposed), short dark hair (proposed), warm olive skin (proposed), no facial hair.",
+          "expression_notes": "Open and readable: fear and worry show easily; the confident and determined expressions are visibly forced (proposed).",
+          "posture_notes": "Small and slightly hunched inside the robe; the tense pose is gripped hands; the action-ready pose is a lifted chin (proposed).",
+          "costume_details": "White robe with gold trim and gold embroidery along the collar and hem (proposed), a thin gold sash (proposed), sleeves and hem much too long, visible folds where the cloth is too big.",
+          "palette": [
+            {
+              "label": "Skin (proposed)",
+              "hex": "#CFA67E"
+            },
+            {
+              "label": "Hair (proposed)",
+              "hex": "#2A211B"
+            },
+            {
+              "label": "Robe white",
+              "hex": "#F2EEE4"
+            },
+            {
+              "label": "Gold",
+              "hex": "#C9A227"
+            },
+            {
+              "label": "Fold shadow",
+              "hex": "#B9B3A6"
+            }
+          ],
+          "materials": "Fine white cloth (proposed: silk), gold thread, soft leather slippers (proposed); stylized materials.",
+          "lock": "the slender boyish build, about fifteen, white-and-gold robe that is too large, sleeves past the hands, hem pooling, no crown",
+          "notes": [
+            "the robe is always too big",
+            "gold trim at collar and hem",
+            "looks up when he asks for help"
+          ],
+          "close_up": "His face looking up, eyes wide, soft gold autumn light: the moment he asks 'what do we do?' of the man he trusts.",
+          "proposed": [
+            "height",
+            "skin tone",
+            "hair",
+            "eye color",
+            "slippers",
+            "sash",
+            "no crown",
+            "palette values"
+          ],
+          "scenes": [
+            3
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the character, rendered in 2D anime:\n1. CHARACTER PROFILE — Sultan al-Mansur Ali (also called Ali (as the script calls him)). Role: The boy sultan, set on a throne too big for him, who is told he cannot lead and is led away. About 15, 160 cm (proposed), Slender and boyish build. Personality: Frightened and boyish, trying to sound older; he asks direct questions and wants to be useful. Distinctive traits: Slender and boyish; sultan's robes that are too large for him. Signature colors: white and gold.\n2. FULL-BODY TURNAROUND — front, 3/4, side, and back views of the exact same character at matching scale, with identical facial features, hairstyle, body proportions, costume, colors, and accessories, standing in a neutral pose beside a vertical height scale in centimeters. He stands in the oversized white-and-gold robe, shoulders slightly narrower than the garment, sleeves hanging past his hands, the hem pooling at his feet.\n3. FACE AND IDENTITY DETAILS — front, profile, and 3/4 head-and-shoulder close-ups showing facial structure, eyes, eyebrows, nose, lips, hairstyle, skin tone, makeup, scars, tattoos, and other defining features. A young, soft-featured face with large dark eyes (proposed), thin eyebrows (proposed), short dark hair (proposed), warm olive skin (proposed), no facial hair.\n4. EXPRESSION SHEET — neutral, happy, angry, sad, surprised, worried, confident, and determined expressions. Preserve the exact same facial structure and identity in every expression. Open and readable: fear and worry show easily; the confident and determined expressions are visibly forced (proposed).\n5. POSE AND BODY LANGUAGE — neutral standing, walking, sitting, relaxed, tense, and action-ready poses. Maintain consistent anatomy, proportions, posture, and silhouette. Small and slightly hunched inside the robe; the tense pose is gripped hands; the action-ready pose is a lifted chin (proposed).\n6. COSTUME DETAILS — close-ups of clothing layers, fabrics, seams, fasteners, footwear, jewelry, eyewear, markings, and other character-defining wardrobe elements. White robe with gold trim and gold embroidery along the collar and hem (proposed), a thin gold sash (proposed), sleeves and hem much too long, visible folds where the cloth is too big.\n7. COLOR AND MATERIAL PALETTE — key colors with HEX codes: Skin (proposed) #CFA67E; Hair (proposed) #2A211B; Robe white #F2EEE4; Gold #C9A227; Fold shadow #B9B3A6. Materials: Fine white cloth (proposed: silk), gold thread, soft leather slippers (proposed); stylized materials.\n8. DO NOT CHANGE — lock the character's face, identity, skin tone, age, hair, eye color, body shape, proportions, costume, accessories, markings, colors, and defining features: the slender boyish build, about fifteen, white-and-gold robe that is too large, sleeves past the hands, hem pooling, no crown. Do not redesign, beautify, age, stylize, simplify, or create alternate versions.\nUse a plain solid white studio background (always white, no gradients or scenery), soft controlled lighting, stylized materials consistent with the chosen style, sharp details, subtle shadows, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid laid out horizontally across the wide frame.\nInclude a small NOTES PANEL with annotation text (the robe is always too big; gold trim at collar and hem; looks up when he asks for help) and one cinematic CLOSE-UP POSE of the character: His face looking up, eyes wide, soft gold autumn light: the moment he asks 'what do we do?' of the man he trusts.\nEvery panel must depict the exact same character with absolute visual consistency. Focus only on the character. Do not include props, additional characters, environments, unrelated objects, or alternate outfits."
+      },
+      {
+        "name": "Sultan Aybak",
+        "tag": "@SultanAybak",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "recurring": false,
+        "scenes": [
+          2
+        ],
+        "entry": {
+          "name": "Sultan Aybak",
+          "tag": "@SultanAybak",
+          "speakers": [
+            "SULTAN AYBAK"
+          ],
+          "alias": "",
+          "gender": "Male",
+          "age": "Adult (proposed: about 45)",
+          "height": "190 cm (proposed; the script says tall)",
+          "body_type": "Tall",
+          "ethnicity": "Not stated in the script. (proposed) Warm olive skin, plain and neutral to the setting.",
+          "role": "The dead sultan: he appears only as a body on the marble in the bath chamber, and an emir swears to protect his son",
+          "archetype": "The fallen ruler",
+          "personality": "Not shown; he is dead in his only scene",
+          "core_theme": "The debt an emir swears to repay: 'made me an emir'",
+          "emotional_range": "None: one calm, still expression (he appears only as a body)",
+          "behavior_notes": "Lies still, face turned away from the camera until one calm high-angle shot",
+          "speech_style": "None",
+          "traits": "Tall; a red-gold coat; a calm, still face with closed eyes (proposed)",
+          "signature_colors": "red-gold",
+          "outfit_summary": "A tall man in a red-gold coat",
+          "top": "Red-gold coat (proposed: long, with a high collar)",
+          "bottom": "Dark trousers (proposed)",
+          "shoes": "Dark leather boots (proposed)",
+          "accessories": "None",
+          "turnaround": "For the turnaround only he stands neutrally with arms at his sides; in the story he appears lying down.",
+          "face_details": "A calm, still face with closed eyes (proposed), a short dark beard (proposed), pale olive skin (proposed), no wound and no blood. Short dark hair (proposed).",
+          "expression_notes": "He appears only as a body, so every expression panel shows the same calm, still, closed-eyed face: there is no emotion to vary.",
+          "posture_notes": "Standing neutral for the turnaround; the pose panels show him lying still on his back (proposed), arms at his sides.",
+          "costume_details": "A red-gold coat with plain seams and a high collar (proposed), gold-toned trim (proposed), dark trousers and boots (proposed).",
+          "palette": [
+            {
+              "label": "Coat red",
+              "hex": "#9A3B2E"
+            },
+            {
+              "label": "Coat gold",
+              "hex": "#C9A227"
+            },
+            {
+              "label": "Skin (proposed)",
+              "hex": "#C9A27C"
+            },
+            {
+              "label": "Hair and beard (proposed)",
+              "hex": "#2A211B"
+            },
+            {
+              "label": "Trousers (proposed)",
+              "hex": "#2C2A2A"
+            }
+          ],
+          "materials": "Heavy red-gold cloth (proposed: brocade), dark leather; stylized materials.",
+          "lock": "the tall build, the red-gold coat, the calm still face, no wound and no blood",
+          "notes": [
+            "appears only as a body",
+            "no blood and no wound",
+            "red-gold coat is the identifier"
+          ],
+          "close_up": "A calm, still face seen from slightly above, closed eyes, soft lamplight: the quiet that frames an oath.",
+          "proposed": [
+            "age",
+            "height",
+            "skin tone",
+            "hair and beard",
+            "coat cut",
+            "trousers and boots",
+            "palette values"
+          ],
+          "scenes": [
+            2
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the character, rendered in 2D anime:\n1. CHARACTER PROFILE — Sultan Aybak. Role: The dead sultan: he appears only as a body on the marble in the bath chamber, and an emir swears to protect his son. Adult (proposed: about 45), 190 cm (proposed; the script says tall), Tall build. Personality: Not shown; he is dead in his only scene. Distinctive traits: Tall; a red-gold coat; a calm, still face with closed eyes (proposed). Signature colors: red-gold.\n2. FULL-BODY TURNAROUND — front, 3/4, side, and back views of the exact same character at matching scale, with identical facial features, hairstyle, body proportions, costume, colors, and accessories, standing in a neutral pose beside a vertical height scale in centimeters. For the turnaround only he stands neutrally with arms at his sides; in the story he appears lying down.\n3. FACE AND IDENTITY DETAILS — front, profile, and 3/4 head-and-shoulder close-ups showing facial structure, eyes, eyebrows, nose, lips, hairstyle, skin tone, makeup, scars, tattoos, and other defining features. A calm, still face with closed eyes (proposed), a short dark beard (proposed), pale olive skin (proposed), no wound and no blood. Short dark hair (proposed).\n4. EXPRESSION SHEET — neutral, happy, angry, sad, surprised, worried, confident, and determined expressions. Preserve the exact same facial structure and identity in every expression. He appears only as a body, so every expression panel shows the same calm, still, closed-eyed face: there is no emotion to vary.\n5. POSE AND BODY LANGUAGE — neutral standing, walking, sitting, relaxed, tense, and action-ready poses. Maintain consistent anatomy, proportions, posture, and silhouette. Standing neutral for the turnaround; the pose panels show him lying still on his back (proposed), arms at his sides.\n6. COSTUME DETAILS — close-ups of clothing layers, fabrics, seams, fasteners, footwear, jewelry, eyewear, markings, and other character-defining wardrobe elements. A red-gold coat with plain seams and a high collar (proposed), gold-toned trim (proposed), dark trousers and boots (proposed).\n7. COLOR AND MATERIAL PALETTE — key colors with HEX codes: Coat red #9A3B2E; Coat gold #C9A227; Skin (proposed) #C9A27C; Hair and beard (proposed) #2A211B; Trousers (proposed) #2C2A2A. Materials: Heavy red-gold cloth (proposed: brocade), dark leather; stylized materials.\n8. DO NOT CHANGE — lock the character's face, identity, skin tone, age, hair, eye color, body shape, proportions, costume, accessories, markings, colors, and defining features: the tall build, the red-gold coat, the calm still face, no wound and no blood. Do not redesign, beautify, age, stylize, simplify, or create alternate versions.\nUse a plain solid white studio background (always white, no gradients or scenery), soft controlled lighting, stylized materials consistent with the chosen style, sharp details, subtle shadows, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid laid out horizontally across the wide frame.\nInclude a small NOTES PANEL with annotation text (appears only as a body; no blood and no wound; red-gold coat is the identifier) and one cinematic CLOSE-UP POSE of the character: A calm, still face seen from slightly above, closed eyes, soft lamplight: the quiet that frames an oath.\nEvery panel must depict the exact same character with absolute visual consistency. Focus only on the character. Do not include props, additional characters, environments, unrelated objects, or alternate outfits."
+      },
+      {
+        "name": "Elder Emir",
+        "tag": "@ElderEmir",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "recurring": true,
+        "scenes": [
+          0,
+          3,
+          4
+        ],
+        "entry": {
+          "name": "Elder Emir",
+          "tag": "@ElderEmir",
+          "speakers": [
+            "ELDER EMIR"
+          ],
+          "alias": "",
+          "gender": "Male",
+          "age": "Elder (proposed: about 60)",
+          "height": "172 cm (proposed)",
+          "body_type": "Lean (proposed)",
+          "ethnicity": "Not stated in the script. (proposed) Warm olive skin, plain and neutral to the setting.",
+          "role": "The court emir who voices the doubts: the claim against the lead, the fear of the Mongols, and the report that the emirs have sworn their loyalty",
+          "archetype": "The weary counselor",
+          "personality": "Weary, careful and candid; he tests how far he can go (proposed from his lines)",
+          "core_theme": "Honest doubt beside a man who does not want to hear it",
+          "emotional_range": "Grave, wary and resigned; no outbursts (proposed)",
+          "behavior_notes": "Waits at doorways; speaks carefully; lowers his eyes instead of arguing",
+          "speech_style": "Dry, weary, measured delivery (proposed)",
+          "video_voice": "Older adult male voice. Dry, weary, measured delivery, a little careful.",
+          "traits": "A grey beard and a red turban",
+          "signature_colors": "red turban, grey beard, dark robe",
+          "outfit_summary": "A red turban and a long dark robe with a plain sash (proposed)",
+          "top": "Long dark robe (proposed: charcoal)",
+          "bottom": "The same robe, full length (proposed)",
+          "shoes": "Dark leather shoes (proposed)",
+          "accessories": "A plain sash (proposed)",
+          "turnaround": "He stands upright with his hands clasped in front of him, red turban, grey beard, long dark robe falling to the ankles.",
+          "face_details": "A lined, lean face with a full grey beard, deep-set dark eyes (proposed), heavy tired lids (proposed), warm olive skin (proposed); hair covered by the red turban.",
+          "expression_notes": "Expressions are small and guarded: worry and gravity read easily; happy is a faint, tired warmth (proposed).",
+          "posture_notes": "Slightly stooped with age (proposed), hands clasped; the tense pose is a drawn-in chin; he stands patiently.",
+          "costume_details": "A red turban wound neatly, a long dark robe with plain seams and a front fastening (proposed), a plain sash (proposed), dark leather shoes (proposed). No jewelry.",
+          "palette": [
+            {
+              "label": "Turban",
+              "hex": "#9E2B25"
+            },
+            {
+              "label": "Beard",
+              "hex": "#9A9A98"
+            },
+            {
+              "label": "Robe (proposed)",
+              "hex": "#3A3F4A"
+            },
+            {
+              "label": "Skin (proposed)",
+              "hex": "#B9926A"
+            },
+            {
+              "label": "Sash (proposed)",
+              "hex": "#6B5B3E"
+            }
+          ],
+          "materials": "Wound red cloth, heavy dark robe cloth (proposed: wool), plain leather; stylized materials.",
+          "lock": "the grey beard, red turban, lean build, long dark robe, tired dark eyes",
+          "notes": [
+            "red turban is the identifier",
+            "hands clasped when he waits",
+            "never raises his voice"
+          ],
+          "close_up": "His grave face in soft warm light, grey beard and tired eyes, a pause before he asks a hard question.",
+          "voice": {
+            "language_accent": "English, neutral standard delivery (proposed)",
+            "gender_age": "Male, 60s (proposed)",
+            "persona": "Weary court counselor",
+            "emotion": "Grave, careful, candid",
+            "delivery": "Dry and measured with a slightly careful pace, like a man testing how far he can go (proposed from his lines).",
+            "preview_text": "They will say a slave took the throne of Egypt. And the boy sultan? Egypt cannot fight an army that took Baghdad. History will call this a theft."
+          },
+          "proposed": [
+            "age",
+            "height",
+            "build",
+            "skin tone",
+            "robe color and cut",
+            "sash",
+            "shoes",
+            "palette values",
+            "speech style"
+          ],
+          "scenes": [
+            0,
+            3,
+            4
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the character, rendered in 2D anime:\n1. CHARACTER PROFILE — Elder Emir. Role: The court emir who voices the doubts: the claim against the lead, the fear of the Mongols, and the report that the emirs have sworn their loyalty. Elder (proposed: about 60), 172 cm (proposed), Lean (proposed) build. Personality: Weary, careful and candid; he tests how far he can go (proposed from his lines). Distinctive traits: A grey beard and a red turban. Signature colors: red turban, grey beard, dark robe.\n2. FULL-BODY TURNAROUND — front, 3/4, side, and back views of the exact same character at matching scale, with identical facial features, hairstyle, body proportions, costume, colors, and accessories, standing in a neutral pose beside a vertical height scale in centimeters. He stands upright with his hands clasped in front of him, red turban, grey beard, long dark robe falling to the ankles.\n3. FACE AND IDENTITY DETAILS — front, profile, and 3/4 head-and-shoulder close-ups showing facial structure, eyes, eyebrows, nose, lips, hairstyle, skin tone, makeup, scars, tattoos, and other defining features. A lined, lean face with a full grey beard, deep-set dark eyes (proposed), heavy tired lids (proposed), warm olive skin (proposed); hair covered by the red turban.\n4. EXPRESSION SHEET — neutral, happy, angry, sad, surprised, worried, confident, and determined expressions. Preserve the exact same facial structure and identity in every expression. Expressions are small and guarded: worry and gravity read easily; happy is a faint, tired warmth (proposed).\n5. POSE AND BODY LANGUAGE — neutral standing, walking, sitting, relaxed, tense, and action-ready poses. Maintain consistent anatomy, proportions, posture, and silhouette. Slightly stooped with age (proposed), hands clasped; the tense pose is a drawn-in chin; he stands patiently.\n6. COSTUME DETAILS — close-ups of clothing layers, fabrics, seams, fasteners, footwear, jewelry, eyewear, markings, and other character-defining wardrobe elements. A red turban wound neatly, a long dark robe with plain seams and a front fastening (proposed), a plain sash (proposed), dark leather shoes (proposed). No jewelry.\n7. COLOR AND MATERIAL PALETTE — key colors with HEX codes: Turban #9E2B25; Beard #9A9A98; Robe (proposed) #3A3F4A; Skin (proposed) #B9926A; Sash (proposed) #6B5B3E. Materials: Wound red cloth, heavy dark robe cloth (proposed: wool), plain leather; stylized materials.\n8. DO NOT CHANGE — lock the character's face, identity, skin tone, age, hair, eye color, body shape, proportions, costume, accessories, markings, colors, and defining features: the grey beard, red turban, lean build, long dark robe, tired dark eyes. Do not redesign, beautify, age, stylize, simplify, or create alternate versions.\nUse a plain solid white studio background (always white, no gradients or scenery), soft controlled lighting, stylized materials consistent with the chosen style, sharp details, subtle shadows, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid laid out horizontally across the wide frame.\nInclude a small NOTES PANEL with annotation text (red turban is the identifier; hands clasped when he waits; never raises his voice) and one cinematic CLOSE-UP POSE of the character: His grave face in soft warm light, grey beard and tired eyes, a pause before he asks a hard question.\nEvery panel must depict the exact same character with absolute visual consistency. Focus only on the character. Do not include props, additional characters, environments, unrelated objects, or alternate outfits."
+      },
+      {
+        "name": "Rider",
+        "tag": "@Rider",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "recurring": true,
+        "scenes": [
+          3,
+          4
+        ],
+        "entry": {
+          "name": "Rider",
+          "tag": "@Rider",
+          "speakers": [
+            "RIDER"
+          ],
+          "alias": "",
+          "gender": "Male",
+          "age": "Adult (proposed: about 30)",
+          "height": "175 cm (proposed)",
+          "body_type": "Lean and wiry (proposed)",
+          "ethnicity": "Not stated in the script. (proposed) Warm olive skin, plain and neutral to the setting.",
+          "role": "The dust-covered messenger who brings the news of the Mongol advance, first to the throne room and then, at the end, to the wall",
+          "archetype": "The exhausted messenger",
+          "personality": "Urgent and breathless; he delivers the news and nothing else (proposed from his lines)",
+          "core_theme": "The clock the episode ends on",
+          "emotional_range": "Urgency, exhaustion and alarm (proposed)",
+          "behavior_notes": "Arrives running or kneeling, gasping; speaks fast with short breaths",
+          "speech_style": "Breathless and hoarse from hard riding (proposed)",
+          "video_voice": "Adult male voice. Breathless and hoarse from hard riding, urgent.",
+          "traits": "Covered in dust from the road",
+          "signature_colors": "dust brown, dark tunic, faded scarf",
+          "outfit_summary": "Dust-covered riding clothes (proposed): a dark tunic, a faded scarf and riding boots",
+          "top": "Dark riding tunic (proposed), thick with road dust",
+          "bottom": "Dark riding trousers (proposed)",
+          "shoes": "Worn leather riding boots (proposed)",
+          "accessories": "A faded scarf at the neck (proposed)",
+          "turnaround": "He stands neutrally, shoulders slightly forward from fatigue, dust on every layer of the dark tunic, scarf loose at the neck.",
+          "face_details": "A lean, sun-darkened face streaked with dust, short dark stubble (proposed), tired dark eyes, short dark hair (proposed), warm olive skin (proposed).",
+          "expression_notes": "Every expression carries exhaustion: even confident and happy read as a tired set of the face (proposed).",
+          "posture_notes": "Forward-leaning and winded; the tense pose is a heaving chest; the relaxed pose is still slumped (proposed).",
+          "costume_details": "A dark tunic with sleeves rolled to the forearm (proposed), a faded scarf, riding trousers tucked into worn boots (proposed), dust ground into every seam.",
+          "palette": [
+            {
+              "label": "Skin (proposed)",
+              "hex": "#B98B63"
+            },
+            {
+              "label": "Dust",
+              "hex": "#8C7B64"
+            },
+            {
+              "label": "Tunic (proposed)",
+              "hex": "#3B3631"
+            },
+            {
+              "label": "Scarf (proposed)",
+              "hex": "#8A6E55"
+            },
+            {
+              "label": "Boots (proposed)",
+              "hex": "#4A3A2B"
+            }
+          ],
+          "materials": "Rough cloth (proposed: wool and cotton), worn leather, road dust; stylized materials.",
+          "lock": "the dust-covered dark tunic, faded scarf, lean build, worn boots, tired dark eyes",
+          "notes": [
+            "dust on every layer",
+            "always slightly out of breath",
+            "scarf loose at the neck"
+          ],
+          "close_up": "A dust-streaked face, tired dark eyes wide with alarm, soft low light: the instant before he delivers bad news.",
+          "voice": {
+            "language_accent": "English, neutral standard delivery (proposed)",
+            "gender_age": "Male, 30s (proposed)",
+            "persona": "Exhausted messenger",
+            "emotion": "Urgent, anxious, spent",
+            "delivery": "Hoarse and a little breathless from hard riding, quick short phrases (proposed from the scenes).",
+            "preview_text": "Sultan, the Mongols are moving west. Hulagu marches on Syria. My lord, the Mongols have reached Aleppo."
+          },
+          "proposed": [
+            "age",
+            "height",
+            "build",
+            "skin tone",
+            "all clothing details",
+            "palette values",
+            "speech style"
+          ],
+          "scenes": [
+            3,
+            4
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the character, rendered in 2D anime:\n1. CHARACTER PROFILE — Rider. Role: The dust-covered messenger who brings the news of the Mongol advance, first to the throne room and then, at the end, to the wall. Adult (proposed: about 30), 175 cm (proposed), Lean and wiry (proposed) build. Personality: Urgent and breathless; he delivers the news and nothing else (proposed from his lines). Distinctive traits: Covered in dust from the road. Signature colors: dust brown, dark tunic, faded scarf.\n2. FULL-BODY TURNAROUND — front, 3/4, side, and back views of the exact same character at matching scale, with identical facial features, hairstyle, body proportions, costume, colors, and accessories, standing in a neutral pose beside a vertical height scale in centimeters. He stands neutrally, shoulders slightly forward from fatigue, dust on every layer of the dark tunic, scarf loose at the neck.\n3. FACE AND IDENTITY DETAILS — front, profile, and 3/4 head-and-shoulder close-ups showing facial structure, eyes, eyebrows, nose, lips, hairstyle, skin tone, makeup, scars, tattoos, and other defining features. A lean, sun-darkened face streaked with dust, short dark stubble (proposed), tired dark eyes, short dark hair (proposed), warm olive skin (proposed).\n4. EXPRESSION SHEET — neutral, happy, angry, sad, surprised, worried, confident, and determined expressions. Preserve the exact same facial structure and identity in every expression. Every expression carries exhaustion: even confident and happy read as a tired set of the face (proposed).\n5. POSE AND BODY LANGUAGE — neutral standing, walking, sitting, relaxed, tense, and action-ready poses. Maintain consistent anatomy, proportions, posture, and silhouette. Forward-leaning and winded; the tense pose is a heaving chest; the relaxed pose is still slumped (proposed).\n6. COSTUME DETAILS — close-ups of clothing layers, fabrics, seams, fasteners, footwear, jewelry, eyewear, markings, and other character-defining wardrobe elements. A dark tunic with sleeves rolled to the forearm (proposed), a faded scarf, riding trousers tucked into worn boots (proposed), dust ground into every seam.\n7. COLOR AND MATERIAL PALETTE — key colors with HEX codes: Skin (proposed) #B98B63; Dust #8C7B64; Tunic (proposed) #3B3631; Scarf (proposed) #8A6E55; Boots (proposed) #4A3A2B. Materials: Rough cloth (proposed: wool and cotton), worn leather, road dust; stylized materials.\n8. DO NOT CHANGE — lock the character's face, identity, skin tone, age, hair, eye color, body shape, proportions, costume, accessories, markings, colors, and defining features: the dust-covered dark tunic, faded scarf, lean build, worn boots, tired dark eyes. Do not redesign, beautify, age, stylize, simplify, or create alternate versions.\nUse a plain solid white studio background (always white, no gradients or scenery), soft controlled lighting, stylized materials consistent with the chosen style, sharp details, subtle shadows, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid laid out horizontally across the wide frame.\nInclude a small NOTES PANEL with annotation text (dust on every layer; always slightly out of breath; scarf loose at the neck) and one cinematic CLOSE-UP POSE of the character: A dust-streaked face, tired dark eyes wide with alarm, soft low light: the instant before he delivers bad news.\nEvery panel must depict the exact same character with absolute visual consistency. Focus only on the character. Do not include props, additional characters, environments, unrelated objects, or alternate outfits."
+      }
+    ],
+    "locations": [
+      {
+        "name": "Commander's tent, Salihiyya camp",
+        "tag": "@QutuzTent",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "scenes": [
+          0
+        ],
+        "entry": {
+          "name": "Commander's tent, Salihiyya camp",
+          "match": "Qutuz's tent, Salihiyya camp",
+          "tag": "@QutuzTent",
+          "role": "Where the episode opens: the lead stands over a map of Syria and answers the claim that a slave took the throne",
+          "setting_type": "interior",
+          "era": "Night, 1259",
+          "region": "Salihiyya camp",
+          "scale": "A single commander's tent, small enough that one torch lights it (proposed)",
+          "mood": "Tense and intimate, lit by one torch",
+          "signature_colors": "torch amber, deep shadow, canvas ochre",
+          "layout": "Seen from the entrance side: canvas walls fall away into deep shadow, a single torch burns on a pole, a low table at the center holds a map of Syria, and the tent flap is on the near side.",
+          "angle_notes": "The front view from the entrance; left and right views along the canvas walls; the reverse view from behind the map table looking back toward the tent flap.",
+          "key_zones": "the map of Syria on the low table, the torch on its pole, the tent flap, the canvas walls and the tent poles (proposed)",
+          "lighting_variants": "night, lit only by one torch (the script gives no daylight version)",
+          "materials": "weathered canvas, rope, a low wooden table (proposed), a parchment map (proposed), torch flame and smoke, packed earth floor (proposed)",
+          "palette": [
+            {
+              "label": "Torch amber",
+              "hex": "#D9822B"
+            },
+            {
+              "label": "Canvas ochre",
+              "hex": "#B58A4E"
+            },
+            {
+              "label": "Deep shadow",
+              "hex": "#14100D"
+            },
+            {
+              "label": "Torch light on cloth",
+              "hex": "#E8B063"
+            },
+            {
+              "label": "Map parchment (proposed)",
+              "hex": "#C9B98A"
+            }
+          ],
+          "lock": "one torch as the only light, the low table with the map of Syria at the center, the tent flap on the near side, the canvas walls falling into shadow",
+          "notes": [
+            "the torch is the only light",
+            "map stays at the center",
+            "no daylight version"
+          ],
+          "proposed": [
+            "scale of the tent",
+            "tent poles",
+            "table and map materials",
+            "earth floor",
+            "palette values"
+          ],
+          "scenes": [
+            0
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the location, rendered in 2D anime:\n1. LOCATION PROFILE — Commander's tent, Salihiyya camp. Role in the story: Where the episode opens: the lead stands over a map of Syria and answers the claim that a slave took the throne. Interior setting, Night, 1259, Salihiyya camp. Scale: A single commander's tent, small enough that one torch lights it (proposed). Mood: Tense and intimate, lit by one torch. Signature colors: torch amber, deep shadow, canvas ochre.\n2. MASTER ESTABLISHING VIEW — one wide hero view showing the full space with accurate layout, architecture, and atmosphere. Seen from the entrance side: canvas walls fall away into deep shadow, a single torch burns on a pole, a low table at the center holds a map of Syria, and the tent flap is on the near side.\n3. MULTI-ANGLE VIEWS — front, left, right, and rear or reverse views of the same space, with matching scale, layout, and architectural details. The front view from the entrance; left and right views along the canvas walls; the reverse view from behind the map table looking back toward the tent flap.\n4. KEY ZONES AND DETAILS — close-ups of the most important areas, entrances, windows, doors, floors, walls, ceilings, and other defining architectural elements: the map of Syria on the low table, the torch on its pole, the tent flap, the canvas walls and the tent poles (proposed).\n5. LIGHTING AND TIME OF DAY — the same location in the lighting the story calls for, with identical geometry in every version: night, lit only by one torch (the script gives no daylight version).\n6. MATERIAL AND TEXTURE REFERENCES — clean swatches or close-ups of the visible surfaces: weathered canvas, rope, a low wooden table (proposed), a parchment map (proposed), torch flame and smoke, packed earth floor (proposed).\n7. COLOR PALETTE — key colors with HEX codes: Torch amber #D9822B; Canvas ochre #B58A4E; Deep shadow #14100D; Torch light on cloth #E8B063; Map parchment (proposed) #C9B98A, plus references for light color and shadow tone.\n8. DO NOT CHANGE — lock the layout, proportions, architecture, materials, colors, signature features, and atmosphere: one torch as the only light, the low table with the map of Syria at the center, the tent flap on the near side, the canvas walls falling into shadow. Do not redesign, modernize, beautify, simplify, or create alternate versions.\nUse soft controlled lighting, sharp details, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid. Include a small NOTES PANEL with annotation text (the torch is the only light; map stays at the center; no daylight version).\nEvery panel must depict the exact same location with absolute visual consistency. Focus only on the location. Do not include people, characters, vehicles, or unrelated objects."
+      },
+      {
+        "name": "Damascus slave market",
+        "tag": "@DamascusSlaveMarket",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "scenes": [
+          1
+        ],
+        "entry": {
+          "name": "Damascus slave market",
+          "tag": "@DamascusSlaveMarket",
+          "role": "Where the lead is sold as a boy and makes his vow",
+          "setting_type": "exterior",
+          "era": "Many years before 1259 (the script's 'Many years earlier')",
+          "region": "Damascus",
+          "scale": "An open market square (proposed)",
+          "mood": "Harsh, loud and dusty",
+          "signature_colors": "dust ochre, sun-bleached stone, rust iron",
+          "layout": "A wide dusty open square in hard midday light: a wooden block at the center of the frame, a wall at the left where the chains are fixed, and dust hanging in the air.",
+          "angle_notes": "The front view toward the block; left and right views along the wall and the open ground; the reverse view from behind the block toward the square (proposed).",
+          "key_zones": "the wooden block at the center, the wall at the left with iron rings and lengths of chain lying where children are chained (shown empty, no people), the packed dusty ground, the market edges (proposed)",
+          "lighting_variants": "midday, hard overhead sun with hanging dust",
+          "materials": "a rough wooden block, sun-baked stone or mud wall (proposed), rust-dark iron rings and chain, packed dust and earth",
+          "palette": [
+            {
+              "label": "Dust ochre",
+              "hex": "#B58A4E"
+            },
+            {
+              "label": "Sunlit stone (proposed)",
+              "hex": "#D5C3A0"
+            },
+            {
+              "label": "Wood block",
+              "hex": "#6B4A2E"
+            },
+            {
+              "label": "Iron",
+              "hex": "#4A4540"
+            },
+            {
+              "label": "Shadow",
+              "hex": "#3D3027"
+            }
+          ],
+          "lock": "the wooden block at the center, the wall with the iron rings at the left, the hanging dust, the hard midday light",
+          "notes": [
+            "shown with no people",
+            "dust is always in the air",
+            "hard midday light"
+          ],
+          "proposed": [
+            "scale",
+            "wall material",
+            "market edges",
+            "reverse view",
+            "palette values"
+          ],
+          "scenes": [
+            1
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the location, rendered in 2D anime:\n1. LOCATION PROFILE — Damascus slave market. Role in the story: Where the lead is sold as a boy and makes his vow. Exterior setting, Many years before 1259 (the script's 'Many years earlier'), Damascus. Scale: An open market square (proposed). Mood: Harsh, loud and dusty. Signature colors: dust ochre, sun-bleached stone, rust iron.\n2. MASTER ESTABLISHING VIEW — one wide hero view showing the full space with accurate layout, architecture, and atmosphere. A wide dusty open square in hard midday light: a wooden block at the center of the frame, a wall at the left where the chains are fixed, and dust hanging in the air.\n3. MULTI-ANGLE VIEWS — front, left, right, and rear or reverse views of the same space, with matching scale, layout, and architectural details. The front view toward the block; left and right views along the wall and the open ground; the reverse view from behind the block toward the square (proposed).\n4. KEY ZONES AND DETAILS — close-ups of the most important areas, entrances, windows, doors, floors, walls, ceilings, and other defining architectural elements: the wooden block at the center, the wall at the left with iron rings and lengths of chain lying where children are chained (shown empty, no people), the packed dusty ground, the market edges (proposed).\n5. LIGHTING AND TIME OF DAY — the same location in the lighting the story calls for, with identical geometry in every version: midday, hard overhead sun with hanging dust.\n6. MATERIAL AND TEXTURE REFERENCES — clean swatches or close-ups of the visible surfaces: a rough wooden block, sun-baked stone or mud wall (proposed), rust-dark iron rings and chain, packed dust and earth.\n7. COLOR PALETTE — key colors with HEX codes: Dust ochre #B58A4E; Sunlit stone (proposed) #D5C3A0; Wood block #6B4A2E; Iron #4A4540; Shadow #3D3027, plus references for light color and shadow tone.\n8. DO NOT CHANGE — lock the layout, proportions, architecture, materials, colors, signature features, and atmosphere: the wooden block at the center, the wall with the iron rings at the left, the hanging dust, the hard midday light. Do not redesign, modernize, beautify, simplify, or create alternate versions.\nUse soft controlled lighting, sharp details, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid. Include a small NOTES PANEL with annotation text (shown with no people; dust is always in the air; hard midday light).\nEvery panel must depict the exact same location with absolute visual consistency. Focus only on the location. Do not include people, characters, vehicles, or unrelated objects."
+      },
+      {
+        "name": "Cairo Citadel royal bath chamber",
+        "tag": "@CairoCitadelRoyalBathChamber",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "scenes": [
+          2
+        ],
+        "entry": {
+          "name": "Cairo Citadel royal bath chamber",
+          "tag": "@CairoCitadelRoyalBathChamber",
+          "role": "Where the dead sultan lies and an emir swears to protect his son",
+          "setting_type": "interior",
+          "era": "Night, 1257",
+          "region": "Cairo Citadel",
+          "scale": "A large vaulted bath hall (proposed)",
+          "mood": "Hushed, steamy and cold with grief",
+          "signature_colors": "white marble, steam grey, lamp gold",
+          "layout": "A marble hall at night: white marble floor and walls, steam drifting through lamplight, an open central floor, and an arched doorway at one side.",
+          "angle_notes": "The front view from the doorway; left and right views along the marble walls; the reverse view from the far side of the central floor back to the doorway.",
+          "key_zones": "the open central marble floor, the arched doorway at one side, the lamps (proposed: in wall niches), the drifting steam, the polished walls (proposed: with a simple carved border)",
+          "lighting_variants": "night, warm lamplight diffused by steam",
+          "materials": "polished white marble (proposed: veined grey), steam, brass or bronze lamps (proposed), wet stone drain channels (proposed)",
+          "palette": [
+            {
+              "label": "White marble",
+              "hex": "#DAD6CB"
+            },
+            {
+              "label": "Steam grey",
+              "hex": "#B7B8B5"
+            },
+            {
+              "label": "Lamp gold",
+              "hex": "#C9A24A"
+            },
+            {
+              "label": "Marble vein (proposed)",
+              "hex": "#8E9296"
+            },
+            {
+              "label": "Shadow",
+              "hex": "#2E2B29"
+            }
+          ],
+          "lock": "the white marble floor and walls, the steam, the warm lamplight, the arched doorway at one side, the open central floor",
+          "notes": [
+            "no people and no body shown",
+            "steam always visible",
+            "doorway at frame left"
+          ],
+          "proposed": [
+            "scale",
+            "vaulting",
+            "lamp niches and material",
+            "marble vein color",
+            "carved border",
+            "palette values"
+          ],
+          "scenes": [
+            2
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the location, rendered in 2D anime:\n1. LOCATION PROFILE — Cairo Citadel royal bath chamber. Role in the story: Where the dead sultan lies and an emir swears to protect his son. Interior setting, Night, 1257, Cairo Citadel. Scale: A large vaulted bath hall (proposed). Mood: Hushed, steamy and cold with grief. Signature colors: white marble, steam grey, lamp gold.\n2. MASTER ESTABLISHING VIEW — one wide hero view showing the full space with accurate layout, architecture, and atmosphere. A marble hall at night: white marble floor and walls, steam drifting through lamplight, an open central floor, and an arched doorway at one side.\n3. MULTI-ANGLE VIEWS — front, left, right, and rear or reverse views of the same space, with matching scale, layout, and architectural details. The front view from the doorway; left and right views along the marble walls; the reverse view from the far side of the central floor back to the doorway.\n4. KEY ZONES AND DETAILS — close-ups of the most important areas, entrances, windows, doors, floors, walls, ceilings, and other defining architectural elements: the open central marble floor, the arched doorway at one side, the lamps (proposed: in wall niches), the drifting steam, the polished walls (proposed: with a simple carved border).\n5. LIGHTING AND TIME OF DAY — the same location in the lighting the story calls for, with identical geometry in every version: night, warm lamplight diffused by steam.\n6. MATERIAL AND TEXTURE REFERENCES — clean swatches or close-ups of the visible surfaces: polished white marble (proposed: veined grey), steam, brass or bronze lamps (proposed), wet stone drain channels (proposed).\n7. COLOR PALETTE — key colors with HEX codes: White marble #DAD6CB; Steam grey #B7B8B5; Lamp gold #C9A24A; Marble vein (proposed) #8E9296; Shadow #2E2B29, plus references for light color and shadow tone.\n8. DO NOT CHANGE — lock the layout, proportions, architecture, materials, colors, signature features, and atmosphere: the white marble floor and walls, the steam, the warm lamplight, the arched doorway at one side, the open central floor. Do not redesign, modernize, beautify, simplify, or create alternate versions.\nUse soft controlled lighting, sharp details, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid. Include a small NOTES PANEL with annotation text (no people and no body shown; steam always visible; doorway at frame left).\nEvery panel must depict the exact same location with absolute visual consistency. Focus only on the location. Do not include people, characters, vehicles, or unrelated objects."
+      },
+      {
+        "name": "Citadel throne room",
+        "tag": "@CitadelThroneRoom",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "scenes": [
+          3
+        ],
+        "entry": {
+          "name": "Citadel throne room",
+          "tag": "@CitadelThroneRoom",
+          "role": "Where the boy sultan sits on a throne too big for him and his guardian refuses to let him lead",
+          "setting_type": "interior",
+          "era": "Autumn 1259",
+          "region": "Cairo Citadel (the script's 'Citadel')",
+          "scale": "A large hall with a high ceiling (proposed); the throne is oversized",
+          "mood": "Solemn and heavy, lit by low gold light",
+          "signature_colors": "low gold, carved wood brown, cool stone grey",
+          "layout": "A stone hall with an oversized throne on a dais at the center, carved screens along the sides letting in low gold autumn light, and tall doors at the far end (proposed).",
+          "angle_notes": "The front view toward the throne; left and right views along the carved screens; the reverse view from the dais toward the doors (proposed).",
+          "key_zones": "the oversized throne on its dais, the carved screens, the stone floor, the tall doors (proposed), the dais steps (proposed)",
+          "lighting_variants": "autumn daylight, low and gold through carved screens",
+          "materials": "carved wood screens, stone floor and walls, a gilded throne (proposed), cloth hangings (proposed)",
+          "palette": [
+            {
+              "label": "Low gold light",
+              "hex": "#D9B45A"
+            },
+            {
+              "label": "Carved wood (proposed)",
+              "hex": "#6B4A2E"
+            },
+            {
+              "label": "Stone floor",
+              "hex": "#8A867C"
+            },
+            {
+              "label": "Gilded throne (proposed)",
+              "hex": "#B8902A"
+            },
+            {
+              "label": "Shadow",
+              "hex": "#2A2620"
+            }
+          ],
+          "lock": "the oversized throne at the center on its dais, the carved screens, the low gold autumn light, the stone floor",
+          "notes": [
+            "the throne is always oversized",
+            "no people shown",
+            "gold light enters from the sides"
+          ],
+          "proposed": [
+            "scale and ceiling",
+            "doors",
+            "dais steps",
+            "throne finish",
+            "cloth hangings",
+            "palette values"
+          ],
+          "scenes": [
+            3
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the location, rendered in 2D anime:\n1. LOCATION PROFILE — Citadel throne room. Role in the story: Where the boy sultan sits on a throne too big for him and his guardian refuses to let him lead. Interior setting, Autumn 1259, Cairo Citadel (the script's 'Citadel'). Scale: A large hall with a high ceiling (proposed); the throne is oversized. Mood: Solemn and heavy, lit by low gold light. Signature colors: low gold, carved wood brown, cool stone grey.\n2. MASTER ESTABLISHING VIEW — one wide hero view showing the full space with accurate layout, architecture, and atmosphere. A stone hall with an oversized throne on a dais at the center, carved screens along the sides letting in low gold autumn light, and tall doors at the far end (proposed).\n3. MULTI-ANGLE VIEWS — front, left, right, and rear or reverse views of the same space, with matching scale, layout, and architectural details. The front view toward the throne; left and right views along the carved screens; the reverse view from the dais toward the doors (proposed).\n4. KEY ZONES AND DETAILS — close-ups of the most important areas, entrances, windows, doors, floors, walls, ceilings, and other defining architectural elements: the oversized throne on its dais, the carved screens, the stone floor, the tall doors (proposed), the dais steps (proposed).\n5. LIGHTING AND TIME OF DAY — the same location in the lighting the story calls for, with identical geometry in every version: autumn daylight, low and gold through carved screens.\n6. MATERIAL AND TEXTURE REFERENCES — clean swatches or close-ups of the visible surfaces: carved wood screens, stone floor and walls, a gilded throne (proposed), cloth hangings (proposed).\n7. COLOR PALETTE — key colors with HEX codes: Low gold light #D9B45A; Carved wood (proposed) #6B4A2E; Stone floor #8A867C; Gilded throne (proposed) #B8902A; Shadow #2A2620, plus references for light color and shadow tone.\n8. DO NOT CHANGE — lock the layout, proportions, architecture, materials, colors, signature features, and atmosphere: the oversized throne at the center on its dais, the carved screens, the low gold autumn light, the stone floor. Do not redesign, modernize, beautify, simplify, or create alternate versions.\nUse soft controlled lighting, sharp details, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid. Include a small NOTES PANEL with annotation text (the throne is always oversized; no people shown; gold light enters from the sides).\nEvery panel must depict the exact same location with absolute visual consistency. Focus only on the location. Do not include people, characters, vehicles, or unrelated objects."
+      },
+      {
+        "name": "Citadel wall at night",
+        "tag": "@CitadelWall",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "scenes": [
+          4
+        ],
+        "entry": {
+          "name": "Citadel wall at night",
+          "tag": "@CitadelWall",
+          "role": "Where the lead looks north at the dark plain and learns that the Mongols have reached Aleppo",
+          "setting_type": "exterior",
+          "era": "Night, January 1260",
+          "region": "Cairo Citadel",
+          "scale": "A long stone wall walk high above an open plain (proposed)",
+          "mood": "Cold, windswept and full of dread",
+          "signature_colors": "night blue-grey, cold stone, faint warm stair glow",
+          "layout": "A high stone wall at night: a parapet along the wall walk, stone steps rising to it at one side, and the dark empty northern plain stretching away beyond.",
+          "angle_notes": "The front view along the parapet toward the north; left and right views along the wall walk; the reverse view from the parapet back toward the stair head.",
+          "key_zones": "the stone parapet, the stone steps rising to the wall walk, the dark northern plain beyond (empty, no army), the wall walk (proposed)",
+          "lighting_variants": "night, cold light with constant wind (proposed: a faint warm glow from the stairs)",
+          "materials": "weathered cut stone, worn stone steps, wind-blown dust (proposed), the dark plain",
+          "palette": [
+            {
+              "label": "Night blue-grey",
+              "hex": "#2B3544"
+            },
+            {
+              "label": "Cold stone",
+              "hex": "#6D7A8C"
+            },
+            {
+              "label": "Parapet shadow",
+              "hex": "#171B22"
+            },
+            {
+              "label": "Stair glow (proposed)",
+              "hex": "#A9682F"
+            },
+            {
+              "label": "Plain dark",
+              "hex": "#12151A"
+            }
+          ],
+          "lock": "the parapet, the stone steps at one side, the dark empty northern plain, the cold night light, the wind",
+          "notes": [
+            "the plain is always empty",
+            "wind is always present",
+            "no people shown"
+          ],
+          "proposed": [
+            "scale",
+            "wall walk",
+            "stair glow",
+            "wind-blown dust",
+            "palette values"
+          ],
+          "scenes": [
+            4
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the location, rendered in 2D anime:\n1. LOCATION PROFILE — Citadel wall at night. Role in the story: Where the lead looks north at the dark plain and learns that the Mongols have reached Aleppo. Exterior setting, Night, January 1260, Cairo Citadel. Scale: A long stone wall walk high above an open plain (proposed). Mood: Cold, windswept and full of dread. Signature colors: night blue-grey, cold stone, faint warm stair glow.\n2. MASTER ESTABLISHING VIEW — one wide hero view showing the full space with accurate layout, architecture, and atmosphere. A high stone wall at night: a parapet along the wall walk, stone steps rising to it at one side, and the dark empty northern plain stretching away beyond.\n3. MULTI-ANGLE VIEWS — front, left, right, and rear or reverse views of the same space, with matching scale, layout, and architectural details. The front view along the parapet toward the north; left and right views along the wall walk; the reverse view from the parapet back toward the stair head.\n4. KEY ZONES AND DETAILS — close-ups of the most important areas, entrances, windows, doors, floors, walls, ceilings, and other defining architectural elements: the stone parapet, the stone steps rising to the wall walk, the dark northern plain beyond (empty, no army), the wall walk (proposed).\n5. LIGHTING AND TIME OF DAY — the same location in the lighting the story calls for, with identical geometry in every version: night, cold light with constant wind (proposed: a faint warm glow from the stairs).\n6. MATERIAL AND TEXTURE REFERENCES — clean swatches or close-ups of the visible surfaces: weathered cut stone, worn stone steps, wind-blown dust (proposed), the dark plain.\n7. COLOR PALETTE — key colors with HEX codes: Night blue-grey #2B3544; Cold stone #6D7A8C; Parapet shadow #171B22; Stair glow (proposed) #A9682F; Plain dark #12151A, plus references for light color and shadow tone.\n8. DO NOT CHANGE — lock the layout, proportions, architecture, materials, colors, signature features, and atmosphere: the parapet, the stone steps at one side, the dark empty northern plain, the cold night light, the wind. Do not redesign, modernize, beautify, simplify, or create alternate versions.\nUse soft controlled lighting, sharp details, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid. Include a small NOTES PANEL with annotation text (the plain is always empty; wind is always present; no people shown).\nEvery panel must depict the exact same location with absolute visual consistency. Focus only on the location. Do not include people, characters, vehicles, or unrelated objects."
+      }
+    ],
+    "extras": [
+      {
+        "name": "DEALER",
+        "look": "man in his 40s, stocky, short dark beard, dirty cream headcloth, stained ochre tunic with a rope sash",
+        "voice": "Adult male voice. Loud, coarse and bored."
+      },
+      {
+        "name": "BUYER",
+        "look": "man in his 50s, lean, neat trimmed grey beard, deep blue fine coat with gold trim, soft cap",
+        "voice": "Adult male voice. Smooth, unhurried, appraising."
+      }
+    ]
+  },
+  "usage": {
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

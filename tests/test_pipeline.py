@@ -275,3 +275,71 @@ class Seedance25Defaults(Base):
         self.assertIn("first-frame image together with reference images", text)
         self.assertIn("12 seconds", text)
         self.assertIn("40 seconds" if False else "4 to 30", text)
+
+
+EXAMPLE = Path(__file__).resolve().parent.parent / "examples" / "ain-jalut-ep02"
+
+
+class WorkedExample(Base):
+    """Episode 02 of the worked example: a production-template script, prompts written outside the program, sheets, and the checks on all of it."""
+
+    def run_example(self, **kw):
+        text = (EXAMPLE / "script.txt").read_text(encoding="utf-8")
+        opts = Options(output=self.out, prompts_file=str(EXAMPLE / "prompts.json"), wps=2.5, **kw)
+        return run_episode(text, opts, ScriptedConsole(interactive=False), None), text
+
+    def test_files_everything_under_movie_episode_scene(self):
+        r, _ = self.run_example()
+        ep = Path(r["path"])
+        self.assertEqual(ep.relative_to(self.out).parts, ("Ain Jalut - The Spring of Goliath", "Episode 02 - The Slave Who Would Rule"))
+        self.assertEqual((r["segments"], r["ok"]), (7, 7))
+        self.assertEqual(sorted(p.name for p in ep.glob("Scene*")),
+                         ["Scene 00 - Hook", "Scene 01 - The Market", "Scene 02 - The Dead Sultan", "Scene 03 - The Boy On The Throne", "Scene 04 - The Wall At Night"])
+        self.assertEqual(len(list((ep / "characters").glob("@*.md"))), 7)
+        self.assertEqual(len(list((ep / "locations").glob("@*.md"))), 5)
+        state = read_json(ep / "episode.json")
+        self.assertTrue(all(c["status"] == "ok" for c in state["sheets"]["characters"] + state["sheets"]["locations"]))
+
+    def test_the_dialogue_is_the_script_word_for_word(self):
+        import re
+        r, text = self.run_example()
+        ep = Path(r["path"])
+        words = lambda parts: re.findall(r"[a-z0-9']+", " ".join(parts).lower())
+        spoken = []
+        for l in text.splitlines():
+            m = re.match(r"^([A-Z][A-Z .'-]+):\s*(?:\([^)]*\)\s*)?(.+)$", l)
+            if m and m.group(1) not in ("TEXT", "AIN JALUT") and not m.group(2).startswith(("THE SPRING", "Episode 03")):
+                spoken.append(m.group(2))
+        got = []
+        for f in sorted(ep.glob("Scene*/S*.txt"), key=lambda p: p.name):
+            body = f.read_text(encoding="utf-8")
+            got += re.findall(r"“([^”]+)”", "SHOT 1" + body.split("SHOT 1", 1)[1])
+        self.assertEqual(words(spoken), words(got))
+        self.assertEqual(len(words(got)), 325)
+
+    def test_scene_prompts_follow_the_studio_rules(self):
+        r, _ = self.run_example()
+        ep = Path(r["path"])
+        for f in ep.glob("Scene*/S*.txt"):
+            t = f.read_text(encoding="utf-8")
+            self.assertIn("Visual Style: 2D anime", t, f.name)
+            self.assertIn("[Negative: chinese language, mandarin, chinese speech, asian accent]", t, f.name)
+            self.assertIn("[System: Language: English] [Audio: English Speech]", t, f.name)
+            self.assertNotIn("@ TAG", t, f.name)
+            self.assertRegex(t, r"SHOT 1 \(00:00-00:\d\d\)", f.name)
+        market = (ep / "Scene 01 - The Market" / "S01_single.txt").read_text(encoding="utf-8")
+        self.assertIn("DEALER: slave dealer, man in his 40s", market)          # described in full: no image
+        self.assertNotIn("@Dealer", market)
+
+    def test_plan_only_writes_the_plan_and_no_prompts(self):
+        text = (EXAMPLE / "script.txt").read_text(encoding="utf-8")
+        r = run_episode(text, Options(output=self.out, plan_only=True, wps=2.5), ScriptedConsole(interactive=False), None)
+        ep = Path(r["path"])
+        self.assertEqual((r["segments"], r["ok"]), (7, 0))
+        self.assertTrue((ep / "plan.html").exists())
+        self.assertFalse(list(ep.glob("Scene*/S*.txt")))
+
+    def test_running_again_keeps_the_earlier_files_in_history(self):
+        self.run_example()
+        r, _ = self.run_example()
+        self.assertTrue(list((Path(r["path"]) / "_history").glob("*")))

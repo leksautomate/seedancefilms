@@ -1,0 +1,13 @@
+@DamascusSlaveMarket
+
+Create a polished 16:9 landscape continuity sheet focused exclusively on the location, rendered in 2D anime:
+1. LOCATION PROFILE — Damascus slave market. Role in the story: Where the lead is sold as a boy and makes his vow. Exterior setting, Many years before 1259 (the script's 'Many years earlier'), Damascus. Scale: An open market square (proposed). Mood: Harsh, loud and dusty. Signature colors: dust ochre, sun-bleached stone, rust iron.
+2. MASTER ESTABLISHING VIEW — one wide hero view showing the full space with accurate layout, architecture, and atmosphere. A wide dusty open square in hard midday light: a wooden block at the center of the frame, a wall at the left where the chains are fixed, and dust hanging in the air.
+3. MULTI-ANGLE VIEWS — front, left, right, and rear or reverse views of the same space, with matching scale, layout, and architectural details. The front view toward the block; left and right views along the wall and the open ground; the reverse view from behind the block toward the square (proposed).
+4. KEY ZONES AND DETAILS — close-ups of the most important areas, entrances, windows, doors, floors, walls, ceilings, and other defining architectural elements: the wooden block at the center, the wall at the left with iron rings and lengths of chain lying where children are chained (shown empty, no people), the packed dusty ground, the market edges (proposed).
+5. LIGHTING AND TIME OF DAY — the same location in the lighting the story calls for, with identical geometry in every version: midday, hard overhead sun with hanging dust.
+6. MATERIAL AND TEXTURE REFERENCES — clean swatches or close-ups of the visible surfaces: a rough wooden block, sun-baked stone or mud wall (proposed), rust-dark iron rings and chain, packed dust and earth.
+7. COLOR PALETTE — key colors with HEX codes: Dust ochre #B58A4E; Sunlit stone (proposed) #D5C3A0; Wood block #6B4A2E; Iron #4A4540; Shadow #3D3027, plus references for light color and shadow tone.
+8. DO NOT CHANGE — lock the layout, proportions, architecture, materials, colors, signature features, and atmosphere: the wooden block at the center, the wall with the iron rings at the left, the hanging dust, the hard midday light. Do not redesign, modernize, beautify, simplify, or create alternate versions.
+Use soft controlled lighting, sharp details, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid. Include a small NOTES PANEL with annotation text (shown with no people; dust is always in the air; hard midday light).
+Every panel must depict the exact same location with absolute visual consistency. Focus only on the location. Do not include people, characters, vehicles, or unrelated objects.

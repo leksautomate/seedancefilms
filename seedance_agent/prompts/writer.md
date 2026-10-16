@@ -70,6 +70,15 @@ For a **new chain** (`mode: new-chain`): the clip starts from a still: say "star
 
 For a **short clip** (`request_s` under 6): 2 to 4 shots, still with the full header.
 
+# Tags, images and language (the studio's Seedance rules)
+
+- A tag means a reference image exists. Use the character's and the location's tag (for example `@Qutuz`, `@CitadelThroneRoom`) every time you name them, exactly as the bible spells it.
+- A character the bible marks `no_image` has no reference image. A bare name means nothing to the video model, so never tag them: describe them in full the first time they appear in each shot (age, hair, facial hair, outfit and colors) using the SAME words every time so the look does not drift.
+- When the settings include `visual_style`, write one `Visual Style: ...` line near the top, once. It applies to every shot; do not repeat it per shot.
+- When the settings include `language_lock`, put these two lines directly under the Visual Style line, exactly: `[Negative: chinese language, mandarin, chinese speech, asian accent]` and `[System: Language: English] [Audio: English Speech]`. They keep the spoken audio in English.
+- Shot headings may carry a time range from the start of this clip, for example `SHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL`. Give every shot one, and make the last range end inside the requested duration.
+- On-screen text from the script (a TEXT: card) is added in the edit. Never ask the model to draw text.
+
 # Using the tools
 
 1. `lookup_camera_recipe` (once).

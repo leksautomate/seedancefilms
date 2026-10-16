@@ -1,0 +1,13 @@
+@CairoCitadelRoyalBathChamber
+
+Create a polished 16:9 landscape continuity sheet focused exclusively on the location, rendered in 2D anime:
+1. LOCATION PROFILE — Cairo Citadel royal bath chamber. Role in the story: Where the dead sultan lies and an emir swears to protect his son. Interior setting, Night, 1257, Cairo Citadel. Scale: A large vaulted bath hall (proposed). Mood: Hushed, steamy and cold with grief. Signature colors: white marble, steam grey, lamp gold.
+2. MASTER ESTABLISHING VIEW — one wide hero view showing the full space with accurate layout, architecture, and atmosphere. A marble hall at night: white marble floor and walls, steam drifting through lamplight, an open central floor, and an arched doorway at one side.
+3. MULTI-ANGLE VIEWS — front, left, right, and rear or reverse views of the same space, with matching scale, layout, and architectural details. The front view from the doorway; left and right views along the marble walls; the reverse view from the far side of the central floor back to the doorway.
+4. KEY ZONES AND DETAILS — close-ups of the most important areas, entrances, windows, doors, floors, walls, ceilings, and other defining architectural elements: the open central marble floor, the arched doorway at one side, the lamps (proposed: in wall niches), the drifting steam, the polished walls (proposed: with a simple carved border).
+5. LIGHTING AND TIME OF DAY — the same location in the lighting the story calls for, with identical geometry in every version: night, warm lamplight diffused by steam.
+6. MATERIAL AND TEXTURE REFERENCES — clean swatches or close-ups of the visible surfaces: polished white marble (proposed: veined grey), steam, brass or bronze lamps (proposed), wet stone drain channels (proposed).
+7. COLOR PALETTE — key colors with HEX codes: White marble #DAD6CB; Steam grey #B7B8B5; Lamp gold #C9A24A; Marble vein (proposed) #8E9296; Shadow #2E2B29, plus references for light color and shadow tone.
+8. DO NOT CHANGE — lock the layout, proportions, architecture, materials, colors, signature features, and atmosphere: the white marble floor and walls, the steam, the warm lamplight, the arched doorway at one side, the open central floor. Do not redesign, modernize, beautify, simplify, or create alternate versions.
+Use soft controlled lighting, sharp details, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid. Include a small NOTES PANEL with annotation text (no people and no body shown; steam always visible; doorway at frame left).
+Every panel must depict the exact same location with absolute visual consistency. Focus only on the location. Do not include people, characters, vehicles, or unrelated objects.

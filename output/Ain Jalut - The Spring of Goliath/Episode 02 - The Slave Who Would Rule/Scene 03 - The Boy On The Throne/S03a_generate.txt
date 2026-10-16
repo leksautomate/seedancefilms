@@ -1,0 +1,122 @@
+Create a 30s serious, slow-burn cinematic historical drama scene.
+
+Characters: @SultanAlMansurAli, @Qutuz, @ElderEmir, @Rider
+Locations: @CitadelThroneRoom
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+@SultanAlMansurAli, @Qutuz, @ElderEmir and a dust-covered @Rider are in @CitadelThroneRoom in autumn 1259.
+
+Autumn light, low and gold through carved screens. @SultanAlMansurAli sits on a throne too big for him. @Qutuz stands at his shoulder. The @Rider, covered in dust, kneels.
+
+Preserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @SultanAlMansurAli, @Qutuz, @ElderEmir, @Rider and @CitadelThroneRoom.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.
+The throne is oversized. @SultanAlMansurAli looks small on it in every shot, and his robes are too large for him.
+From the front: @SultanAlMansurAli at the center, @Qutuz at frame LEFT of him, @Rider kneeling at the center of the floor, @ElderEmir at frame RIGHT. Keep these positions in every wide shot.
+Never show @Qutuz sitting on the throne.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only soft echo in a stone hall, cloth, footsteps, breath, the creak of a throne, and the low hum of wind through carved screens, and dialogue.
+
+RIDER'S VOICE:
+
+Adult male voice. Breathless and hoarse from hard riding, urgent.
+
+ELDER EMIR'S VOICE:
+
+Older adult male voice. Dry, weary, measured delivery, a little careful.
+
+ALI'S VOICE:
+
+A teenage boy's voice, about fifteen. Thin and slightly high, wavering, frightened.
+
+QUTUZ'S VOICE:
+
+Adult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.
+
+SHOT 1 (00:00-00:04) — WIDE ESTABLISHING SHOT — EYE LEVEL
+
+@CitadelThroneRoom in autumn light, low and gold through carved screens. From the front: @SultanAlMansurAli sits at the center on a throne far too big for him. @Qutuz stands at frame LEFT of him, at his shoulder. The dust-covered @Rider kneels at the center of the floor. The @ElderEmir stands at frame RIGHT.
+
+HARD CUT.
+
+SHOT 2 (00:04-00:06) — MEDIUM SHOT ON SULTAN ALI — HIGH ANGLE
+
+@SultanAlMansurAli sits on the oversized throne, his white-and-gold robes too large for him, his hands gripping the armrests.
+
+HARD CUT.
+
+SHOT 3 (00:06-00:11) — MEDIUM CLOSE-UP ON THE RIDER — EYE LEVEL
+
+The @Rider kneels, covered in dust, breathless from the road.
+
+@Rider, in his SAME breathless, hoarse voice, urgent, gasping:
+
+“Sultan, the Mongols are moving west. Hulagu marches on Syria.”
+
+HARD CUT.
+
+SHOT 4 (00:11-00:14) — MEDIUM SHOT ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir stands with his hands clasped, grave.
+
+@ElderEmir, in his SAME dry, weary voice, grave:
+
+“Egypt cannot fight an army that took Baghdad.”
+
+HARD CUT.
+
+SHOT 5 (00:14-00:17) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE
+
+@SultanAlMansurAli looks up and to the side at @Qutuz, his eyes wide.
+
+@SultanAlMansurAli, in his SAME thin, frightened voice, in a small voice:
+
+“Atabek, what do we do?”
+
+HARD CUT.
+
+SHOT 6 (00:17-00:20) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz looks straight ahead, not at the boy.
+
+@Qutuz, in his SAME low, stern voice, firm, unhurried:
+
+“We do not hide behind a crown, my lord.”
+
+HARD CUT.
+
+SHOT 7 (00:20-00:22) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE
+
+@SultanAlMansurAli lifts his chin, trying to sound older.
+
+@SultanAlMansurAli, in his SAME thin, frightened voice, trying to sound steady:
+
+“Then I will lead them.”
+
+HARD CUT.
+
+SHOT 8 (00:22-00:28) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz turns his head toward the boy for the first time. His voice stays even.
+
+@Qutuz, in his SAME low, stern voice, respectful and final:
+
+“With respect, you cannot hold a bow for a day, and a Mongol arrow does not wait.”
+
+HARD CUT.
+
+SHOT 9 (00:28-00:30) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE
+
+@SultanAlMansurAli's face falls. His eyes drop, then lift again toward @Qutuz. Hold on this frame.
+
+HARD CUT.
+
+END HERE.

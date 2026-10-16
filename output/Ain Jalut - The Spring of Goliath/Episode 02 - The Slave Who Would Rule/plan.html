@@ -1,0 +1,802 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Ain Jalut - The Spring of Goliath — Episode 02 — The Slave Who Would Rule</title><style>
+:root{--bg:#f6f3ec;--card:#fffdf8;--ink:#1d1a16;--ink2:#5b554b;--rule:#ded7c8;--accent:#b4401f;--ok:#2f7d4f;--warn:#b7791f;--bad:#b3261e;
+--gen:#b4401f;--ext:#d89a7f;--chain:#5a4a8a;--single:#2c6e7f}
+@media (prefers-color-scheme:dark){:root{--bg:#16130f;--card:#1f1b16;--ink:#efe9dc;--ink2:#a79f8f;--rule:#35302a;--accent:#e0714d;--ok:#6cc48c;--warn:#e0b255;--bad:#f2766d;
+--gen:#e0714d;--ext:#8a5a49;--chain:#8c7bd0;--single:#5ab1c4}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Georgia,'Times New Roman',serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px 64px}
+.sans{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace}
+header{padding:36px 0 12px}.eyebrow{font:600 12px/1 -apple-system,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:8px 0 12px}.deck{color:var(--ink2);max-width:62ch;margin:0 0 14px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}.fact{font:13px -apple-system,sans-serif;border:1px solid var(--rule);border-radius:999px;padding:3px 12px;background:var(--card)}
+.rib{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0 12px;border-bottom:1px solid var(--rule)}
+.scrub{display:flex;gap:2px;height:38px}.cell{min-width:22px;border-radius:3px;color:#fff;font:600 11px/38px -apple-system,sans-serif;text-align:center;
+overflow:hidden;white-space:nowrap;text-decoration:none;opacity:.92}.cell:hover,.cell.on{opacity:1;outline:2px solid var(--ink)}
+.m-single{background:var(--single)}.m-generate{background:var(--gen)}.m-extend{background:var(--ext)}.m-new-chain{background:var(--chain)}
+.cell.needs-review{background-image:repeating-linear-gradient(45deg,rgba(0,0,0,.28) 0 5px,transparent 5px 10px)}
+.cell.pending{opacity:.4}.legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font:12px -apple-system,sans-serif;color:var(--ink2)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.act{margin:34px 0 8px;padding-top:10px;border-top:2px solid var(--ink)}.act b{font:700 13px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.act span{display:block;color:var(--ink2);font-size:15px}
+.card{display:grid;grid-template-columns:200px 1fr;gap:20px;background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:18px;margin:14px 0;scroll-margin-top:90px}
+@media(max-width:720px){.card{grid-template-columns:1fr}}
+.id{font:700 26px/1 -apple-system,sans-serif}.scene{color:var(--ink2);font-size:14px;margin:4px 0 10px}
+.badge{display:inline-block;font:600 11px -apple-system,sans-serif;text-transform:uppercase;letter-spacing:.06em;border-radius:4px;padding:2px 7px;color:#fff;margin:0 4px 4px 0}
+.s-ok{background:var(--ok)}.s-needs-review{background:var(--bad)}.s-pending{background:var(--ink2)}
+.bar{height:8px;background:var(--rule);border-radius:4px;margin:10px 0 4px;position:relative;overflow:hidden}.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
+.bar i.over{background:var(--bad)}.nums{font:12px -apple-system,sans-serif;color:var(--ink2)}
+h3{font:700 12px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);margin:16px 0 6px}h3:first-child{margin-top:0}
+.why{font-size:17px;margin:0}.why.weak{color:var(--bad)}
+table{border-collapse:collapse;width:100%;font:13px -apple-system,sans-serif}th,td{text-align:left;padding:4px 8px 4px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+th{color:var(--ink2);font-weight:600}.say{margin:0 0 4px}.say b{font:700 12px -apple-system,sans-serif;letter-spacing:.04em}
+.warn{font:13px -apple-system,sans-serif;color:var(--warn);margin:2px 0}.err{font:13px -apple-system,sans-serif;color:var(--bad);margin:2px 0}
+details{margin-top:12px}summary{cursor:pointer;font:600 13px -apple-system,sans-serif}
+pre{white-space:pre-wrap;word-wrap:break-word;background:var(--bg);border:1px solid var(--rule);border-radius:8px;padding:12px;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;margin:8px 0}
+button{font:600 12px -apple-system,sans-serif;border:1px solid var(--ink);background:var(--card);color:var(--ink);border-radius:6px;padding:5px 12px;cursor:pointer}
+button:hover{background:var(--ink);color:var(--bg)}.files{font:12px ui-monospace,Menlo,monospace;color:var(--ink2);margin-top:6px}
+.status{margin-top:34px}.status table td:first-child{font-weight:700}
+</style></head><body><div class=wrap><header><div class=eyebrow>Ain Jalut - The Spring of Goliath</div><h1>Episode 02 — The Slave Who Would Rule</h1><p class=deck>A former slave who swore to protect a dead sultan&#x27;s son takes the boy&#x27;s throne because Egypt must have a sword before the Mongols arrive.</p><div class=facts><span class=fact>183s estimated (3.1 min)</span><span class=fact>7 clips</span><span class=fact>16:9</span><span class=fact>7 ready · 0 need review · 0 pending</span></div></header><div class=rib><div class=scrub><a class='cell m-single ok' data-id='S00' style='flex:22.80' href='#seg-S00' title='S00 · single · 22.8s'>S00</a><a class='cell m-single ok' data-id='S01' style='flex:31.90' href='#seg-S01' title='S01 · single · 31.9s'>S01</a><a class='cell m-generate ok' data-id='S02a' style='flex:20.10' href='#seg-S02a' title='S02a · generate · 20.1s'>S02a</a><a class='cell m-extend ok' data-id='S02b' style='flex:20.20' href='#seg-S02b' title='S02b · extend · 20.2s'>S02b</a><a class='cell m-generate ok' data-id='S03a' style='flex:30.70' href='#seg-S03a' title='S03a · generate · 30.7s'>S03a</a><a class='cell m-extend ok' data-id='S03b' style='flex:25.90' href='#seg-S03b' title='S03b · extend · 25.9s'>S03b</a><a class='cell m-single ok' data-id='S04' style='flex:31.70' href='#seg-S04' title='S04 · single · 31.7s'>S04</a></div><div class=legend><span><i class=m-single></i>single</span><span><i class=m-generate></i>generate</span><span><i class=m-extend></i>extension</span><span><i class=m-new-chain></i>new chain</span><span>hatched = needs review</span></div></div><div class=act><b>Act I: The claim and the wound</b><span>State the accusation, then show where the man comes from.</span></div><section class=card id='seg-S00' data-id='S00'><div><div class=id>S00</div><div class=scene>Hook</div><span class='badge m-single'>single</span><span class='badge s-ok'>ok</span><div class=bar><i class='' style='width:88%'></i></div><div class=nums>22.8s estimated of 26s · plan 18s · 4 lines · 36 words</div><div class=nums style='margin-top:8px'>Generate this clip on its own.</div></div><div><h3>Why this scene earns its place</h3><p class='why'>It states the episode&#x27;s argument in four lines, a slave on a throne and a boy who cannot lift a sword, before the market shows where the man comes from.</p><h3>Spoken lines</h3><p class=say><b>ELDER EMIR</b> “They will say a slave took the throne of Egypt.”</p><p class=say><b>QUTUZ</b> “Let them. The Mongols never ask who sits on a throne. They ask if it stands.”</p><p class=say><b>ELDER EMIR</b> “And the boy sultan?”</p><p class=say><b>QUTUZ</b> “A boy cannot lift a sword.”</p><h3>Shots</h3><table><tr><th>#<th>Scale<th>Angle<th>Camera<th>Sec<th>Job<tr><td>1<td>wide establishing shot<td>eye level<td>locked-off<td>3<td>establish the tent and the one light<tr><td>2<td>medium shot on qutuz<td>slight low angle<td>locked-off<td>2<td>show who holds the room<tr><td>3<td>medium close-up on the elder emir<td>eye level<td>locked-off<td>3.5<td>state the claim against him<tr><td>4<td>close-up on qutuz<td>low angle<td>locked-off<td>4<td>the answer: legitimacy is whether it stands<tr><td>5<td>extreme close-up — insert<td>top-down<td>locked-off<td>2<td>land the second half of the line on the map<tr><td>6<td>medium close-up on the elder emir<td>eye level<td>locked-off<td>2.5<td>raise the boy sultan<tr><td>7<td>close-up on qutuz<td>low angle<td>locked-off<td>2.5<td>dismiss the boy<tr><td>8<td>close-up on the elder emir<td>eye level<td>locked-off<td>1.5<td>the Emir&#x27;s silent doubt<tr><td>9<td>extreme close-up on qutuz&#x27;s eyes<td>eye level<td>locked-off<td>3<td>the hook&#x27;s last image, ready to cut to the boy&#x27;s eyes</table><details><summary>Prompt</summary><p><button data-copy='p-S00'>Copy prompt</button></p><pre id='p-S00'>Create a 26s serious, slow-burn cinematic historical drama scene.
+
+Characters: @Qutuz, @ElderEmir
+Locations: @QutuzTent
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+@Qutuz and @ElderEmir are inside @QutuzTent in the Salihiyya camp, at night in 1259.
+
+@Qutuz stands over a map of Syria. The @ElderEmir waits at the tent flap. One torch is the only light.
+
+Preserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @Qutuz, @ElderEmir and @QutuzTent.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.
+The single torch is the ONLY light source: warm orange on faces, deep shadow everywhere else.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only the crackle of the torch, wind against the tent canvas, slow breathing, cloth and metal sounds, and dialogue.
+
+ELDER EMIR&#x27;S VOICE:
+
+Older adult male voice. Dry, weary, measured delivery, a little careful.
+
+QUTUZ&#x27;S VOICE:
+
+Adult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.
+
+SHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL
+
+Inside @QutuzTent, seen from the entrance side. Canvas walls fall away into deep shadow. A single torch burns on a pole. A map of Syria lies on a low table at the center. @Qutuz stands over it, small in the frame. The @ElderEmir waits at the tent flap in the foreground, a dark silhouette at the left edge.
+
+HARD CUT.
+
+SHOT 2 (00:03-00:05) — MEDIUM SHOT ON QUTUZ — SLIGHT LOW ANGLE
+
+@Qutuz stands over the map with both hands resting on the table. Torchlight catches the scar on his cheek. He does not look up.
+
+HARD CUT.
+
+SHOT 3 (00:05-00:09) — MEDIUM CLOSE-UP ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir at the tent flap, his grey beard lit orange from the side. He speaks carefully, like a man testing how far he can go.
+
+@ElderEmir, in his SAME dry, weary voice, careful and level:
+
+“They will say a slave took the throne of Egypt.”
+
+HARD CUT.
+
+SHOT 4 (00:09-00:14) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz finally looks up. His eyes are steady and the torch is reflected in them. He speaks without anger.
+
+@Qutuz, in his SAME low, stern voice, flat and certain:
+
+“Let them. The Mongols never ask who sits on a throne.”
+
+HARD CUT.
+
+SHOT 5 (00:14-00:16) — EXTREME CLOSE-UP — INSERT — TOP-DOWN
+
+@Qutuz&#x27;s scarred hand lies flat on the northern edge of the map of Syria. His voice continues from OFF-SCREEN, quiet and sure.
+
+@Qutuz, in his SAME low, stern voice, quiet and sure:
+
+“They ask if it stands.”
+
+HARD CUT.
+
+SHOT 6 (00:16-00:18) — MEDIUM CLOSE-UP ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir hesitates before he asks.
+
+@ElderEmir, in his SAME dry, weary voice, hesitant:
+
+“And the boy sultan?”
+
+HARD CUT.
+
+SHOT 7 (00:18-00:21) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz keeps his eyes on the map and answers at once.
+
+@Qutuz, in his SAME low, stern voice, flat, final:
+
+“A boy cannot lift a sword.”
+
+HARD CUT.
+
+SHOT 8 (00:21-00:23) — CLOSE-UP ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir lowers his eyes. He says nothing.
+
+HARD CUT.
+
+SHOT 9 (00:23-00:26) — EXTREME CLOSE-UP ON QUTUZ&#x27;S EYES — EYE LEVEL
+
+Only @Qutuz&#x27;s eyes fill the frame. The single torch flame catches in them and burns there. Perfectly still. Hold.
+
+HARD CUT.
+
+END HERE.
+</pre></details><div class=files>Scene 00 - Hook/S00_single.txt</div></div></section><section class=card id='seg-S01' data-id='S01'><div><div class=id>S01</div><div class=scene>The Market</div><span class='badge m-single'>single</span><span class='badge s-ok'>ok</span><div class=bar><i class='over' style='width:100%'></i></div><div class=nums>31.9s estimated of 30s · plan 33s · 7 lines · 53 words</div><div class=nums style='margin-top:8px'>Generate this clip on its own.</div></div><div><h3>Why this scene earns its place</h3><p class='why'>It turns the throne into a promise made at ten: a boy who will not cry decides to build a home no one can sell.</p><h3>Spoken lines</h3><p class=say><b>DEALER</b> “Step up, boy. Tell the buyers your name.”</p><p class=say><b>YOUNG QUTUZ</b> “Mahmud, son of Mamdud. My uncle was Khwarazm-Shah, a king.”</p><p class=say><b>DEALER</b> “Everyone in this market was a king yesterday.”</p><p class=say><b>BUYER</b> “Does he fight, or does he cry?”</p><p class=say><b>YOUNG QUTUZ</b> “I do not cry.”</p><p class=say><b>BUYER</b> “Then he is worth the coin.”</p><p class=say><b>YOUNG QUTUZ</b> “Then I will build a home no one can sell.”</p><h3>Shots</h3><table><tr><th>#<th>Scale<th>Angle<th>Camera<th>Sec<th>Job<tr><td>1<td>wide establishing shot<td>eye level<td>locked-off<td>3<td>place us in the market<tr><td>2<td>medium shot<td>eye level<td>locked-off<td>2<td>the dealer shoves the boy up<tr><td>3<td>medium close-up on the dealer<td>low angle<td>locked-off<td>3<td>the dealer&#x27;s command<tr><td>4<td>close-up on young qutuz<td>eye level<td>locked-off<td>4.5<td>the boy&#x27;s claim<tr><td>5<td>medium close-up on the dealer<td>eye level<td>locked-off<td>2.5<td>the dealer ignores the claim<tr><td>6<td>medium shot<td>eye level<td>locked-off<td>2<td>the buyer appraises him<tr><td>7<td>medium close-up on the buyer<td>slight low angle<td>locked-off<td>2.5<td>the test<tr><td>8<td>close-up on young qutuz<td>eye level<td>locked-off<td>1.5<td>the answer<tr><td>9<td>medium close-up on the buyer<td>eye level<td>locked-off<td>2.5<td>the sale<tr><td>10<td>close-up on the boy&#x27;s eyes<td>eye level<td>locked-off<td>3<td>the signature shot: the chain closes<tr><td>11<td>close-up on young qutuz<td>eye level<td>locked-off<td>3.5<td>the vow</table><div class=warn>⚠ Timing is tight: estimated 29.5s of 30s.</div><details><summary>Prompt</summary><p><button data-copy='p-S01'>Copy prompt</button></p><pre id='p-S01'>Create a 30s serious, slow-burn cinematic historical drama scene.
+
+Characters: @QutuzChild; DEALER: slave dealer, man in his 40s (proposed), warm tan skin, heavy brow, dark eyes with a bored gaze, short dark beard (proposed), shaved head under a dirty cream headcloth (proposed), stained ochre tunic with a rope sash (proposed), bare forearms, stocky build, loud and coarse, 2D anime style; BUYER: man in his 50s (proposed), light olive skin, narrow appraising eyes, neat trimmed grey beard (proposed), soft cap (proposed), deep blue fine coat with gold trim (the fine coat is from the script, the colors are proposed), lean build, upright posture, smooth and unhurried, 2D anime style
+Locations: @DamascusSlaveMarket
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+@QutuzChild, the DEALER and the BUYER are in @DamascusSlaveMarket at midday.
+
+Dust, shouting, rows of chained children. The DEALER shoves the thin boy onto a wooden block.
+
+Preserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @QutuzChild and @DamascusSlaveMarket. Keep the DEALER and the BUYER exactly as described in the Characters line.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.
+Keep it non-graphic and dignified: there is no violence beyond the shove, and the chain is a plain iron cuff. The camera stays on the boy&#x27;s face and never lingers on suffering.
+The boy is @QutuzChild, a child. He is not the adult @Qutuz.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only crowd noise and shouting, dust and wind, footsteps on packed earth, the clink of chain, cloth, and coin, and dialogue.
+
+DEALER&#x27;S VOICE:
+
+Adult male voice. Loud, coarse and bored, the voice of a man who has said the same words ten thousand times.
+
+YOUNG QUTUZ&#x27;S VOICE:
+
+A boy&#x27;s voice, about ten years old. Small and light in pitch but steady, with a flat, defiant delivery and no tremble.
+
+BUYER&#x27;S VOICE:
+
+Adult male voice. Smooth, unhurried, appraising.
+
+SHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL
+
+@DamascusSlaveMarket in hard midday light. Dust hangs in the air. A crowd shouts. Rows of chained children sit along a wall at the left. A wooden block stands at the center of the frame.
+
+HARD CUT.
+
+SHOT 2 (00:03-00:05) — MEDIUM SHOT — EYE LEVEL
+
+The DEALER (man in his 40s, stocky, short dark beard, dirty cream headcloth, stained ochre tunic with a rope sash) shoves a thin boy up onto the wooden block. The boy stumbles, then stands straight on top of it.
+
+HARD CUT.
+
+SHOT 3 (00:05-00:08) — MEDIUM CLOSE-UP ON THE DEALER (man in his 40s, stocky, short dark beard, dirty cream headcloth, stained ochre tunic with a rope sash) — LOW ANGLE
+
+The DEALER looks up at the boy on the block, bored and loud.
+
+DEALER, in his SAME coarse voice, loud and bored:
+
+“Step up, boy. Tell the buyers your name.”
+
+HARD CUT.
+
+SHOT 4 (00:08-00:12) — CLOSE-UP ON YOUNG QUTUZ — EYE LEVEL
+
+The boy stands on the block with dry, defiant eyes. He answers without a tremor.
+
+@QutuzChild, in his SAME small, steady voice, proud and unshaken:
+
+“Mahmud, son of Mamdud. My uncle was Khwarazm-Shah, a king.”
+
+HARD CUT.
+
+SHOT 5 (00:12-00:15) — MEDIUM CLOSE-UP ON THE DEALER (man in his 40s, stocky, short dark beard, dirty cream headcloth, stained ochre tunic with a rope sash) — EYE LEVEL
+
+The DEALER shrugs it off without looking at the boy.
+
+DEALER, in his SAME coarse voice, flat, dismissive:
+
+“Everyone in this market was a king yesterday.”
+
+HARD CUT.
+
+SHOT 6 (00:15-00:17) — MEDIUM SHOT — EYE LEVEL
+
+A BUYER (man in his 50s, lean, neat trimmed grey beard, deep blue fine coat with gold trim, soft cap) in a fine coat circles the boy slowly, looking him over.
+
+HARD CUT.
+
+SHOT 7 (00:17-00:20) — MEDIUM CLOSE-UP ON THE BUYER (man in his 50s, lean, neat trimmed grey beard, deep blue fine coat with gold trim, soft cap) — SLIGHT LOW ANGLE
+
+The BUYER stops in front of the block and studies the boy&#x27;s face.
+
+BUYER, in his SAME smooth voice, appraising:
+
+“Does he fight, or does he cry?”
+
+HARD CUT.
+
+SHOT 8 (00:20-00:21) — CLOSE-UP ON YOUNG QUTUZ — EYE LEVEL
+
+The boy&#x27;s jaw sets. His eyes stay dry.
+
+@QutuzChild, in his SAME small, steady voice, quiet and certain:
+
+“I do not cry.”
+
+HARD CUT.
+
+SHOT 9 (00:21-00:24) — MEDIUM CLOSE-UP ON THE BUYER (man in his 50s, lean, neat trimmed grey beard, deep blue fine coat with gold trim, soft cap) — EYE LEVEL
+
+The BUYER gives a small nod.
+
+BUYER, in his SAME smooth voice, final:
+
+“Then he is worth the coin.”
+
+HARD CUT.
+
+SHOT 10 (00:24-00:26) — CLOSE-UP ON THE BOY&#x27;S EYES — EYE LEVEL
+
+Only the boy&#x27;s eyes fill the frame. Off-screen an iron chain closes around his wrist: CLINK. His eyes do not blink and do not drop.
+
+HARD CUT.
+
+SHOT 11 (00:26-00:30) — CLOSE-UP ON YOUNG QUTUZ — EYE LEVEL
+
+The boy murmurs it to himself, so quietly that only the frame hears it.
+
+@QutuzChild, in his SAME small, steady voice, murmuring to himself:
+
+“Then I will build a home no one can sell.”
+
+HARD CUT.
+
+END HERE.
+</pre></details><div class=files>Scene 01 - The Market/S01_single.txt</div></div></section><div class=act><b>Act II: The oath and the theft</b><span>He swears to protect the boy, then takes the throne from him.</span></div><section class=card id='seg-S02a' data-id='S02a'><div><div class=id>S02a</div><div class=scene>The Dead Sultan</div><span class='badge m-generate'>generate</span><span class='badge s-ok'>ok</span><div class=bar><i class='' style='width:87%'></i></div><div class=nums>20.1s estimated of 23s · plan 40s · 3 lines · 32 words</div><div class=nums style='margin-top:8px'>Generate this clip first. Its extension follows.</div></div><div><h3>Why this scene earns its place</h3><p class='why'>It ties the oath to its cause: Qutuz swears to protect Aybak&#x27;s son, the debt he breaks in the next scene.</p><h3>Spoken lines</h3><p class=say><b>QUTUZ</b> “The sultan is dead. Who did this?”</p><p class=say><b>SHAJAR AL-DURR</b> “Egypt is not a house for the soft, Qutuz. Someone had to decide.”</p><p class=say><b>QUTUZ</b> “You decided with a blade, and now every emir will want one.”</p><h3>Shots</h3><table><tr><th>#<th>Scale<th>Angle<th>Camera<th>Sec<th>Job<tr><td>1<td>wide establishing shot<td>eye level<td>locked-off<td>3<td>the room and the body<tr><td>2<td>medium shot<td>eye level<td>locked-off<td>2.5<td>Qutuz enters<tr><td>3<td>medium close-up on qutuz<td>eye level<td>locked-off<td>3<td>the question<tr><td>4<td>medium close-up on shajar al-durr<td>slight low angle<td>locked-off<td>4.5<td>she owns it without apology<tr><td>5<td>close-up on qutuz<td>eye level<td>locked-off<td>4<td>he sees the cost<tr><td>6<td>close-up on shajar al-durr&#x27;s eyes<td>eye level<td>locked-off<td>3<td>hold on her, ready to answer</table><details><summary>Prompt</summary><p><button data-copy='p-S02a'>Copy prompt</button></p><pre id='p-S02a'>Create a 23s serious, slow-burn cinematic historical drama scene.
+
+Characters: @Qutuz, @ShajarAlDurr, @SultanAybak
+Locations: @CairoCitadelRoyalBathChamber
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+@Qutuz, @ShajarAlDurr and the body of @SultanAybak are in @CairoCitadelRoyalBathChamber at night in 1257.
+
+Steam, lamplight, marble. @SultanAybak lies still on the marble. @ShajarAlDurr stands over him, veiled and calm. @Qutuz enters, breathing hard.
+
+Preserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @Qutuz, @ShajarAlDurr, @SultanAybak and @CairoCitadelRoyalBathChamber.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.
+@SultanAybak is shown only as a body and lies perfectly still. There is no blood and no visible wound.
+Do NOT show @SultanAybak&#x27;s face in this clip.
+@ShajarAlDurr always stands on the far side of the body. @Qutuz always enters from frame LEFT.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only dripping water, steam, soft echo off marble, footsteps, cloth, and breathing, and dialogue.
+
+QUTUZ&#x27;S VOICE:
+
+Adult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.
+
+SHAJAR AL-DURR&#x27;S VOICE:
+
+Adult woman&#x27;s voice. Quiet, controlled and even, with calm authority. Never raised.
+
+SHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL
+
+@CairoCitadelRoyalBathChamber at night. White marble, steam drifting through lamplight. @SultanAybak lies still on the marble at the center, tall in his red-gold coat, his face turned away from the camera. @ShajarAlDurr stands over him on the far side, veiled and calm. An open doorway at frame left.
+
+HARD CUT.
+
+SHOT 2 (00:03-00:06) — MEDIUM SHOT — EYE LEVEL
+
+@Qutuz enters through the doorway at frame left, breathing hard, steam curling around his red coat. He stops at the sight of the body.
+
+HARD CUT.
+
+SHOT 3 (00:06-00:10) — MEDIUM CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz looks from the body to @ShajarAlDurr, still catching his breath.
+
+@Qutuz, in his SAME low, stern voice, hard and breathless:
+
+“The sultan is dead. Who did this?”
+
+HARD CUT.
+
+SHOT 4 (00:10-00:15) — MEDIUM CLOSE-UP ON SHAJAR AL-DURR — SLIGHT LOW ANGLE
+
+@ShajarAlDurr, veiled and calm, with steel in her eyes. She does not move.
+
+@ShajarAlDurr, in her SAME controlled, quiet voice, level and even:
+
+“Egypt is not a house for the soft, Qutuz. Someone had to decide.”
+
+HARD CUT.
+
+SHOT 5 (00:15-00:20) — CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz&#x27;s eyes narrow. He keeps his voice low.
+
+@Qutuz, in his SAME low, stern voice, bitter:
+
+“You decided with a blade, and now every emir will want one.”
+
+HARD CUT.
+
+SHOT 6 (00:20-00:23) — CLOSE-UP ON SHAJAR AL-DURR&#x27;S EYES — EYE LEVEL
+
+Her eyes above the dark veil, level and unblinking, the gold of her jewelry catching the lamplight. She does not look away. Hold on this frame.
+
+HARD CUT.
+
+END HERE.
+</pre></details><div class=files>Scene 02 - The Dead Sultan/S02a_generate.txt</div></div></section><section class=card id='seg-S02b' data-id='S02b'><div><div class=id>S02b</div><div class=scene>The Dead Sultan</div><span class='badge m-extend'>extend</span><span class='badge s-ok'>ok</span><div class=bar><i class='' style='width:88%'></i></div><div class=nums>20.2s estimated of 23s · 4 lines · 42 words</div><div class=nums style='margin-top:8px'>Upload the previous clip&#x27;s result and use this as the extension prompt (it starts from that clip&#x27;s exact final frame).</div></div><div><h3>Why this scene earns its place</h3><p class='why'>It ties the oath to its cause: Qutuz swears to protect Aybak&#x27;s son, the debt he breaks in the next scene.</p><h3>Spoken lines</h3><p class=say><b>SHAJAR AL-DURR</b> “Then be the one who holds the sword, not the one it falls on.”</p><p class=say><b>QUTUZ</b> “Aybak made me an emir. I will not be his grave-digger.”</p><p class=say><b>SHAJAR AL-DURR</b> “Then protect his son. The boy is fifteen, and the wolves are already circling.”</p><p class=say><b>QUTUZ</b> “I swear it.”</p><h3>Shots</h3><table><tr><th>#<th>Scale<th>Angle<th>Camera<th>Sec<th>Job<tr><td>1<td>close-up on shajar al-durr<td>eye level<td>locked-off<td>4<td>she turns the accusation into an offer<tr><td>2<td>close-up on qutuz<td>eye level<td>locked-off<td>4<td>his loyalty to Aybak<tr><td>3<td>wide shot<td>eye level<td>locked-off<td>2<td>the three of them in the room<tr><td>4<td>medium close-up on shajar al-durr<td>slight low angle<td>locked-off<td>5<td>the oath is handed to him<tr><td>5<td>close-up on qutuz<td>eye level<td>locked-off<td>1.5<td>he looks down<tr><td>6<td>pov shot looking down<td>high angle<td>locked-off<td>2.5<td>the dead sultan&#x27;s face<tr><td>7<td>close-up on qutuz<td>eye level<td>locked-off<td>3<td>the oath</table><details><summary>Prompt</summary><p><button data-copy='p-S02b'>Copy prompt</button></p><pre id='p-S02b'>Create a 23s serious, slow-burn cinematic historical drama scene.
+
+Characters: @Qutuz, @ShajarAlDurr, @SultanAybak
+Locations: @CairoCitadelRoyalBathChamber
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+Extend the previous video by another 23s, starting from its exact final frame after @Qutuz says:
+
+“You decided with a blade, and now every emir will want one.”
+
+Continue the same scene in @CairoCitadelRoyalBathChamber with the exact same character designs, clothing, lighting, atmosphere, framing style, and emotional continuity. @SultanAybak is still on the marble. @ShajarAlDurr is on the far side of him and @Qutuz is near the doorway at frame left.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. Do not restate the opening; shot 1 continues directly from the final frame.
+@SultanAybak is shown only as a body. There is no blood and no visible wound.
+@Qutuz and @ShajarAlDurr keep their SAME voices from the first part. Do not change them.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only dripping water, steam, soft echo off marble, footsteps, cloth, and breathing, and dialogue.
+
+SHOT 1 (00:00-00:04) — CLOSE-UP ON SHAJAR AL-DURR — EYE LEVEL
+
+Continuing from the final frame. @ShajarAlDurr answers without moving her eyes from @Qutuz.
+
+@ShajarAlDurr, in her SAME controlled, quiet voice, level and even:
+
+“Then be the one who holds the sword, not the one it falls on.”
+
+HARD CUT.
+
+SHOT 2 (00:04-00:08) — CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz lowers his voice. His eyes go to the body and back to her.
+
+@Qutuz, in his SAME low, stern voice, quietly:
+
+“Aybak made me an emir. I will not be his grave-digger.”
+
+HARD CUT.
+
+SHOT 3 (00:08-00:10) — WIDE SHOT — EYE LEVEL
+
+@ShajarAlDurr and @Qutuz stand on either side of the body on the marble. Steam drifts. Nobody moves.
+
+HARD CUT.
+
+SHOT 4 (00:10-00:16) — MEDIUM CLOSE-UP ON SHAJAR AL-DURR — SLIGHT LOW ANGLE
+
+@ShajarAlDurr, veiled and calm.
+
+@ShajarAlDurr, in her SAME controlled, quiet voice, quiet, certain:
+
+“Then protect his son. The boy is fifteen, and the wolves are already circling.”
+
+HARD CUT.
+
+SHOT 5 (00:16-00:17) — CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz looks down at the body. His jaw tightens.
+
+HARD CUT.
+
+SHOT 6 (00:17-00:20) — POV SHOT LOOKING DOWN — HIGH ANGLE
+
+Looking straight down from @Qutuz&#x27;s eyes at the dead sultan&#x27;s face on the marble. Still and calm. No blood, no wound.
+
+HARD CUT.
+
+SHOT 7 (00:20-00:23) — CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz lifts his eyes from the body. Hold on his face after the line.
+
+@Qutuz, in his SAME low, stern voice, final:
+
+“I swear it.”
+
+HARD CUT.
+
+END HERE.
+</pre></details><div class=files>Scene 02 - The Dead Sultan/S02b_extend.txt</div></div></section><section class=card id='seg-S03a' data-id='S03a'><div><div class=id>S03a</div><div class=scene>The Boy On The Throne</div><span class='badge m-generate'>generate</span><span class='badge s-ok'>ok</span><div class=bar><i class='over' style='width:100%'></i></div><div class=nums>30.7s estimated of 30s · plan 55s · 6 lines · 54 words</div><div class=nums style='margin-top:8px'>Generate this clip first. Its extension follows.</div></div><div><h3>Why this scene earns its place</h3><p class='why'>It is the turn of the episode: the protector removes the boy he swore to keep alive, and calls it keeping him safe.</p><h3>Spoken lines</h3><p class=say><b>RIDER</b> “Sultan, the Mongols are moving west. Hulagu marches on Syria.”</p><p class=say><b>ELDER EMIR</b> “Egypt cannot fight an army that took Baghdad.”</p><p class=say><b>ALI</b> “Atabek, what do we do?”</p><p class=say><b>QUTUZ</b> “We do not hide behind a crown, my lord.”</p><p class=say><b>ALI</b> “Then I will lead them.”</p><p class=say><b>QUTUZ</b> “With respect, you cannot hold a bow for a day, and a Mongol arrow does not wait.”</p><h3>Shots</h3><table><tr><th>#<th>Scale<th>Angle<th>Camera<th>Sec<th>Job<tr><td>1<td>wide establishing shot<td>eye level<td>locked-off<td>3.5<td>the room, the boy, the man at his shoulder<tr><td>2<td>medium shot on sultan ali<td>high angle<td>locked-off<td>2.5<td>the boy is small on the throne<tr><td>3<td>medium close-up on the rider<td>eye level<td>locked-off<td>4.5<td>the news<tr><td>4<td>medium shot on the elder emir<td>eye level<td>locked-off<td>3.5<td>the fear<tr><td>5<td>close-up on sultan ali<td>high angle<td>locked-off<td>2.5<td>the boy turns to his guardian<tr><td>6<td>close-up on qutuz<td>low angle<td>locked-off<td>3<td>Qutuz answers for the throne<tr><td>7<td>close-up on sultan ali<td>high angle<td>locked-off<td>2<td>the boy reaches for power<tr><td>8<td>close-up on qutuz<td>low angle<td>locked-off<td>5.5<td>the refusal<tr><td>9<td>close-up on sultan ali<td>high angle<td>locked-off<td>2<td>the boy&#x27;s face falls, hold</table><div class=warn>⚠ Timing is tight: estimated 28.7s of 30s.</div><details><summary>Prompt</summary><p><button data-copy='p-S03a'>Copy prompt</button></p><pre id='p-S03a'>Create a 30s serious, slow-burn cinematic historical drama scene.
+
+Characters: @SultanAlMansurAli, @Qutuz, @ElderEmir, @Rider
+Locations: @CitadelThroneRoom
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+@SultanAlMansurAli, @Qutuz, @ElderEmir and a dust-covered @Rider are in @CitadelThroneRoom in autumn 1259.
+
+Autumn light, low and gold through carved screens. @SultanAlMansurAli sits on a throne too big for him. @Qutuz stands at his shoulder. The @Rider, covered in dust, kneels.
+
+Preserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @SultanAlMansurAli, @Qutuz, @ElderEmir, @Rider and @CitadelThroneRoom.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.
+The throne is oversized. @SultanAlMansurAli looks small on it in every shot, and his robes are too large for him.
+From the front: @SultanAlMansurAli at the center, @Qutuz at frame LEFT of him, @Rider kneeling at the center of the floor, @ElderEmir at frame RIGHT. Keep these positions in every wide shot.
+Never show @Qutuz sitting on the throne.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only soft echo in a stone hall, cloth, footsteps, breath, the creak of a throne, and the low hum of wind through carved screens, and dialogue.
+
+RIDER&#x27;S VOICE:
+
+Adult male voice. Breathless and hoarse from hard riding, urgent.
+
+ELDER EMIR&#x27;S VOICE:
+
+Older adult male voice. Dry, weary, measured delivery, a little careful.
+
+ALI&#x27;S VOICE:
+
+A teenage boy&#x27;s voice, about fifteen. Thin and slightly high, wavering, frightened.
+
+QUTUZ&#x27;S VOICE:
+
+Adult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.
+
+SHOT 1 (00:00-00:04) — WIDE ESTABLISHING SHOT — EYE LEVEL
+
+@CitadelThroneRoom in autumn light, low and gold through carved screens. From the front: @SultanAlMansurAli sits at the center on a throne far too big for him. @Qutuz stands at frame LEFT of him, at his shoulder. The dust-covered @Rider kneels at the center of the floor. The @ElderEmir stands at frame RIGHT.
+
+HARD CUT.
+
+SHOT 2 (00:04-00:06) — MEDIUM SHOT ON SULTAN ALI — HIGH ANGLE
+
+@SultanAlMansurAli sits on the oversized throne, his white-and-gold robes too large for him, his hands gripping the armrests.
+
+HARD CUT.
+
+SHOT 3 (00:06-00:11) — MEDIUM CLOSE-UP ON THE RIDER — EYE LEVEL
+
+The @Rider kneels, covered in dust, breathless from the road.
+
+@Rider, in his SAME breathless, hoarse voice, urgent, gasping:
+
+“Sultan, the Mongols are moving west. Hulagu marches on Syria.”
+
+HARD CUT.
+
+SHOT 4 (00:11-00:14) — MEDIUM SHOT ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir stands with his hands clasped, grave.
+
+@ElderEmir, in his SAME dry, weary voice, grave:
+
+“Egypt cannot fight an army that took Baghdad.”
+
+HARD CUT.
+
+SHOT 5 (00:14-00:17) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE
+
+@SultanAlMansurAli looks up and to the side at @Qutuz, his eyes wide.
+
+@SultanAlMansurAli, in his SAME thin, frightened voice, in a small voice:
+
+“Atabek, what do we do?”
+
+HARD CUT.
+
+SHOT 6 (00:17-00:20) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz looks straight ahead, not at the boy.
+
+@Qutuz, in his SAME low, stern voice, firm, unhurried:
+
+“We do not hide behind a crown, my lord.”
+
+HARD CUT.
+
+SHOT 7 (00:20-00:22) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE
+
+@SultanAlMansurAli lifts his chin, trying to sound older.
+
+@SultanAlMansurAli, in his SAME thin, frightened voice, trying to sound steady:
+
+“Then I will lead them.”
+
+HARD CUT.
+
+SHOT 8 (00:22-00:28) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz turns his head toward the boy for the first time. His voice stays even.
+
+@Qutuz, in his SAME low, stern voice, respectful and final:
+
+“With respect, you cannot hold a bow for a day, and a Mongol arrow does not wait.”
+
+HARD CUT.
+
+SHOT 9 (00:28-00:30) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE
+
+@SultanAlMansurAli&#x27;s face falls. His eyes drop, then lift again toward @Qutuz. Hold on this frame.
+
+HARD CUT.
+
+END HERE.
+</pre></details><div class=files>Scene 03 - The Boy On The Throne/S03a_generate.txt</div></div></section><section class=card id='seg-S03b' data-id='S03b'><div><div class=id>S03b</div><div class=scene>The Boy On The Throne</div><span class='badge m-extend'>extend</span><span class='badge s-ok'>ok</span><div class=bar><i class='' style='width:89%'></i></div><div class=nums>25.9s estimated of 29s · 6 lines · 52 words</div><div class=nums style='margin-top:8px'>Upload the previous clip&#x27;s result and use this as the extension prompt (it starts from that clip&#x27;s exact final frame).</div></div><div><h3>Why this scene earns its place</h3><p class='why'>It is the turn of the episode: the protector removes the boy he swore to keep alive, and calls it keeping him safe.</p><h3>Spoken lines</h3><p class=say><b>ALI</b> “Am I being put away?”</p><p class=say><b>QUTUZ</b> “You are being kept safe. Egypt needs a sword, and no one has ever given you one.”</p><p class=say><b>ALI</b> “Aybak was my father.”</p><p class=say><b>QUTUZ</b> “And I swore to him that you would live. You will live.”</p><p class=say><b>ELDER EMIR</b> “History will call this a theft.”</p><p class=say><b>QUTUZ</b> “History will call it Egypt, if Egypt lives.”</p><h3>Shots</h3><table><tr><th>#<th>Scale<th>Angle<th>Camera<th>Sec<th>Job<tr><td>1<td>close-up on sultan ali<td>high angle<td>locked-off<td>2.5<td>the boy asks the real question<tr><td>2<td>close-up on qutuz<td>low angle<td>locked-off<td>6<td>Qutuz calls it protection<tr><td>3<td>close-up on sultan ali<td>high angle<td>locked-off<td>3<td>the boy names his father<tr><td>4<td>close-up on qutuz<td>eye level<td>locked-off<td>4<td>the oath, used as a reason<tr><td>5<td>wide shot<td>eye level<td>locked-off<td>4<td>the boy is led away<tr><td>6<td>extreme close-up — insert<td>low angle<td>locked-off<td>2<td>the robe on the stone<tr><td>7<td>medium shot on the elder emir<td>eye level<td>locked-off<td>2.5<td>the verdict<tr><td>8<td>close-up on qutuz<td>low angle<td>locked-off<td>3.5<td>Qutuz&#x27;s answer, held</table><details><summary>Prompt</summary><p><button data-copy='p-S03b'>Copy prompt</button></p><pre id='p-S03b'>Create a 29s serious, slow-burn cinematic historical drama scene.
+
+Characters: @SultanAlMansurAli, @Qutuz, @ElderEmir, @Rider; PALACE GUARDS: two men in their 30s (proposed), clean-shaven, plain stern faces, helmets of dull steel, lamellar vests over dark tunics, spears held upright (all proposed), broad build, stiff posture, 2D anime style
+Locations: @CitadelThroneRoom
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+Extend the previous video by another 29s, starting from its exact final frame after @Qutuz says:
+
+“With respect, you cannot hold a bow for a day, and a Mongol arrow does not wait.”
+
+Continue the same scene in @CitadelThroneRoom with the exact same character designs, clothing, lighting, atmosphere, framing style, and emotional continuity. @SultanAlMansurAli sits on the oversized throne in robes too large for him. @Qutuz is at frame LEFT of him, @Rider kneels at the center of the floor and @ElderEmir stands at frame RIGHT.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. Do not restate the opening; shot 1 continues directly from the final frame.
+The throne is oversized. @SultanAlMansurAli looks small on it in every shot and his robes are too large for him.
+The guards are the only new characters. @SultanAlMansurAli&#x27;s later fate stays off screen: he is led out through the doors and the clip does not follow him.
+Never show @Qutuz sitting on the throne.
+@SultanAlMansurAli, @Qutuz and @ElderEmir keep their SAME voices from the first part. Do not change them.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only soft echo in a stone hall, cloth dragging on stone, footsteps, breath, and doors closing, and dialogue.
+
+SHOT 1 (00:00-00:03) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE
+
+Continuing from the final frame. @SultanAlMansurAli looks up at @Qutuz.
+
+@SultanAlMansurAli, in his SAME thin, frightened voice, small, afraid:
+
+“Am I being put away?”
+
+HARD CUT.
+
+SHOT 2 (00:03-00:09) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz answers evenly, not unkindly, and does not soften his eyes.
+
+@Qutuz, in his SAME low, stern voice, even, final:
+
+“You are being kept safe. Egypt needs a sword, and no one has ever given you one.”
+
+HARD CUT.
+
+SHOT 3 (00:09-00:12) — CLOSE-UP ON SULTAN ALI — HIGH ANGLE
+
+@SultanAlMansurAli&#x27;s eyes fill. He does not cry.
+
+@SultanAlMansurAli, in his SAME thin, frightened voice, quiet:
+
+“Aybak was my father.”
+
+HARD CUT.
+
+SHOT 4 (00:12-00:16) — CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz&#x27;s expression is hard and steady.
+
+@Qutuz, in his SAME low, stern voice, firm:
+
+“And I swore to him that you would live. You will live.”
+
+HARD CUT.
+
+SHOT 5 (00:16-00:21) — WIDE SHOT — EYE LEVEL
+
+Two palace guards (two men in their 30s, helmets of dull steel, lamellar vests over dark tunics, spears) escort @SultanAlMansurAli across the stone floor toward the doors. His oversized robe drags behind him across the stone. @Qutuz stays beside the throne, watching them go.
+
+HARD CUT.
+
+SHOT 6 (00:21-00:23) — EXTREME CLOSE-UP — INSERT — LOW ANGLE
+
+The hem of the white-and-gold robe drags across the stone floor. Cloth on stone, the only sound.
+
+HARD CUT.
+
+SHOT 7 (00:23-00:25) — MEDIUM SHOT ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir watches the doors close behind the boy.
+
+@ElderEmir, in his SAME dry, weary voice, low and grave:
+
+“History will call this a theft.”
+
+HARD CUT.
+
+SHOT 8 (00:25-00:29) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz does not turn to @ElderEmir. Hold on his face after the line.
+
+@Qutuz, in his SAME low, stern voice, quiet, certain:
+
+“History will call it Egypt, if Egypt lives.”
+
+HARD CUT.
+
+END HERE.
+</pre></details><div class=files>Scene 03 - The Boy On The Throne/S03b_extend.txt</div></div></section><div class=act><b>Act III: The clock starts</b><span>The theft becomes a purpose, and the Mongols reach Aleppo.</span></div><section class=card id='seg-S04' data-id='S04'><div><div class=id>S04</div><div class=scene>The Wall At Night</div><span class='badge m-single'>single</span><span class='badge s-ok'>ok</span><div class=bar><i class='over' style='width:100%'></i></div><div class=nums>31.7s estimated of 30s · plan 30s · 6 lines · 54 words</div><div class=nums style='margin-top:8px'>Generate this clip on its own.</div></div><div><h3>Why this scene earns its place</h3><p class='why'>It turns the theft into a purpose, &#x27;a reason to be remembered&#x27;, and starts the clock the next episode runs on.</p><h3>Spoken lines</h3><p class=say><b>ELDER EMIR</b> “The emirs have sworn their loyalty, my lord. Half from fear, half from hope.”</p><p class=say><b>QUTUZ</b> “Fear and hope will do. I need one thing more.”</p><p class=say><b>ELDER EMIR</b> “What is that?”</p><p class=say><b>QUTUZ</b> “A reason to be remembered for something other than a crown.”</p><p class=say><b>RIDER</b> “My lord, the Mongols have reached Aleppo! The siege has begun!”</p><p class=say><b>QUTUZ</b> “Then the clock has started.”</p><h3>Shots</h3><table><tr><th>#<th>Scale<th>Angle<th>Camera<th>Sec<th>Job<tr><td>1<td>wide establishing shot<td>eye level<td>locked-off<td>3<td>the wall and the dark plain<tr><td>2<td>medium shot on qutuz<td>slight low angle<td>locked-off<td>2<td>he looks north<tr><td>3<td>medium shot<td>eye level<td>locked-off<td>2<td>the Emir arrives<tr><td>4<td>medium close-up on the elder emir<td>eye level<td>locked-off<td>5<td>the Emir reports the oaths<tr><td>5<td>close-up on qutuz in profile<td>eye level<td>locked-off<td>3.5<td>he sets his need<tr><td>6<td>medium close-up on the elder emir<td>eye level<td>locked-off<td>1.5<td>the question<tr><td>7<td>close-up on qutuz<td>low angle<td>locked-off<td>4<td>the real answer<tr><td>8<td>low-angle shot up the stairs<td>low angle<td>locked-off<td>2<td>hooves, and the rider<tr><td>9<td>medium close-up on the rider<td>eye level<td>locked-off<td>3.5<td>the news from the north<tr><td>10<td>close-up on qutuz<td>eye level<td>locked-off<td>2.5<td>the clock</table><div class=warn>⚠ Timing is tight: estimated 29.9s of 30s.</div><details><summary>Prompt</summary><p><button data-copy='p-S04'>Copy prompt</button></p><pre id='p-S04'>Create a 30s serious, slow-burn cinematic historical drama scene.
+
+Characters: @Qutuz, @ElderEmir, @Rider
+Locations: @CitadelWall
+
+Visual Style: 2D anime, serious historical drama, soft cel shading, painterly backgrounds.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+
+@Qutuz, @ElderEmir and a @Rider are on @CitadelWall at night in January 1260.
+
+Wind. @Qutuz looks north across the dark plain. The @ElderEmir climbs the steps behind him.
+
+Preserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @Qutuz, @ElderEmir, @Rider and @CitadelWall.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Keep the pacing measured, tense, and cinematic. The silence between the lines carries the tension.
+The plain to the north is empty and dark. The Mongols are never shown.
+The wind is constant in every shot. The only light is cold night light on stone, with a faint warm glow from the stairs.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only constant wind, cloth snapping in the gale, footsteps on stone, galloping hooves, and breathing, and dialogue.
+
+ELDER EMIR&#x27;S VOICE:
+
+Older adult male voice. Dry, weary, measured delivery, a little careful.
+
+QUTUZ&#x27;S VOICE:
+
+Adult male voice. Low pitch, stern tone, steady and unhurried delivery, clear articulation. He never raises it.
+
+RIDER&#x27;S VOICE:
+
+Adult male voice. Breathless and hoarse from hard riding, urgent.
+
+SHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL
+
+@CitadelWall at night in January. Wind blows constantly. @Qutuz is a small silhouette at the parapet, seen from behind, looking north over a dark, empty plain. Stone steps rise at frame right.
+
+HARD CUT.
+
+SHOT 2 (00:03-00:05) — MEDIUM SHOT ON QUTUZ — SLIGHT LOW ANGLE
+
+@Qutuz in profile at the parapet, his red coat moving in the wind. He looks north across the dark plain.
+
+HARD CUT.
+
+SHOT 3 (00:05-00:07) — MEDIUM SHOT — EYE LEVEL
+
+The @ElderEmir climbs the stone steps behind @Qutuz and reaches the top, his red turban whipped by the wind.
+
+HARD CUT.
+
+SHOT 4 (00:07-00:12) — MEDIUM CLOSE-UP ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir speaks over the wind.
+
+@ElderEmir, in his SAME dry, weary voice, level and honest:
+
+“The emirs have sworn their loyalty, my lord. Half from fear, half from hope.”
+
+HARD CUT.
+
+SHOT 5 (00:12-00:16) — CLOSE-UP ON QUTUZ IN PROFILE — EYE LEVEL
+
+@Qutuz does not turn from the plain.
+
+@Qutuz, in his SAME low, stern voice, steady:
+
+“Fear and hope will do. I need one thing more.”
+
+HARD CUT.
+
+SHOT 6 (00:16-00:18) — MEDIUM CLOSE-UP ON THE ELDER EMIR — EYE LEVEL
+
+The @ElderEmir waits, bracing against the wind.
+
+@ElderEmir, in his SAME dry, weary voice, quiet:
+
+“What is that?”
+
+HARD CUT.
+
+SHOT 7 (00:18-00:22) — CLOSE-UP ON QUTUZ — LOW ANGLE
+
+@Qutuz finally turns his face toward @ElderEmir.
+
+@Qutuz, in his SAME low, stern voice, quiet, weighty:
+
+“A reason to be remembered for something other than a crown.”
+
+HARD CUT.
+
+SHOT 8 (00:22-00:24) — LOW-ANGLE SHOT UP THE STAIRS — LOW ANGLE
+
+HOOVES, growing louder. A @Rider races up the stone stairs toward the wall, breathless.
+
+HARD CUT.
+
+SHOT 9 (00:24-00:27) — MEDIUM CLOSE-UP ON THE RIDER — EYE LEVEL
+
+The @Rider reaches the top, gasping.
+
+@Rider, in his SAME breathless, hoarse voice, urgent, gasping:
+
+“My lord, the Mongols have reached Aleppo! The siege has begun!”
+
+HARD CUT.
+
+SHOT 10 (00:27-00:30) — CLOSE-UP ON QUTUZ — EYE LEVEL
+
+@Qutuz turns back to the dark plain. Hold on his face after the line.
+
+@Qutuz, in his SAME low, stern voice, low, certain:
+
+“Then the clock has started.”
+
+HARD CUT.
+
+CUT TO BLACK.
+</pre></details><div class=files>Scene 04 - The Wall At Night/S04_single.txt</div></div></section><div class=status><h3>Status</h3><table><tr><th>Clip<th>Mode<th>Estimated<th>Request<th>Status<th>Attempts<tr><td>S00<td>single<td>22.8s<td>26s<td>ok<td>1<tr><td>S01<td>single<td>31.9s<td>30s<td>ok<td>1<tr><td>S02a<td>generate<td>20.1s<td>23s<td>ok<td>1<tr><td>S02b<td>extend<td>20.2s<td>23s<td>ok<td>1<tr><td>S03a<td>generate<td>30.7s<td>30s<td>ok<td>1<tr><td>S03b<td>extend<td>25.9s<td>29s<td>ok<td>1<tr><td>S04<td>single<td>31.7s<td>30s<td>ok<td>1</table></div></div><script>
+document.querySelectorAll('button[data-copy]').forEach(b=>b.addEventListener('click',()=>{
+ const t=document.getElementById(b.dataset.copy).textContent;
+ navigator.clipboard.writeText(t).then(()=>{const o=b.textContent;b.textContent='Copied';setTimeout(()=>b.textContent=o,1200)})}));
+const cells=[...document.querySelectorAll('.cell')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){cells.forEach(c=>c.classList.toggle('on',c.dataset.id===e.target.dataset.id))}}),{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('.card').forEach(c=>io.observe(c));
+</script></body></html>

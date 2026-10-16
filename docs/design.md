@@ -61,12 +61,19 @@ agent as the `lookup_camera_recipe` tool.
    extension quoting are checked in code, not only requested in a prompt.
 6. **An agent with gated tools.** The model cannot save a prompt that fails the checks, cannot change dialogue, and
    cannot skip a clip. A clip it cannot fix is saved for review rather than lost, and a run resumes after an interruption.
-7. **Provider neutral, zero dependencies.** Anthropic or any OpenAI-compatible endpoint over plain HTTP, and an
+7. **Sheets rendered by code from model-written fields.** The character and location sheet prompts follow the studio's own
+   skill. The model supplies facts; code renders the template and checks it (one character per prompt, real HEX codes,
+   voice design only for recurring characters, preview text taken from the character's own lines). The script stays the
+   only source of truth, and every invented detail is marked `(proposed)`.
+8. **Reading a production script as it is written.** Runtime maps, clip blocks, on-screen text and the character and
+   location lists are read directly, so planned seconds and edit-room text are kept apart from what Seedance generates.
+9. **Provider neutral, zero dependencies.** Anthropic or any OpenAI-compatible endpoint over plain HTTP, and an
    `--offline` mode for template drafts.
 
 ## Honest limits
 
-- No real model has written a prompt through this code. Everything else is tested.
+- No real model has written a prompt or a sheet through this code. Everything else is tested.
+- The visual style of the worked example ("2D anime") was inferred from the skill text, not stated by the script.
 - Timing numbers rest on five clips and one prompt matched to its clip.
 - Seedance 2.5's duration range (4 to 30 seconds) is confirmed from its input schema. The 60 second chain (a generation plus one extension) is an assumption, and so is whether a provider allows a first-frame image together with reference images.
 - The offline drafts are templates. They show the structure and pass the checks, but they are not creative writing.
