@@ -1,6 +1,6 @@
 # How the agent works
 
-`studio.py` is a real agent program. You paste a script, it talks to a language model through tool calls, and it
+`studio.py` is a real agent program. It writes prompts only and never generates video: you paste each prompt into Seedance 2.5 yourself. You paste a script, it talks to a language model through tool calls, and it
 files everything under `output/`. This page explains what happens, where the checks are, and how to change things.
 
 ```

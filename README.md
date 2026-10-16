@@ -3,6 +3,9 @@
 Paste an episode script. The agent splits it into clips, writes a checked Seedance prompt for every clip, and files
 everything under `output/<Movie>/<Episode>/<Scene>/`.
 
+**It only writes prompts. It never generates video.** You paste each prompt into Seedance 2.5 yourself. The only network calls
+the program makes are to the language model that writes the prompts.
+
 ```
 python3 studio.py
 ```
