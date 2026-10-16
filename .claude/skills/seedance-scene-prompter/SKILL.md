@@ -113,7 +113,9 @@ estimated total seconds, and the verdict against the clip length.
 Rules of thumb taken from the example prompts (they are estimates, not guarantees):
 
 - Example 01 shipped 7 shots, 6 lines and 25 spoken words inside a 15 second generation (script estimate: 13.2s).
-- Plan for roughly 6 to 8 shots and no more than about 30 spoken words in a 15 second clip.
+- Measured on five published clips (74 shots): the average shot lasts 1.7 to 2.7 seconds (median 1.7), so plan for 6 to 9 shots per 15 seconds. Shots under 1 second exist but are rare.
+- Measured on the cash-counting clip: the shot with 2 lines and 7 spoken words ("Is that enough, babe?" / "For rent? Yeah.") ran 3.5 seconds. The script gives 3.0s at 3.0 words per second and 3.5s at 2.5, so use `--wps 2.5` for calm, intimate or deadpan dialogue and 3.0 for fast comedy.
+- Keep a 15 second clip to about 30 spoken words or fewer.
 - Shots with no dialogue still need about 1.2 to 2 seconds each.
 - If the estimate is TOO LONG: trim lines first, then merge or drop a visual-only shot, then split into a first clip plus an extension prompt.
 - If the estimate is TIGHT: trim one line or one beat so the model does not rush the delivery.
