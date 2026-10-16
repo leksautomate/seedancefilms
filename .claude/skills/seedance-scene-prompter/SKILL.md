@@ -20,7 +20,7 @@ Read these when needed:
 
 Working from a whole episode? Run the other skills first (see `docs/agent-pipeline.md`):
 
-1. `episode-segmenter` splits the script into segments (15 s clips, extensions, new chains). Each segment arrives with its characters, estimated seconds, last spoken line and mode (`single`, `generate`, `extend`, `new-chain`).
+1. `episode-segmenter` splits the script into segments (clips of up to 30 s, extensions, new chains). Each segment arrives with its characters, estimated seconds, last spoken line and mode (`single`, `generate`, `extend`, `new-chain`).
 2. `cinematic-camera-engine` turns the segment's scene type and mood into a shot plan (`SHOT N - SCALE - ANGLE`). When this skill's header says hard cuts only, use its scales and angles and ignore camera movement.
 3. This skill writes the prompt from that plan. For `extend` and `new-chain` segments use the extension style below and quote the last spoken line of the previous segment.
 4. Run the timing check in section 4 on every finished prompt.
@@ -33,7 +33,7 @@ Ask only for what is missing. Do not ask for anything the user already gave.
 
 | Input | Default if the user does not say |
 |---|---|
-| Clip length (per generation) | 15 seconds |
+| Clip length (per generation) | The scene's own length, 4 to 30 seconds (Seedance 2.5 renders up to 30 in one generation) |
 | New scene or extension of an existing clip | New scene |
 | Characters and their `@TAG` names | Use the names given, write them as `@ TAG NAME` |
 | Locations/props with `@TAG` names | Same |
@@ -58,7 +58,7 @@ how the user's reference uploads are bound to the prompt.
 Use this order. Sections in brackets are optional.
 
 ```
-Create [the first 15 seconds of] a [fast-paced] cinematic adult animated scene.
+Create [the first 15 seconds of] a [fast-paced] cinematic adult animated scene.      (use the clip's own length: 4 to 30 seconds)
 (Extension: "@ TAG VIDEO extend the video by another 15 seconds. Start exactly after <last event>."
  or "Extend the @ TAG VIDEO from the exact final frame after <CHARACTER> says: “<last line>”")
 
@@ -126,8 +126,8 @@ Rules of thumb taken from the example prompts (they are estimates, not guarantee
 
 - Example 01 shipped 7 shots, 6 lines and 25 spoken words inside a 15 second generation (script estimate: 12.5s).
 - Measured on five published clips (transcribed with word timestamps, see `references/measured-clips.md`): speech runs 3.4 words per second pooled (median 4.0); calm or deadpan lines run 2.5 to 3.2, energetic comic lines 4 to 6.
-- Spoken words in the first 15 seconds of the published clips: 16 to 26. Keep a 15 second clip to about 25 spoken words or fewer.
-- 74 shots measured: the average shot lasts 1.7 to 2.7 seconds (median 1.7), so plan for 6 to 9 shots per 15 seconds.
+- Spoken words in the first 15 seconds of the published clips: 16 to 26. Keep a 15 second clip to about 25 spoken words or fewer, and a 30 second clip to about 50.
+- 74 shots measured: the average shot lasts 1.7 to 2.7 seconds (median 1.7), so plan for 6 to 9 shots per 15 seconds (12 to 18 in a 30 second clip).
 - A dialogue shot with a reaction or action beat runs about 1 second longer than its speaking time (cash clip: 7 words, 3.5 second shot). The script estimate is the tight minimum, so leave about 0.5 seconds of slack per dialogue shot.
 - Shots with no dialogue still need about 1.2 to 2 seconds each.
 - If the estimate is TOO LONG: trim lines first, then merge or drop a visual-only shot, then split into a first clip plus an extension prompt.

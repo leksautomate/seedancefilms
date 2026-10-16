@@ -13,7 +13,7 @@ def bible_for(seg):
 
 class Lint(unittest.TestCase):
     def setUp(self):
-        self.segs = sb.segment(SAMPLE)
+        self.segs = sb.segment(SAMPLE, clip=15.0, chain=30.0)  # the 15 second layout
         self.seg = self.segs[0]
         self.bible = bible_for(self.seg)
         self.draft = offline.draft(self.seg, self.bible, SETTINGS, None)["prompt"]
@@ -94,7 +94,7 @@ class Lint(unittest.TestCase):
                 "events": [{"kind": "dialogue", "speaker": "GIRL", "text": " ".join(["word"] * 12) + "?", "words": 12, "seconds": 4}] * 6}
         d = offline.draft(many, bible_for(many), SETTINGS, None)["prompt"]
         r = lint.lint(d, many, bible_for(many), SETTINGS, "full")
-        self.assertTrue(any("Estimated" in e and "clip" in e for e in r["errors"]), r["errors"])
+        self.assertTrue(any("Estimated" in e and "limit" in e for e in r["errors"]), r["errors"])
 
 
 if __name__ == "__main__":

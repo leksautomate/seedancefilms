@@ -25,8 +25,11 @@ from .util import clean_name, norm_key, now_iso, read_json, stamp, title_case, w
 
 DEFAULT_SETTINGS = {
     "aspect_ratio": "16:9",
-    "clip_seconds": 15,
-    "chain_seconds": 30,
+    "video_model": "Seedance 2.5",
+    "clip_seconds": 30,        # longest single generation (Seedance 2.5 accepts 4 to 30 whole seconds)
+    "chain_seconds": 60,       # a generation plus one extension
+    "resolution": "1080p",     # 480p, 720p or 1080p
+    "generate_audio": True,    # dialogue, ambience and lip-sync come from the model
     "style_lock": "",
     "prompt_style": "full",
 }

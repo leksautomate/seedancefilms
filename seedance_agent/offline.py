@@ -56,7 +56,7 @@ def draft(segment: dict, bible: dict, settings: dict, prev: dict | None = None) 
             speakers.append(e["speaker"])
     loc_name, loc_tag = location_tag(segment, bible)
     fmt = settings.get("format_line") or DEFAULT_FORMAT_LINE
-    request = int(segment.get("request_s") or settings.get("clip_seconds", 15))
+    request = int(segment.get("request_s") or settings.get("clip_seconds", 30))
     assumptions = ["Drafted offline from a template (no model was used). Treat it as a starting point."]
 
     mode = segment.get("mode", "single")

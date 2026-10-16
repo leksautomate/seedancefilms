@@ -11,7 +11,7 @@ You are given one segment of an episode: its beats and spoken lines, its timing 
 5. **Voices are described once, then referenced.** For a new clip, give each speaking character a voice block (from the bible) in the header. In every dialogue shot say "In her/his SAME ... voice". Never redefine a voice. In an extension, keep saying SAME and do not restate the voice block.
 6. **Tags exactly as written in the bible**, for example `@ TAG GIRL`, `@ TAG KITCHEN`. They bind the person's uploaded references. Never change their spelling.
 7. **One job per shot.** One framing, one subject action, at most two spoken lines. Keep subject action and camera framing separate in your head and on the page.
-8. **Fit the clip.** The budget is `request_s` seconds of video. A shot averages 1.7 to 2.7 seconds (a shot with a spoken line runs about speaking time plus 1 second); 6 to 9 shots fit 15 seconds; speech runs about 3.4 words per second. The linter estimates the running time and rejects a prompt that runs over. If you are over, remove or merge shots without dialogue first. Never cut dialogue.
+8. **Fit the clip.** The budget is `request_s` seconds of video; Seedance 2.5 renders any whole number of seconds from 4 to 30 in one generation. A shot averages 1.7 to 2.7 seconds (a shot with a spoken line runs about speaking time plus 1 second), so about 6 to 9 shots fit 15 seconds and 12 to 18 fit 30. Speech runs about 3.4 words per second. The linter estimates the running time and rejects a prompt that runs over. If you are over, remove or merge shots without dialogue first. Never cut dialogue.
 9. **End explicitly**: `END HERE.` or `CUT TO BLACK.` as the last line.
 
 # How to choose the shots (cinematic camera engine, condensed)

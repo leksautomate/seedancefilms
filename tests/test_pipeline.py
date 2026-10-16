@@ -20,6 +20,8 @@ class Base(unittest.TestCase):
         self.tmp.cleanup()
 
     def opts(self, **kw):
+        kw.setdefault("clip", 15.0)  # these tests assert the 15 second layout; the default is 30
+        kw.setdefault("chain", 30.0)
         return Options(output=self.out, movie=kw.pop("movie", "The Six"), **kw)
 
     def ep(self, movie="The Six", name="Episode 01 - The Six"):
@@ -238,3 +240,38 @@ class SloppyModelOutput(unittest.TestCase):
         out = j._normalise({"prompt": "x", "shots": ["wide shot", {"n": 1}], "brief": "text", "carry_over": None})
         self.assertEqual(out["shots"], [{"n": 1}])
         self.assertEqual(out["brief"]["purpose"], "")
+
+
+class Seedance25Defaults(Base):
+    def test_default_is_a_scene_per_generation_up_to_30_seconds(self):
+        r = run_episode(SAMPLE, Options(output=self.out, movie="The Six", offline=True), ScriptedConsole(interactive=False), None)
+        state = read_json(self.ep() / "episode.json")
+        self.assertEqual(r["segments"], 5)  # one clip per scene
+        self.assertEqual([s["mode"] for s in state["segments"]], ["single"] * 5)
+        for s in state["segments"]:
+            self.assertTrue(4 <= s["request_s"] <= 30, s["request_s"])
+            self.assertEqual(s["request_s"], int(s["request_s"]))
+        brief = (self.ep() / "Scene 01 - Kitchen" / "S01_brief.md").read_text()
+        self.assertIn("## Seedance 2.5 settings", brief)
+        self.assertIn("whole seconds from 4 to 30", brief)
+        self.assertIn("Seedance 2.5 at 16:9, 1080p, audio on", (self.ep() / "README.md").read_text())
+
+    def test_a_long_scene_is_split_beyond_the_chain_length(self):
+        long_scene = "SCENE 1 - INT. HALL - DAY\n" + "\n".join(
+            "ROXIE: Line %d of the long argument goes on and on." % i if i % 2 == 0 else "DIESEL: Reply %d is just as long as the line before it." % i
+            for i in range(30))
+        r = run_episode(long_scene, Options(output=self.out, movie="Long", offline=True), ScriptedConsole(interactive=False), None)
+        state = read_json(Path(self.out) / "Long" / "Episode 01" / "episode.json")
+        self.assertGreaterEqual(r["segments"], 2)
+        self.assertEqual([s["mode"] for s in state["segments"]][:2], ["generate", "extend"])
+        for s in state["segments"]:
+            self.assertLessEqual(s["request_s"], 30)
+
+    def test_new_chain_brief_warns_about_first_frame_inputs(self):
+        from seedance_agent import render
+        brief = render.generation_settings({"mode": "new-chain", "request_s": 12}, {"aspect_ratio": "16:9", "resolution": "1080p"})
+        text = "\n".join(brief)
+        self.assertIn("adaptive", text)
+        self.assertIn("first-frame image together with reference images", text)
+        self.assertIn("12 seconds", text)
+        self.assertIn("40 seconds" if False else "4 to 30", text)

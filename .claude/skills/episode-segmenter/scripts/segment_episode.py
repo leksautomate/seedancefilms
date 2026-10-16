@@ -2,7 +2,7 @@
 """Split an episode script into clip-sized segments for Seedance generation.
 
 Usage:
-    python3 segment_episode.py episode.txt [--clip 15] [--chain 30] [--json]
+    python3 segment_episode.py episode.txt [--clip 30] [--chain 60] [--json]
     cat episode.txt | python3 segment_episode.py - --json
 
 What it does
@@ -307,7 +307,7 @@ def build(text, args):
             request = min(args.clip, max(args.min_gen, math.ceil(est * (1 + args.slack))))
             notes = []
             if est < args.min_clip and len(parts) == 1:
-                notes.append("short clip: generate at %ds, or fold into a neighbouring scene as an insert if your tool needs a longer minimum" % request)
+                notes.append("short clip: request %ds (Seedance 2.5 takes 4 to 30 seconds), or fold it into a neighbouring scene as an insert" % request)
             if forced:
                 notes.append("no clean cut point found; the cut falls inside a beat, check the extension frame")
             if args.clip < est <= clip_eff:
@@ -356,8 +356,8 @@ def render(segs, args):
 def build_parser():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("file", help="episode script, or - for stdin")
-    ap.add_argument("--clip", type=float, default=15.0, help="seconds per generation (default 15)")
-    ap.add_argument("--chain", type=float, default=30.0, help="longest generation + extensions chain (default 30)")
+    ap.add_argument("--clip", type=float, default=30.0, help="longest single generation in seconds (default 30, the Seedance 2.5 maximum)")
+    ap.add_argument("--chain", type=float, default=60.0, help="longest generation plus one extension (default 60)")
     ap.add_argument("--tolerance", type=float, default=0.07, help="estimates are good to about this fraction; a part up to clip*(1+tolerance) is kept and flagged TIGHT (default 0.07)")
     ap.add_argument("--min-clip", type=float, default=6.0, help="scenes shorter than this are merged or kept short (default 6)")
     ap.add_argument("--min-part", type=float, default=5.0, help="smallest piece produced by a split (default 5)")

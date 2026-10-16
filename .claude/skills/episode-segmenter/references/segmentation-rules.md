@@ -2,7 +2,7 @@
 
 ## Why these numbers
 
-- **15 seconds per generation.** The prompts in this project say "Create the first 15 seconds" and "extend the video by another 15 seconds". Published clips are edited from 15 second generations.
+- **Up to 30 seconds per generation.** The Seedance 2.5 input schema takes `duration` as a whole number from 4 to 30, and one of the published clips was a single 20 second generation. The earlier prompts used 15 seconds plus a 15 second extension; that is still possible with `--clip 15`.
 - **6 to 9 shots per 15 seconds.** Measured on five published clips (74 shots): mean shot 1.95 s, median 1.73 s.
 - **3.4 spoken words per second.** Measured on 17 clean sentences from the same clips. Calm lines run 2.5 to 3.2, energetic comic lines 4 to 6.
 - **Dialogue shot overhead.** A shot with spoken lines runs about a second longer than the speaking time itself (lead-in before the first word, hold after the last). The segmenter adds 0.6 s per spoken line.
@@ -70,9 +70,9 @@ So each `extend` segment needs from the previous one:
 
 Write these into the segment card's "Carry over" line.
 
-## New chains (scenes over 30 seconds)
+## New chains (scenes over the chain length)
 
-After one generation and one extension, the chain is full. The next segment starts a new chain.
+After one generation and one extension (60 seconds by default), the chain is full. The next segment starts a new chain.
 
 1. Pick the last frame of the previous segment and use it as a first-frame image reference (`@Image N`, "match exactly").
 2. Re-state the character and location tags, and the preserve-the-designs sentence.
@@ -95,17 +95,19 @@ If a scene has no heading but the place changes (for example the chase in scene 
 
 ## Worked example: the sample episode
 
-`examples/sample-episode.txt` has five scenes. Output (see `examples/sample-segments.md`):
+`examples/sample-episode.txt` has five scenes. With the defaults (30 second generations) every scene is one clip
+(`examples/sample-segments.md`):
 
-| Segment | Scene | Mode | Est. s | Note |
-|---|---|---|---|---|
-| S01a | Kitchen | generate | 15.1 | TIGHT, cut after "Are you SURE? They feel so tight..." |
-| S01b | Kitchen | extend | 14.8 | Starts from the final frame of S01a |
-| S02a | Bedroom | generate | 9.7 | Cut after "For what?" |
-| S02b | Bedroom | extend | 11.9 | |
-| S03 | Underground city | single | 4.0 | Short establishing clip |
-| S04 | Restaurant | single | 12.8 | One clip |
-| S05a | Bridge | generate | 15.4 | TIGHT, cut after "DROP THE EXIT... NOW!" |
-| S05b | Bridge | extend | 12.4 | The exit sphere and the teleport |
+| Segment | Scene | Mode | Est. s | Request s | Note |
+|---|---|---|---|---|---|
+| S01 | Kitchen | single | 29.9 | 30 | 9 spoken lines, 39 words |
+| S02 | Bedroom | single | 21.7 | 24 | 8 lines, 37 words |
+| S03 | Underground city | single | 4.0 | 5 | Short establishing clip |
+| S04 | Restaurant | single | 12.8 | 15 | |
+| S05 | Bridge | single | 27.8 | 30 | The chase, the exit sphere and the teleport |
 
-Total estimated runtime: 96 seconds, 8 segments.
+Total estimated runtime: 96 seconds in 5 clips.
+
+With `--clip 15 --chain 30` (the earlier 15 second layout, `examples/sample-segments-15s.md`) the same episode becomes 8 clips:
+the kitchen, bedroom and bridge scenes each split into a generation and an extension, with cuts after "Are you SURE? They feel so tight...",
+"For what?" and "DROP THE EXIT... NOW!".

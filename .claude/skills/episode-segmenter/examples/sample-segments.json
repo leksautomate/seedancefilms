@@ -1,28 +1,28 @@
 {
-  "clip_s": 15.0,
-  "chain_s": 30.0,
+  "clip_s": 30.0,
+  "chain_s": 60.0,
   "segments": [
     {
-      "id": "S01a",
+      "id": "S01",
       "scene": 1,
       "heading": "SCENE 1 - INT. KITCHEN - NIGHT",
       "location": "kitchen",
-      "mode": "generate",
+      "mode": "single",
       "part": 1,
-      "parts": 2,
-      "estimated_s": 15.1,
-      "request_s": 15.0,
-      "dialogue_lines": 4,
-      "dialogue_words": 16,
+      "parts": 1,
+      "estimated_s": 29.9,
+      "request_s": 30.0,
+      "dialogue_lines": 9,
+      "dialogue_words": 39,
       "characters": [
         "GIRL",
         "WOLF"
       ],
       "scene_type_hint": "dialogue",
       "mood_hint": "neutral",
-      "last_beat": "Are you SURE? They feel so tight...",
+      "last_beat": "Here we go...",
       "last_beat_kind": "dialogue",
-      "next_beat": "Then get a bigger size.",
+      "next_beat": "",
       "events": [
         {
           "kind": "establish",
@@ -100,35 +100,7 @@
           "text": "Are you SURE? They feel so tight...",
           "words": 7,
           "seconds": 2.66
-        }
-      ],
-      "notes": [
-        "TIGHT: estimate 15.1s is over the 15s budget by 0.1s; trim a line or a beat, or accept the risk"
-      ],
-      "merged_from": null
-    },
-    {
-      "id": "S01b",
-      "scene": 1,
-      "heading": "SCENE 1 - INT. KITCHEN - NIGHT",
-      "location": "kitchen",
-      "mode": "extend",
-      "part": 2,
-      "parts": 2,
-      "estimated_s": 14.8,
-      "request_s": 15.0,
-      "dialogue_lines": 5,
-      "dialogue_words": 23,
-      "characters": [
-        "GIRL",
-        "WOLF"
-      ],
-      "scene_type_hint": "dialogue",
-      "mood_hint": "neutral",
-      "last_beat": "Here we go...",
-      "last_beat_kind": "dialogue",
-      "next_beat": "",
-      "events": [
+        },
         {
           "kind": "dialogue",
           "speaker": "WOLF",
@@ -200,32 +172,30 @@
           "seconds": 1.48
         }
       ],
-      "notes": [
-        "extension: start from the exact final frame of the previous segment"
-      ],
+      "notes": [],
       "merged_from": null
     },
     {
-      "id": "S02a",
+      "id": "S02",
       "scene": 2,
       "heading": "SCENE 2 - INT. BEDROOM - NIGHT",
       "location": "bedroom",
-      "mode": "generate",
+      "mode": "single",
       "part": 1,
-      "parts": 2,
-      "estimated_s": 9.7,
-      "request_s": 11,
-      "dialogue_lines": 3,
-      "dialogue_words": 10,
+      "parts": 1,
+      "estimated_s": 21.7,
+      "request_s": 24,
+      "dialogue_lines": 8,
+      "dialogue_words": 37,
       "characters": [
         "DIESEL",
         "ROXIE"
       ],
       "scene_type_hint": "dialogue",
       "mood_hint": "neutral",
-      "last_beat": "For what?",
+      "last_beat": "Whatever.",
       "last_beat_kind": "dialogue",
-      "next_beat": "Collagen. Better skin. Less wrinkles.",
+      "next_beat": "",
       "events": [
         {
           "kind": "establish",
@@ -275,33 +245,7 @@
           "text": "For what?",
           "words": 2,
           "seconds": 1.19
-        }
-      ],
-      "notes": [],
-      "merged_from": null
-    },
-    {
-      "id": "S02b",
-      "scene": 2,
-      "heading": "SCENE 2 - INT. BEDROOM - NIGHT",
-      "location": "bedroom",
-      "mode": "extend",
-      "part": 2,
-      "parts": 2,
-      "estimated_s": 11.9,
-      "request_s": 14,
-      "dialogue_lines": 5,
-      "dialogue_words": 27,
-      "characters": [
-        "DIESEL",
-        "ROXIE"
-      ],
-      "scene_type_hint": "dialogue",
-      "mood_hint": "neutral",
-      "last_beat": "Whatever.",
-      "last_beat_kind": "dialogue",
-      "next_beat": "",
-      "events": [
+        },
         {
           "kind": "dialogue",
           "speaker": "ROXIE",
@@ -345,9 +289,7 @@
           "seconds": 0.89
         }
       ],
-      "notes": [
-        "extension: start from the exact final frame of the previous segment"
-      ],
+      "notes": [],
       "merged_from": null
     },
     {
@@ -385,7 +327,7 @@
         }
       ],
       "notes": [
-        "short clip: generate at 5s, or fold into a neighbouring scene as an insert if your tool needs a longer minimum"
+        "short clip: request 5s (Seedance 2.5 takes 4 to 30 seconds), or fold it into a neighbouring scene as an insert"
       ],
       "merged_from": null
     },
@@ -398,7 +340,7 @@
       "part": 1,
       "parts": 1,
       "estimated_s": 12.8,
-      "request_s": 15.0,
+      "request_s": 15,
       "dialogue_lines": 4,
       "dialogue_words": 8,
       "characters": [
@@ -500,26 +442,26 @@
       "merged_from": null
     },
     {
-      "id": "S05a",
+      "id": "S05",
       "scene": 5,
       "heading": "SCENE 5 - EXT. BRIDGE - DAY",
       "location": "bridge",
-      "mode": "generate",
+      "mode": "single",
       "part": 1,
-      "parts": 2,
-      "estimated_s": 15.4,
-      "request_s": 15.0,
-      "dialogue_lines": 4,
-      "dialogue_words": 7,
+      "parts": 1,
+      "estimated_s": 27.8,
+      "request_s": 30.0,
+      "dialogue_lines": 5,
+      "dialogue_words": 8,
       "characters": [
         "DIESEL",
         "ROXIE"
       ],
       "scene_type_hint": "action",
       "mood_hint": "tense",
-      "last_beat": "DROP THE EXIT... NOW!",
+      "last_beat": "Almost.",
       "last_beat_kind": "dialogue",
-      "next_beat": "Roxie reaches into her black bag while running and pulls out a golf-ball-sized gunmetal sphere.",
+      "next_beat": "",
       "events": [
         {
           "kind": "establish",
@@ -611,35 +553,7 @@
           "text": "DROP THE EXIT... NOW!",
           "words": 4,
           "seconds": 1.78
-        }
-      ],
-      "notes": [
-        "TIGHT: estimate 15.4s is over the 15s budget by 0.4s; trim a line or a beat, or accept the risk"
-      ],
-      "merged_from": null
-    },
-    {
-      "id": "S05b",
-      "scene": 5,
-      "heading": "SCENE 5 - EXT. BRIDGE - DAY",
-      "location": "bridge",
-      "mode": "extend",
-      "part": 2,
-      "parts": 2,
-      "estimated_s": 12.4,
-      "request_s": 14,
-      "dialogue_lines": 1,
-      "dialogue_words": 1,
-      "characters": [
-        "DIESEL",
-        "ROXIE"
-      ],
-      "scene_type_hint": "action",
-      "mood_hint": "tense",
-      "last_beat": "Almost.",
-      "last_beat_kind": "dialogue",
-      "next_beat": "",
-      "events": [
+        },
         {
           "kind": "action",
           "speaker": null,
@@ -718,9 +632,7 @@
           "seconds": 0.89
         }
       ],
-      "notes": [
-        "extension: start from the exact final frame of the previous segment"
-      ],
+      "notes": [],
       "merged_from": null
     }
   ]

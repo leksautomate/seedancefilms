@@ -40,7 +40,7 @@ output/
         S01b_extend.txt              the extension prompt
 ```
 
-Every prompt is checked before it is saved: your dialogue word for word, hard cuts only, no music, voices, tags, an
+Prompts are written for Seedance 2.5, which renders 4 to 30 seconds in one generation, so by default a whole scene is one clip (use `--clip 15` for shorter ones). Every prompt is checked before it is saved: your dialogue word for word, hard cuts only, no music, voices, tags, an
 explicit ending, and an estimated running time that fits the clip. Details: [`docs/agent-pipeline.md`](docs/agent-pipeline.md).
 What was learned from other projects and what is original: [`docs/design.md`](docs/design.md).
 

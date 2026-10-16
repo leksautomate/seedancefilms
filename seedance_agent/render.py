@@ -17,6 +17,25 @@ def seg_files(seg: dict) -> tuple[str, str, str]:
     return folder, "%s.txt" % base, "%s_brief.md" % seg["id"]
 
 
+def generation_settings(seg: dict, settings: dict) -> list[str]:
+    """What to set in Seedance 2.5 for this clip (limits checked against the model's input schema)."""
+    secs = max(4, min(30, int(round(seg.get("request_s") or settings.get("clip_seconds", 30)))))
+    mode = seg["mode"]
+    aspect = settings.get("aspect_ratio", "16:9")
+    lines = ["- **Model:** %s" % settings.get("video_model", "Seedance 2.5"),
+             "- **Duration:** %d seconds (the model takes whole seconds from 4 to 30)" % secs,
+             "- **Aspect ratio:** %s" % ("adaptive (the first-frame image sets the shape)" if mode == "new-chain" else aspect),
+             "- **Resolution:** %s (480p is cheaper for a test render)" % settings.get("resolution", "1080p"),
+             "- **Audio:** %s (dialogue, ambience and lip-sync are generated with the video)" % ("on" if settings.get("generate_audio", True) else "off")]
+    if mode == "extend":
+        lines.append("- **Inputs:** the previous clip's video as the video reference, plus the character and location references. Paste the extension prompt.")
+    elif mode == "new-chain":
+        lines.append("- **Inputs:** the previous clip's last frame as the first-frame image, plus the references. Some providers do not allow a first-frame image together with reference images; if yours does not, add the last frame as a normal reference image and keep the prompt as written.")
+    else:
+        lines.append("- **Inputs:** the reference images for the tags listed below (a model takes up to 30 images, 10 videos and 10 audio files), and optionally an audio file to fix a character's voice. Paste the prompt.")
+    return lines
+
+
 def _bullets(items) -> str:
     return "\n".join("- %s" % i for i in items) if items else "- (none)"
 
@@ -30,7 +49,8 @@ def brief_md(seg: dict, scene_note: dict | None, settings: dict, offline: bool) 
              "Status: **%s**%s · estimated %.1fs, request %ds · %d spoken lines, %d words · part %d of %d" % (
                  seg.get("status", "pending").upper(), " (offline draft, no model used)" if offline else "", seg.get("estimated_s", 0),
                  seg.get("request_s", 0), seg.get("dialogue_lines", 0), seg.get("dialogue_words", 0), seg.get("part", 1), seg.get("parts", 1)),
-             "", "## How to generate", "", MODE_HELP.get(seg["mode"], ""), ""]
+             "", "## How to generate", "", MODE_HELP.get(seg["mode"], ""), "",
+             "## Seedance 2.5 settings", ""] + generation_settings(seg, settings) + [""]
     if scene_note:
         lines += ["## Why this scene earns its place", "", scene_note.get("why", "(not analysed)"), ""]
     lines += ["## Shot brief", "",
@@ -68,7 +88,7 @@ def brief_md(seg: dict, scene_note: dict | None, settings: dict, offline: bool) 
     lines += ["## Warnings", "", _bullets(seg.get("warnings")), "",
               "## Timing check", "",
               "Estimated %.1fs of a %ds clip (%s). Speech %.1fs. These are estimates: speech runs about 3.4 words per second and a shot with a line runs about a second longer than the speech." % (
-                  t.get("estimated_s", 0), t.get("limit_s", settings.get("clip_seconds", 15)), t.get("verdict", "n/a"), t.get("speaking_s", 0)), ""]
+                  t.get("estimated_s", 0), t.get("limit_s", settings.get("clip_seconds", 30)), t.get("verdict", "n/a"), t.get("speaking_s", 0)), ""]
     return "\n".join(lines)
 
 
@@ -100,7 +120,11 @@ def readme_md(state: dict, offline: bool) -> str:
     for s in state["segments"]:
         lines.append("| %s | %s | %s | %.1f | %d | %d | %d | %s |" % (s["id"], s.get("heading", ""), s["mode"], s.get("estimated_s", 0),
                                                                     s.get("request_s", 0), s.get("dialogue_lines", 0), s.get("dialogue_words", 0), s.get("status", "pending")))
-    lines += ["", "Estimated runtime: **%.1fs** (%.1f min) in %d clips." % (total, total / 60, len(state["segments"])), ""]
+    st = state.get("settings", {})
+    lines += ["", "Estimated runtime: **%.1fs** (%.1f min) in %d clips." % (total, total / 60, len(state["segments"])),
+              "", "Generate every clip with %s at %s, %s, audio %s. Each clip's brief lists its duration (whole seconds, 4 to 30) and inputs." % (
+                  st.get("video_model", "Seedance 2.5"), st.get("aspect_ratio", "16:9"), st.get("resolution", "1080p"),
+                  "on" if st.get("generate_audio", True) else "off"), ""]
     if a.get("spine"):
         lines += ["## The spine", ""]
         for act in a["spine"]:

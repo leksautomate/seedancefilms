@@ -10,7 +10,7 @@ paste a script
 [1] Intake ........... which movie? which episode?  (asks you when the movie is not given)
    |
    v
-[2] Segmenter ........ scenes -> clips of 15 s, +15 s extensions, new chains, short clips     (code, no model)
+[2] Segmenter ........ scenes -> clips of up to 30 s, extension or new chain beyond, short clips  (code, no model)
    |
    v
 [3] Analyst agent .... reads the whole episode: spine, why each scene earns its place,        (model, 1 loop)
@@ -26,6 +26,27 @@ paste a script
 ```
 
 Progress is written after every clip. If a run stops (network, Ctrl-C), run the same command again and it resumes.
+
+## Seedance 2.5
+
+The agent writes prompts for Seedance 2.5 and plans around its limits. Checked against the model's input schema:
+
+| Setting | Limit |
+|---|---|
+| Duration | Whole seconds, 4 to 30, in one generation |
+| Aspect ratio | 16:9, 4:3, 1:1, 3:4, 9:16, 21:9, adaptive |
+| Resolution | 480p, 720p, 1080p |
+| Audio | On by default: dialogue, ambience and lip-sync are generated with the video |
+| Prompt length | Up to 30000 characters |
+| References | Images, videos and audio files (up to 30 images, 10 videos and 10 audio files, per the model description) |
+
+So by default a whole scene is one clip of up to 30 seconds, requested at the scene's own length. Use `--clip 15` for
+shorter generations. Each clip's brief has a **Seedance 2.5 settings** section (duration, aspect ratio, resolution,
+audio, inputs) so you know what to set when you generate it. Settings such as `aspect_ratio`, `resolution` and
+`generate_audio` live in `output/<Movie>/movie.json`.
+
+Not confirmed: how long an extension may be (the 60 second chain is an assumption), and whether your provider lets a
+first-frame image be combined with reference images (the brief for a new chain says what to do if it does not).
 
 ## What gets saved
 
@@ -108,7 +129,7 @@ Plain HTTP, no packages to install.
 python3 -m unittest discover -s tests -t .
 ```
 
-62 tests cover intake, the folder structure and versioning, the linter, both model clients (against mocked HTTP), the
+65 tests cover intake, the folder structure and versioning, the linter, both model clients (against mocked HTTP), the
 agent loop, and the whole pipeline including a scripted model that first changes a line of dialogue and has to fix it.
 
 ## What has not been run

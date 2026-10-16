@@ -53,8 +53,9 @@ def lint(prompt: str, segment: dict, bible: dict, settings: dict, style: str = "
         errors.append("Use at least 2 shots, each starting with a line like 'SHOT 1 — MEDIUM SHOT — EYE LEVEL'.")
     elif nums != list(range(1, len(nums) + 1)):
         errors.append("Shot numbers must run 1, 2, 3 ... without gaps. Found: %s." % nums)
-    if len(nums) > 14:
-        errors.append("%d shots is too many for one clip. Merge shots." % len(nums))
+    max_shots = max(14, int(float(settings.get("clip_seconds", 30)) * 0.6))
+    if len(nums) > max_shots:
+        errors.append("%d shots is too many for one clip (limit %d). Merge shots." % (len(nums), max_shots))
     if style == "full":
         for m in SHOT_HEAD.finditer(text):
             rest = re.sub(r"[\s—–\-:]+", "", m.group(2))
@@ -104,10 +105,10 @@ def lint(prompt: str, segment: dict, bible: dict, settings: dict, style: str = "
                           k + 1, want or "(end)", have or "(end)", " | ".join(expected) or "(none)"))
 
     # 7. timing
-    limit = float(settings.get("clip_seconds", 15))
+    limit = float(settings.get("clip_seconds", 30))
     timing = sb.timing(text, limit)
     if timing["verdict"] == "TOO LONG":
-        errors.append("Estimated %.1fs against a %ds clip. Remove or merge non-dialogue shots or shorten action. "
+        errors.append("Estimated %.1fs against a %ds limit. Remove or merge non-dialogue shots or shorten action. "
                       "Do not cut dialogue." % (timing["estimated_s"], limit))
     elif timing["verdict"] == "TIGHT":
         warnings.append("Timing is tight: estimated %.1fs of %ds." % (timing["estimated_s"], limit))

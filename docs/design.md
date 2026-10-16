@@ -68,5 +68,5 @@ agent as the `lookup_camera_recipe` tool.
 
 - No real model has written a prompt through this code. Everything else is tested.
 - Timing numbers rest on five clips and one prompt matched to its clip.
-- The 4 second minimum generation and the 30 second chain limit are assumptions to confirm in the generator.
+- Seedance 2.5's duration range (4 to 30 seconds) is confirmed from its input schema. The 60 second chain (a generation plus one extension) is an assumption, and so is whether a provider allows a first-frame image together with reference images.
 - The offline drafts are templates. They show the structure and pass the checks, but they are not creative writing.

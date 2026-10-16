@@ -2,7 +2,7 @@
 
   paste a script
     -> intake        which movie, which episode (asks if the movie is not given)
-    -> segmenter     scenes -> clips (15 s, +15 s extension, new chains, short clips)   [code]
+    -> segmenter     scenes -> clips (up to 30 s each, extension and new chains beyond, short clips)   [code]
     -> analyst       spine, why each scene earns its place, bible, colour, risks         [model agent]
     -> writer        one agent loop per clip, every prompt gated by the linter           [model agent]
     -> library       output/<Movie>/<Episode>/<Scene>/ files, plan.html, README, review checklist
