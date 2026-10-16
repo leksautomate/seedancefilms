@@ -16,6 +16,17 @@ Read these when needed:
 - `examples/` - eight real prompts (generation, extension, no-dialogue action, 20s fragment)
 - `scripts/dialogue_timing.py` - dialogue word count and running-time estimate
 
+## Where this fits in the pipeline
+
+Working from a whole episode? Run the other skills first (see `docs/agent-pipeline.md`):
+
+1. `episode-segmenter` splits the script into segments (15 s clips, extensions, new chains). Each segment arrives with its characters, estimated seconds, last spoken line and mode (`single`, `generate`, `extend`, `new-chain`).
+2. `cinematic-camera-engine` turns the segment's scene type and mood into a shot plan (`SHOT N - SCALE - ANGLE`). When this skill's header says hard cuts only, use its scales and angles and ignore camera movement.
+3. This skill writes the prompt from that plan. For `extend` and `new-chain` segments use the extension style below and quote the last spoken line of the previous segment.
+4. Run the timing check in section 4 on every finished prompt.
+
+If the user hands over a single scene or an idea instead, skip steps 1 and 2 and start at section 1.
+
 ## 1. Collect the inputs
 
 Ask only for what is missing. Do not ask for anything the user already gave.

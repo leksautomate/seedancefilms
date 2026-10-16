@@ -1,0 +1,750 @@
+{
+  "clip_s": 15.0,
+  "chain_s": 30.0,
+  "segments": [
+    {
+      "id": "S01a",
+      "scene": 1,
+      "heading": "SCENE 1 - INT. KITCHEN - NIGHT",
+      "location": "kitchen",
+      "mode": "generate",
+      "part": 1,
+      "parts": 2,
+      "estimated_s": 15.1,
+      "request_s": 15.0,
+      "dialogue_lines": 4,
+      "dialogue_words": 16,
+      "characters": [
+        "ALREADY",
+        "BABE",
+        "GIRL",
+        "SIX",
+        "SURE",
+        "TEN",
+        "THEY",
+        "WOLF"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "neutral",
+      "last_beat": "Are you SURE? They feel so tight...",
+      "last_beat_kind": "dialogue",
+      "next_beat": "Then get a bigger size.",
+      "events": [
+        {
+          "kind": "establish",
+          "speaker": null,
+          "text": "establishing view of SCENE 1 - INT. KITCHEN - NIGHT",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "WOLF sits at the table assembling a fictional training bomb.",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "A one-sided magnifying lens covers his eye.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "He handles tiny parts with tweezers.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "GIRL stands in front of a full-length mirror, fighting with the button of her jeans.",
+          "words": 0,
+          "seconds": 1.0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "GIRL",
+          "text": "BABE!",
+          "words": 1,
+          "seconds": 0.89
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "WOLF flinches, nearly drops the tweezers, then looks up, annoyed.",
+          "words": 0,
+          "seconds": 1.0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "GIRL",
+          "text": "Do I look fat in these jeans?",
+          "words": 7,
+          "seconds": 2.66
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "WOLF",
+          "text": "No.",
+          "words": 1,
+          "seconds": 0.89
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "He goes back to the bomb.",
+          "words": 0,
+          "seconds": 1.0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "GIRL",
+          "text": "Are you SURE? They feel so tight...",
+          "words": 7,
+          "seconds": 2.66
+        }
+      ],
+      "notes": [
+        "TIGHT: estimate 15.1s is over the 15s budget by 0.1s; trim a line or a beat, or accept the risk"
+      ],
+      "merged_from": null
+    },
+    {
+      "id": "S01b",
+      "scene": 1,
+      "heading": "SCENE 1 - INT. KITCHEN - NIGHT",
+      "location": "kitchen",
+      "mode": "extend",
+      "part": 2,
+      "parts": 2,
+      "estimated_s": 14.8,
+      "request_s": 15.0,
+      "dialogue_lines": 5,
+      "dialogue_words": 23,
+      "characters": [
+        "ALREADY",
+        "BABE",
+        "GIRL",
+        "SIX",
+        "SURE",
+        "TEN",
+        "THEY",
+        "WOLF"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "neutral",
+      "last_beat": "Here we go...",
+      "last_beat_kind": "dialogue",
+      "next_beat": "",
+      "events": [
+        {
+          "kind": "dialogue",
+          "speaker": "WOLF",
+          "text": "Then get a bigger size.",
+          "words": 5,
+          "seconds": 2.07
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "GIRL looks offended, eyebrows shooting up.",
+          "words": 0,
+          "seconds": 1.0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "GIRL",
+          "text": "THEY'RE ALREADY A SIX!",
+          "words": 4,
+          "seconds": 1.78
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "WOLF stops working and looks up, genuinely surprised.",
+          "words": 0,
+          "seconds": 1.0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "WOLF",
+          "text": "Six? I thought you were, like, a TEN!",
+          "words": 8,
+          "seconds": 2.95
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "GIRL freezes.",
+          "words": 0,
+          "seconds": 1.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Confusion turns to disbelief, then outrage.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "GIRL",
+          "text": "You thought what?",
+          "words": 3,
+          "seconds": 1.48
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "WOLF puts down the tweezers and removes the magnifying lens, resigned.",
+          "words": 0,
+          "seconds": 1.0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "WOLF",
+          "text": "Here we go...",
+          "words": 3,
+          "seconds": 1.48
+        }
+      ],
+      "notes": [
+        "extension: start from the exact final frame of the previous segment"
+      ],
+      "merged_from": null
+    },
+    {
+      "id": "S02a",
+      "scene": 2,
+      "heading": "SCENE 2 - INT. BEDROOM - NIGHT",
+      "location": "bedroom",
+      "mode": "generate",
+      "part": 1,
+      "parts": 2,
+      "estimated_s": 9.7,
+      "request_s": 11,
+      "dialogue_lines": 3,
+      "dialogue_words": 10,
+      "characters": [
+        "DIESEL",
+        "ROXIE"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "neutral",
+      "last_beat": "For what?",
+      "last_beat_kind": "dialogue",
+      "next_beat": "Collagen. Better skin. Less wrinkles.",
+      "events": [
+        {
+          "kind": "establish",
+          "speaker": null,
+          "text": "establishing view of SCENE 2 - INT. BEDROOM - NIGHT",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "ROXIE scrolls on her phone in bed, then puts on a white LED therapy mask.",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Her wolf nose sticks out through the nose opening.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Red light glows across her fur.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "DIESEL",
+          "text": "What the hell is that?",
+          "words": 5,
+          "seconds": 2.07
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ROXIE",
+          "text": "Red light therapy.",
+          "words": 3,
+          "seconds": 1.48
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "DIESEL",
+          "text": "For what?",
+          "words": 2,
+          "seconds": 1.19
+        }
+      ],
+      "notes": [],
+      "merged_from": null
+    },
+    {
+      "id": "S02b",
+      "scene": 2,
+      "heading": "SCENE 2 - INT. BEDROOM - NIGHT",
+      "location": "bedroom",
+      "mode": "extend",
+      "part": 2,
+      "parts": 2,
+      "estimated_s": 11.9,
+      "request_s": 14,
+      "dialogue_lines": 5,
+      "dialogue_words": 27,
+      "characters": [
+        "DIESEL",
+        "ROXIE"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "neutral",
+      "last_beat": "Whatever.",
+      "last_beat_kind": "dialogue",
+      "next_beat": "",
+      "events": [
+        {
+          "kind": "dialogue",
+          "speaker": "ROXIE",
+          "text": "Collagen. Better skin. Less wrinkles.",
+          "words": 5,
+          "seconds": 2.07
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "DIESEL",
+          "text": "Your entire face is covered in fur.",
+          "words": 7,
+          "seconds": 2.66
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ROXIE",
+          "text": "Better skin means better fur. It's basic science.",
+          "words": 8,
+          "seconds": 2.95
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "DIESEL",
+          "text": "That's definitely how fur works, Roxie...",
+          "words": 6,
+          "seconds": 2.36
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "ROXIE rolls her eyes and goes back to scrolling.",
+          "words": 0,
+          "seconds": 1.0
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ROXIE",
+          "text": "Whatever.",
+          "words": 1,
+          "seconds": 0.89
+        }
+      ],
+      "notes": [
+        "extension: start from the exact final frame of the previous segment"
+      ],
+      "merged_from": null
+    },
+    {
+      "id": "S03",
+      "scene": 3,
+      "heading": "SCENE 3 - EXT. UNDERGROUND CITY - NIGHT",
+      "location": "underground city",
+      "mode": "single",
+      "part": 1,
+      "parts": 1,
+      "estimated_s": 4.0,
+      "request_s": 5,
+      "dialogue_lines": 0,
+      "dialogue_words": 0,
+      "characters": [],
+      "scene_type_hint": "environment_establishing",
+      "mood_hint": "neutral",
+      "last_beat": "A huge layered city of pipes, bridges and waterfalls fades through haze.",
+      "last_beat_kind": "action",
+      "next_beat": "",
+      "events": [
+        {
+          "kind": "establish",
+          "speaker": null,
+          "text": "establishing view of SCENE 3 - EXT. UNDERGROUND CITY - NIGHT",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "A huge layered city of pipes, bridges and waterfalls fades through haze.",
+          "words": 0,
+          "seconds": 2.0
+        }
+      ],
+      "notes": [
+        "short clip: generate at 5s, or fold into a neighbouring scene as an insert if your tool needs a longer minimum"
+      ],
+      "merged_from": null
+    },
+    {
+      "id": "S04",
+      "scene": 4,
+      "heading": "SCENE 4 - INT. RESTAURANT - NIGHT",
+      "location": "restaurant",
+      "mode": "single",
+      "part": 1,
+      "parts": 1,
+      "estimated_s": 12.8,
+      "request_s": 15.0,
+      "dialogue_lines": 4,
+      "dialogue_words": 8,
+      "characters": [
+        "CLICK",
+        "DIESEL",
+        "RUFUS"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "neutral",
+      "last_beat": "A brief ominous pause.",
+      "last_beat_kind": "action",
+      "next_beat": "",
+      "events": [
+        {
+          "kind": "establish",
+          "speaker": null,
+          "text": "establishing view of SCENE 4 - INT. RESTAURANT - NIGHT",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "RUFUS wipes the counter after closing, quietly singing.",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "A red landline phone sits beside him.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "It rings.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "He stops singing and picks up.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "DIESEL",
+          "text": "You done?",
+          "words": 2,
+          "seconds": 1.19
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "RUFUS",
+          "text": "Yeah.",
+          "words": 1,
+          "seconds": 0.89
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "DIESEL",
+          "text": "Bring your chopper.",
+          "words": 3,
+          "seconds": 1.48
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "RUFUS",
+          "text": "Always do.",
+          "words": 2,
+          "seconds": 1.19
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "RUFUS hangs up.",
+          "words": 0,
+          "seconds": 1.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "CLICK.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "A brief ominous pause.",
+          "words": 0,
+          "seconds": 1.0
+        }
+      ],
+      "notes": [],
+      "merged_from": null
+    },
+    {
+      "id": "S05a",
+      "scene": 5,
+      "heading": "SCENE 5 - EXT. BRIDGE - DAY",
+      "location": "bridge",
+      "mode": "generate",
+      "part": 1,
+      "parts": 2,
+      "estimated_s": 15.4,
+      "request_s": 15.0,
+      "dialogue_lines": 4,
+      "dialogue_words": 7,
+      "characters": [
+        "DIESEL",
+        "DROP",
+        "EXIT",
+        "NOW",
+        "ROXIE",
+        "RUN",
+        "WHAT"
+      ],
+      "scene_type_hint": "action",
+      "mood_hint": "tense",
+      "last_beat": "DROP THE EXIT... NOW!",
+      "last_beat_kind": "dialogue",
+      "next_beat": "Roxie reaches into her black bag while running and pulls out a golf-ball-sized gunmetal sphere.",
+      "events": [
+        {
+          "kind": "establish",
+          "speaker": null,
+          "text": "establishing view of SCENE 5 - EXT. BRIDGE - DAY",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "ROXIE and DIESEL look up.",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "A small drone hovers over the bridge.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "DIESEL",
+          "text": "RUN!",
+          "words": 1,
+          "seconds": 0.89
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "They sprint across the bridge.",
+          "words": 0,
+          "seconds": 1.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "The drone chases from behind and above.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Its targeting interface locks onto both of them.",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "The interface flashes red.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "The drone fires repeatedly.",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Bullets strike the bridge around their feet.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "DIESEL",
+          "text": "ROXIE!",
+          "words": 1,
+          "seconds": 0.89
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ROXIE",
+          "text": "WHAT?",
+          "words": 1,
+          "seconds": 0.89
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "DIESEL",
+          "text": "DROP THE EXIT... NOW!",
+          "words": 4,
+          "seconds": 1.78
+        }
+      ],
+      "notes": [
+        "TIGHT: estimate 15.4s is over the 15s budget by 0.4s; trim a line or a beat, or accept the risk"
+      ],
+      "merged_from": null
+    },
+    {
+      "id": "S05b",
+      "scene": 5,
+      "heading": "SCENE 5 - EXT. BRIDGE - DAY",
+      "location": "bridge",
+      "mode": "extend",
+      "part": 2,
+      "parts": 2,
+      "estimated_s": 12.4,
+      "request_s": 14,
+      "dialogue_lines": 1,
+      "dialogue_words": 1,
+      "characters": [
+        "DIESEL",
+        "DROP",
+        "EXIT",
+        "NOW",
+        "ROXIE",
+        "RUN",
+        "WHAT"
+      ],
+      "scene_type_hint": "action",
+      "mood_hint": "tense",
+      "last_beat": "Almost.",
+      "last_beat_kind": "dialogue",
+      "next_beat": "",
+      "events": [
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Roxie reaches into her black bag while running and pulls out a golf-ball-sized gunmetal sphere.",
+          "words": 0,
+          "seconds": 1.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Its segments shift as it activates.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "She throws the sphere onto the bridge.",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "It hits the ground and unfolds into a glowing platform.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "They jump into the platform together.",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "The drone is still chasing them.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "They teleport away.",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "The portal closes behind them.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Inside their apartment a wall gadget flares with glowing energy.",
+          "words": 0,
+          "seconds": 2.0
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "They crash onto the floor and tumble across it, battered.",
+          "words": 0,
+          "seconds": 0.5
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "DIESEL",
+          "text": "Almost.",
+          "words": 1,
+          "seconds": 0.89
+        }
+      ],
+      "notes": [
+        "extension: start from the exact final frame of the previous segment"
+      ],
+      "merged_from": null
+    }
+  ]
+}
