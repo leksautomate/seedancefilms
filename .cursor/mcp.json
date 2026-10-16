@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "seedance-studio": {
+      "command": "python3",
+      "args": ["studio.py", "mcp"]
+    }
+  }
+}

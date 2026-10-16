@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 
 from .console import Console
@@ -17,6 +18,8 @@ Seedance Studio: paste an episode script, get organised, checked Seedance prompt
   python3 studio.py script.txt           use a script file
   python3 studio.py revise --movie "The Six" --episode 1 --clip-id S01b "make the last shot a wide"
   python3 studio.py list                 show the movies and episodes in the output folder
+  python3 studio.py mcp                  run the studio's tools as an MCP server (an AI assistant starts this itself)
+  python3 studio.py call TOOL '{...}'    call one studio tool from a shell (same tools as the MCP server)
 
 Everything is saved under output/<Movie>/<Episode NN - Title>/<Scene NN - Place>/.
 Set ANTHROPIC_API_KEY or OPENAI_API_KEY to use a model. Use --offline for template drafts without one.
@@ -51,6 +54,7 @@ def cmd_run(argv: list[str]) -> int:
     p.add_argument("--tone", help="tone word for the header, for example comedic")
     p.add_argument("--wps", type=float, help="spoken words per second (default 3.4; use 2.5 for slow, solemn delivery)")
     p.add_argument("--visual-style", help="style for the character and location sheets, for example \"2D anime\"")
+    p.add_argument("--language-lock", action="store_true", default=None, help="add the English-language lock lines to every scene prompt")
     p.add_argument("--sheets", choices=["auto", "only", "skip"], default="auto", help="auto builds the sheets and the scene prompts; only stops after the sheets; skip builds no sheets")
     p.add_argument("--plan-only", action="store_true", help="segment the script and file the plan, write no prompts")
     p.add_argument("--prompts", metavar="FILE", help="JSON with prompts (and an analysis) written elsewhere; filed through the same checks")
@@ -75,7 +79,7 @@ def cmd_run(argv: list[str]) -> int:
         console.say("Model: %s (%s)" % (llm.model, llm.provider))
     opts = Options(output=a.output, movie=a.movie, episode=a.episode, title=a.title, new_episode=a.new_episode, offline=a.offline,
                    clip=a.clip, chain=a.chain, max_attempts=a.max_attempts, fresh=a.fresh, tone=a.tone,
-                   wps=a.wps, plan_only=a.plan_only, prompts_file=a.prompts, visual_style=a.visual_style, sheets=a.sheets)
+                   wps=a.wps, plan_only=a.plan_only, prompts_file=a.prompts, visual_style=a.visual_style, sheets=a.sheets, language_lock=a.language_lock)
     try:
         result = run_episode(text, opts, console, llm)
     except NeedInput as e:
@@ -135,6 +139,55 @@ def cmd_list(argv: list[str]) -> int:
     return 0
 
 
+def cmd_mcp(argv: list[str]) -> int:
+    from .mcp_server import serve
+    p = argparse.ArgumentParser(prog="studio.py mcp", description="Run the studio's tools as an MCP server on stdio (assistants start this themselves).")
+    p.add_argument("--output", default=None)
+    a = p.parse_args(argv)
+    serve(output=a.output)
+    return 0
+
+
+def cmd_sync(argv: list[str]) -> int:
+    from .workbench import sync_agents_md
+    sync_agents_md("AGENTS.md")
+    print("AGENTS.md now holds the current workflow.")
+    return 0
+
+
+def cmd_call(argv: list[str]) -> int:
+    """Call one studio tool from a shell: the same tools the MCP server offers, for assistants that can only run commands."""
+    import json
+    from .workbench import TOOLS, Workbench
+    p = argparse.ArgumentParser(prog="studio.py call", description="Call a studio tool. Arguments are JSON, from the command line, --file, or stdin.")
+    p.add_argument("tool", nargs="?", help="tool name; leave out to list them")
+    p.add_argument("args", nargs="?", help="JSON arguments")
+    p.add_argument("--file", help="read the JSON arguments from this file")
+    p.add_argument("--script-file", help="read the 'script' argument from this text file (start_episode)")
+    p.add_argument("--output", default=None)
+    a = p.parse_args(argv)
+    if not a.tool:
+        for n, (d, _) in TOOLS.items():
+            print("%-24s %s" % (n, d.split(".")[0]))
+        return 0
+    if a.file:
+        with open(a.file, encoding="utf-8") as fh:
+            raw = fh.read()
+    else:
+        raw = a.args if a.args is not None else (sys.stdin.read() if not sys.stdin.isatty() else "{}")
+    try:
+        args = json.loads(raw or "{}")
+    except json.JSONDecodeError as e:
+        print(json.dumps({"ok": False, "error": "The arguments are not valid JSON: %s" % e}))
+        return 2
+    if a.script_file:
+        with open(a.script_file, encoding="utf-8") as fh:
+            args["script"] = fh.read()
+    result = Workbench(a.output or os.environ.get("SEEDANCE_OUTPUT", "output")).call(a.tool, args)
+    print(json.dumps(result, ensure_ascii=False, indent=1))
+    return 0 if result.get("ok", True) or "needs" in result else 1
+
+
 def main(argv: list[str] | None = None) -> int:
     argv = list(sys.argv[1:] if argv is None else argv)
     if argv and argv[0] in ("-h", "--help"):
@@ -144,6 +197,12 @@ def main(argv: list[str] | None = None) -> int:
         return cmd_revise(argv[1:])
     if argv and argv[0] == "list":
         return cmd_list(argv[1:])
+    if argv and argv[0] == "mcp":
+        return cmd_mcp(argv[1:])
+    if argv and argv[0] == "sync-agents":
+        return cmd_sync(argv[1:])
+    if argv and argv[0] == "call":
+        return cmd_call(argv[1:])
     if argv and argv[0] == "run":
         argv = argv[1:]
     return cmd_run(argv)

@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "seedance-studio": {
+      "type": "stdio",
+      "command": "python3",
+      "args": ["studio.py", "mcp"]
+    }
+  }
+}

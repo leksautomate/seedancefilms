@@ -1,4 +1,6 @@
-# How the agent works
+# How the standalone program works
+
+This page describes the standalone program (`python3 studio.py`), which calls a language model itself. To use the studio from inside an AI assistant such as Claude Code, Gemini CLI or Antigravity, where the assistant's own model is the writer and needs no key, see [`host-agents.md`](host-agents.md). Both routes use the same checks, sheets and folder layout.
 
 `studio.py` is a real agent program. It writes prompts only and never generates video: you paste each prompt into Seedance 2.5 yourself. You paste a script, it talks to a language model through tool calls, and it
 files everything under `output/`. This page explains what happens, where the checks are, and how to change things.

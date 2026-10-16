@@ -44,6 +44,7 @@ class Options:
     prompts_file: str | None = None   # prompts (and an analysis) written elsewhere, filed through the same checks
     visual_style: str | None = None   # for the character and location sheets, for example "2D anime"
     sheets: str = "auto"              # auto: build the sheets, only: sheets and no scene prompts, skip: no sheets
+    language_lock: bool | None = None # True adds the English-language lock lines to every scene prompt (checked by the linter)
 
 
 # ---------------------------------------------------------------------------
@@ -415,6 +416,10 @@ def run_episode(text: str, opts: Options, console: Console, llm: LLM | None) -> 
         movie.settings["wps"] = opts.wps
     for k, v in ((external or {}).get("settings") or {}).items():
         movie.settings[k] = v
+    if opts.visual_style:
+        movie.settings["visual_style"] = opts.visual_style
+    if opts.language_lock is not None:
+        movie.settings["language_lock"] = opts.language_lock
     epdir = movie.episode_dir(resolved.number, resolved.title)
     folder = EpisodeFolder(epdir)
     prior = read_json(epdir / "episode.json")

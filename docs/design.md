@@ -67,12 +67,15 @@ agent as the `lookup_camera_recipe` tool.
    only source of truth, and every invented detail is marked `(proposed)`.
 8. **Reading a production script as it is written.** Runtime maps, clip blocks, on-screen text and the character and
    location lists are read directly, so planned seconds and edit-room text are kept apart from what Seedance generates.
-9. **Provider neutral, zero dependencies.** Anthropic or any OpenAI-compatible endpoint over plain HTTP, and an
+9. **An agent defined by files, not only by code.** `AGENTS.md`, an MCP server and a shell command let any AI assistant that opens the
+   folder become the agent: it reads who it is, calls gated tools, and cannot save a prompt that fails the checks. See `docs/host-agents.md`.
+10. **Provider neutral, zero dependencies.** Anthropic or any OpenAI-compatible endpoint over plain HTTP, and an
    `--offline` mode for template drafts.
 
 ## Honest limits
 
-- No real model has written a prompt or a sheet through this code. Everything else is tested.
+- No assistant (Claude Code, Gemini CLI, Antigravity ...) has been run against the MCP server or `AGENTS.md` here; the protocol and the tools are tested, the hosts are not.
+- No real model has written a prompt or a sheet through the standalone program's code. Everything else is tested.
 - The visual style of the worked example ("2D anime") was inferred from the skill text, not stated by the script.
 - Timing numbers rest on five clips and one prompt matched to its clip.
 - Seedance 2.5's duration range (4 to 30 seconds) is confirmed from its input schema. The 60 second chain (a generation plus one extension) is an assumption, and so is whether a provider allows a first-frame image together with reference images.
