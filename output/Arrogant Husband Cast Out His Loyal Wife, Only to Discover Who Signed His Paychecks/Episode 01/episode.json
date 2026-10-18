@@ -4,7 +4,7 @@
   "title": "",
   "script_sha": "0fb61ca3981ea6a6",
   "created": "2026-10-18T22:49:46",
-  "updated": "2026-10-18T22:49:46",
+  "updated": "2026-10-18T22:51:24",
   "offline": false,
   "source": "host agent",
   "provider": "host agent",
@@ -16,14 +16,165 @@
     "chain_seconds": 60,
     "resolution": "1080p",
     "generate_audio": true,
-    "style_lock": "",
+    "style_lock": "Premium cinematic 3D animated African drama, as given by the person for this movie.",
     "prompt_style": "full",
     "wps": 2.8,
     "visual_style": "Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.",
     "language_lock": true
   },
   "script_doc": null,
-  "analysis": null,
+  "analysis": {
+    "logline": "At his own promotion party, a husband publicly throws out the wife who has quietly carried him, and her calm last instruction tells the room that his pride rests on something she controls.",
+    "tone": "Family-friendly but cutting domestic drama: loud party cruelty on one side, held-back dignity on the other, ending on a half-laugh that has lost its confidence.",
+    "spine": [
+      {
+        "act": "Act I: The party and the expulsion",
+        "scenes": [
+          1
+        ],
+        "note": "Show a man's arrogance, a woman's patience, and the moment she accepts being sent away in front of everyone, leaving him one sentence he cannot ignore."
+      }
+    ],
+    "scenes": [
+      {
+        "scene": 1,
+        "why": "The audience watches a man humiliate his wife in front of twenty guests, and the instant she leaves with her father's pen and one calm sentence, his confidence cracks: the whole series turns on that sentence.",
+        "scene_type": "dialogue",
+        "mood": "anger",
+        "camera_approach": "Wide at the party to place all three and the guests, then alternating close-ups that tighten as Richard grows louder and Esther grows quieter; an insert on the pen for the object that defines her; end tight on Richard's thumb stopping on the watch.",
+        "status": "ready"
+      }
+    ],
+    "characters": [
+      {
+        "name": "RICHARD",
+        "tag": "@RichardKalio",
+        "aliases": [
+          "RICHARD KALIO"
+        ],
+        "lead": true,
+        "look": "38, tight burgundy shirt, gold-rimmed sunglasses pushed up into his fade, heavy gold watch on his wrist.",
+        "voice": "Loud, pompous adult male voice, full chest, playing to the room; goes cold and flat when he is angry.",
+        "source": "assumed"
+      },
+      {
+        "name": "ESTHER",
+        "tag": "@EstherKalio",
+        "aliases": [
+          "ESTHER KALIO"
+        ],
+        "lead": true,
+        "look": "33, plain sage-green wrapper and blouse; carries a brass-capped fountain pen that was her father's.",
+        "voice": "Quiet, even adult female voice, controlled and steady; never raised.",
+        "source": "assumed"
+      },
+      {
+        "name": "STEPHANIE",
+        "tag": "@StephanieSekibo",
+        "aliases": [
+          "STEPHANIE SEKIBO"
+        ],
+        "look": "29, fuchsia dress, glossy bob, long French-tip nails.",
+        "voice": "Sweet, light adult female voice with something sharp under it.",
+        "source": "assumed"
+      }
+    ],
+    "locations": [
+      {
+        "name": "Kalio duplex sitting room",
+        "tag": "@KalioSittingRoom"
+      }
+    ],
+    "style_lock": "Premium cinematic 3D animated African drama, as given by the person for this movie.",
+    "color_script": [
+      {
+        "beat": "The party",
+        "emotion": "smug warmth",
+        "dominant": "warm amber and gold light",
+        "accent": "burgundy and fuchsia",
+        "contrast": "medium",
+        "saturation": "~65%",
+        "hex": [
+          "#C98B3A",
+          "#7A1F2B",
+          "#C2257A"
+        ]
+      },
+      {
+        "beat": "The expulsion",
+        "emotion": "cold anger against a warm room",
+        "dominant": "amber interior",
+        "accent": "sage green (Esther) against burgundy (Richard)",
+        "contrast": "medium-high",
+        "saturation": "~55%",
+        "hex": [
+          "#B7792E",
+          "#8A9A78",
+          "#6B1A24"
+        ]
+      },
+      {
+        "beat": "The door",
+        "emotion": "dignity, then unease",
+        "dominant": "cool rain-grey spilling into the amber room",
+        "accent": "brass of the pen and gold of the watch",
+        "contrast": "high",
+        "saturation": "~45%",
+        "hex": [
+          "#4B5666",
+          "#B08A3E",
+          "#D8A82A"
+        ]
+      }
+    ],
+    "motif": "Gold: Richard's watch and the brass-capped pen. The watch is what he turns when he feels powerful; the pen is what Esther will not let go of. The last frame returns to the watch, stopped.",
+    "risks": [
+      {
+        "item": "The brass-capped pen",
+        "why": "A tiny prop that drifts in shape and disappears between shots",
+        "alternative": "Show it large in an insert each time it matters (on the table, rolling, in her hand, in her pocket) and describe it the same way every time"
+      },
+      {
+        "item": "Twenty guests in the room",
+        "why": "Crowds blur, duplicate faces and steal focus from the three leads",
+        "alternative": "Keep guests soft in the background, a few clear silhouettes, and keep the three leads in the foreground"
+      },
+      {
+        "item": "Richard's 15-second speech",
+        "why": "Long lip-sync can rush or drift when the request is shorter than the speech",
+        "alternative": "Break it with cutaways to Esther and the guests, and request the full clip length"
+      },
+      {
+        "item": "Left and right across the extensions",
+        "why": "Positions of Richard, Stephanie, Esther and the door can flip between clips",
+        "alternative": "State the positions at the top of every clip and in each brief"
+      },
+      {
+        "item": "Rain through an open door",
+        "why": "Rain and a door opening at the end can add unwanted weather or sound",
+        "alternative": "Keep the rain visible at the windows from the start and let it blow in only in the last shots"
+      },
+      {
+        "item": "Faces that look alike",
+        "why": "Three leads and many guests with similar features drift together",
+        "alternative": "Keep each lead's face shape, nose and jaw different in the sheets and repeat the key traits in the prompt"
+      }
+    ],
+    "unknowns": [
+      "Where Richard works and who actually signs his paychecks (the script leaves it as the reveal).",
+      "Richard's, Esther's and Stephanie's hair, build and skin tone beyond what the style paragraph says.",
+      "The layout of the sitting room: where the door, side table, chair and stage are.",
+      "Whether Esther's bag is on the chair from the start (the script says she lifts her bag from the chair).",
+      "What the guests wear and look like."
+    ],
+    "assumptions": [
+      "English dialogue in a Nigerian English register, matching the Port Harcourt setting.",
+      "Slow, pointed delivery at about 2.8 words per second.",
+      "Richard and Esther are the series leads, so both get a voice design prompt.",
+      "The title given is the movie name; this is episode 1.",
+      "The party guests are one shared group of extras with no sheet."
+    ]
+  },
   "segments": [
     {
       "id": "S01a",

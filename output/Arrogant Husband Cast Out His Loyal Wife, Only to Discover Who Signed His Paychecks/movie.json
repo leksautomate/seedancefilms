@@ -8,7 +8,7 @@
     "chain_seconds": 60,
     "resolution": "1080p",
     "generate_audio": true,
-    "style_lock": "",
+    "style_lock": "Premium cinematic 3D animated African drama, as given by the person for this movie.",
     "prompt_style": "full",
     "wps": 2.8,
     "visual_style": "Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.",
@@ -18,20 +18,47 @@
     "characters": {
       "ESTHER": {
         "source": "assumed",
-        "tag": "@ TAG ESTHER"
+        "tag": "@ TAG ESTHER",
+        "look": "33, plain sage-green wrapper and blouse; carries a brass-capped fountain pen that was her father's.",
+        "voice": "Quiet, even adult female voice, controlled and steady; never raised."
       },
       "RICHARD": {
         "source": "assumed",
-        "tag": "@ TAG RICHARD"
+        "tag": "@ TAG RICHARD",
+        "look": "38, tight burgundy shirt, gold-rimmed sunglasses pushed up into his fade, heavy gold watch on his wrist.",
+        "voice": "Loud, pompous adult male voice, full chest, playing to the room; goes cold and flat when he is angry."
       },
       "STEPHANIE": {
         "source": "assumed",
-        "tag": "@ TAG STEPHANIE"
+        "tag": "@ TAG STEPHANIE",
+        "look": "29, fuchsia dress, glossy bob, long French-tip nails.",
+        "voice": "Sweet, light adult female voice with something sharp under it."
+      },
+      "RICHARD KALIO": {
+        "tag": "@ TAG RICHARD",
+        "look": "38, tight burgundy shirt, gold-rimmed sunglasses pushed up into his fade, heavy gold watch on his wrist.",
+        "voice": "Loud, pompous adult male voice, full chest, playing to the room; goes cold and flat when he is angry.",
+        "alias_of": "RICHARD"
+      },
+      "ESTHER KALIO": {
+        "tag": "@ TAG ESTHER",
+        "look": "33, plain sage-green wrapper and blouse; carries a brass-capped fountain pen that was her father's.",
+        "voice": "Quiet, even adult female voice, controlled and steady; never raised.",
+        "alias_of": "ESTHER"
+      },
+      "STEPHANIE SEKIBO": {
+        "tag": "@ TAG STEPHANIE",
+        "look": "29, fuchsia dress, glossy bob, long French-tip nails.",
+        "voice": "Sweet, light adult female voice with something sharp under it.",
+        "alias_of": "STEPHANIE"
       }
     },
     "locations": {
       "Kalio Duplex Peter Odili Road Port Harcourt Night": {
         "tag": "@ TAG KALIO DUPLEX PETER ODILI ROAD PORT HARCOURT NIGHT"
+      },
+      "Kalio duplex sitting room": {
+        "tag": "@KalioSittingRoom"
       }
     }
   }
