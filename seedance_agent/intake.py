@@ -94,7 +94,7 @@ def resolve(text: str, lib: Library, console: Console, movie: str | None = None,
                                ["Yes, use \"%s\"" % close[0], "No, create a new movie called \"%s\"" % movie], default="1")
             if pick.startswith("Yes") or pick == "1":
                 found = close[0]
-    movie_name = found or clean_name(title_case(movie) if movie.isupper() else movie)
+    movie_name = found or clean_name(title_case(movie) if movie.isupper() else movie, 100)
     is_new_movie = found is None
 
     # 2. the episode number and title

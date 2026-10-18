@@ -37,7 +37,7 @@ DEFAULT_SETTINGS = {
 
 class Movie:
     def __init__(self, root: Path, name: str):
-        self.dir = Path(root) / clean_name(name)
+        self.dir = Path(root) / clean_name(name, 100)
         self.file = self.dir / "movie.json"
         self.data = read_json(self.file) or {
             "name": name,

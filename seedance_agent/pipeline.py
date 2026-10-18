@@ -15,7 +15,7 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
-from . import intake, offline, planpage, prompts, render, script_doc, sheets
+from . import intake, offline, planpage, prompts, render, screenplay, script_doc, sheets
 from . import skills_bridge as sb
 from .agent import run_loop
 from .console import Console
@@ -429,7 +429,7 @@ def run_episode(text: str, opts: Options, console: Console, llm: LLM | None) -> 
                                                 " (new movie)" if resolved.is_new_movie else ""))
     console.say("Resuming the saved run." if resume else ("Replacing the earlier version of this episode (it is kept in _history)." if prior else "Starting a new episode."))
 
-    segs = prior["segments"] if resume else sb.segment(doc.normalized if doc else text, clip=movie.settings["clip_seconds"],
+    segs = prior["segments"] if resume else sb.segment(doc.normalized if doc else screenplay.normalize(text), clip=movie.settings["clip_seconds"],
                                                        chain=movie.settings["chain_seconds"], wps=movie.settings.get("wps"))
     if not segs:
         raise ValueError("No scenes were found in the script.")

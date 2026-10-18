@@ -1,0 +1,453 @@
+{
+  "movie": "Arrogant Husband Cast Out His Loyal Wife, Only to Discover Who Signed His Paychecks",
+  "number": 1,
+  "title": "",
+  "script_sha": "0fb61ca3981ea6a6",
+  "created": "2026-10-18T22:49:46",
+  "updated": "2026-10-18T22:49:46",
+  "offline": false,
+  "source": "host agent",
+  "provider": "host agent",
+  "model": "the host agent's own model",
+  "settings": {
+    "aspect_ratio": "16:9",
+    "video_model": "Seedance 2.5",
+    "clip_seconds": 30,
+    "chain_seconds": 60,
+    "resolution": "1080p",
+    "generate_audio": true,
+    "style_lock": "",
+    "prompt_style": "full",
+    "wps": 2.8,
+    "visual_style": "Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.",
+    "language_lock": true
+  },
+  "script_doc": null,
+  "analysis": null,
+  "segments": [
+    {
+      "id": "S01a",
+      "scene": 1,
+      "heading": "INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT",
+      "location": "kalio duplex peter odili road port harcourt night",
+      "mode": "generate",
+      "part": 1,
+      "parts": 4,
+      "estimated_s": 30.8,
+      "request_s": 30,
+      "dialogue_lines": 4,
+      "dialogue_words": 60,
+      "characters": [
+        "ESTHER",
+        "RICHARD",
+        "STEPHANIE"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "warm",
+      "last_beat": "Richard, leave her. She is trying. Not everybody can be at this level.",
+      "last_beat_kind": "dialogue",
+      "next_beat": "Esther's eyes go to Stephanie's hand on his sleeve, then back to Richard.",
+      "events": [
+        {
+          "kind": "establish",
+          "speaker": null,
+          "text": "establishing view of INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT",
+          "words": 0,
+          "seconds": 2.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Rain hammers the windows.",
+          "words": 0,
+          "seconds": 2.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "A promotion party is in full swing: twenty guests, a generator humming behind the wall, glasses clinking.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "RICHARD KALIO (38), tight burgundy shirt, gold-rimmed sunglasses pushed up into his fade, holds a glass high and turns a heavy gold watch on his wrist.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "At his elbow stands STEPHANIE SEKIBO (29), fuchsia dress, glossy bob, long French-tip nails.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "ESTHER KALIO (33), in a plain sage-green wrapper and blouse, crosses the room with a tray of fried plantain and small chops, her head down.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "RICHARD",
+          "text": "Look at her! A primary school teacher, carrying plantain in my sitting room like a house girl. Esther, who asked you to serve my guests?",
+          "words": 25,
+          "seconds": 9.53,
+          "how": "laughing, loud, glass raised"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ESTHER",
+          "text": "You did, Richard. This morning.",
+          "words": 5,
+          "seconds": 2.39,
+          "how": "quiet, balancing the tray"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "RICHARD",
+          "text": "I asked you to stay in the kitchen. Not to stand where my colleagues can see you.",
+          "words": 17,
+          "seconds": 6.67,
+          "how": "cold, the smile gone"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "STEPHANIE",
+          "text": "Richard, leave her. She is trying. Not everybody can be at this level.",
+          "words": 13,
+          "seconds": 5.24,
+          "how": "sweet, poisonous, touching his sleeve"
+        }
+      ],
+      "notes": [
+        "TIGHT: estimate 30.8s is over the 30s budget by 0.8s; trim a line or a beat, or accept the risk"
+      ],
+      "merged_from": null,
+      "status": "pending",
+      "tags": [
+        "@ TAG ESTHER",
+        "@ TAG RICHARD",
+        "@ TAG STEPHANIE",
+        "@ TAG KALIO DUPLEX PETER ODILI ROAD PORT HARCOURT NIGHT"
+      ]
+    },
+    {
+      "id": "S01b",
+      "scene": 1,
+      "heading": "INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT",
+      "location": "kalio duplex peter odili road port harcourt night",
+      "mode": "extend",
+      "part": 2,
+      "parts": 4,
+      "estimated_s": 18.8,
+      "request_s": 21,
+      "dialogue_lines": 2,
+      "dialogue_words": 45,
+      "characters": [
+        "ESTHER",
+        "RICHARD",
+        "STEPHANIE"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "warm",
+      "last_beat": "What are you saying, Richard?",
+      "last_beat_kind": "dialogue",
+      "next_beat": "Pack one bag. Go to your people in Warri. Go and sit in that falling house in Ekpan.",
+      "events": [
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Esther's eyes go to Stephanie's hand on his sleeve, then back to Richard.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "She sets the tray down on the side table, beside a brass-capped fountain pen lying on a folded exercise book.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "RICHARD",
+          "text": "Five years I have carried this woman. Her whole salary cannot fuel my generator for one month. Today they made me Deputy General Manager. Do you understand? I cannot stand on that stage with a woman who smells of chalk.",
+          "words": 40,
+          "seconds": 14.89,
+          "how": "stepping closer, voice rising so every guest hears"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ESTHER",
+          "text": "What are you saying, Richard?",
+          "words": 5,
+          "seconds": 2.39,
+          "how": "very calm"
+        }
+      ],
+      "notes": [
+        "extension: start from the exact final frame of the previous segment"
+      ],
+      "merged_from": null,
+      "status": "pending",
+      "tags": [
+        "@ TAG ESTHER",
+        "@ TAG RICHARD",
+        "@ TAG STEPHANIE",
+        "@ TAG KALIO DUPLEX PETER ODILI ROAD PORT HARCOURT NIGHT"
+      ]
+    },
+    {
+      "id": "S01c",
+      "scene": 1,
+      "heading": "INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT",
+      "location": "kalio duplex peter odili road port harcourt night",
+      "mode": "new-chain",
+      "part": 3,
+      "parts": 4,
+      "estimated_s": 23.9,
+      "request_s": 27,
+      "dialogue_lines": 4,
+      "dialogue_words": 56,
+      "characters": [
+        "ESTHER",
+        "RICHARD",
+        "STEPHANIE"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "warm",
+      "last_beat": "And take that market trinket with you. Seven years you carry it like a staff of office.",
+      "last_beat_kind": "dialogue",
+      "next_beat": "The pen stops against Stephanie's heel.",
+      "events": [
+        {
+          "kind": "dialogue",
+          "speaker": "RICHARD",
+          "text": "Pack one bag. Go to your people in Warri. Go and sit in that falling house in Ekpan.",
+          "words": 18,
+          "seconds": 7.03,
+          "how": "pointing at the door"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ESTHER",
+          "text": "In this rain? At night?",
+          "words": 5,
+          "seconds": 2.39,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "RICHARD",
+          "text": "This roof is mine. Every plate, every light, every kobo in this house is my salary.",
+          "words": 16,
+          "seconds": 6.31,
+          "how": "spreading his arms, smiling at the guests"
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "He sweeps his hand across the side table.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "The brass pen flies off and rolls across the tiles.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "RICHARD",
+          "text": "And take that market trinket with you. Seven years you carry it like a staff of office.",
+          "words": 17,
+          "seconds": 6.67,
+          "how": "sneering"
+        }
+      ],
+      "notes": [
+        "starts a new chain: use the last frame of the previous segment as the first-frame reference"
+      ],
+      "merged_from": null,
+      "status": "pending",
+      "tags": [
+        "@ TAG ESTHER",
+        "@ TAG RICHARD",
+        "@ TAG STEPHANIE",
+        "@ TAG KALIO DUPLEX PETER ODILI ROAD PORT HARCOURT NIGHT"
+      ]
+    },
+    {
+      "id": "S01d",
+      "scene": 1,
+      "heading": "INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT",
+      "location": "kalio duplex peter odili road port harcourt night",
+      "mode": "extend",
+      "part": 4,
+      "parts": 4,
+      "estimated_s": 27.7,
+      "request_s": 30,
+      "dialogue_lines": 5,
+      "dialogue_words": 51,
+      "characters": [
+        "ESTHER",
+        "RICHARD",
+        "STEPHANIE"
+      ],
+      "scene_type_hint": "dialogue",
+      "mood_hint": "warm",
+      "last_beat": "His thumb stops turning the gold watch.",
+      "last_beat_kind": "action",
+      "next_beat": "",
+      "events": [
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "The pen stops against Stephanie's heel.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "She smiles and does not move.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Esther crosses the floor, bends, picks it up, and wipes it slowly on her wrapper.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "The room goes quiet.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Only the generator hums.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ESTHER",
+          "text": "My father's pen is not a trinket.",
+          "words": 7,
+          "seconds": 3.1,
+          "how": "quietly, almost to herself"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "RICHARD",
+          "text": "Ladies and gentlemen, my wife, the poet!",
+          "words": 7,
+          "seconds": 3.1,
+          "how": "shrugging, laughing to the room"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ESTHER",
+          "text": "You are sure, Richard? Before all these people?",
+          "words": 8,
+          "seconds": 3.46,
+          "how": "lifting her bag from the chair, steady"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "RICHARD",
+          "text": "I have never been surer. Without me, you will not eat.",
+          "words": 11,
+          "seconds": 4.53,
+          "how": "arms wide"
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Esther slides the pen into her pocket and opens the door.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Rain blows in across the tiles.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "ESTHER",
+          "text": "Tonight, when everyone has gone home, open your payslip. Read the bottom line. See whose name carries it.",
+          "words": 18,
+          "seconds": 7.03,
+          "how": "not turning around"
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "The door closes.",
+          "words": 0,
+          "seconds": 1.0,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "Richard laughs, but it is only half a laugh.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        },
+        {
+          "kind": "action",
+          "speaker": null,
+          "text": "His thumb stops turning the gold watch.",
+          "words": 0,
+          "seconds": 0.5,
+          "how": null
+        }
+      ],
+      "notes": [
+        "extension: start from the exact final frame of the previous segment"
+      ],
+      "merged_from": null,
+      "status": "pending",
+      "tags": [
+        "@ TAG ESTHER",
+        "@ TAG RICHARD",
+        "@ TAG STEPHANIE",
+        "@ TAG KALIO DUPLEX PETER ODILI ROAD PORT HARCOURT NIGHT"
+      ]
+    }
+  ]
+}
