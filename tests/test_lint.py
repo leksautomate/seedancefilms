@@ -146,6 +146,15 @@ class StudioRules(Base):
         d = self.draft.replace("SHOT 1 \u2014", "SHOT 1 (00:00-00:03) \u2014", 1)
         self.assertEqual(self.run_lint(d)["errors"], [])
 
+class LongHeader(Base):
+    def test_extension_line_may_sit_below_a_long_visual_style(self):
+        ext = next(x for x in self.segs if x["mode"] == "extend")
+        prev = {"last_line": "Are you SURE? They feel so tight...", "last_speaker": "GIRL"}
+        good = offline.draft(ext, bible_for(ext), SETTINGS, prev)["prompt"]
+        pushed = "Visual Style: " + "painterly, warm and detailed, " * 60 + "\n\n" + good
+        self.assertEqual(self.run_lint(pushed, ext, prev)["errors"], [])
+        self.assertTrue(any("Extend the previous video" in e for e in self.run_lint(good.replace("Extend the", "Continue the"), ext, prev)["errors"]))
+
 
 
 if __name__ == "__main__":

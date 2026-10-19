@@ -10,14 +10,27 @@ Production sheet. Prompts are in the scene folders and in `prompts-all.md`. Open
 
 | Clip | Scene | Mode | Plan s | Est. s | Request s | Lines | Words | Status |
 |---|---|---|---|---|---|---|---|---|
-| S01a | INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT | generate |  | 30.8 | 30 | 4 | 60 | pending |
-| S01b | INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT | extend |  | 18.8 | 21 | 2 | 45 | pending |
-| S01c | INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT | new-chain |  | 23.9 | 27 | 4 | 56 | pending |
-| S01d | INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT | extend |  | 27.7 | 30 | 5 | 51 | pending |
+| S01a | INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT | generate |  | 30.8 | 30 | 4 | 60 | ok |
+| S01b | INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT | extend |  | 18.8 | 21 | 2 | 45 | ok |
+| S01c | INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT | new-chain |  | 23.9 | 27 | 4 | 56 | ok |
+| S01d | INT. KALIO DUPLEX, PETER ODILI ROAD, PORT HARCOURT. NIGHT | extend |  | 27.7 | 30 | 5 | 51 | ok |
 
 Estimated runtime: **101.2s** (1.7 min) in 4 clips.
 
 Generate every clip with Seedance 2.5 at 16:9, 1080p, audio on. Each clip's brief lists its duration (whole seconds, 4 to 30) and inputs.
+
+## Reference images to make first
+
+Style: **Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.**. Paste each sheet prompt into the image tool, save the result as `images/characters/<tag>.png` or `images/locations/<tag>.png`, and upload those images as references when you generate the clips. Lists to review: `characters-and-locations.md`.
+
+| Tag | Kind | Scenes | Voice design | Status |
+|---|---|---|---|---|
+| `@RichardKalio` | character | 1 | yes | ok |
+| `@EstherKalio` | character | 1 | yes | ok |
+| `@StephanieSekibo` | character | 1 | no | ok |
+| `@KalioSittingRoom` | location | 1 | | ok |
+
+No sheet (described in full in each scene prompt): GUESTS.
 
 ## The spine
 

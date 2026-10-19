@@ -1,0 +1,83 @@
+Create a 26s premium cinematic 3D animated African drama scene.
+
+Characters: @RichardKalio, @EstherKalio, @StephanieSekibo; GUESTS: about twenty adult party guests of all ages, dark and medium-brown skin, in smart party wear: kaftans and agbada in cream and gold for the men, gowns and wrapper-and-blouse sets in gold, burgundy and cream for the women, soft and slightly out of focus behind the three leads
+Locations: @KalioSittingRoom
+
+Visual Style: Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+[Accent: Nigerian English, Port Harcourt, for every speaker, with natural Nigerian rhythm, stress and intonation]
+
+Extend the previous video by another 26s, starting from its exact final frame after @StephanieSekibo says:
+
+“Richard, leave her. She is trying. Not everybody can be at this level.”
+
+Continue the same scene in @KalioSittingRoom with the exact same character designs, clothing, lighting, atmosphere, framing style, and emotional continuity. @StephanieSekibo's hand is still on @RichardKalio's sleeve. From the camera's view: @RichardKalio stands center-left with @StephanieSekibo at his right elbow; the front door is on the right; the side table is at the far left; the tall rain-streaked windows are behind them. Keep these positions in every wide shot.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Do not restate the opening; shot 1 continues directly from the final frame.
+Keep the pacing measured, tense, and cinematic. Let the silences between the lines carry the tension.
+@RichardKalio, @EstherKalio and @StephanieSekibo keep their SAME voices and the SAME Nigerian accent from the first part. Do not change them.
+@RichardKalio keeps the sunglasses pushed up in his fade, never over his eyes.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only heavy rain against the windows, a generator humming behind the wall, party chatter and clinking glasses, cloth and footsteps on tiles, small object sounds, and dialogue.
+
+SHOT 1 (00:00-00:02) — CLOSE-UP ON ESTHER'S EYES — EYE LEVEL
+
+@EstherKalio's eyes go to @StephanieSekibo's hand on @RichardKalio's sleeve, then back up to @RichardKalio. No dialogue.
+
+HARD CUT.
+
+SHOT 2 (00:02-00:05) — MEDIUM SHOT — THREE-QUARTER ANGLE
+
+@EstherKalio sets the tray down on the side table at the far left, beside a brass-capped fountain pen lying on a folded exercise book. Her movements are slow and careful.
+
+HARD CUT.
+
+SHOT 3 (00:05-00:06) — EXTREME CLOSE-UP — INSERT, TOP-DOWN
+
+The brass-capped fountain pen lying on the folded exercise book on the polished side table. The edge of the tray enters the frame. The pen stays in sharp focus. No dialogue.
+
+HARD CUT.
+
+SHOT 4 (00:06-00:13) — MEDIUM CLOSE-UP ON RICHARD — LOW ANGLE
+
+@RichardKalio steps closer to @EstherKalio, his voice rising so that every guest hears. His chest is out and his free hand cuts the air.
+
+@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, stepping closer, voice rising so every guest hears:
+
+“Five years I have carried this woman. Her whole salary cannot fuel my generator for one month.”
+
+HARD CUT.
+
+SHOT 5 (00:13-00:15) — WIDE SHOT — EYE LEVEL
+
+The party guests (adults in smart cream, gold and burgundy party wear) turn their heads toward the two of them. @RichardKalio and @EstherKalio face each other in the foreground, @StephanieSekibo at his right. No dialogue.
+
+HARD CUT.
+
+SHOT 6 (00:15-00:23) — CLOSE-UP ON RICHARD — LOW ANGLE
+
+@RichardKalio's face is hard and certain, and he does not blink. His jaw is set.
+
+@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, voice rising:
+
+“Today they made me Deputy General Manager. Do you understand? I cannot stand on that stage with a woman who smells of chalk.”
+
+HARD CUT.
+
+SHOT 7 (00:23-00:26) — CLOSE-UP ON ESTHER — EYE LEVEL
+
+@EstherKalio looks straight at @RichardKalio without moving. Her face is perfectly calm.
+
+@EstherKalio, in her SAME quiet, even, Nigerian-accented voice, very calm:
+
+“What are you saying, Richard?”
+
+HARD CUT.
+
+END HERE.

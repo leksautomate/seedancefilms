@@ -18,44 +18,52 @@
     "characters": {
       "ESTHER": {
         "source": "assumed",
-        "tag": "@ TAG ESTHER",
+        "tag": "@EstherKalio",
         "look": "33, plain sage-green wrapper and blouse; carries a brass-capped fountain pen that was her father's.",
         "voice": "Quiet, even adult female voice, controlled and steady; never raised."
       },
       "RICHARD": {
         "source": "assumed",
-        "tag": "@ TAG RICHARD",
+        "tag": "@RichardKalio",
         "look": "38, tight burgundy shirt, gold-rimmed sunglasses pushed up into his fade, heavy gold watch on his wrist.",
         "voice": "Loud, pompous adult male voice, full chest, playing to the room; goes cold and flat when he is angry."
       },
       "STEPHANIE": {
         "source": "assumed",
-        "tag": "@ TAG STEPHANIE",
+        "tag": "@StephanieSekibo",
         "look": "29, fuchsia dress, glossy bob, long French-tip nails.",
         "voice": "Sweet, light adult female voice with something sharp under it."
       },
       "RICHARD KALIO": {
-        "tag": "@ TAG RICHARD",
+        "tag": "@RichardKalio",
         "look": "38, tight burgundy shirt, gold-rimmed sunglasses pushed up into his fade, heavy gold watch on his wrist.",
         "voice": "Loud, pompous adult male voice, full chest, playing to the room; goes cold and flat when he is angry.",
-        "alias_of": "RICHARD"
+        "alias_of": "RICHARD",
+        "source": "script"
       },
       "ESTHER KALIO": {
-        "tag": "@ TAG ESTHER",
+        "tag": "@EstherKalio",
         "look": "33, plain sage-green wrapper and blouse; carries a brass-capped fountain pen that was her father's.",
         "voice": "Quiet, even adult female voice, controlled and steady; never raised.",
-        "alias_of": "ESTHER"
+        "alias_of": "ESTHER",
+        "source": "script"
       },
       "STEPHANIE SEKIBO": {
-        "tag": "@ TAG STEPHANIE",
+        "tag": "@StephanieSekibo",
         "look": "29, fuchsia dress, glossy bob, long French-tip nails.",
         "voice": "Sweet, light adult female voice with something sharp under it.",
-        "alias_of": "STEPHANIE"
+        "alias_of": "STEPHANIE",
+        "source": "script"
+      },
+      "GUESTS": {
+        "no_image": true,
+        "tag": "",
+        "look": "about twenty adult party guests of all ages, dark and medium-brown skin, in smart party wear: kaftans and agbada in cream and gold for the men, gowns and wrapper-and-blouse sets in gold, burgundy and cream for the women, soft and slightly out of focus behind the three leads"
       }
     },
     "locations": {
       "Kalio Duplex Peter Odili Road Port Harcourt Night": {
-        "tag": "@ TAG KALIO DUPLEX PETER ODILI ROAD PORT HARCOURT NIGHT"
+        "tag": "@KalioSittingRoom"
       },
       "Kalio duplex sitting room": {
         "tag": "@KalioSittingRoom"

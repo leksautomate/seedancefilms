@@ -1,0 +1,91 @@
+Create a 28s premium cinematic 3D animated African drama scene.
+
+Characters: @RichardKalio, @EstherKalio, @StephanieSekibo; GUESTS: about twenty adult party guests of all ages, dark and medium-brown skin, in smart party wear: kaftans and agbada in cream and gold for the men, gowns and wrapper-and-blouse sets in gold, burgundy and cream for the women, soft and slightly out of focus behind the three leads
+Locations: @KalioSittingRoom
+
+Visual Style: Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.
+[Negative: chinese language, mandarin, chinese speech, asian accent]
+[System: Language: English] [Audio: English Speech]
+[Accent: Nigerian English, Port Harcourt, for every speaker, with natural Nigerian rhythm, stress and intonation]
+
+Extend the previous video by another 28s, starting from its exact final frame after @RichardKalio says:
+
+“And take that market trinket with you. Seven years you carry it like a staff of office.”
+
+Continue the same scene in @KalioSittingRoom with the exact same character designs, clothing, lighting, atmosphere, framing style, and emotional continuity. The brass-capped fountain pen is still rolling across the tiles. From the camera's view: @RichardKalio stands center-left with @StephanieSekibo at his right elbow; the front door is on the right; the side table is at the far left; the tall rain-streaked windows are behind them. Keep these positions in every wide shot.
+
+IMPORTANT:
+
+Use ONLY hard cuts between shots.
+NO tracking shots, camera slides, whip pans, or continuous camera transitions.
+Every shot is a locked-off frame.
+Do not restate the opening; shot 1 continues directly from the final frame.
+Keep the pacing measured, tense, and cinematic. Let the silences between the lines carry the tension.
+@RichardKalio, @EstherKalio and @StephanieSekibo keep their SAME voices and the SAME Nigerian accent from the earlier clips. Do not change them.
+The rain is visible at the windows in every shot and blows in only when the door opens.
+No on-screen text, subtitles or captions anywhere in the frame.
+NO music. Only heavy rain against the windows, a generator humming behind the wall, party chatter and clinking glasses, cloth and footsteps on tiles, small object sounds, and dialogue.
+
+SHOT 1 (00:00-00:03) — MEDIUM WIDE SHOT — EYE LEVEL
+
+The brass-capped fountain pen rolls across the tiles and stops against the heel of @StephanieSekibo's gold sandal. She smiles and does not move. @EstherKalio crosses the floor, bends, picks up the pen, and wipes it slowly on her wrapper. The party guests (adults in smart cream, gold and burgundy party wear) go quiet. Only the generator hums. No dialogue.
+
+HARD CUT.
+
+SHOT 2 (00:03-00:06) — CLOSE-UP ON ESTHER — EYE LEVEL
+
+@EstherKalio holds the pen against her chest in one hand. Her eyes are steady and wet but do not break.
+
+@EstherKalio, in her SAME quiet, even, Nigerian-accented voice, quietly, almost to herself:
+
+“My father's pen is not a trinket.”
+
+HARD CUT.
+
+SHOT 3 (00:06-00:09) — MEDIUM SHOT ON RICHARD — SLIGHT LOW ANGLE
+
+@RichardKalio shrugs and laughs to the room, glancing around at the guests.
+
+@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, shrugging, laughing to the room:
+
+“Ladies and gentlemen, my wife, the poet!”
+
+HARD CUT.
+
+SHOT 4 (00:09-00:13) — MEDIUM CLOSE-UP ON ESTHER — EYE LEVEL
+
+@EstherKalio lifts her bag from the chair beside her. Her back is straight.
+
+@EstherKalio, in her SAME quiet, even, Nigerian-accented voice, lifting her bag from the chair, steady:
+
+“You are sure, Richard? Before all these people?”
+
+HARD CUT.
+
+SHOT 5 (00:13-00:17) — MEDIUM CLOSE-UP ON RICHARD — LOW ANGLE
+
+@RichardKalio throws his arms wide, chin high.
+
+@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, arms wide:
+
+“I have never been surer. Without me, you will not eat.”
+
+HARD CUT.
+
+SHOT 6 (00:17-00:25) — MEDIUM SHOT FROM BEHIND ESTHER — EYE LEVEL
+
+@EstherKalio slides the pen into her pocket and opens the heavy front door. Rain blows in across the tiles. She stands in the doorway with her back to the room and does not turn around. @RichardKalio is small in the background.
+
+@EstherKalio, in her SAME quiet, even, Nigerian-accented voice, not turning around:
+
+“Tonight, when everyone has gone home, open your payslip. Read the bottom line. See whose name carries it.”
+
+HARD CUT.
+
+SHOT 7 (00:25-00:28) — CLOSE-UP ON RICHARD — EYE LEVEL
+
+The door closes. DOOR CLOSING. @RichardKalio laughs, but it is only half a laugh, and it fades. His thumb stops turning the heavy gold watch on his wrist. Hold on his face and the stopped watch.
+
+HARD CUT.
+
+CUT TO BLACK.

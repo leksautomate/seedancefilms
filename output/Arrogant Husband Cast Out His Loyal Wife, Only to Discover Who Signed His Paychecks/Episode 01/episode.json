@@ -4,7 +4,7 @@
   "title": "",
   "script_sha": "0fb61ca3981ea6a6",
   "created": "2026-10-18T22:49:46",
-  "updated": "2026-10-18T22:51:24",
+  "updated": "2026-10-19T07:03:17",
   "offline": false,
   "source": "host agent",
   "provider": "host agent",
@@ -284,13 +284,109 @@
         "TIGHT: estimate 30.8s is over the 30s budget by 0.8s; trim a line or a beat, or accept the risk"
       ],
       "merged_from": null,
-      "status": "pending",
+      "status": "ok",
       "tags": [
-        "@ TAG ESTHER",
-        "@ TAG RICHARD",
-        "@ TAG STEPHANIE",
-        "@ TAG KALIO DUPLEX PETER ODILI ROAD PORT HARCOURT NIGHT"
-      ]
+        "@EstherKalio",
+        "@RichardKalio",
+        "@StephanieSekibo",
+        "@KalioSittingRoom"
+      ],
+      "prompt": "Create a 30s premium cinematic 3D animated African drama scene.\n\nCharacters: @RichardKalio, @EstherKalio, @StephanieSekibo; GUESTS: about twenty adult party guests of all ages, dark and medium-brown skin, in smart party wear: kaftans and agbada in cream and gold for the men, gowns and wrapper-and-blouse sets in gold, burgundy and cream for the women, soft and slightly out of focus behind the three leads\nLocations: @KalioSittingRoom\n\nVisual Style: Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.\n[Negative: chinese language, mandarin, chinese speech, asian accent]\n[System: Language: English] [Audio: English Speech]\n[Accent: Nigerian English, Port Harcourt, for every speaker, with natural Nigerian rhythm, stress and intonation]\n\n@RichardKalio, @StephanieSekibo and @EstherKalio are in @KalioSittingRoom, the Kalio duplex on Peter Odili Road, Port Harcourt, at night in heavy rain, at a promotion party for twenty guests.\n\n@RichardKalio, in a tight burgundy shirt, is the host. @StephanieSekibo, in a fuchsia dress, stands beside him. @EstherKalio, in a plain sage-green wrapper and blouse, serves the guests. From the camera's view: @RichardKalio stands center-left with @StephanieSekibo at his right elbow; the front door is on the right; the side table is at the far left; the tall rain-streaked windows are behind them. Keep these positions in every wide shot.\n\nPreserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @RichardKalio, @EstherKalio, @StephanieSekibo and @KalioSittingRoom.\n\nIMPORTANT:\n\nUse ONLY hard cuts between shots.\nNO tracking shots, camera slides, whip pans, or continuous camera transitions.\nEvery shot is a locked-off frame.\nKeep the pacing measured, tense, and cinematic. Let the silences between the lines carry the tension.\n@RichardKalio always wears the gold-rimmed sunglasses pushed up in his fade, never over his eyes, and the heavy gold watch.\n@EstherKalio never raises her voice and never smiles in this scene.\nNo on-screen text, subtitles or captions anywhere in the frame.\nNO music. Only heavy rain against the windows, a generator humming behind the wall, party chatter and clinking glasses, cloth and footsteps on tiles, small object sounds, and dialogue.\n\nRICHARD'S VOICE:\n\nAdult Nigerian male voice with a thick Port Harcourt Nigerian English accent, a full-chested baritone. Loud, pompous and theatrical when he plays to the room, with the stressed, rising rhythm of Nigerian English; cold and flat when he is angry.\n\nESTHER'S VOICE:\n\nAdult Nigerian female voice with a thick Port Harcourt Nigerian English accent. Quiet, even and controlled, soft but clear, never raised, each word placed deliberately.\n\nSTEPHANIE'S VOICE:\n\nAdult Nigerian female voice with a thick Port Harcourt Nigerian English accent. Sweet and light with something sharp underneath, smooth and unhurried.\n\nSHOT 1 (00:00-00:03) — WIDE ESTABLISHING SHOT — EYE LEVEL\n\n@KalioSittingRoom at night. A promotion party is in full swing: rain streaks the tall windows, a generator hums behind the wall, glasses clink. About twenty party guests (adults in smart cream, gold and burgundy party wear) stand in small groups behind the three leads, soft and slightly out of focus. @RichardKalio stands center-left with a glass held high, @StephanieSekibo at his right elbow. From frame right, @EstherKalio crosses the room carrying a tray of fried plantain and small chops, her head down.\n\nHARD CUT.\n\nSHOT 2 (00:03-00:11) — MEDIUM SHOT ON RICHARD — SLIGHT LOW ANGLE\n\n@RichardKalio holds his glass high and turns the heavy gold watch on his wrist with his thumb, the gold-rimmed sunglasses pushed up into his fade. He laughs out loud and plays to the room, looking at the guests and then toward @EstherKalio, who is just out of frame.\n\n@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, laughing, loud, glass raised:\n\n“Look at her! A primary school teacher, carrying plantain in my sitting room like a house girl.”\n\nHARD CUT.\n\nSHOT 3 (00:11-00:17) — CLOSE-UP ON ESTHER — EYE LEVEL\n\n@EstherKalio stops with the tray balanced in both hands. Her head is slightly lowered, her eyes lift. Her face is calm and does not show the sting.\n\nFrom OFF-SCREEN, @RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, loud, from across the room:\n\n“Esther, who asked you to serve my guests?”\n\n@EstherKalio, in her SAME quiet, even, Nigerian-accented voice, quiet, balancing the tray:\n\n“You did, Richard. This morning.”\n\nHARD CUT.\n\nSHOT 4 (00:17-00:24) — MEDIUM CLOSE-UP ON RICHARD — LOW ANGLE\n\nThe laugh drops off @RichardKalio's face. He lowers the glass. The sunglasses stay pushed up in his fade, and his eyes go flat and cold as they settle on @EstherKalio.\n\n@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, cold, the smile gone:\n\n“I asked you to stay in the kitchen. Not to stand where my colleagues can see you.”\n\nHARD CUT.\n\nSHOT 5 (00:24-00:30) — MEDIUM CLOSE-UP ON STEPHANIE — EYE LEVEL\n\n@StephanieSekibo touches @RichardKalio's burgundy sleeve with her long French-tip nails. Her smile is gentle and her eyes are not. @RichardKalio's sleeve and hand are at the edge of the frame. Hold on this frame after the line.\n\n@StephanieSekibo, in her SAME sweet, light, Nigerian-accented voice, sweet, poisonous, touching his sleeve:\n\n“Richard, leave her. She is trying. Not everybody can be at this level.”\n\nHARD CUT.\n\nEND HERE.\n",
+      "shots": [
+        {
+          "n": 1,
+          "scale": "wide establishing shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3,
+          "function": "@KalioSittingRoom at night",
+          "dialogue": null
+        },
+        {
+          "n": 2,
+          "scale": "medium shot on richard",
+          "angle": "slight low angle",
+          "camera": "locked-off",
+          "seconds": 7.2,
+          "function": "@RichardKalio holds his glass high and turns the heavy gold watch on his wrist with his th",
+          "dialogue": "Look at her! A primary school teacher, carrying plantain in my sitting room like a house girl."
+        },
+        {
+          "n": 3,
+          "scale": "close-up on esther",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 6,
+          "function": "@EstherKalio stops with the tray balanced in both hands",
+          "dialogue": "Esther, who asked you to serve my guests? / You did, Richard. This morning."
+        },
+        {
+          "n": 4,
+          "scale": "medium close-up on richard",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 6.5,
+          "function": "The laugh drops off @RichardKalio's face",
+          "dialogue": "I asked you to stay in the kitchen. Not to stand where my colleagues can see you."
+        },
+        {
+          "n": 5,
+          "scale": "medium close-up on stephanie",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 5.1,
+          "function": "@StephanieSekibo touches @RichardKalio's burgundy sleeve with her long French-tip nails",
+          "dialogue": "Richard, leave her. She is trying. Not everybody can be at this level."
+        }
+      ],
+      "brief": {
+        "purpose": "Show the host's arrogance, the wife's patience and the sweet cruelty of the guest, up to the line that ends the first exchange.",
+        "subject": "@RichardKalio and @EstherKalio",
+        "subject_action": "He mocks her in front of the party; she answers quietly; the guest at his side adds a sweet insult.",
+        "camera": "locked-off framing with hard cuts only",
+        "environment": "The sitting room at night with a full party and heavy rain at the windows",
+        "lighting": "Warm amber lamps, soft global illumination, cool rain-grey at the windows",
+        "visual_direction": "The style paragraph in the Visual Style line. Three leads in the foreground, guests soft behind them.",
+        "stability": [
+          "Richard's sunglasses stay pushed up in his fade, never over his eyes",
+          "Positions: Richard center-left, Stephanie at his right elbow, Esther enters from frame right",
+          "Rain stays visible at the windows"
+        ],
+        "must_get": [
+          "The wide that shows the party and the three leads",
+          "The close-up of Esther on 'You did, Richard. This morning.'",
+          "The hold on Stephanie's hand on Richard's sleeve"
+        ],
+        "cut_first": [
+          "The wide establishing shot can shrink to 2 seconds"
+        ]
+      },
+      "carry_over": {
+        "last_frame": "Medium close-up of Stephanie's hand on Richard's burgundy sleeve, held after her line",
+        "positions": "Richard center-left holding the glass, Stephanie at his right elbow, Esther with the tray frame right",
+        "props": "Tray of fried plantain and small chops in Esther's hands; the side table at far left with the brass-capped fountain pen on a folded exercise book",
+        "costume": "Richard burgundy shirt; Stephanie fuchsia dress; Esther sage-green wrapper and blouse",
+        "lighting": "Warm amber lamps with rain-grey at the windows"
+      },
+      "assumptions": [
+        "The Nigerian accent is carried by the voice blocks and the accent line; no spoken word is changed.",
+        "The room layout, guest clothing and positions are not in the script and were proposed.",
+        "Richard's line 'Esther, who asked you to serve my guests?' is spoken off-screen over Esther's close-up; it is still the script's line, in order."
+      ],
+      "warnings": [],
+      "errors": [],
+      "timing": {
+        "shots": 5,
+        "dialogue_lines": 5,
+        "dialogue_words": 60,
+        "speaking_s": 23.4,
+        "estimated_s": 25.8,
+        "limit_s": 30.0,
+        "verdict": "FITS"
+      },
+      "last_line": "Richard, leave her. She is trying. Not everybody can be at this level.",
+      "last_speaker": "STEPHANIE",
+      "attempts": 3
     },
     {
       "id": "S01b",
@@ -352,13 +448,126 @@
         "extension: start from the exact final frame of the previous segment"
       ],
       "merged_from": null,
-      "status": "pending",
+      "status": "ok",
       "tags": [
-        "@ TAG ESTHER",
-        "@ TAG RICHARD",
-        "@ TAG STEPHANIE",
-        "@ TAG KALIO DUPLEX PETER ODILI ROAD PORT HARCOURT NIGHT"
-      ]
+        "@EstherKalio",
+        "@RichardKalio",
+        "@StephanieSekibo",
+        "@KalioSittingRoom"
+      ],
+      "prompt": "Create a 26s premium cinematic 3D animated African drama scene.\n\nCharacters: @RichardKalio, @EstherKalio, @StephanieSekibo; GUESTS: about twenty adult party guests of all ages, dark and medium-brown skin, in smart party wear: kaftans and agbada in cream and gold for the men, gowns and wrapper-and-blouse sets in gold, burgundy and cream for the women, soft and slightly out of focus behind the three leads\nLocations: @KalioSittingRoom\n\nVisual Style: Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.\n[Negative: chinese language, mandarin, chinese speech, asian accent]\n[System: Language: English] [Audio: English Speech]\n[Accent: Nigerian English, Port Harcourt, for every speaker, with natural Nigerian rhythm, stress and intonation]\n\nExtend the previous video by another 26s, starting from its exact final frame after @StephanieSekibo says:\n\n“Richard, leave her. She is trying. Not everybody can be at this level.”\n\nContinue the same scene in @KalioSittingRoom with the exact same character designs, clothing, lighting, atmosphere, framing style, and emotional continuity. @StephanieSekibo's hand is still on @RichardKalio's sleeve. From the camera's view: @RichardKalio stands center-left with @StephanieSekibo at his right elbow; the front door is on the right; the side table is at the far left; the tall rain-streaked windows are behind them. Keep these positions in every wide shot.\n\nIMPORTANT:\n\nUse ONLY hard cuts between shots.\nNO tracking shots, camera slides, whip pans, or continuous camera transitions.\nEvery shot is a locked-off frame.\nDo not restate the opening; shot 1 continues directly from the final frame.\nKeep the pacing measured, tense, and cinematic. Let the silences between the lines carry the tension.\n@RichardKalio, @EstherKalio and @StephanieSekibo keep their SAME voices and the SAME Nigerian accent from the first part. Do not change them.\n@RichardKalio keeps the sunglasses pushed up in his fade, never over his eyes.\nNo on-screen text, subtitles or captions anywhere in the frame.\nNO music. Only heavy rain against the windows, a generator humming behind the wall, party chatter and clinking glasses, cloth and footsteps on tiles, small object sounds, and dialogue.\n\nSHOT 1 (00:00-00:02) — CLOSE-UP ON ESTHER'S EYES — EYE LEVEL\n\n@EstherKalio's eyes go to @StephanieSekibo's hand on @RichardKalio's sleeve, then back up to @RichardKalio. No dialogue.\n\nHARD CUT.\n\nSHOT 2 (00:02-00:05) — MEDIUM SHOT — THREE-QUARTER ANGLE\n\n@EstherKalio sets the tray down on the side table at the far left, beside a brass-capped fountain pen lying on a folded exercise book. Her movements are slow and careful.\n\nHARD CUT.\n\nSHOT 3 (00:05-00:06) — EXTREME CLOSE-UP — INSERT, TOP-DOWN\n\nThe brass-capped fountain pen lying on the folded exercise book on the polished side table. The edge of the tray enters the frame. The pen stays in sharp focus. No dialogue.\n\nHARD CUT.\n\nSHOT 4 (00:06-00:13) — MEDIUM CLOSE-UP ON RICHARD — LOW ANGLE\n\n@RichardKalio steps closer to @EstherKalio, his voice rising so that every guest hears. His chest is out and his free hand cuts the air.\n\n@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, stepping closer, voice rising so every guest hears:\n\n“Five years I have carried this woman. Her whole salary cannot fuel my generator for one month.”\n\nHARD CUT.\n\nSHOT 5 (00:13-00:15) — WIDE SHOT — EYE LEVEL\n\nThe party guests (adults in smart cream, gold and burgundy party wear) turn their heads toward the two of them. @RichardKalio and @EstherKalio face each other in the foreground, @StephanieSekibo at his right. No dialogue.\n\nHARD CUT.\n\nSHOT 6 (00:15-00:23) — CLOSE-UP ON RICHARD — LOW ANGLE\n\n@RichardKalio's face is hard and certain, and he does not blink. His jaw is set.\n\n@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, voice rising:\n\n“Today they made me Deputy General Manager. Do you understand? I cannot stand on that stage with a woman who smells of chalk.”\n\nHARD CUT.\n\nSHOT 7 (00:23-00:26) — CLOSE-UP ON ESTHER — EYE LEVEL\n\n@EstherKalio looks straight at @RichardKalio without moving. Her face is perfectly calm.\n\n@EstherKalio, in her SAME quiet, even, Nigerian-accented voice, very calm:\n\n“What are you saying, Richard?”\n\nHARD CUT.\n\nEND HERE.\n",
+      "shots": [
+        {
+          "n": 1,
+          "scale": "close-up on esther's eyes",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2.5,
+          "function": "@EstherKalio's eyes go to @StephanieSekibo's hand on @RichardKalio's sleeve, then back up ",
+          "dialogue": null
+        },
+        {
+          "n": 2,
+          "scale": "medium shot",
+          "angle": "three-quarter angle",
+          "camera": "locked-off",
+          "seconds": 2.8,
+          "function": "@EstherKalio sets the tray down on the side table at the far left, beside a brass-capped f",
+          "dialogue": null
+        },
+        {
+          "n": 3,
+          "scale": "extreme close-up",
+          "angle": "insert, top-down",
+          "camera": "locked-off",
+          "seconds": 1.5,
+          "function": "The brass-capped fountain pen lying on the folded exercise book on the polished side table",
+          "dialogue": null
+        },
+        {
+          "n": 4,
+          "scale": "medium close-up on richard",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 7.0,
+          "function": "@RichardKalio steps closer to @EstherKalio, his voice rising so that every guest hears",
+          "dialogue": "Five years I have carried this woman. Her whole salary cannot fuel my generator for one month."
+        },
+        {
+          "n": 5,
+          "scale": "wide shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2.0,
+          "function": "The party guests (adults in smart cream, gold and burgundy party wear) turn their heads to",
+          "dialogue": null
+        },
+        {
+          "n": 6,
+          "scale": "close-up on richard",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 9.0,
+          "function": "@RichardKalio's face is hard and certain, and he does not blink",
+          "dialogue": "Today they made me Deputy General Manager. Do you understand? I cannot stand on that stage with a woman who smells of chalk."
+        },
+        {
+          "n": 7,
+          "scale": "close-up on esther",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2.8,
+          "function": "@EstherKalio looks straight at @RichardKalio without moving",
+          "dialogue": "What are you saying, Richard?"
+        }
+      ],
+      "brief": {
+        "purpose": "Put the pen on the table, then give Richard's reason in front of the room, and end on Esther's calm question.",
+        "subject": "@RichardKalio and @EstherKalio",
+        "subject_action": "She sets down the tray; he steps closer and states why he cannot be seen with her.",
+        "camera": "locked-off framing with hard cuts only",
+        "environment": "The same party in the sitting room, guests turning to watch",
+        "lighting": "Warm amber lamps with rain-grey at the windows",
+        "visual_direction": "Same style and positions as the first part.",
+        "stability": [
+          "The brass-capped fountain pen is the same size and look every time it is shown",
+          "Richard's sunglasses stay up in his fade",
+          "Voices and accent unchanged from the first part"
+        ],
+        "must_get": [
+          "The insert on the pen and exercise book",
+          "Richard's close-up on 'a woman who smells of chalk'",
+          "Esther's calm 'What are you saying, Richard?'"
+        ],
+        "cut_first": [
+          "The guests' wide shot (shot 5)"
+        ]
+      },
+      "carry_over": {
+        "last_frame": "Close-up of Esther, calm, after 'What are you saying, Richard?'",
+        "positions": "Richard center-left facing Esther, Stephanie at his right elbow, side table at far left with the pen on the exercise book",
+        "props": "The pen on the folded exercise book on the side table; the tray beside it",
+        "costume": "Unchanged",
+        "lighting": "Warm amber lamps with rain-grey at the windows"
+      },
+      "assumptions": [
+        "The extreme close-up on the pen is added to keep the object consistent; it adds no plot.",
+        "The wide shot of guests turning is implied by 'so every guest hears'."
+      ],
+      "warnings": [],
+      "errors": [],
+      "timing": {
+        "shots": 7,
+        "dialogue_lines": 3,
+        "dialogue_words": 45,
+        "speaking_s": 16.7,
+        "estimated_s": 22.4,
+        "limit_s": 30.0,
+        "verdict": "FITS"
+      },
+      "last_line": "What are you saying, Richard?",
+      "last_speaker": "ESTHER",
+      "attempts": 2
     },
     {
       "id": "S01c",
@@ -436,13 +645,116 @@
         "starts a new chain: use the last frame of the previous segment as the first-frame reference"
       ],
       "merged_from": null,
-      "status": "pending",
+      "status": "ok",
       "tags": [
-        "@ TAG ESTHER",
-        "@ TAG RICHARD",
-        "@ TAG STEPHANIE",
-        "@ TAG KALIO DUPLEX PETER ODILI ROAD PORT HARCOURT NIGHT"
-      ]
+        "@EstherKalio",
+        "@RichardKalio",
+        "@StephanieSekibo",
+        "@KalioSittingRoom"
+      ],
+      "prompt": "Create a 28s premium cinematic 3D animated African drama scene.\n\nCharacters: @RichardKalio, @EstherKalio, @StephanieSekibo; GUESTS: about twenty adult party guests of all ages, dark and medium-brown skin, in smart party wear: kaftans and agbada in cream and gold for the men, gowns and wrapper-and-blouse sets in gold, burgundy and cream for the women, soft and slightly out of focus behind the three leads\nLocations: @KalioSittingRoom\n\nVisual Style: Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.\n[Negative: chinese language, mandarin, chinese speech, asian accent]\n[System: Language: English] [Audio: English Speech]\n[Accent: Nigerian English, Port Harcourt, for every speaker, with natural Nigerian rhythm, stress and intonation]\n\nThis clip starts exactly from the last frame of the previous clip (first-frame reference @Image 1): @EstherKalio in close-up, calm, just after she asks her question.\n\n@RichardKalio, @EstherKalio and @StephanieSekibo are in @KalioSittingRoom at the promotion party, at night in heavy rain.\n\n@EstherKalio stands calm in her plain sage-green wrapper and blouse, facing @RichardKalio in his tight burgundy shirt. @StephanieSekibo in her fuchsia dress stands at his right elbow. From the camera's view: @RichardKalio stands center-left with @StephanieSekibo at his right elbow; the front door is on the right; the side table is at the far left; the tall rain-streaked windows are behind them. Keep these positions in every wide shot.\n\nPreserve the exact established designs, proportions, clothing, locations, lighting, colors, and visual style for @RichardKalio, @EstherKalio, @StephanieSekibo and @KalioSittingRoom.\n\nIMPORTANT:\n\nUse ONLY hard cuts between shots.\nNO tracking shots, camera slides, whip pans, or continuous camera transitions.\nEvery shot is a locked-off frame.\nKeep the pacing measured, tense, and cinematic. Let the silences between the lines carry the tension.\n@RichardKalio keeps the sunglasses pushed up in his fade and the heavy gold watch on his wrist.\nNo on-screen text, subtitles or captions anywhere in the frame.\nNO music. Only heavy rain against the windows, a generator humming behind the wall, party chatter and clinking glasses, cloth and footsteps on tiles, small object sounds, and dialogue.\n\nRICHARD'S VOICE:\n\nAdult Nigerian male voice with a thick Port Harcourt Nigerian English accent, a full-chested baritone. Loud, pompous and theatrical when he plays to the room, with the stressed, rising rhythm of Nigerian English; cold and flat when he is angry.\n\nESTHER'S VOICE:\n\nAdult Nigerian female voice with a thick Port Harcourt Nigerian English accent. Quiet, even and controlled, soft but clear, never raised, each word placed deliberately.\n\nSHOT 1 (00:00-00:07) — CLOSE-UP ON RICHARD — LOW ANGLE\n\n@RichardKalio points a stiff arm toward the heavy front door at the right of the room. His face is cold.\n\n@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, pointing at the door:\n\n“Pack one bag. Go to your people in Warri. Go and sit in that falling house in Ekpan.”\n\nHARD CUT.\n\nSHOT 2 (00:07-00:10) — MEDIUM CLOSE-UP ON ESTHER — EYE LEVEL\n\n@EstherKalio turns her head slowly toward the rain-streaked windows and back to @RichardKalio. Her face is steady.\n\n@EstherKalio, in her SAME quiet, even, Nigerian-accented voice, :\n\n“In this rain? At night?”\n\nHARD CUT.\n\nSHOT 3 (00:10-00:17) — MEDIUM SHOT ON RICHARD — SLIGHT LOW ANGLE\n\n@RichardKalio spreads his arms wide and smiles at the party guests (adults in smart cream, gold and burgundy party wear), playing to them.\n\n@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, spreading his arms, smiling at the guests:\n\n“This roof is mine. Every plate, every light, every kobo in this house is my salary.”\n\nHARD CUT.\n\nSHOT 4 (00:17-00:19) — MEDIUM SHOT — THREE-QUARTER ANGLE\n\n@RichardKalio sweeps his hand across the side table in one hard motion. No dialogue.\n\nHARD CUT.\n\nSHOT 5 (00:19-00:21) — EXTREME CLOSE-UP — INSERT, LOW ANGLE\n\nThe brass-capped fountain pen flies off the side table and rolls across the polished tiles. ROLL. The pen stays in sharp focus. No dialogue.\n\nHARD CUT.\n\nSHOT 6 (00:21-00:28) — CLOSE-UP ON RICHARD — SLIGHT LOW ANGLE\n\n@RichardKalio sneers down at @EstherKalio, his chin raised.\n\n@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, sneering:\n\n“And take that market trinket with you. Seven years you carry it like a staff of office.”\n\nHARD CUT.\n\nEND HERE.\n",
+      "shots": [
+        {
+          "n": 1,
+          "scale": "close-up on richard",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 7.4,
+          "function": "@RichardKalio points a stiff arm toward the heavy front door at the right of the room",
+          "dialogue": "Pack one bag. Go to your people in Warri. Go and sit in that falling house in Ekpan."
+        },
+        {
+          "n": 2,
+          "scale": "medium close-up on esther",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 2.8,
+          "function": "@EstherKalio turns her head slowly toward the rain-streaked windows and back to @RichardKa",
+          "dialogue": "In this rain? At night?"
+        },
+        {
+          "n": 3,
+          "scale": "medium shot on richard",
+          "angle": "slight low angle",
+          "camera": "locked-off",
+          "seconds": 7.1,
+          "function": "@RichardKalio spreads his arms wide and smiles at the party guests (adults in smart cream,",
+          "dialogue": "This roof is mine. Every plate, every light, every kobo in this house is my salary."
+        },
+        {
+          "n": 4,
+          "scale": "medium shot",
+          "angle": "three-quarter angle",
+          "camera": "locked-off",
+          "seconds": 2.0,
+          "function": "@RichardKalio sweeps his hand across the side table in one hard motion",
+          "dialogue": null
+        },
+        {
+          "n": 5,
+          "scale": "extreme close-up",
+          "angle": "insert, low angle",
+          "camera": "locked-off",
+          "seconds": 1.5,
+          "function": "The brass-capped fountain pen flies off the side table and rolls across the polished tiles",
+          "dialogue": null
+        },
+        {
+          "n": 6,
+          "scale": "close-up on richard",
+          "angle": "slight low angle",
+          "camera": "locked-off",
+          "seconds": 7.1,
+          "function": "@RichardKalio sneers down at @EstherKalio, his chin raised",
+          "dialogue": "And take that market trinket with you. Seven years you carry it like a staff of office."
+        }
+      ],
+      "brief": {
+        "purpose": "Richard orders her out in front of everyone and knocks the pen off the table.",
+        "subject": "@RichardKalio",
+        "subject_action": "He points at the door, claims the house as his, and sweeps the pen to the floor.",
+        "camera": "locked-off framing with hard cuts only",
+        "environment": "The sitting room at night with rain at the windows and guests watching",
+        "lighting": "Warm amber lamps with rain-grey at the windows",
+        "visual_direction": "Same style; this is a new generation started from the last frame of the previous clip.",
+        "stability": [
+          "The front door is on the right",
+          "The pen keeps the same size and look and rolls toward the left foreground of Stephanie",
+          "Richard's sunglasses stay up in his fade"
+        ],
+        "must_get": [
+          "The pen flying off the table and rolling",
+          "Richard's arms-wide close-up on 'This roof is mine.'"
+        ],
+        "cut_first": [
+          "Esther's turn toward the windows (shot 2) can be trimmed"
+        ]
+      },
+      "carry_over": {
+        "last_frame": "Close-up of Richard sneering after 'staff of office', pen still rolling across the tiles toward Stephanie",
+        "positions": "Richard center-left, Stephanie at his right, Esther facing him, front door on the right",
+        "props": "The pen on the tiles, rolling; the exercise book left on the side table",
+        "costume": "Unchanged",
+        "lighting": "Warm amber lamps with rain-grey at the windows"
+      },
+      "assumptions": [
+        "The clip needs the last frame of the previous clip as a first-frame reference; if the provider does not allow a first-frame image together with reference images, use the tags only.",
+        "The pen rolls toward Stephanie so the next clip can start from it (the script says it stops against her heel)."
+      ],
+      "warnings": [],
+      "errors": [],
+      "timing": {
+        "shots": 6,
+        "dialogue_lines": 4,
+        "dialogue_words": 56,
+        "speaking_s": 20.8,
+        "estimated_s": 24.4,
+        "limit_s": 30.0,
+        "verdict": "FITS"
+      },
+      "last_line": "And take that market trinket with you. Seven years you carry it like a staff of office.",
+      "last_speaker": "RICHARD",
+      "attempts": 2
     },
     {
       "id": "S01d",
@@ -592,13 +904,492 @@
         "extension: start from the exact final frame of the previous segment"
       ],
       "merged_from": null,
-      "status": "pending",
+      "status": "ok",
       "tags": [
-        "@ TAG ESTHER",
-        "@ TAG RICHARD",
-        "@ TAG STEPHANIE",
-        "@ TAG KALIO DUPLEX PETER ODILI ROAD PORT HARCOURT NIGHT"
-      ]
+        "@EstherKalio",
+        "@RichardKalio",
+        "@StephanieSekibo",
+        "@KalioSittingRoom"
+      ],
+      "prompt": "Create a 28s premium cinematic 3D animated African drama scene.\n\nCharacters: @RichardKalio, @EstherKalio, @StephanieSekibo; GUESTS: about twenty adult party guests of all ages, dark and medium-brown skin, in smart party wear: kaftans and agbada in cream and gold for the men, gowns and wrapper-and-blouse sets in gold, burgundy and cream for the women, soft and slightly out of focus behind the three leads\nLocations: @KalioSittingRoom\n\nVisual Style: Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.\n[Negative: chinese language, mandarin, chinese speech, asian accent]\n[System: Language: English] [Audio: English Speech]\n[Accent: Nigerian English, Port Harcourt, for every speaker, with natural Nigerian rhythm, stress and intonation]\n\nExtend the previous video by another 28s, starting from its exact final frame after @RichardKalio says:\n\n“And take that market trinket with you. Seven years you carry it like a staff of office.”\n\nContinue the same scene in @KalioSittingRoom with the exact same character designs, clothing, lighting, atmosphere, framing style, and emotional continuity. The brass-capped fountain pen is still rolling across the tiles. From the camera's view: @RichardKalio stands center-left with @StephanieSekibo at his right elbow; the front door is on the right; the side table is at the far left; the tall rain-streaked windows are behind them. Keep these positions in every wide shot.\n\nIMPORTANT:\n\nUse ONLY hard cuts between shots.\nNO tracking shots, camera slides, whip pans, or continuous camera transitions.\nEvery shot is a locked-off frame.\nDo not restate the opening; shot 1 continues directly from the final frame.\nKeep the pacing measured, tense, and cinematic. Let the silences between the lines carry the tension.\n@RichardKalio, @EstherKalio and @StephanieSekibo keep their SAME voices and the SAME Nigerian accent from the earlier clips. Do not change them.\nThe rain is visible at the windows in every shot and blows in only when the door opens.\nNo on-screen text, subtitles or captions anywhere in the frame.\nNO music. Only heavy rain against the windows, a generator humming behind the wall, party chatter and clinking glasses, cloth and footsteps on tiles, small object sounds, and dialogue.\n\nSHOT 1 (00:00-00:03) — MEDIUM WIDE SHOT — EYE LEVEL\n\nThe brass-capped fountain pen rolls across the tiles and stops against the heel of @StephanieSekibo's gold sandal. She smiles and does not move. @EstherKalio crosses the floor, bends, picks up the pen, and wipes it slowly on her wrapper. The party guests (adults in smart cream, gold and burgundy party wear) go quiet. Only the generator hums. No dialogue.\n\nHARD CUT.\n\nSHOT 2 (00:03-00:06) — CLOSE-UP ON ESTHER — EYE LEVEL\n\n@EstherKalio holds the pen against her chest in one hand. Her eyes are steady and wet but do not break.\n\n@EstherKalio, in her SAME quiet, even, Nigerian-accented voice, quietly, almost to herself:\n\n“My father's pen is not a trinket.”\n\nHARD CUT.\n\nSHOT 3 (00:06-00:09) — MEDIUM SHOT ON RICHARD — SLIGHT LOW ANGLE\n\n@RichardKalio shrugs and laughs to the room, glancing around at the guests.\n\n@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, shrugging, laughing to the room:\n\n“Ladies and gentlemen, my wife, the poet!”\n\nHARD CUT.\n\nSHOT 4 (00:09-00:13) — MEDIUM CLOSE-UP ON ESTHER — EYE LEVEL\n\n@EstherKalio lifts her bag from the chair beside her. Her back is straight.\n\n@EstherKalio, in her SAME quiet, even, Nigerian-accented voice, lifting her bag from the chair, steady:\n\n“You are sure, Richard? Before all these people?”\n\nHARD CUT.\n\nSHOT 5 (00:13-00:17) — MEDIUM CLOSE-UP ON RICHARD — LOW ANGLE\n\n@RichardKalio throws his arms wide, chin high.\n\n@RichardKalio, in his SAME loud, pompous, Nigerian-accented voice, arms wide:\n\n“I have never been surer. Without me, you will not eat.”\n\nHARD CUT.\n\nSHOT 6 (00:17-00:25) — MEDIUM SHOT FROM BEHIND ESTHER — EYE LEVEL\n\n@EstherKalio slides the pen into her pocket and opens the heavy front door. Rain blows in across the tiles. She stands in the doorway with her back to the room and does not turn around. @RichardKalio is small in the background.\n\n@EstherKalio, in her SAME quiet, even, Nigerian-accented voice, not turning around:\n\n“Tonight, when everyone has gone home, open your payslip. Read the bottom line. See whose name carries it.”\n\nHARD CUT.\n\nSHOT 7 (00:25-00:28) — CLOSE-UP ON RICHARD — EYE LEVEL\n\nThe door closes. DOOR CLOSING. @RichardKalio laughs, but it is only half a laugh, and it fades. His thumb stops turning the heavy gold watch on his wrist. Hold on his face and the stopped watch.\n\nHARD CUT.\n\nCUT TO BLACK.\n",
+      "shots": [
+        {
+          "n": 1,
+          "scale": "medium wide shot",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3.5,
+          "function": "The brass-capped fountain pen rolls across the tiles and stops against the heel of @Stepha",
+          "dialogue": null
+        },
+        {
+          "n": 2,
+          "scale": "close-up on esther",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3.1,
+          "function": "@EstherKalio holds the pen against her chest in one hand",
+          "dialogue": "My father's pen is not a trinket."
+        },
+        {
+          "n": 3,
+          "scale": "medium shot on richard",
+          "angle": "slight low angle",
+          "camera": "locked-off",
+          "seconds": 3.5,
+          "function": "@RichardKalio shrugs and laughs to the room, glancing around at the guests",
+          "dialogue": "Ladies and gentlemen, my wife, the poet!"
+        },
+        {
+          "n": 4,
+          "scale": "medium close-up on esther",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 4.0,
+          "function": "@EstherKalio lifts her bag from the chair beside her",
+          "dialogue": "You are sure, Richard? Before all these people?"
+        },
+        {
+          "n": 5,
+          "scale": "medium close-up on richard",
+          "angle": "low angle",
+          "camera": "locked-off",
+          "seconds": 4.0,
+          "function": "@RichardKalio throws his arms wide, chin high",
+          "dialogue": "I have never been surer. Without me, you will not eat."
+        },
+        {
+          "n": 6,
+          "scale": "medium shot from behind esther",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 8.8,
+          "function": "@EstherKalio slides the pen into her pocket and opens the heavy front door",
+          "dialogue": "Tonight, when everyone has gone home, open your payslip. Read the bottom line. See whose name carries it."
+        },
+        {
+          "n": 7,
+          "scale": "close-up on richard",
+          "angle": "eye level",
+          "camera": "locked-off",
+          "seconds": 3.0,
+          "function": "The door closes",
+          "dialogue": null
+        }
+      ],
+      "brief": {
+        "purpose": "She takes her father's pen, leaves with one calm instruction, and his half-laugh shows the doubt.",
+        "subject": "@EstherKalio",
+        "subject_action": "She picks up the pen, answers him three times, and walks out into the rain.",
+        "camera": "locked-off framing with hard cuts only",
+        "environment": "The sitting room, then the open front door with rain",
+        "lighting": "Warm amber lamps; cool rain-grey spills in when the door opens",
+        "visual_direction": "Same style; the last shot returns to the gold watch.",
+        "stability": [
+          "Esther keeps the plain sage-green wrapper and blouse",
+          "The pen is the same brass-capped fountain pen every time",
+          "Esther never turns around at the door"
+        ],
+        "must_get": [
+          "Esther on 'My father's pen is not a trinket.'",
+          "The shot from behind Esther at the open door with the payslip line",
+          "Richard's half-laugh and the stopped watch"
+        ],
+        "cut_first": [
+          "The cutaway moment of Stephanie smiling at the pen can shrink to 1 second"
+        ]
+      },
+      "carry_over": {
+        "last_frame": "Cut to black after the close-up of Richard and the stopped gold watch",
+        "positions": "End of the episode",
+        "props": "The pen in Esther's pocket",
+        "costume": "Unchanged",
+        "lighting": "Warm amber lamps"
+      },
+      "assumptions": [
+        "The pen stops at Stephanie's heel as the script says; her heels are proposed as gold sandals.",
+        "The script's CUT TO BLACK is written as CUT TO BLACK."
+      ],
+      "warnings": [],
+      "errors": [],
+      "timing": {
+        "shots": 7,
+        "dialogue_lines": 5,
+        "dialogue_words": 51,
+        "speaking_s": 19.7,
+        "estimated_s": 23.6,
+        "limit_s": 30.0,
+        "verdict": "FITS"
+      },
+      "last_line": "Tonight, when everyone has gone home, open your payslip. Read the bottom line. See whose name carries it.",
+      "last_speaker": "ESTHER",
+      "attempts": 2
     }
-  ]
+  ],
+  "sheets": {
+    "style": "Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.",
+    "characters": [
+      {
+        "name": "Richard Kalio",
+        "tag": "@RichardKalio",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "scenes": [
+          1
+        ],
+        "entry": {
+          "name": "Richard Kalio",
+          "tag": "@RichardKalio",
+          "speakers": [
+            "RICHARD",
+            "RICHARD KALIO"
+          ],
+          "lead": true,
+          "gender": "Male",
+          "age": "38",
+          "height": "182 cm (proposed)",
+          "body_type": "Broad and solid (proposed)",
+          "ethnicity": "Nigerian, from the Port Harcourt setting; dark-brown skin (proposed, from the style's dark and medium-brown skin tones)",
+          "role": "A husband newly promoted to Deputy General Manager, hosting his own promotion party, who throws out his wife in front of his guests",
+          "archetype": "The arrogant provider who mistakes his comfort for his own achievement",
+          "personality": "Loud, vain and domineering; performs for an audience, laughs at others to look big, and goes cold and flat when truly angry",
+          "core_theme": "A man who takes the credit for a life that someone else holds up",
+          "emotional_range": "Big and theatrical: smug laughter, sneering contempt, cold anger; the only crack is a half-laugh at the end",
+          "behavior_notes": "Turns the heavy gold watch on his wrist when he feels powerful, speaks to the room instead of the person, spreads his arms to play to the crowd",
+          "speech_style": "Loud, pompous Nigerian English with a thick Port Harcourt accent (proposed); cold and flat when angry",
+          "video_voice": "Adult Nigerian male voice with a thick Port Harcourt Nigerian English accent, full-chested baritone, loud and theatrical when playing to the room, cold and flat when angry.",
+          "traits": "Gold-rimmed sunglasses pushed up into his fade and a heavy gold watch on his wrist (both from the script); a strong square jaw and heavy brows (proposed)",
+          "signature_colors": "burgundy, gold, black fade, dark-brown skin",
+          "outfit_summary": "Tight burgundy shirt, dark trousers (proposed), gold-rimmed sunglasses pushed up into his fade, heavy gold watch",
+          "top": "Tight burgundy shirt, fitted across the chest and arms, sleeves rolled to the forearms (rolled sleeves proposed)",
+          "bottom": "Dark charcoal tailored trousers with a crisp crease (proposed)",
+          "shoes": "Polished black leather shoes (proposed)",
+          "accessories": "Gold-rimmed sunglasses pushed up into his fade; a heavy gold watch on his wrist; no other jewelry (proposed)",
+          "turnaround": "He stands tall, shoulders back, chin slightly raised, hands relaxed at his sides, the heavy gold watch visible on his wrist and the sunglasses resting in his fade.",
+          "face_details": "A square face with a strong wide jaw, a broad nose with a flat bridge (proposed), heavy straight brows, full lips often set in a smirk, bright dark eyes made for wide-open acting, dark-brown skin (proposed), a sharp low fade with gold-rimmed sunglasses resting in it, clean-shaven (proposed).",
+          "expression_notes": "Exaggerated and theatrical: a wide laughing mouth, a sneer, a cold flat stare; his sad expression is wounded pride, never tears (proposed).",
+          "posture_notes": "Chest out, chin up, arms thrown wide when he performs for a room; weight leaning forward when he steps close to someone; walking is slow and swaggering (proposed).",
+          "costume_details": "A tight burgundy cotton shirt with visible shoulder seams and buttons straining slightly; a heavy gold link watch on the left wrist (side proposed); gold-rimmed aviator-style sunglasses (frame shape proposed); dark trousers with a crisp crease; polished black shoes.",
+          "palette": [
+            {
+              "label": "Skin (proposed)",
+              "hex": "#5A3A2A"
+            },
+            {
+              "label": "Fade",
+              "hex": "#15110F"
+            },
+            {
+              "label": "Shirt",
+              "hex": "#7A1F2B"
+            },
+            {
+              "label": "Gold watch and frames",
+              "hex": "#D4A838"
+            },
+            {
+              "label": "Trousers (proposed)",
+              "hex": "#2B2B30"
+            }
+          ],
+          "materials": "Cotton shirt, polished gold metal, glass lenses, wool-blend trousers, leather shoes; all shown as stylized materials.",
+          "lock": "the square jaw, broad nose, heavy brows, low fade, gold-rimmed sunglasses pushed up into the fade, tight burgundy shirt, heavy gold watch, dark-brown skin, broad build",
+          "notes": [
+            "sunglasses always sit up in the fade, never over his eyes",
+            "the gold watch is his only jewelry",
+            "arms spread wide when he performs"
+          ],
+          "close_up": "His face under warm party light, glass raised, a smug half-smile, his thumb turning the heavy gold watch: the moment he believes he owns the room.",
+          "voice": {
+            "language_accent": "Nigerian English, thick Port Harcourt accent (proposed)",
+            "gender_age": "Male, late 30s",
+            "persona": "Arrogant, loud husband",
+            "emotion": "Smug, domineering, cold",
+            "delivery": "A full-chested baritone, loud and theatrical when he plays to the room and cold and flat when he is angry, with the stressed, rising rhythm of Nigerian English.",
+            "preview_text": "Five years I have carried this woman. Her whole salary cannot fuel my generator for one month. Today they made me Deputy General Manager. Do you understand?"
+          },
+          "proposed": [
+            "height",
+            "build",
+            "skin tone",
+            "face shape details",
+            "rolled sleeves",
+            "trousers and shoes",
+            "watch side",
+            "frame shape",
+            "voice accent and timbre"
+          ],
+          "scenes": [
+            1
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the character, rendered in Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.:\n1. CHARACTER PROFILE — Richard Kalio. Role: A husband newly promoted to Deputy General Manager, hosting his own promotion party, who throws out his wife in front of his guests. 38, 182 cm (proposed), Broad and solid (proposed) build. Personality: Loud, vain and domineering; performs for an audience, laughs at others to look big, and goes cold and flat when truly angry. Distinctive traits: Gold-rimmed sunglasses pushed up into his fade and a heavy gold watch on his wrist (both from the script); a strong square jaw and heavy brows (proposed). Signature colors: burgundy, gold, black fade, dark-brown skin.\n2. FULL-BODY TURNAROUND — front, 3/4, side, and back views of the exact same character at matching scale, with identical facial features, hairstyle, body proportions, costume, colors, and accessories, standing in a neutral pose beside a vertical height scale in centimeters. He stands tall, shoulders back, chin slightly raised, hands relaxed at his sides, the heavy gold watch visible on his wrist and the sunglasses resting in his fade.\n3. FACE AND IDENTITY DETAILS — front, profile, and 3/4 head-and-shoulder close-ups showing facial structure, eyes, eyebrows, nose, lips, hairstyle, skin tone, makeup, scars, tattoos, and other defining features. A square face with a strong wide jaw, a broad nose with a flat bridge (proposed), heavy straight brows, full lips often set in a smirk, bright dark eyes made for wide-open acting, dark-brown skin (proposed), a sharp low fade with gold-rimmed sunglasses resting in it, clean-shaven (proposed).\n4. EXPRESSION SHEET — neutral, happy, angry, sad, surprised, worried, confident, and determined expressions. Preserve the exact same facial structure and identity in every expression. Exaggerated and theatrical: a wide laughing mouth, a sneer, a cold flat stare; his sad expression is wounded pride, never tears (proposed).\n5. POSE AND BODY LANGUAGE — neutral standing, walking, sitting, relaxed, tense, and action-ready poses. Maintain consistent anatomy, proportions, posture, and silhouette. Chest out, chin up, arms thrown wide when he performs for a room; weight leaning forward when he steps close to someone; walking is slow and swaggering (proposed).\n6. COSTUME DETAILS — close-ups of clothing layers, fabrics, seams, fasteners, footwear, jewelry, eyewear, markings, and other character-defining wardrobe elements. A tight burgundy cotton shirt with visible shoulder seams and buttons straining slightly; a heavy gold link watch on the left wrist (side proposed); gold-rimmed aviator-style sunglasses (frame shape proposed); dark trousers with a crisp crease; polished black shoes.\n7. COLOR AND MATERIAL PALETTE — key colors with HEX codes: Skin (proposed) #5A3A2A; Fade #15110F; Shirt #7A1F2B; Gold watch and frames #D4A838; Trousers (proposed) #2B2B30. Materials: Cotton shirt, polished gold metal, glass lenses, wool-blend trousers, leather shoes; all shown as stylized materials.\n8. DO NOT CHANGE — lock the character's face, identity, skin tone, age, hair, eye color, body shape, proportions, costume, accessories, markings, colors, and defining features: the square jaw, broad nose, heavy brows, low fade, gold-rimmed sunglasses pushed up into the fade, tight burgundy shirt, heavy gold watch, dark-brown skin, broad build. Do not redesign, beautify, age, stylize, simplify, or create alternate versions.\nUse a plain solid white studio background (always white, no gradients or scenery), soft controlled lighting, realistic materials, sharp details, subtle shadows, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid laid out horizontally across the wide frame.\nInclude a small NOTES PANEL with annotation text (sunglasses always sit up in the fade, never over his eyes; the gold watch is his only jewelry; arms spread wide when he performs) and one cinematic CLOSE-UP POSE of the character: His face under warm party light, glass raised, a smug half-smile, his thumb turning the heavy gold watch: the moment he believes he owns the room.\nEvery panel must depict the exact same character with absolute visual consistency. Focus only on the character. Do not include props, additional characters, environments, unrelated objects, or alternate outfits.",
+        "recurring": true
+      },
+      {
+        "name": "Esther Kalio",
+        "tag": "@EstherKalio",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "scenes": [
+          1
+        ],
+        "entry": {
+          "name": "Esther Kalio",
+          "tag": "@EstherKalio",
+          "speakers": [
+            "ESTHER",
+            "ESTHER KALIO"
+          ],
+          "lead": true,
+          "gender": "Female",
+          "age": "33",
+          "height": "168 cm (proposed)",
+          "body_type": "Slim and upright (proposed)",
+          "ethnicity": "Nigerian, from the Port Harcourt setting; medium-brown skin (proposed, from the style's dark and medium-brown skin tones)",
+          "role": "A primary school teacher and a wife, who serves the guests in her own home and is sent out of it in front of them",
+          "archetype": "The quiet woman with hidden strength",
+          "personality": "Calm, dignified and observant; steady under humiliation, speaks softly and says exactly what she means",
+          "core_theme": "Dignity that does not need to shout",
+          "emotional_range": "Restrained: calm, hurt kept below the surface, steady resolve; her eyes do the acting",
+          "behavior_notes": "Keeps her head down while serving, then lifts it; moves slowly and deliberately; does not turn around when she leaves",
+          "speech_style": "Quiet, even Nigerian English with a thick Port Harcourt accent (proposed), never raised",
+          "video_voice": "Adult Nigerian female voice with a thick Port Harcourt Nigerian English accent, quiet, even and controlled, never raised.",
+          "traits": "A plain, modest look; neat braids pulled back (proposed); a calm, steady gaze",
+          "signature_colors": "sage green, black braids, medium-brown skin",
+          "outfit_summary": "Plain sage-green wrapper and blouse (script), flat sandals (proposed)",
+          "top": "Plain sage-green blouse with short sleeves and a simple neckline (sleeve and neckline proposed)",
+          "bottom": "Plain sage-green wrapper, tied at the waist and falling to the ankle",
+          "shoes": "Simple flat leather sandals (proposed)",
+          "accessories": "None; no jewelry (proposed)",
+          "turnaround": "She stands upright with her hands folded in front of her, head level, the plain sage-green wrapper falling straight to her ankles.",
+          "face_details": "An oval face with high, soft cheekbones, large calm dark eyes with a steady gaze, gently arched brows, a straight narrow nose, full lips, medium-brown skin (proposed), black hair in neat braids pulled back (proposed).",
+          "expression_notes": "Restrained and readable through the eyes: the happy expression is a small, tired warmth; the sad one is a wet, unbroken gaze with pressed lips (proposed).",
+          "posture_notes": "Upright and still, shoulders level, hands steady; a small bow of the head when serving, a straight back when she stands her ground (proposed).",
+          "costume_details": "A plain sage-green blouse in soft cotton with neat hems; a plain sage-green wrapper in a matching cloth, wrapped and tucked at the waist; flat leather sandals; no jewelry.",
+          "palette": [
+            {
+              "label": "Skin (proposed)",
+              "hex": "#8A5A3C"
+            },
+            {
+              "label": "Braids (proposed)",
+              "hex": "#1A1412"
+            },
+            {
+              "label": "Wrapper",
+              "hex": "#7F9270"
+            },
+            {
+              "label": "Blouse",
+              "hex": "#9CAB88"
+            },
+            {
+              "label": "Sandals (proposed)",
+              "hex": "#6B4A32"
+            }
+          ],
+          "materials": "Soft cotton blouse, plain wrapper cloth, leather sandals; all shown as stylized materials.",
+          "lock": "the oval face, high cheekbones, calm dark eyes, braids pulled back, plain sage-green blouse and wrapper, flat sandals, medium-brown skin, slim upright build",
+          "notes": [
+            "the sage green is plain, with no pattern",
+            "no jewelry",
+            "always upright and still"
+          ],
+          "close_up": "A soft close-up in warm window light, her eyes steady and wet but unbroken, lips pressed: the moment she chooses calm.",
+          "voice": {
+            "language_accent": "Nigerian English, thick Port Harcourt accent (proposed)",
+            "gender_age": "Female, early 30s",
+            "persona": "Calm, dignified teacher",
+            "emotion": "Calm, restrained, resolute",
+            "delivery": "Quiet and even, soft but clear and never raised, each word placed deliberately with the measured rhythm of Nigerian English.",
+            "preview_text": "You did, Richard. This morning. What are you saying, Richard? My father's pen is not a trinket. You are sure, Richard? Before all these people?"
+          },
+          "proposed": [
+            "height",
+            "build",
+            "skin tone",
+            "braids",
+            "sleeves and neckline",
+            "sandals",
+            "voice accent and timbre"
+          ],
+          "scenes": [
+            1
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the character, rendered in Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.:\n1. CHARACTER PROFILE — Esther Kalio. Role: A primary school teacher and a wife, who serves the guests in her own home and is sent out of it in front of them. 33, 168 cm (proposed), Slim and upright (proposed) build. Personality: Calm, dignified and observant; steady under humiliation, speaks softly and says exactly what she means. Distinctive traits: A plain, modest look; neat braids pulled back (proposed); a calm, steady gaze. Signature colors: sage green, black braids, medium-brown skin.\n2. FULL-BODY TURNAROUND — front, 3/4, side, and back views of the exact same character at matching scale, with identical facial features, hairstyle, body proportions, costume, colors, and accessories, standing in a neutral pose beside a vertical height scale in centimeters. She stands upright with her hands folded in front of her, head level, the plain sage-green wrapper falling straight to her ankles.\n3. FACE AND IDENTITY DETAILS — front, profile, and 3/4 head-and-shoulder close-ups showing facial structure, eyes, eyebrows, nose, lips, hairstyle, skin tone, makeup, scars, tattoos, and other defining features. An oval face with high, soft cheekbones, large calm dark eyes with a steady gaze, gently arched brows, a straight narrow nose, full lips, medium-brown skin (proposed), black hair in neat braids pulled back (proposed).\n4. EXPRESSION SHEET — neutral, happy, angry, sad, surprised, worried, confident, and determined expressions. Preserve the exact same facial structure and identity in every expression. Restrained and readable through the eyes: the happy expression is a small, tired warmth; the sad one is a wet, unbroken gaze with pressed lips (proposed).\n5. POSE AND BODY LANGUAGE — neutral standing, walking, sitting, relaxed, tense, and action-ready poses. Maintain consistent anatomy, proportions, posture, and silhouette. Upright and still, shoulders level, hands steady; a small bow of the head when serving, a straight back when she stands her ground (proposed).\n6. COSTUME DETAILS — close-ups of clothing layers, fabrics, seams, fasteners, footwear, jewelry, eyewear, markings, and other character-defining wardrobe elements. A plain sage-green blouse in soft cotton with neat hems; a plain sage-green wrapper in a matching cloth, wrapped and tucked at the waist; flat leather sandals; no jewelry.\n7. COLOR AND MATERIAL PALETTE — key colors with HEX codes: Skin (proposed) #8A5A3C; Braids (proposed) #1A1412; Wrapper #7F9270; Blouse #9CAB88; Sandals (proposed) #6B4A32. Materials: Soft cotton blouse, plain wrapper cloth, leather sandals; all shown as stylized materials.\n8. DO NOT CHANGE — lock the character's face, identity, skin tone, age, hair, eye color, body shape, proportions, costume, accessories, markings, colors, and defining features: the oval face, high cheekbones, calm dark eyes, braids pulled back, plain sage-green blouse and wrapper, flat sandals, medium-brown skin, slim upright build. Do not redesign, beautify, age, stylize, simplify, or create alternate versions.\nUse a plain solid white studio background (always white, no gradients or scenery), soft controlled lighting, realistic materials, sharp details, subtle shadows, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid laid out horizontally across the wide frame.\nInclude a small NOTES PANEL with annotation text (the sage green is plain, with no pattern; no jewelry; always upright and still) and one cinematic CLOSE-UP POSE of the character: A soft close-up in warm window light, her eyes steady and wet but unbroken, lips pressed: the moment she chooses calm.\nEvery panel must depict the exact same character with absolute visual consistency. Focus only on the character. Do not include props, additional characters, environments, unrelated objects, or alternate outfits.",
+        "recurring": true
+      },
+      {
+        "name": "Stephanie Sekibo",
+        "tag": "@StephanieSekibo",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "scenes": [
+          1
+        ],
+        "entry": {
+          "name": "Stephanie Sekibo",
+          "tag": "@StephanieSekibo",
+          "speakers": [
+            "STEPHANIE",
+            "STEPHANIE SEKIBO"
+          ],
+          "gender": "Female",
+          "age": "29",
+          "height": "170 cm (proposed)",
+          "body_type": "Slim with a curved figure (proposed)",
+          "ethnicity": "Nigerian, from the Port Harcourt setting; golden-brown skin (proposed, from the style's dark and medium-brown skin tones)",
+          "role": "A guest at the promotion party, standing at the host's elbow; her relationship to him is not stated in the script",
+          "archetype": "The sweet-voiced rival",
+          "personality": "Polished, sweet on the surface and sharp underneath; keeps still and smiles while others suffer",
+          "core_theme": "Kindness used as a weapon",
+          "emotional_range": "Controlled: a sweet smile, a sly look, quiet satisfaction; she never raises her voice",
+          "behavior_notes": "Touches the host's sleeve when she speaks, does not move when the pen stops at her heel, smiles",
+          "speech_style": "Sweet and light Nigerian English with a thick Port Harcourt accent (proposed)",
+          "video_voice": "Adult Nigerian female voice with a thick Port Harcourt Nigerian English accent, sweet and light with something sharp underneath.",
+          "traits": "A glossy bob and long French-tip nails (both from the script); a pointed chin (proposed)",
+          "signature_colors": "fuchsia, glossy black, white nail tips, golden-brown skin",
+          "outfit_summary": "Fuchsia dress (script), gold heels and small gold earrings (proposed)",
+          "top": "Fitted fuchsia dress with a modest square neckline (neckline proposed)",
+          "bottom": "The dress falls to the knee (length proposed)",
+          "shoes": "Gold high-heeled sandals (proposed)",
+          "accessories": "Small gold hoop earrings (proposed); long French-tip nails (script)",
+          "turnaround": "She stands with one hip slightly turned, shoulders relaxed, chin lifted, the long French-tip nails visible on a loosely held hand.",
+          "face_details": "A heart-shaped face with a narrow pointed chin, almond eyes with a knowing look, sharply arched brows, a small upturned nose, glossy lips, golden-brown skin (proposed), a glossy black bob cut at the jaw.",
+          "expression_notes": "Sweet and calculated: a gentle smile that never reaches the eyes, a slow sly look, quiet satisfaction (proposed).",
+          "posture_notes": "Poised and still, weight on one hip, hands light and deliberate; she holds a pose instead of moving (proposed).",
+          "costume_details": "A fitted fuchsia dress with clean seams and a smooth finish; gold high-heeled sandals; small gold hoop earrings; long French-tip nails with white tips on a nude base.",
+          "palette": [
+            {
+              "label": "Skin (proposed)",
+              "hex": "#A9744F"
+            },
+            {
+              "label": "Bob",
+              "hex": "#14100E"
+            },
+            {
+              "label": "Dress",
+              "hex": "#C2257A"
+            },
+            {
+              "label": "Nail tips",
+              "hex": "#F4EDE4"
+            },
+            {
+              "label": "Gold (proposed)",
+              "hex": "#D4A838"
+            }
+          ],
+          "materials": "A smooth satin-finish dress cloth (proposed), polished gold metal, glossy hair, gel nails; all shown as stylized materials.",
+          "lock": "the heart-shaped face, pointed chin, almond eyes, glossy jaw-length bob, fuchsia dress, long French-tip nails, golden-brown skin, slim curved figure",
+          "notes": [
+            "the smile stays on the mouth, not the eyes",
+            "nails are always long with white tips",
+            "the bob is always glossy and smooth"
+          ],
+          "close_up": "A close-up in warm party light, a sweet smile, her long French-tip nails resting lightly on a sleeve: the moment she pretends to be kind.",
+          "proposed": [
+            "height",
+            "build",
+            "skin tone",
+            "face details",
+            "neckline and length",
+            "heels and earrings",
+            "satin finish"
+          ],
+          "scenes": [
+            1
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the character, rendered in Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.:\n1. CHARACTER PROFILE — Stephanie Sekibo. Role: A guest at the promotion party, standing at the host's elbow; her relationship to him is not stated in the script. 29, 170 cm (proposed), Slim with a curved figure (proposed) build. Personality: Polished, sweet on the surface and sharp underneath; keeps still and smiles while others suffer. Distinctive traits: A glossy bob and long French-tip nails (both from the script); a pointed chin (proposed). Signature colors: fuchsia, glossy black, white nail tips, golden-brown skin.\n2. FULL-BODY TURNAROUND — front, 3/4, side, and back views of the exact same character at matching scale, with identical facial features, hairstyle, body proportions, costume, colors, and accessories, standing in a neutral pose beside a vertical height scale in centimeters. She stands with one hip slightly turned, shoulders relaxed, chin lifted, the long French-tip nails visible on a loosely held hand.\n3. FACE AND IDENTITY DETAILS — front, profile, and 3/4 head-and-shoulder close-ups showing facial structure, eyes, eyebrows, nose, lips, hairstyle, skin tone, makeup, scars, tattoos, and other defining features. A heart-shaped face with a narrow pointed chin, almond eyes with a knowing look, sharply arched brows, a small upturned nose, glossy lips, golden-brown skin (proposed), a glossy black bob cut at the jaw.\n4. EXPRESSION SHEET — neutral, happy, angry, sad, surprised, worried, confident, and determined expressions. Preserve the exact same facial structure and identity in every expression. Sweet and calculated: a gentle smile that never reaches the eyes, a slow sly look, quiet satisfaction (proposed).\n5. POSE AND BODY LANGUAGE — neutral standing, walking, sitting, relaxed, tense, and action-ready poses. Maintain consistent anatomy, proportions, posture, and silhouette. Poised and still, weight on one hip, hands light and deliberate; she holds a pose instead of moving (proposed).\n6. COSTUME DETAILS — close-ups of clothing layers, fabrics, seams, fasteners, footwear, jewelry, eyewear, markings, and other character-defining wardrobe elements. A fitted fuchsia dress with clean seams and a smooth finish; gold high-heeled sandals; small gold hoop earrings; long French-tip nails with white tips on a nude base.\n7. COLOR AND MATERIAL PALETTE — key colors with HEX codes: Skin (proposed) #A9744F; Bob #14100E; Dress #C2257A; Nail tips #F4EDE4; Gold (proposed) #D4A838. Materials: A smooth satin-finish dress cloth (proposed), polished gold metal, glossy hair, gel nails; all shown as stylized materials.\n8. DO NOT CHANGE — lock the character's face, identity, skin tone, age, hair, eye color, body shape, proportions, costume, accessories, markings, colors, and defining features: the heart-shaped face, pointed chin, almond eyes, glossy jaw-length bob, fuchsia dress, long French-tip nails, golden-brown skin, slim curved figure. Do not redesign, beautify, age, stylize, simplify, or create alternate versions.\nUse a plain solid white studio background (always white, no gradients or scenery), soft controlled lighting, realistic materials, sharp details, subtle shadows, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid laid out horizontally across the wide frame.\nInclude a small NOTES PANEL with annotation text (the smile stays on the mouth, not the eyes; nails are always long with white tips; the bob is always glossy and smooth) and one cinematic CLOSE-UP POSE of the character: A close-up in warm party light, a sweet smile, her long French-tip nails resting lightly on a sleeve: the moment she pretends to be kind.\nEvery panel must depict the exact same character with absolute visual consistency. Focus only on the character. Do not include props, additional characters, environments, unrelated objects, or alternate outfits.",
+        "recurring": false
+      }
+    ],
+    "locations": [
+      {
+        "name": "Kalio duplex sitting room",
+        "tag": "@KalioSittingRoom",
+        "status": "ok",
+        "errors": [],
+        "warnings": [],
+        "scenes": [
+          1
+        ],
+        "entry": {
+          "name": "Kalio duplex sitting room",
+          "match": "Kalio Duplex, Peter Odili Road, Port Harcourt. Night",
+          "tag": "@KalioSittingRoom",
+          "role": "Where the promotion party is held and where a wife is sent out of her own home",
+          "setting_type": "interior",
+          "era": "Present day, night, heavy rain",
+          "region": "Peter Odili Road, Port Harcourt, Nigeria",
+          "scale": "A large duplex sitting room that holds about twenty guests (proposed)",
+          "mood": "Warm, crowded and loud, with cold rain pressing at the windows",
+          "signature_colors": "warm amber lamp light, gold, deep wood brown, cool rain-grey at the windows",
+          "layout": "Seen from the entrance side: a large open sitting room with a cream sofa set pushed back to the walls to leave floor for the guests (proposed), a polished side table near one wall with a folded exercise book on it, a dining chair against the wall, tall rain-streaked windows along the far wall, a heavy front door on the near right, a tiled floor throughout, warm lamps and a chandelier (proposed).",
+          "angle_notes": "The front view from the door across the room to the windows; the left view along the sofa wall toward the side table; the right view toward the dining chair and the passage to the kitchen (proposed); the reverse view from the windows back toward the front door.",
+          "key_zones": "the heavy front door, the side table with a folded exercise book, the dining chair, the tall rain-streaked windows, the polished tiled floor, the ceiling chandelier (proposed), the wall behind which a generator hums (sound only, nothing visible)",
+          "lighting_variants": "night with warm amber interior lamps against heavy rain at the windows; the same room with the front door open and cool rain-grey light and rain blowing in across the tiles",
+          "materials": "polished floor tiles, painted walls, wooden furniture, upholstered sofa fabric, glass windows streaked with rain, a brass door handle (proposed); all shown as stylized materials.",
+          "palette": [
+            {
+              "label": "Amber lamp light",
+              "hex": "#E0A24A"
+            },
+            {
+              "label": "Gold highlight",
+              "hex": "#D8A82A"
+            },
+            {
+              "label": "Deep wood (proposed)",
+              "hex": "#4A2E20"
+            },
+            {
+              "label": "Cream sofa (proposed)",
+              "hex": "#E8DCC6"
+            },
+            {
+              "label": "Rain-grey window light",
+              "hex": "#4B5666"
+            },
+            {
+              "label": "Shadow tone",
+              "hex": "#1B1512"
+            }
+          ],
+          "lock": "the front door on the near right, the tall rain-streaked windows on the far wall, the side table, the dining chair, the tiled floor, the warm amber lamps, the chandelier",
+          "notes": [
+            "rain is always visible at the windows",
+            "the room is always lit warm amber at night",
+            "nothing of the generator is seen, only heard"
+          ],
+          "proposed": [
+            "scale",
+            "sofa set and floor space",
+            "chandelier",
+            "kitchen passage",
+            "door handle",
+            "palette values"
+          ],
+          "scenes": [
+            1
+          ]
+        },
+        "prompt": "Create a polished 16:9 landscape continuity sheet focused exclusively on the location, rendered in Premium cinematic 3D animated African drama, stylized semi-realistic human characters with expressive eyes, individually distinct sculpted facial features with a unique face shape, nose and jaw for every character, detailed dark and medium-brown skin tones, polished natural hair, curls and braids, emotionally exaggerated facial acting, realistic contemporary and traditional African clothing, highly detailed but uncluttered interiors and environments, warm amber and golden color palette, cinematic golden-hour or large-window lighting, soft global illumination, subtle rim lighting, moderate depth of field, realistic material textures, strong foreground character hierarchy, clear multi-character emotional staging, eye-level or cinematic three-quarter camera angles, polished animated-feature rendering, dramatic but family-friendly emotional atmosphere.:\n1. LOCATION PROFILE — Kalio duplex sitting room. Role in the story: Where the promotion party is held and where a wife is sent out of her own home. Interior setting, Present day, night, heavy rain, Peter Odili Road, Port Harcourt, Nigeria. Scale: A large duplex sitting room that holds about twenty guests (proposed). Mood: Warm, crowded and loud, with cold rain pressing at the windows. Signature colors: warm amber lamp light, gold, deep wood brown, cool rain-grey at the windows.\n2. MASTER ESTABLISHING VIEW — one wide hero view showing the full space with accurate layout, architecture, and atmosphere. Seen from the entrance side: a large open sitting room with a cream sofa set pushed back to the walls to leave floor for the guests (proposed), a polished side table near one wall with a folded exercise book on it, a dining chair against the wall, tall rain-streaked windows along the far wall, a heavy front door on the near right, a tiled floor throughout, warm lamps and a chandelier (proposed).\n3. MULTI-ANGLE VIEWS — front, left, right, and rear or reverse views of the same space, with matching scale, layout, and architectural details. The front view from the door across the room to the windows; the left view along the sofa wall toward the side table; the right view toward the dining chair and the passage to the kitchen (proposed); the reverse view from the windows back toward the front door.\n4. KEY ZONES AND DETAILS — close-ups of the most important areas, entrances, windows, doors, floors, walls, ceilings, and other defining architectural elements: the heavy front door, the side table with a folded exercise book, the dining chair, the tall rain-streaked windows, the polished tiled floor, the ceiling chandelier (proposed), the wall behind which a generator hums (sound only, nothing visible).\n5. LIGHTING AND TIME OF DAY — the same location in the lighting the story calls for, with identical geometry in every version: night with warm amber interior lamps against heavy rain at the windows; the same room with the front door open and cool rain-grey light and rain blowing in across the tiles.\n6. MATERIAL AND TEXTURE REFERENCES — clean swatches or close-ups of the visible surfaces: polished floor tiles, painted walls, wooden furniture, upholstered sofa fabric, glass windows streaked with rain, a brass door handle (proposed); all shown as stylized materials.\n7. COLOR PALETTE — key colors with HEX codes: Amber lamp light #E0A24A; Gold highlight #D8A82A; Deep wood (proposed) #4A2E20; Cream sofa (proposed) #E8DCC6; Rain-grey window light #4B5666; Shadow tone #1B1512, plus references for light color and shadow tone.\n8. DO NOT CHANGE — lock the layout, proportions, architecture, materials, colors, signature features, and atmosphere: the front door on the near right, the tall rain-streaked windows on the far wall, the side table, the dining chair, the tiled floor, the warm amber lamps, the chandelier. Do not redesign, modernize, beautify, simplify, or create alternate versions.\nUse soft controlled lighting, sharp details, clean typography, thin dividers, balanced spacing, and a sophisticated editorial production-design grid. Include a small NOTES PANEL with annotation text (rain is always visible at the windows; the room is always lit warm amber at night; nothing of the generator is seen, only heard).\nEvery panel must depict the exact same location with absolute visual consistency. Focus only on the location. Do not include people, characters, vehicles, or unrelated objects."
+      }
+    ],
+    "extras": [
+      {
+        "name": "GUESTS",
+        "look": "about twenty adult party guests of all ages, dark and medium-brown skin, in smart party wear: kaftans and agbada in cream and gold for the men, gowns and wrapper-and-blouse sets in gold, burgundy and cream for the women, soft and slightly out of focus behind the three leads",
+        "voice": ""
+      }
+    ]
+  }
 }

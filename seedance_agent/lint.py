@@ -149,13 +149,14 @@ def lint(prompt: str, segment: dict, bible: dict, settings: dict, style: str = "
 
     # 9. extension and chain
     mode = segment.get("mode")
+    head = re.split(r"^\s*(?:\*\*)?SHOT\s+1\b", text, maxsplit=1, flags=re.IGNORECASE | re.MULTILINE)[0]
     if mode == "extend":
-        if not re.search(r"\bextend", text[:700], re.IGNORECASE):
-            errors.append("An extension prompt must start with 'Extend the @ TAG VIDEO from the exact final frame ...'.")
+        if not re.search(r"^\s*extend\b", head, re.IGNORECASE | re.MULTILINE):   # a long Visual Style paragraph may sit above it
+            errors.append("An extension prompt needs a line that starts 'Extend the previous video from its exact final frame after NAME says: ...' before SHOT 1.")
         if prev and prev.get("last_line"):
             if not _run_tokens(words(text.split("SHOT 1")[0]), words(prev["last_line"])):
                 errors.append("The extension must quote the previous clip's last spoken line in the opening: “%s”" % prev["last_line"])
-    if mode == "new-chain" and not re.search(r"(first[- ]frame|@\s?Image|last frame)", text[:900], re.IGNORECASE):
+    if mode == "new-chain" and not re.search(r"(first[- ]frame|@\s?Image|last frame)", head, re.IGNORECASE):
         warnings.append("A new chain should name the previous clip's last frame as the first-frame reference.")
 
     # 10. sound

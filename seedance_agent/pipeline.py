@@ -203,7 +203,8 @@ def scenes_for_names(names: list[str], segs: list[dict]) -> list[int]:
 
 def scenes_for_location(name: str, segs: list[dict]) -> list[int]:
     key = _norm(name)
-    return sorted({s["scene"] for s in segs if s.get("location_label") and (key in _norm(s["location_label"]) or _norm(s["location_label"]) in key)})
+    where = lambda s: s.get("location_label") or s.get("location") or ""   # a plain script has only the heading's place
+    return sorted({s["scene"] for s in segs if where(s) and (key in _norm(where(s)) or _norm(where(s)) in key)})
 
 
 def speech_for(names: list[str], segs: list[dict]) -> list[str]:
@@ -312,7 +313,8 @@ def apply_sheets_to_bible(movie: Movie, built: dict, segs: list[dict]) -> None:
     for l in built["locations"]:
         e = l["entry"]
         key = e.get("match") or e.get("name")
-        label = next((s.get("location_label") for s in segs if s.get("location_label") and (_norm(key) in _norm(s["location_label"]) or _norm(s["location_label"]) in _norm(key))), None)
+        label = next((s.get("location_label") or s.get("location") for s in segs if (s.get("location_label") or s.get("location"))
+                      and (_norm(key) in _norm(s.get("location_label") or s["location"]) or _norm(s.get("location_label") or s["location"]) in _norm(key))), None)
         k = next((k for k in locs if _norm(k) == _norm(label or key)), label or key)
         cur = locs.setdefault(k, {})
         if not cur.get("tag") or cur["tag"].startswith("@ TAG "):
